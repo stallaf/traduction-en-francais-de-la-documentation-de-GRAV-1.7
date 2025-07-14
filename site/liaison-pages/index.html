@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/liaison-pages/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Liaison de pages - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Liaison de pages";
+        var mkdocs_page_input_path = "liaison-pages.md";
+        var mkdocs_page_url = "/liaison-pages/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Liaison de pages</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>2. Contenu &raquo;</li><li>Liaison de pages</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="liaison-de-pages">Liaison de pages</h1>
+<p>Grav propose une variété d'options de liaison flexibles qui vous permettent de créer un lien d'une page à une autre, et même à des pages distantes. Si vous avez déjà lié des fichiers à l'aide de HTML ou travaillé avec un système de fichiers à l'aide d'une ligne de commande, cela devrait être très facile à comprendre.</p>
+<p>Nous allons passer à quelques exemples simples en utilisant ce modèle très basique et réduit de ce à quoi pourrait ressembler le répertoire <strong>Pages</strong> d'un site Grav.</p>
+<p><img alt="Annuaire des pages" src="https://learn.getgrav.org/user/pages/02.content/05.linking/pages.jpg" /></p>
+<p>En utilisant cette structure de répertoires comme exemple, nous examinerons les différents types de liens que vous pouvez utiliser dans votre contenu.</p>
+<p>Pour commencer, voici un bref aperçu de certains des composants communs d'un lien Grav et de ce qu'ils signifient.</p>
+<div class="cadre">
+<code>[Contenu lié](../chemin/slug/page)</code>
+</div>
+<p><br></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>CHAINE</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>[]</code></td>
+<td align="left">Le crochet est utilisé pour envelopper le texte ou le contenu alternatif <br>qui devient lié. En HTML, ce serait le contenu placé entre<br> <code>&lt;a href=""&gt;</code> et <code>&lt;/a&gt;</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>()</code></td>
+<td align="left">La parenthèse est utilisée pour entourer le lien lui-même.<br>Ceci est placé directement après le crochet.</td>
+</tr>
+<tr>
+<td align="left"><code>../</code></td>
+<td align="left">Lorsqu'il est utilisé dans le lien, il indique un<br> déplacement vers le haut d'un répertoire.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Slug Relatif">Slug Relatif
+<a href="#Slug Relatif" class="toc-anchor after"></a></h2>
+
+<p>Grav ne se contente pas de limiter vos liens internes à des noms spécifiques dans votre structure de fichiers/répertoires. Il peut également extraire les slugs attribués à la fois dans l'en-tête du fichier, ainsi que dans le nom du répertoire de secours. Cela facilite la création de liens rapides car vous n'avez pas à vous souvenir du nom de fichier spécifique, mais d'un slug facilement mémorisable (et pertinent).</p>
+<p>Le moteur de template de Grav utilise les noms de fichiers pour déterminer quel template leur appliquer. Par exemple, un blog peut utiliser le nom de fichier standard <code>item.md</code> pour chaque article de blog. Le billet de blog lui-même peut se voir attribuer un slug qui a plus de sens, comme <code>grass</code> ou <code>grass-is-green</code>.</p>
+<p>Les noms de répertoire ont également des numéros attribués, ce qui facilite la commande. Vous n'êtes pas obligé d'inclure ces chiffres avec des liens relatifs aux slugs. Grav les ignore lors de la création du slug, la structure d'URL de votre site est donc plus propre.</p>
+<p>Voici quelques exemples de liens slug-relatif.</p>
+<p>Dans cet exemple, nous montons d'un répertoire et chargeons la page par défaut située dans le répertoire <code>pages/01.blue/02.water/item.md</code> depuis <code>pages/01.blue/01.sky/item.md</code>. Le fichier, <code>item.md</code>, n'a pas de slug assigné, donc Grav utilise le nom du répertoire.</p>
+<div class="cadre">
+<code>[link](../water)</code>
+</div>
+<p><br>
+Cet exemple suivant fait une chose très similaire, reliant les pages/<code>01.blue/01.sky/item.md</code> aux <code>pages/02.green/02.tree/item.md</code>, mais lors du chargement du fichier <code>item.md</code>, un slug a été affecté au dossier de <code>tree-is-green</code>.</p>
+<div class="cadre">
+<code>[link](../../green/tree-is-green)</code>
+</div>
+<p><br>
+Le slug placé dans l'en-tête de <code>item.md</code> remplace le slug <code>green</code> du nom de dossier par défaut.</p>
+<h2 id="Répertoire relatif">Répertoire relatif
+<a href="#Répertoire relatif" class="toc-anchor after"></a></h2>
+
+<p>Les liens <strong>relatifs au répertoire</strong> utilisent des destinations définies par rapport à la page actuelle. Cela peut être aussi simple que de créer un lien vers un autre fichier dans le répertoire actuel, tel qu'un fichier image, ou aussi complexe que de remonter plusieurs niveaux de répertoire, puis de revenir au dossier/fichier spécifique que vous devez afficher.</p>
+<p>Avec des liens relatifs, l'emplacement du fichier source est tout aussi important que celui de la destination. Si l'un ou l'autre des fichiers du mixage est déplacé, en modifiant le chemin entre eux, le lien peut être rompu.</p>
+<p>L'avantage de ce type de structure de liaison est que vous pouvez facilement basculer entre un serveur de développement local et un serveur de production avec un nom de domaine différent et tant que la structure de fichiers reste cohérente, les liens devraient fonctionner sans problème.</p>
+<p>Un lien de fichier pointe vers un fichier particulier par son nom, plutôt que par son répertoire ou son slug. Si vous créiez un lien de <code>pages/01.blue/01.sky/item.md</code> vers <code>/pages/02.green/01.grass/item.md</code>, vous utiliseriez la commande suivante.</p>
+<div class="cadre">
+<code>[link](../../02.green/01.grass/item.md)</code>
+</div>
+<p><br>
+Ce lien monte de deux dossiers, comme indiqué par <code>../../</code>, puis descend de deux dossiers, pointant directement vers <code>item.md</code> comme destination.</p>
+<p>Parfois, vous souhaitez simplement diriger l'utilisateur vers un seul répertoire, en chargeant la page par défaut. Puisqu'un fichier exact n'est pas indiqué, Grav est chargé de choisir le bon à charger. Pour un site Grav bien organisé, cela ne devrait pas poser de problème.</p>
+<p>Dans cet exemple, nous allons lier les <code>pages/01.blue/01.sky/item.md</code> à /<code>pages/02.green/</code> qui chargerait le fichier <code>color.md</code> par défaut.</p>
+<div class="cadre">
+<code>[link](../../02.green)</code>
+</div>
+<p><br>
+Si vous souhaitez créer un lien vers un répertoire deux étapes plus haut, vous pouvez le faire en utilisant ce processus.</p>
+<p>L'exemple suivant ressemble beaucoup au lien de fichier que nous avons démontré précédemment. Au lieu de créer un lien direct vers le fichier, nous lions vers son répertoire, qui devrait de toute façon charger le fichier que nous voulons car c'est le fichier par défaut. Si vous créez un lien de <code>pages/01.blue/01.sky/item.md</code> vers <code>/pages/02.green/01.grass/</code> vous utiliserez la commande suivante.</p>
+<div class="cadre">
+<code>[link](../../02.green/01.grass)</code>
+</div>
+<p><br></p>
+<h2 id="Absolu">Absolu
+<a href="#Absolu" class="toc-anchor after"></a></h2>
+
+<p>Les liens absolus sont similaires aux liens relatifs, mais sont relatifs à la racine du site. Dans <strong>Grav</strong>, ceci est généralement basé dans votre répertoire <strong>/user/pages/</strong>. Ce type de lien peut se faire de deux manières différentes.</p>
+<p>Vous pouvez le faire de la même manière que le style <strong>Slug Relatif</strong> qui utilise le slug ou le nom du répertoire dans le chemin pour plus de simplicité. Cette méthode supprime les problèmes potentiels de changements de commande ultérieurs (changement du numéro au début du nom du dossier) rompant le lien. Ce serait la méthode de liaison absolue la plus couramment utilisée.</p>
+<p>Dans un lien absolu, le lien s'ouvre avec un <code>/</code>. Voici un exemple de lien absolu fait vers <code>pages/01.blue/01.sky/item.md</code> dans le style <strong>Slug</strong>.</p>
+<div class="cadre">
+<code>[link](/blue/sky)</code>
+</div>
+<p><br>
+La deuxième méthode est façonnée d'après le style <strong>Directory Relative</strong> décrit précédemment. Cette méthode laisse des éléments tels que les numéros de classement au début des noms de répertoire. Bien que cela ajoute le potentiel d'un lien rompu lorsque le contenu est réorganisé, il est plus fiable lorsqu'il est utilisé avec des services comme <a href="https://github.com/">Github</a> où les liens de contenu ne bénéficient pas de la flexibilité de Grav. Voici un exemple de lien absolu fait vers <code>pages/01.blue/01.sky/item.md</code> en utilisant ce style.</p>
+<div class="cadre">
+<code>[link](/01.blue/01.sky)</code>
+</div>
+<p><br></p>
+<h2 id="Distants">Distants
+<a href="#Distants" class="toc-anchor after"></a></h2>
+
+<p>Les liens distants vous permettent de vous connecter directement à pratiquement n'importe quel fichier ou document via son URL. Cela ne doit pas nécessairement inclure le contenu de votre propre site, mais c'est possible. Voici un exemple de lien vers la page d'accueil de Google.</p>
+<div class="cadre">
+<code>[link](http://www.google.com)</code>
+</div>
+
+<p>Vous pouvez créer un lien vers pratiquement n'importe quelle URL directe, y compris les liens HTTPS sécurisés. Par exemple:</p>
+<div class="cadre">
+<code>[link](https://github.com)</code>
+</div>
+<p><br></p>
+<h2 id="Attributs de liens">Attributs de liens
+<a href="#Attributs de liens" class="toc-anchor after"></a></h2>
+
+<p>Une nouvelle fonctionnalité intéressante dont vous pouvez profiter consiste à fournir des attributs de lien directement via la syntaxe de démarquage. Cela vous permet d'ajouter facilement des attributs HTML <strong>class</strong>, <strong>id</strong>, <strong>rel</strong> et <strong>target</strong> sans avoir besoin de <a href="https://michelf.ca/projects/php-markdown/extra/">Markdown Extra</a>.</p>
+<p>Voici quelques exemples :</p>
+<h3 id="Classe/Classes d'Attributs">Classe/Classes d'Attributs
+<a href="#Classe/Classes d'Attributs" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Big Button](../some-page?classes=button,big)</code>
+</div>
+
+<p>qui se traduira par un code HTML similaire à :</p>
+<pre><code class="language-html">&lt;a href=&quot;/your/pages/some-page&quot; class=&quot;button,big&quot;&gt;Big Button&lt;/a&gt;
+</code></pre>
+<h3 id="ID Attribut">ID Attribut
+<a href="#ID Attribut" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Unique Button](../some-page?id=important-button)</code>
+</div>
+
+<p>qui se traduira par un code HTML similaire à :</p>
+<pre><code class="language-html">&lt;a href=&quot;/your/pages/some-page&quot; id=&quot;important-button&quot;&gt;Unique Button&lt;/a&gt;
+</code></pre>
+<h3 id="Rel Attribut">Rel Attribut
+<a href="#Rel Attribut" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+</code>[NoFollow Link](../some-page?rel=nofollow)</code>
+</div>
+</div>
+<p>qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page" rel="nofollow"&gt;NoFollow Link&lt;/a&gt;
+</code></pre>
+<h3 id="Target Attribut">Target Attribut
+<a href="#Target Attribut" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Link in new Tab](../some-page?target=_blank)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page" target="_blank"&gt;Link in new Tab&lt;/a&gt;
+</code></pre>
+<h3 id="Combinaisons d'Attributs">Combinaisons d'Attributs
+<a href="#Combinaisons d'Attributs" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Combinaisons d'Attributs](../some-page?target=_blank&classes=button)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page" target="_blank" class="button"&gt;Combinations of Attributes&lt;/a&gt;
+</code></pre>
+<h3 id="Combinaisons d'Attributs avec ancres">Combinaisons d'Attributs avec ancres
+<a href="#Combinaisons d'Attributs avec ancres" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Element Ancre](../some-page?target=_blank&classes=button#element-id)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page#element-id" target="_blank" class="button"&gt;Element Anchor&lt;/a&gt;
+</code></pre>
+<h3 id="Liens d'ancrage dans la même page">Liens d'ancrage dans la même page
+<a href="#Liens d'ancrage dans la même page" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Element Ancre](?classes=button#element-id)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="#element-id" class="button"&gt;
+</code></pre>
+<p>Notez que l'ancre doit venir <em>après</em> la requête, comme indiqué dans le <a href="https://github.com/getgrav/grav/issues/1324#issuecomment-282587549">problème 1324</a></p>
+<h3 id="Transmission d'un attribut non pris en charge">Transmission d'un attribut non pris en charge
+<a href="#Transmission d'un attribut non pris en charge" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Pass-through of 'cat' attribute](../some-page?classes=underline&cat=black)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page?cat=black" class="underline"&gt;Pass-through of 'cat' attribute&lt;/a&gt;
+</code></pre>
+<h3 id="Ignorer tous les Attribus">Ignorer tous les Attribus
+<a href="#Ignorer tous les Attribus" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Ignorer tous les Attribus](../some-page?classes=underline&rel=nofollow&noprocess)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page?rel=nofollow&amp;classes=underline"&gt;Skip All attributes&lt;/a&gt;
+</code></pre>
+<h3 id="Ignorer Certains Attribus">Ignorer Certains Attribus
+<a href="#Ignorer Certains Attribus" class="toc-anchor after"></a></h3>
+
+<div class="cadre">
+<code>[Ignorer Certains Attribus](../some-page?id=myvariable&classes=underline&target=_blank&noprocess=id,classes)</code>
+</div>
+<p><br>
+qui se traduira par un code HTML similaire à :</p>
+<pre><code>&lt;a href="/your/pages/some-page?id=myvariable&amp;classes=underline" target="_blank"&gt;Skip Certain attributes&lt;/a&gt;
+</code></pre>
+<p>Ceci est utile lorsque vous essayez d'ignorer un ou plusieurs attributs spécifiques sans affecter les autres.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../syntaxe-markdown/" class="btn btn-neutral float-left" title="Syntaxe Markdown"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../liaison-images/" class="btn btn-neutral float-right" title="Liaison d'images">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../syntaxe-markdown/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../liaison-images/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

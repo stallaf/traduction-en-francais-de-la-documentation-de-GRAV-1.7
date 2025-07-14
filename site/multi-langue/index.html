@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/multi-langue/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Multi langue - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Multi langue";
+        var mkdocs_page_input_path = "multi-langue.md";
+        var mkdocs_page_url = "/multi-langue/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>2. Contenu &raquo;</li><li>Multi langue</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Multi-langue</h1>
+
+<p>Le support multilingue dans Grav est le résultat direct d'une excellente <a href="https://github.com/getgrav/grav/issues/170">discussion communautaire</a> sur le sujet. Nous allons maintenant les décomposer et fournir des exemples sur la façon dont vous pouvez configurer votre site Grav avec plusieurs langues.</p>
+<h2 id="Langue unique différente de l'anglais">Langue unique différente de l'anglais
+<a href="#Langue unique différente de l'anglais" class="toc-anchor after"></a></h2>
+
+<p>Si vous n'utilisez qu'une seule langue, activez les traductions et ajoutez votre code de langue dans le fichier <code>user/config/system.yaml</code> :</p>
+<pre><code class="language-yaml">languages:
+   supported:
+      - fr
+</code></pre>
+<p>ou dans la configuration du système dans l'Admin :</p>
+<p><img alt="Paramètres de traduction de l'administrateur" src="https://learn.getgrav.org/user/pages/02.content/11.multi-language/translations-settings.png" /></p>
+<p>Cela garantira que Grav utilise les chaînes de langue correctes dans le frontend. De plus, si le thème le prend en charge, il ajoutera votre code de langue à la balise HTML.</p>
+<h2 id="Bases multilingues">Bases multilingues
+<a href="#Bases multilingues" class="toc-anchor after"></a></h2>
+
+<p>Comme vous devriez déjà savoir comment Grav utilise les fichiers Markdown dans les dossiers pour définir la structure architecturale ainsi que pour définir les options de page importantes ainsi que le contenu, nous n'aborderons pas directement ces mécanismes. Cependant, sachez que par défaut, Grav recherche un <strong>seul</strong> fichier <code>.md</code> dans un dossier pour représenter la page. Si vous n'êtes pas sûr d'être suffisamment familiarisé avec ce principe, veuillez vous référer à la section <a href="../tutoriel/">Tutoriel de Base</a> avant de continuer. Avec la prise en charge multilingue activée, Grav recherchera le fichier basé sur la langue appropriée, par exemple <code>default.en.md</code> ou <code>default.fr.md</code>.</p>
+<h3 id="Configuration de la langue">Configuration de la langue
+<a href="#Configuration de la langue" class="toc-anchor after"></a></h3>
+
+<p>Pour que Grav fasse cela, vous devez d'abord configurer une configuration de langage de base dans votre fichier <code>user/config/system.yaml</code> (avec des commentaires pour une meilleure lisibilité) :</p>
+<pre><code class="language-yaml">languages:
+   supported: # Supported languages:
+      - en # English language
+      - fr # French language
+   default_lang: en # Set default language to English
+   include_default_lang: true # If true, use /en/path instead of /path for default English language.
+   include_default_lang_file_extension: true # If true, use .en.md file extension instead of .md for default langauge.
+   content_fallback:
+      en: ['en'] # No fallback for English.
+      fr: ['fr', 'en'] #  French falls back to English version of the page.
+</code></pre>
+<p>En fournissant un bloc <code>langages</code> avec une liste des langues <code>supported</code> prises en charge, vous avez effectivement activé la prise en charge multilingue dans Grav.</p>
+<p>Dans cet exemple, vous pouvez voir que deux langues prises en charge ont été décrites (<code>en</code> et <code>fr</code>). Ceux-ci vous permettront de prendre en charge les langues <strong>Anglaise</strong> et <strong>Française</strong>.</p>
+<p>Si aucune langue n'est explicitement demandée (via l'URL ou par code), Grav utilisera l'ordre des langues fournies pour sélectionner la bonne langue. Ainsi, dans l'exemple ci-dessus, la langue par <strong>défaut</strong> est <code>en</code> ou Anglais. Si vous aviez <code>fr</code> en premier, le Français serait la langue par défaut.</p>
+<p>Par défaut, toutes les langues reviennent à la langue par défaut. Si vous ne voulez pas faire cela, vous pouvez ignorer les replis de langue en utilisant <code>content_fallback</code>, où la clef est la langue et la valeur,  un tableau de langues.</p>
+<div class="notice info">
+Vous pouvez bien sûr fournir autant de langues que vous le souhaitez et vous pouvez même utiliser des codes de type de paramètres régionaux tels que <code>en-GB</code>, <code>en-US</code> et <code>fr-FR</code>. Si vous utilisez cette dénomination basée sur les paramètres régionaux, vous devrez remplacer tous les codes de langue abrégés par les versions locales.
+</div>
+
+<h3 id="Pages multilingues">Pages multilingues
+<a href="#Pages multilingues" class="toc-anchor after"></a></h3>
+
+<p>Par défaut dans Grav, chaque page est représentée par un fichier de démarquage, par exemple <code>default.md</code>. Lorsque vous activez la prise en charge multilingue, Grav recherchera le fichier Markdown nommé de manière appropriée. Par exemple, comme l'anglais est notre langue par défaut, il cherchera d'abord <code>default.en.md</code>.</p>
+<p>Si ce fichier n'est pas trouvé, il reviendra à la valeur par défaut de Grav et recherchera <code>default.md</code> pour fournir des informations à la page.</p>
+<div class="notice info">
+Ce comportement par défaut a changé dans <strong>Grav 1.7</strong>. Dans le passé, Grav affichait une page Anglaise inexistante en Français, maintenant toutes les langues retombent uniquement sur la langue par défaut si elles ne sont pas spécifiées autrement dans <code>content_fallback</code>. Ainsi, si la page est introuvable dans les langues de secours, la <strong>page d'erreur 404</strong> s'affiche à la place.
+</div>
+
+<p>Si nous avions le plus basique des sites Grav, avec un seul fichier <code>01.home/default.md</code>, nous pourrions commencer par renommer <code>default.md</code> en <code>default.en.md</code>, et son contenu pourrait ressembler à ceci :</p>
+<pre><code class="language-yaml">---
+title: Homepage
+---
+
+This is my Grav-powered homepage!
+</code></pre>
+<p>Ensuite vous pourriez créer une nouvelle page située dans le même dossier <code>01.home/</code> appelé <code>default.fr.md</code> avec le contenu :</p>
+<pre><code class="language-yaml">---
+titre : Page d'accueil
+---
+
+Ceci est ma page d'accueil générée par Grav !
+</code></pre>
+<p>Vous avez maintenant défini deux pages pour votre page d'accueil actuelle en plusieurs langues.</p>
+<div class="notice note">
+Si vous convertissez un site existant pour utiliser plusieurs langues, vous pouvez également définir <code>include_default_lang_file_extension : false</code> pour continuer à utiliser l'extension de fichier <code>.md</code> ordinaire pour votre langue principale. <a href="#Extension de fichier par défaut">Lire la suite....</a>
+</div>
+
+<h3 id="Langue active via URL">Langue active via URL
+<a href="#Langue active via URL" class="toc-anchor after"></a></h3>
+
+<p>Comme l'Anglais est la langue par défaut, si vous deviez pointer votre navigateur sans spécifier de langue, vous obtiendriez le contenu tel que décrit dans le fichier <code>default.en.md</code>, mais vous pourriez également demander explicitement l'anglais en pointant votre navigateur vers</p>
+<pre><code>http://yoursite.com/en
+</code></pre>
+<p>Pour accéder à la version française, vous utiliserez bien sûr</p>
+<pre><code>http://yoursite.com/fr
+</code></pre>
+<div class="notice note">
+Si vous préférez ne pas utiliser le préfixe de langue pour la langue par défaut, définissez <code>include_default_lang : false</code>. <a href="#Préfixe de langue par défaut">Lire la suite...</a>
+</div>
+
+<h3 id="Langue active via le navigateur">Langue active via le navigateur
+<a href="#Langue active via le navigateur" class="toc-anchor after"></a></h3>
+
+<p>La plupart des navigateurs vous permettent de configurer les langues dans lesquelles vous préférez voir le contenu. Grav a la capacité de lire ces valeurs <code>http_accept_language</code> et de les comparer aux langues actuellement prises en charge pour le site, et si aucune langue spécifique n'a été détectée, vous montrer le contenu dans votre langue préférée.</p>
+<p>Pour que cela fonctionne, vous devez activer l'option dans votre fichier <code>user/system.yaml</code> dans la section <code>languages ​​:</code> :</p>
+<pre><code>languages:
+  http_accept_language: true
+</code></pre>
+<h3 id="Langage actif basé sur la session">Langage actif basé sur la session
+<a href="#Langage actif basé sur la session" class="toc-anchor after"></a></h3>
+
+<p>Si vous souhaitez mémoriser la langue active indépendamment de l'URL, vous pouvez activer le stockage basé sur la <strong>session</strong> de la langue active. Pour l'activer, vous devez vous assurer que vous avez <code>session : enabled : true</code> dans le fichier <code>system.yaml</code>. Ensuite, vous devez activer le paramètre de langue :</p>
+<pre><code>languages:
+  session_store_active: true
+</code></pre>
+<p>Cela stockera alors la langue active dans la session.</p>
+<h3 id="Définir les paramètres régionaux sur la langue active">Définir les paramètres régionaux sur la langue active
+<a href="#Définir les paramètres régionaux sur la langue active" class="toc-anchor after"></a></h3>
+
+<p>Le paramètre booléen définira la méthode PHP <code>setlocale()</code> qui contrôle des éléments tels que les valeurs monétaires, les dates, les comparaisons de chaînes, les classifications de caractères et d'autres paramètres spécifiques aux paramètres régionaux sur celui de la langue active. La valeur par défaut est <code>false</code>, puis elle utilisera les paramètres régionaux du système. Si vous définissez cette valeur sur <code>true</code>, elle remplacera les paramètres régionaux par la langue active actuelle.</p>
+<pre><code>languages:
+   override_locale: false
+</code></pre>
+<h3 id="Préfixe de langue par défaut">Préfixe de langue par défaut
+<a href="#Préfixe de langue par défaut" class="toc-anchor after"></a></h3>
+
+<p>Par défaut, le code de langue par défaut est préfixé dans toutes les URL. Par exemple, si vous avez un support pour l'Anglais et le Français (<code>en</code> et <code>fr</code>), et que la valeur par défaut est l'Anglais. Une route de page peut ressembler à <code>/en/my-page</code> en Anglais et <code>/fr/ma-page</code> en Français. Cependant, il est souvent préférable d'avoir la langue par défaut sans le préfixe, vous pouvez donc simplement définir cette option sur <code>false</code> et la page en Anglais apparaîtra sous la forme <code>/my-page</code>.</p>
+<pre><code>languages:
+   override_locale: false
+</code></pre>
+<h3 id="Extension de fichier par défaut">Extension de fichier par défaut
+<a href="#Extension de fichier par défaut" class="toc-anchor after"></a></h3>
+
+<p>Si vous convertissez un site existant pour utiliser plusieurs langues, il peut être intimidant de convertir toutes les pages existantes pour utiliser la nouvelle extension de fichier de langue <code>.en.md</code> (si vous utilisez l'Anglais). Dans ce cas, vous pouvez désactiver l'extension de langue sur votre langue d'origine.</p>
+<pre><code>languages:
+    include_default_lang_file_extension: false
+</code></pre>
+<h3 id="Routage multilingue">Routage multilingue
+<a href="#Routage multilingue" class="toc-anchor after"></a></h3>
+
+<p>Grav utilise généralement les noms des dossiers pour produire un itinéraire URL pour une page particulière. Cela permet à l'architecture du site d'être facilement comprise et mise en œuvre sous la forme d'un ensemble de dossiers imbriqués. Cependant, avec un site multilingue, vous souhaiterez peut-être utiliser une URL qui a plus de sens dans cette langue particulière.</p>
+<p>Si nous avions la structure de dossiers suivante :</p>
+<pre><code class="language-yaml">- 01.animals
+   - 01.mammals
+      - 01.bats
+      - 02.bears
+      - 03.foxes
+      - 04.cats
+   - 02.reptiles
+   - 03.birds
+   - 04.insets
+   - 05.aquatic
+</code></pre>
+<p>Cela produirait des URL telles que <code>http://yoursite.com/animals/mammals/bears</code>. C'est parfait pour un site en Anglais, mais si vous souhaitez avoir une version française, vous préféreriez qu'elle soit traduite de manière appropriée. Le moyen le plus simple d'y parvenir est d'ajouter un <a href="../en-tete-frontmatter/#Slug">slug</a> personnalisé pour chacun des fichiers de page <code>fr.md</code>. par exemple, la page des mammifères pourrait ressembler à :</p>
+<pre><code class="language-yaml">---
+title: Mammifères
+slug: mammiferes
+---
+
+Les mammifères (classe des Mammalia) forment un taxon inclus dans les vertébrés,
+traditionnellement une classe, définie dès la classification de Linné. Ce taxon 
+est considéré comme monophylétique...
+</code></pre>
+<p>Ceci combiné avec les <strong>slug-overrides</strong> appropriés dans les autres fichiers devrait aboutir à une URL de <code>http://yoursite.com/animaux/mammiferes/ours</code> qui ressemble beaucoup plus au Français !</p>
+<p>Une autre option consiste à utiliser la prise en charge des <a href="../en-tete-frontmatter/#Routes">routes au niveau de la page</a> et à fournir un alias de route complet pour la page.</p>
+<h3 id="Page d'accueil basée sur la langue">Page d'accueil basée sur la langue
+<a href="#Page d'accueil basée sur la langue" class="toc-anchor after"></a></h3>
+
+<p>Si vous remplacez la route/slug pour la page d'accueil, Grav ne pourra pas trouver la page d'accueil telle que définie par votre option <code>home.alias</code> dans votre <code>system.yaml</code>. Il recherchera <code>/homepage</code> et votre page d'accueil Française pourrait avoir un itinéraire de <code>/page-d-accueil</code>.</p>
+<p>Afin de prendre en charge les pages d'accueil multilingues, Grav a une nouvelle option qui peut être utilisée à la place de <code>home.alias</code> et qui est simple <code>home.aliases</code> et cela pourrait ressembler à ceci :</p>
+<pre><code class="language-yaml">home:
+   aliases:
+      en: /homepage
+      fr: /page-d-accueil
+</code></pre>
+<p>De cette façon, Grav sait comment vous diriger vers la page d'accueil si la langue active est l'Anglais ou le Français.</p>
+<h3 id="Modèles Twig basés sur la langue">Modèles Twig basés sur la langue
+<a href="#Modèles Twig basés sur la langue" class="toc-anchor after"></a></h3>
+
+<p>Par défaut, Grav utilise le nom de fichier Markdown pour déterminer le modèle Twig à utiliser pour le rendu. Cela fonctionne avec plusieurs langues de la même manière. Par exemple, <code>default.fr.md</code> recherchera un fichier Twig appelé <code>default.html.twig</code> dans les chemins de modèle Twig appropriés du thème actuel et de tous les plugins qui enregistrent les chemins de modèle Twig. Avec le multi-langue, Grav ajoute également la langue active actuelle à la structure du chemin. Cela signifie que si vous avez besoin d'un fichier Twig spécifique à une langue, vous pouvez simplement les placer dans un dossier de langue de niveau racine. Par exemple, si votre thème actuel utilise un modèle situé dans templates<code>/default.html.twig</code>, vous pouvez créer un dossier <code>templates/fr/</code> et y placer votre fichier Twig spécifique au français : <code>templates/fr/default.html.twig</code>.</p>
+<p>Une autre option qui nécessite une configuration manuelle consiste à remplacer le paramètre <code>template:</code> dans les en-têtes de page. Par example:</p>
+<pre><code>template: default.fr
+</code></pre>
+<p>Cela recherchera un modèle situé à <code>templates/default.fr.html.twig</code>.</p>
+<p>Cela vous offre deux options pour fournir des remplacements Twig spécifiques à la langue.</p>
+<div class="notice info">
+Si aucun modèle Twig spécifique à la langue n'est fourni, celui par défaut sera utilisé.
+</div>
+
+<h3 id="Traduction via Twig">Traduction via Twig
+<a href="#Traduction via Twig" class="toc-anchor after"></a></h3>
+
+<p>La façon la plus simple d'utiliser ces chaînes de traduction dans vos modèles Twig consiste à utiliser le filtre Twig <code>|t</code>. Vous pouvez également utiliser la fonction  Twig<code>t()</code>, mais franchement, le filtre est plus propre et fait la même chose :</p>
+<pre><code class="language-html">&lt;h1 id=&quot;site-name&quot;&gt;{{ &quot;SITE_NAME&quot;|t|e }}&lt;/h1&gt;
+&lt;section id=&quot;header&quot;&gt;
+   &lt;h2&gt;{{ &quot;HEADER.MAIN_TEXT&quot;|t|e }}&lt;/h2&gt;
+   &lt;h3&gt;{{ &quot;HEADER.SUB_TEXT&quot;|t|e }}&lt;/h3&gt;
+&lt;/section&gt;
+</code></pre>
+<p>En utilisant la fonction Twig <code>t()</code>, la solution est similaire :</p>
+<pre><code class="language-html">&lt;h1 id=&quot;site-name&quot;&gt;{{ t(&quot;SITE_NAME&quot;)|e }}&lt;/h1&gt;
+&lt;section id=&quot;header&quot;&gt;
+   &lt;h2&gt;{{ t(&quot;HEADER.MAIN_TEXT&quot;)|e }}&lt;/h2&gt;
+   &lt;h3&gt;{{ t(&quot;HEADER.SUB_TEXT&quot;)|e }}&lt;/h3&gt;
+&lt;/section&gt;
+</code></pre>
+<p>Un autre nouveau filtre/fonction Twig vous permet de traduire à partir d'un tableau. Ceci est particulièrement utile si vous avez une liste de valeurs telles que les mois de l'année ou les jours de la semaine. Par exemple, disons que vous avez cette traduction :</p>
+<pre><code class="language-yaml">en:
+   GRAV:
+      MONTHS_OF_THE_YEAR: [January, February, March, April, May, June, July, August, September, October, November, December]
+</code></pre>
+<p>Vous pouvez obtenir la traduction appropriée pour le mois d'un article avec ce qui suit :</p>
+<pre><code>{{ 'GRAV.MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1e }}
+</code></pre>
+<p>Vous pouvez également l'utiliser comme fonction Twig avec <code>ta()</code>.</p>
+<h3 id="Traductions avec variables">Traductions avec variables
+<a href="#Traductions avec variables" class="toc-anchor after"></a></h3>
+
+<p>Vous pouvez également utiliser des variables dans vos traductions Twig en utilisant la syntaxe <a href="https://php.net/sprintf">sprintf de PHP</a> :</p>
+<pre><code>SIMPLE_TEXT: There are %d monkeys in the %s
+</code></pre>
+<p>Et puis vous pouvez remplir ces variables avec le Twig :</p>
+<pre><code>{{ "SIMPLE_TEXT"|t(12, "London Zoo")|e }}
+</code></pre>
+<p>aboutissant à la traduction :</p>
+<pre><code>There are 12 monkeys in the London Zoo
+</code></pre>
+<h3 id="Traductions complexes">Traductions complexes
+<a href="#Traductions complexes" class="toc-anchor after"></a></h3>
+
+<p>Parfois, il est nécessaire d'effectuer des traductions complexes avec remplacement dans des langues spécifiques. Vous pouvez utiliser toute la puissance de la méthode <code>translate(</code>) des objets langage avec le filtre/fonction <code>tl</code>. Par exemple:</p>
+<pre><code>{{ ["SIMPLE_TEXT", 12, 'London Zoo']|tl(['fr'])|e }}
+</code></pre>
+<p>Traduira la chaîne <code>SIMPLE_TEXT</code> et remplacera les espaces réservés par <code>12</code> et <code>London Zoo</code> respectivement. Il existe également un tableau transmis avec des traductions de langue à essayer dans l'ordre premier trouvé, premier utilisé. Cela affichera le résultat en français :</p>
+<pre><code>Il y a 12 singes dans le Zoo de Londres
+</code></pre>
+<h3 id="Traductions PHP">Traductions PHP
+<a href="#Traductions PHP" class="toc-anchor after"></a></h3>
+
+<p>En plus du filtre et des fonctions Twig, vous pouvez utiliser la même approche dans votre plugin Grav :</p>
+<pre><code>$translation = $this-&gt;grav['language']-&gt;translate(['HEADER.MAIN_TEXT']);
+</code></pre>
+<p>Vous pouvez également spécifier une langue :</p>
+<pre><code>$translation = $this-&gt;grav['language']-&gt;translate(['HEADER.MAIN_TEXT'], 'fr');
+</code></pre>
+<p>Pour traduire un élément spécifique dans un tableau, utilisez :</p>
+<pre><code>$translation = $this-&gt;grav['language']-&gt;translateArray('GRAV.MONTHS_OF_THE_YEAR', 3);
+</code></pre>
+<h3 id="Traductions de plugins et de thèmes">Traductions de plugins et de thèmes
+<a href="#Traductions de plugins et de thèmes" class="toc-anchor after"></a></h3>
+
+<p>Vous pouvez également fournir vos propres traductions dans les plugins et les thèmes. Cela se fait en créant un fichier <code>languages.yaml</code> à la racine de votre plugin ou thème (par exemple <code>/user/plugins/error/languages.yaml</code>, ou <code>user/themes/antimatter/languages.yaml</code>), et doit contenir toutes les langues prises en charge préfixé par le code de langue ou de paramètres régionaux :</p>
+<pre><code class="language-yaml">en:
+   PLUGIN_ERROR:
+      TITLE: Error Plugin
+      DESCRIPTION: The error plugin provides a simple mechanism for handling error pages within Grav.
+fr:
+   PLUGIN_ERROR:
+      TITLE: Plugin d'Erreur
+      DESCRIPTION: Le plugin d'erreur fournit un mécanisme simple de manipulation des pages d'erreur au sein de Grav.
+</code></pre>
+<div class="notice note">
+La convention pour les plugins est d'utiliser PLUGIN_PLUGINNAME. <em>comme préfixe pour toutes les chaînes de langue, pour éviter tout conflit de nom. Les thèmes sont moins susceptibles d'introduire des conflits de chaînes de langue, mais c'est une bonne idée de préfixer les chaînes ajoutées dans les thèmes avec THEME_THEMENAME</em>.
+</div>
+
+<h3 id="Remplacement de traduction">Remplacement de traduction
+<a href="#Remplacement de traduction" class="toc-anchor after"></a></h3>
+
+<p>Si vous souhaitez remplacer une traduction particulière, placez simplement la paire clé/valeur modifiée dans un fichier de langue approprié dans votre dossier <code>user/languages/</code>. Par exemple, un fichier appelé <code>user/languages/en.yaml</code> pourrait contenir :</p>
+<pre><code class="language-yaml">PLUGIN_ERROR:
+   TITLE: My Error Plugin
+</code></pre>
+<p>Cela garantira que vous pouvez toujours remplacer une chaîne de traduction sans déranger les plugins ou les thèmes eux-mêmes, et évitera également d'écraser une traduction personnalisée lors de leur mise à jour.</p>
+<h2 id="Avancé">Avancé
+<a href="#Avancé" class="toc-anchor after"></a></h2>
+
+<h3 id="Gestion de la langue basée sur l'environnement">Gestion de la langue basée sur l'environnement
+<a href="#Gestion de la langue basée sur l'environnement" class="toc-anchor after"></a></h3>
+
+<p>Vous pouvez tirer parti de la <a href="../avance-config-environnement/">configuration de l'environnement de Grav</a> pour acheminer automatiquement les utilisateurs vers la version correcte de votre site en fonction de l'URL. Par exemple, si vous aviez une URL telle que <code>http://french.monsite.comè qui était un alias pour votre</code>http://www.monsite.com` standard, vous pourriez configurer une configuration d'environnement :</p>
+<p><code>/user/french.monsite.com/config/system.yaml</code></p>
+<pre><code class="language-yaml">languages:
+   supported:
+      - fr
+      - en
+</code></pre>
+<p>Ceci utilise un <strong>ordre de langue inversé</strong> donc la langue par défaut est maintenant <code>fr</code> donc la langue française s'affichera par défaut.</p>
+<h3 id="Routes d'alias de langue">Routes d'alias de langue
+<a href="#Routes d'alias de langue" class="toc-anchor after"></a></h3>
+
+<p>Étant donné que chaque page peut avoir son propre itinéraire personnalisé, il serait difficile de basculer entre différentes versions linguistiques de la même page. Cependant, il existe une nouvelle méthode <strong>Page.rawRoute()</strong> sur l'objet Page qui obtiendra le même itinéraire brut pour l'une des différentes traductions linguistiques d'une même page. Tout ce que vous auriez à faire est de mettre le code lang devant pour obtenir le bon chemin vers une version linguistique spécifique d'une page.</p>
+<p>Par exemple, supposons que vous êtes sur une page en anglais avec une route personnalisée :</p>
+<pre><code>/my-custom-english-page
+</code></pre>
+<p>La page française a la route personnalisée de :</p>
+<pre><code>/ma-page-francaise-personnalisee
+</code></pre>
+<p>Vous pourriez obtenir la page brute de la page anglaise et cela pourrait être :</p>
+<pre><code>/blog/custom/my-page
+</code></pre>
+<p>Ensuite, ajoutez simplement la langue que vous voulez et c'est votre nouvelle URL ;</p>
+<pre><code>/fr/blog/custom/ma-page
+</code></pre>
+<p>Cela récupérera la même page que <code>/ma-page-francaise-personnalisee</code>.</p>
+<h2 id="Assistance à la traduction">Assistance à la traduction
+<a href="#Assistance à la traduction" class="toc-anchor after"></a></h2>
+
+<p>Grav fournit un mécanisme simple mais puissant pour fournir des traductions dans Twig et également via PHP pour une utilisation dans les thèmes et les plugins. Ceci est activé par défaut et utilisera la langue en si aucune langue n'est définie. Pour activer ou désactiver manuellement les traductions, il existe un paramètre dans votre <code>system.yaml</code> :</p>
+<pre><code class="language-yaml">languages:
+   translations: true
+</code></pre>
+<p>Les traductions utilisent la même liste de langues que celle définie par <code>languages: supported:</code>  dans votre <code>system.yaml</code>.</p>
+<p>Le système de traduction fonctionne de manière similaire à la configuration Grav et il existe plusieurs endroits et façons de fournir des traductions.</p>
+<p>Le premier endroit où Grav recherche les fichiers de traduction est dans le dossier <code>system/languages</code>. Les fichiers doivent être créés au format : <code>en.yaml</code>, <code>fr.yaml</code>, etc. Chaque fichier yaml doit contenir un tableau ou des tableaux imbriqués de paires clé/valeur :</p>
+<pre><code class="language-yaml">SITE_NAME: My Blog Site
+HEADER:
+   MAIN_TEXT: Welcome to my new blog site
+   SUB_TEXT: Check back daily for the latest news
+</code></pre>
+<p>Pour faciliter l'identification, Grav préfère l'utilisation de chaînes de langue en majuscules, car cela aide à déterminer les chaînes non traduites et les rend également plus claires lorsqu'elles sont utilisées dans les modèles Twig.</p>
+<p>Grav a la capacité de parcourir les langues prises en charge pour trouver une traduction si aucune pour la langue active n'est trouvée. Ceci est activé par défaut mais peut être désactivé via l'option <code>translations_fallback</code> :</p>
+<pre><code class="language-yaml">languages:
+   translations_fallback: true
+</code></pre>
+<div class="notice tip">
+Aidez Grav à atteindre une communauté d'utilisateurs plus large en fournissant des traductions <strong>dans votre langue</strong>. Nous utilisons la <a href="https://crowdin.com/">plateforme de traduction Crowdin</a> pour faciliter la traduction des plugins <a href="https://crowdin.com/project/grav-core">Grav Core</a> et <a href="https://crowdin.com/project/grav-admin[Grav Admin]">Grav Admin</a>. <a href="https://crowdin.com/join">Enregistrez-vous</a> et commencez à traduire dès aujourd'hui !
+</div>
+
+<h3 id="Sélecteur de langue">Sélecteur de langue
+<a href="#Sélecteur de langue" class="toc-anchor after"></a></h3>
+
+<p>Vous pouvez télécharger un simple plugin <strong>Language Switching</strong> via le plugin Admin, ou via le GPM avec :</p>
+<pre><code>bin/gpm install langswitcher
+</code></pre>
+<p>La <a href="https://github.com/getgrav/grav-plugin-langswitcher">documentation pour la configuration et la mise en œuvre se trouve sur GitHub</a>.</p>
+<h3 id="Configuration avec des domaines spécifiques à une langue">Configuration avec des domaines spécifiques à une langue
+<a href="#Configuration avec des domaines spécifiques à une langue" class="toc-anchor after"></a></h3>
+
+<p>Configurez votre site avec la gestion des langues basée sur l'environnement pour attribuer des langues par défaut (la première langue) aux domaines.</p>
+<p>Assurez-vous que l'option</p>
+<pre><code>pages.redirect_default_route: true
+</code></pre>
+<p>est défini sur <code>true</code> dans votre <code>system.yaml</code>.</p>
+<p>Ajoutez ce qui suit à votre fichier <strong>.htaccess</strong> et adaptez les slugs de langage et les noms de domaine à vos besoins :</p>
+<pre><code class="language-console"># http://www.cheat-sheets.org/saved-copy/mod_rewrite_cheat_sheet.pdf
+# http://www.workingwith.me.uk/articles/scripting/mod_rewrite
+
+# handle top level e.g. http://grav-site.com/de
+RewriteRule ^en/?$ &quot;http://grav-site.com&quot; [R=302,L]
+RewriteRule ^de/?$ &quot;http://grav-site.de&quot; [R=302,L]
+
+# handle sub pages, exclude admin path
+RewriteCond %{REQUEST_URI} !(admin) [NC]
+RewriteRule ^en/(.*)$ &quot;http://grav-site.com/$1&quot; [R=302,L]
+RewriteCond %{REQUEST_URI} !(admin) [NC]
+RewriteRule ^de/(.*)$ &quot;http://grav-site.de/$1&quot; [R=302,L]
+</code></pre>
+<p>Si vous savez comment simplifier les règles de réécriture, veuillez modifier cette page sur GitHub en cliquant sur le lien <strong>Edit</strong> en haut de la page.</p>
+<div class="notice note">
+Assurez-vous d'ajouter ces règles avant les règles par défaut fournies avec Grav CMS.
+</div>
+
+<h3 id="Logique de langage dans les modèles Twig">Logique de langage dans les modèles Twig
+<a href="#Logique de langage dans les modèles Twig" class="toc-anchor after"></a></h3>
+
+<p>Il est souvent nécessaire d'accéder à l'état et à la logique de la langue à partir des modèles Twig. Par exemple, si vous avez besoin d'accéder à un certain fichier image qui est différent pour une langue particulière et qui porte un nom différent (<code>myimage.en.jpg</code> et <code>myimage.fr.jpg</code>).</p>
+<p>Pour afficher la version correcte de l'image, vous devez connaître la langue active actuelle. Ceci est possible dans Grav en accédant à l'objet <code>Language</code> via l'objet <code>Grav</code> et en appelant la méthode appropriée. Dans l'exemple ci-dessus, cela pourrait être réalisé avec le code Twig suivant :</p>
+<pre><code>{{ page.media.images['myimage.'~grav.language.getActive~'.jpg'].html()|raw }}
+</code></pre>
+<p>L'appel <code>getActive</code> dans Twig appelle effectivement <code>Language-&gt;getActive()</code> pour renvoyer le code de langue actif actuel. Voici quelques méthodes linguistiques utiles :</p>
+<ul>
+<li><code>getLanguages()</code> - Renvoie un tableau de toutes les langues prises en charge</li>
+<li><code>getLanguage()</code> - Renvoie l'actif actuel, sinon renvoie la langue par défaut</li>
+<li><code>getActive()</code> - Renvoie la langue active actuelle</li>
+<li><code>getDefault()</code> - Renvoie la (première) langue par défaut</li>
+</ul>
+<p>Pour une liste complète des méthodes disponibles, vous pouvez regarder dans le fichier <code><grav root>/system/src/Grav/Common/Language/Language.php</code>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../routage/" class="btn btn-neutral float-left" title="Routage"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../types-contenu/" class="btn btn-neutral float-right" title="Types de contenu">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../routage/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../types-contenu/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

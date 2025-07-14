@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/formulaires-references/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Référence - Champs de formulaire Blueprint - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "R\u00e9f\u00e9rence - Champs de formulaire Blueprint";
+        var mkdocs_page_input_path = "formulaires-references.md";
+        var mkdocs_page_url = "/formulaires-references/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Blueprints</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>6. Formulaires &raquo;</li>
+          <li>Blueprints &raquo;</li><li>Référence - Champs de formulaire Blueprint</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Référence : Champs de formulaire Blueprint</h1>
+
+<h2 id="Champs de formulaire disponibles pour une utilisation dans l'administration">Champs de formulaire disponibles pour une utilisation dans l'administration
+<a href="#Champs de formulaire disponibles pour une utilisation dans l'administration" class="toc-anchor after"></a></h2>
+
+<p>Les formulaires côté administrateur peuvent être créés avec une variété de champs. Ce document fournit une référence complète des propriétés de chaque champ et fournit des exemples d'utilisation.</p>
+<p>En plus des champs listés ci-dessous, réservés à une utilisation dans l'Admin, vous pouvez également utiliser tous les champs disponibles dans les formulaires frontend décrits dans <a href="../formulaires-ref-index-formulaires/">la Référence des champs des formulaires frontend</a>.</p>
+<h3 id="Champs de formulaire spéciaux disponibles exclusivement dans l'administration">Champs de formulaire spéciaux disponibles exclusivement dans l'administration
+<a href="#Champs de formulaire spéciaux disponibles exclusivement dans l'administration" class="toc-anchor after"></a></h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>CHAMPS</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Champ de tableau">Array</a></td>
+<td>utilisé pour créer des tableaux clé-valeur.</td>
+</tr>
+<tr>
+<td><strong>BackupHistory</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Blueprint</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Champ de sélecteur de couleurs">Colorpicker</a></td>
+<td>affiche un sélecteur de couleurs.</td>
+</tr>
+<tr>
+<td><a href="#Colonnes / Champs de colonne">Columns</a></td>
+<td>utilisées pour diviser le formulaire en plusieurs colonnes.</td>
+</tr>
+<tr>
+<td><a href="#Colonnes / Champs de colonne">Column</a></td>
+<td>utilisée pour afficher une seule colonne (utilisée avec le champ <code>Colonnes</code>).</td>
+</tr>
+<tr>
+<td><strong>Cron</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>CronStatus</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Champ de format de date">Dateformat</a></td>
+<td>une sélection spéciale qui rend la date/heure actuelle dans les formats passés.</td>
+</tr>
+<tr>
+<td><a href="#Champ de format de date">Datetime</a></td>
+<td>un champ de sélection de date et d'heure.</td>
+</tr>
+<tr>
+<td><a href="#Champ de l'éditeur">Editor</a></td>
+<td>afficher un éditeur de markdown.</td>
+</tr>
+<tr>
+<td><a href="#Champ d'éléments">Elements</a></td>
+<td>un champ conditionnel et organisationnel pour afficher/masquer les enfants en <br>fonction de la valeur sélectionnée du "déclencheur". Ceci est extrêmement utile <br>pour réduire l'encombrement lorsqu'il y a beaucoup d'options à afficher.</td>
+</tr>
+<tr>
+<td><a href="#Champ d'ensemble de champs">Groupe de champs</a></td>
+<td>un ensemble de champs à l'intérieur d'un accordéon pliable.</td>
+</tr>
+<tr>
+<td><a href="#Champ de fichier">File</a></td>
+<td>dans Admin, <strong>File</strong> est spécialisé pour être utilisé dans les configurations de plugins <br>et de thèmes (blueprints). Gère le téléchargement d'un fichier vers un emplacement, <br>sa suppression et sa suppression de la configuration du thème / plugin.</td>
+</tr>
+<tr>
+<td><a href="#Champ de sélecteur de fichiers">Filepicker</a></td>
+<td><strong>Filepicker</strong> permet de choisir des fichiers à partir d'un emplacement dans le <br>système de fichiers du serveur Web.</td>
+</tr>
+<tr>
+<td><strong>Frontmatter</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>IconPicker</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Champ de liste">List</a></td>
+<td>utilisée pour créer des collections de champs.</td>
+</tr>
+<tr>
+<td><strong>Markdown</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>MediaPicker</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Multilevel</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Order</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageMedia</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Champ PageMediaSelect">PageMediaSelect</a></td>
+<td>affiche une sélection avec tous les médias de la page. Utilisé dans les plans Pages <br>pour permettre à l'utilisateur de choisir un fichier multimédia à affecter à un champ.</td>
+</tr>
+<tr>
+<td><a href="#Champ Pages">Pages</a></td>
+<td>affiche une liste des pages du site</td>
+</tr>
+<tr>
+<td><strong> Parents</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Permissions</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Range</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Champ de section">Section</a></td>
+<td>utilisée pour diviser une page de paramètres en sections ; chaque section est <br>accompagnée d'un titre</td>
+</tr>
+<tr>
+<td><a href="#Champ de sélection">Selectize</a></td>
+<td>Sélectionnez un hybride d'une zone de texte et d'une zone de sélection. <br>Principalement utile pour le balisage et d'autres champs de sélection d'éléments.</td>
+</tr>
+<tr>
+<td><strong>SelectUnique </strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Champ de taxonomie">Taxonomie</a></td>
+<td>une sélection spéciale préconfigurée pour sélectionner une ou plusieurs <br> taxonomies</td>
+</tr>
+<tr>
+<td><strong>ThemeSelect</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Userinfo</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Xss</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Attributs des champs communs">Attributs des champs communs
+<a href="#Attributs des champs communs" class="toc-anchor after"></a></h2>
+
+<p>Chaque champ accepte une liste d'attributs que vous pouvez utiliser. Chaque champ peut partager ces attributs communs, mais des champs particuliers peuvent les ignorer. La meilleure façon de vérifier quels attributs sont autorisés sur un champ est de vérifier la description du champ dans cette page et de voir quels attributs sont mentionnés.</p>
+<p>Cette liste fournit un terrain d'entente, il n'est donc pas nécessaire de répéter la description d'un champ commun.</p>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUTS</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>autocomplete</code></td>
+<td>la saisie semi-automatique accepte <code>on</code> ou <code>off</code></td>
+</tr>
+<tr>
+<td><code>autofocus</code></td>
+<td>si activé, autofocus sur ce champ</td>
+</tr>
+<tr>
+<td><code>classes</code></td>
+<td>accepte une chaîne avec une ou plusieurs classes CSS à ajouter</td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>définit la valeur par défaut du champ. Cela garantit que vous récupérerez toujours <br>soit une valeur spécifiée par l'utilisateur, soit cette valeur par défaut. Voir aussi <br><code>placeholder</code>.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>définit l'état désactivé du champ</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>Ajoute une info-bulle au champ</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>définit l'identifiant du champ ainsi que l'attribut <code>for</code> sur l'étiquette</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>définit le libellé du champ</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>définit le nom du champ</td>
+</tr>
+<tr>
+<td><code>novalidate</code></td>
+<td>définit l'état novalidate du champ</td>
+</tr>
+<tr>
+<td><code>placeholder</code></td>
+<td>définit la valeur de l'espace réservé du champ. Il s'agit de définir une valeur que <br>l'utilisateur peut voir comme une invite pour sa propre valeur, mais cela n'influence <br>pas la valeur finalement écrite. Voir aussi par <code>default</code>.</td>
+</tr>
+<tr>
+<td><code>readonly</code></td>
+<td>définit l'état du champ en lecture seule</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>définit la taille du champ, qui à son tour ajoute une classe à son conteneur. Les <br>valeurs valides sont <code>large</code>, <code>x-small</code>, <code>medium</code>, <code>long</code>, <code>small</code>. Vous pouvez <br>bien sûr en ajouter plus dans le modèle que vous voyez, lorsqu'il est utilisé dans <br>le frontend</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>définit le style de champ. S'il est défini sur vertical, le champ peut apparaître en <br>pleine largeur. C'est un moyen facile de nettoyer le formulaire.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>définit la valeur du titre du champ</td>
+</tr>
+<tr>
+<td><code>toggleable</code></td>
+<td>ajouter une case à cocher qui basculera l'attribut activé/désactivé du champ</td>
+</tr>
+<tr>
+<td><code>validate.required</code></td>
+<td>si défini sur une valeur positive, définit le champ comme requis</td>
+</tr>
+<tr>
+<td><code>validate.pattern</code></td>
+<td>définit un modèle de validation</td>
+</tr>
+<tr>
+<td><code>validate.message</code></td>
+<td>définit le message affiché si la validation échoue</td>
+</tr>
+<tr>
+<td><code>validate.type</code></td>
+<td>définit le type de champ utilisé lors de la validation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="En savoir plus sur les champs">En savoir plus sur les champs
+<a href="#En savoir plus sur les champs" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez lire comment les champs sont construits à partir de la source : <a href="https://github.com/getgrav/grav-plugin-form/tree/master/templates/forms">champs ajoutés par le plug-in de formulaire</a> et <a href="https://github.com/getgrav/grav-plugin-admin/tree/master/themes/grav/templates/forms">champs uniquement disponibles dans Admin</a>.</p>
+<h2 id="Validation">Validation
+<a href="#Validation" class="toc-anchor after"></a></h2>
+
+<p>La plupart des champs permettent la validation.</p>
+<pre><code class="language-yaml">1 | validate:
+2 |   required: true
+</code></pre>
+<p>fera que le champ sera marqué comme requis.</p>
+<pre><code class="language-yaml">1 | validate:
+2 |   message: 'Some message'
+</code></pre>
+<p>affichera le message défini lorsque le champ n'est pas correctement rempli.</p>
+<pre><code class="language-yaml">1 | validate:
+2 |   pattern: 'Some pattern'
+</code></pre>
+<p>validera la valeur du champ par rapport au modèle regex passé. Exemples : <code>Pattern : "[1-9][0-9]*", modèle : '[A-Za-z0-9-]+', modèle : '[a-z0-9-]+', modèle : '^[a-z0-9_-]{3,16}$', modèle : '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8 ,}'</code></p>
+<h3 id="validate.type">validate.type
+<a href="#validate.type" class="toc-anchor after"></a></h3>
+
+<p><code>validate.type</code> indique le type par rapport auquel il doit être validé.</p>
+<p>Quelques exemples:</p>
+<p>Un éditeur se traduira par une <code>textarea</code> :</p>
+<pre><code class="language-yaml">1 | content:
+2 |    type: editor
+3 |    validate:
+4 |       type: textarea
+</code></pre>
+<p>Un selectize sera un <code>commalist</code> :</p>
+<pre><code class="language-yaml">1  | taxonomies:
+2  |    type: selectize
+3  |    size: large
+4  |    label: PLUGIN_ADMIN.TAXONOMY_TYPES
+5  |    classes: fancy
+6  |    help: PLUGIN_ADMIN.TAXONOMY_TYPES_HELP
+7  |    validate:
+8  |       type: commalist
+9  |
+10 | filters.category:
+11 |    type: selectize
+12 |    label: Category filter
+13 |    help: Comma separated list of category names
+14 |    validate:
+15 |       type: commalist
+</code></pre>
+<p>Valider une adresse e-mail :</p>
+<pre><code class="language-yaml">1 | author.email:
+2 |    type: text
+3 |    size: large
+4 |    label: PLUGIN_ADMIN.DEFAULT_EMAIL
+5 |    help: PLUGIN_ADMIN.DEFAULT_EMAIL_HELP
+6 |    validate:
+7 |       type: email
+</code></pre>
+<p>Assurez-vous qu'une valeur est un booléen :</p>
+<pre><code class="language-yaml">1  | summary.enabled:
+2  |    type: toggle
+3  |    label: PLUGIN_ADMIN.ENABLED
+4  |    highlight: 1
+5  |    help: PLUGIN_ADMIN.ENABLED_HELP
+6  |    options:
+7  |        1: PLUGIN_ADMIN.YES
+8  |        0: PLUGIN_ADMIN.NO
+9  |     validate:
+10 |        type: bool
+</code></pre>
+<p>Assurez-vous qu'une valeur est un entier compris entre 0 et 65536 :</p>
+<pre><code class="language-yaml">1 | summary.size:
+2 |     type: text
+3 |     size: x-small
+4 |     label: PLUGIN_ADMIN.SUMMARY_SIZE
+5 |     help: PLUGIN_ADMIN.SUMMARY_SIZE_HELP
+6 |     validate:
+7 |        type: int
+8 |        min: 0
+9 |        max: 65536
+</code></pre>
+<p>Assurez-vous qu'une valeur est un nombre &gt; 1 :</p>
+<pre><code class="language-yaml">1 | pages.list.count:
+2 |    type: text
+3 |    size: x-small
+4 |    label: PLUGIN_ADMIN.DEFAULT_PAGE_COUNT
+5 |    help: PLUGIN_ADMIN.DEFAULT_PAGE_COUNT_HELP
+6 |    validate:
+7 |       type: number
+8 |       min: 1
+</code></pre>
+<p>Validez un type de taxonomie en tant que tableau :</p>
+<pre><code class="language-yaml">1 | header.taxonomy:
+2 |    type: taxonomy
+3 |    label: PLUGIN_ADMIN.TAXONOMY
+4 |    multiple: true
+6 |    validate:
+7 |       type: array
+</code></pre>
+<p>Validez un champ de texte en tant que slug :</p>
+<pre><code class="language-yaml">1 | folder:
+2 |    type: text
+3 |    label: PLUGIN_ADMIN.FOLDER_NAME
+4 |    validate:
+5 |       type: slug
+</code></pre>
+<h2 id="Champ de tableau">Champ de tableau
+<a href="#Champ de tableau" class="toc-anchor after"></a></h2>
+
+<p><img alt="Déployer" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/array_field_bp.gif" /></p>
+<p>Le type de champ <code>attay</code> est utilisé pour créer une simple liste d'objets clé-valeurs, ou simplement une liste de valeurs si vous utilisez l'option <code>value_only</code>.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | metadata:
+2 |   type: array
+3 |   label: PLUGIN_ADMIN.METADATA
+4 |   help: PLUGIN_ADMIN.METADATA_HELP
+5 |   placeholder_key: PLUGIN_ADMIN.METADATA_KEY
+6 |   placeholder_value: PLUGIN_ADMIN.METADATA_VALUE
+7 |   required: true
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>placeholder_key</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>placeholder_value</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>value_only</code></td>
+<td>N'exige pas ou ne stocke pas de clés de tableau, stocke juste un simple <br>tableau de valeurs.</td>
+</tr>
+<tr>
+<td><code>value_type</code></td>
+<td>Définissez sur <code>textarea</code> pour afficher un <a href="../formulaires-ref-index-formulaires/#Champ de zone de texte">champ de zone de texte</a> pour <br>saisir les valeurs du tableau plutôt que le <a href="../formulaires-ref-index-formulaires/#Champ de texte">champ de texte</a> plus petit.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de sélecteur de couleurs">Champ de sélecteur de couleurs
+<a href="#Champ de sélecteur de couleurs" class="toc-anchor after"></a></h2>
+
+<p><img alt="Pipette à couleurs" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/colorpicker_field.png" /></p>
+<p>Le type de champ <code>colorpicker</code> est utilisé pour afficher un champ color picker</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | color:
+2 |   type: colorpicker
+3 |   label: Choose a color
+4 |   default: '&quot;FFFFFF'
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COOMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">autocomplete</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">id</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">placeholder</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">title</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.message</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Colonnes / Champs de colonne">Colonnes / Champs de colonne
+<a href="#Colonnes / Champs de colonne" class="toc-anchor after"></a></h2>
+
+<p><img alt="Colonnes" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/columns_field_bp.gif" /></p>
+<p>Les <code>columns</code> et les types de champ <code>column</code> sont utilisés pour diviser les champs de formulaire contenus en colonnes</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | columns:
+2  |     type: columns
+3  |     fields:
+4  |        column1:
+5  |           type: column
+6  |           fields:
+7  | 
+8  |           # .... subfields
+9  | 
+10 |        column2:
+11 |           type: column
+12 |           fields:
+13 |
+14 |           # .... other subfields
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fields</code></td>
+<td>Les colonnes / sous-champs de colonne</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de format de date">Champ de format de date
+<a href="#Champ de format de date" class="toc-anchor after"></a></h2>
+
+<p><img alt="Format de date" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/dateformat_field_bp.gif" /></p>
+<p>Le type de champ <code>dateformat</code> est utilisé pour</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | pages.dateformat.short:
+2  |     type: dateformat
+3  |     size: medium
+4  |     classes: fancy
+5  |     label: PLUGIN_ADMIN.SHORT_DATE_FORMAT
+6  |     help: PLUGIN_ADMIN.SHORT_DATE_FORMAT_HELP
+7  |     default: &quot;jS M Y&quot;
+8  |     options:
+9  |        &quot;F jS \\a\\t g:ia&quot;: Date1
+10 |        &quot;l jS \\of F g:i A&quot;: Date2
+11 |        &quot;D, d M Y G:i:s&quot;: Date3
+12 |        &quot;d-m-y G:i&quot;: Date4
+13 |        &quot;jS M Y&quot;: Date5
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>options</code></td>
+<td>Le champ options de valeur-clé disponibles</td>
+</tr>
+<tr>
+<td><code>multiple</code></td>
+<td>Boléen. Si positif, le champ accepte plusieurs valeurs</td>
+</tr>
+<tr>
+<td><code>selectize</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">novalidate</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de date">Champ de date
+<a href="#Champ de date" class="toc-anchor after"></a></h2>
+
+<p><img alt="DateTime" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/datetime_field.gif" /></p>
+<p>The <code>datetime</code> field type is used to store and present a date and time field.</p>
+<p>Example:</p>
+<pre><code class="language-yaml">1 | header.date:
+2 |   type: datetime
+3 |   label: PLUGIN_ADMIN.DATE
+4 |   toggleable: true
+5 |   help: PLUGIN_ADMIN.DATE_HELP
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>format</code></td>
+<td>Une valeur de format datetime, vous pouvez utiliser n'importe lequel des formats <a href="https://www.php.net/manual/en/datetime.format.php">datetime PHP disponibles</a>.</td>
+</tr>
+<tr>
+<td><code>validate.min</code></td>
+<td>Une valeur valide minimale.</td>
+</tr>
+<tr>
+<td><code>validate.max</code></td>
+<td>Une valeur maximale valide.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">alidate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de l'éditeur">Champ de l'éditeur
+<a href="#Champ de l'éditeur" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ de l'éditeur" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/editor_field_bp.gif" /></p>
+<p>Le type de champ <code>editor</code> est utilisé pour présenter l'éditeur Codemirror</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | frontmatter:
+2  |     classes: frontmatter
+3  |     type: editor
+4  |     label: PLUGIN_ADMIN.FRONTMATTER
+5  |     autofocus: true
+6  |     codemirror:
+7  |        mode: 'yaml'
+8  |        indentUnit: 4
+9  |        autofocus: true
+10 |        indentWithTabs: false
+11 |        lineNumbers: true
+12 |        styleActiveLine: true
+13 |        gutters: ['CodeMirror-lint-markers']
+14 |        lint: true
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>codemirror</code></td>
+<td>Un ensemble de valeurs à définir dans <a href="https://codemirror.net/doc/manual.html#config">l'éditeur de codemirror</a>. Par défaut, utilise le <br>mode : gfm (démarquage aromatisé github).</td>
+</tr>
+<tr>
+<td><code>resizer</code></td>
+<td>Si positif, active le resizer. Sinon l'éditeur est fixe.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">id</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">novalidate</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">placeholder</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">readonly</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ d'éléments">Champ d'éléments
+<a href="#Champ d'éléments" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ éléments" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/elements_field.gif" /></p>
+<p>Ce champ est uniquement organisationnel et permet de regrouper des éléments au sein d'un groupe nommé qui ne sera affiché que si la valeur de l'élément sélectionné correspond au groupe.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | header.elements-demo.type:
+2  |     type: elements
+3  |     label: 'Elements Demo'
+4  |     size: small
+5  |     default: gelato
+6  |     options:
+7  |        gelato: Gelato Flavors
+8  |        color: Color
+9  |        planets: Planets
+10 |     fields:
+11 |        gelato:
+12 |           type: element
+13 |           fields:
+14 |              .flavours:
+15 |                 type: array
+16 |                 default:
+17 |                    pistacchio: Pistacchio
+18 |                    vanilla: Vanilla
+19 |                    chocolate: Chocolate
+20 |                    stracciatella: Stracciatella
+21 |        color:
+22 |           type: element
+23 |           fields:
+24 |              .description:
+25 |                 type: textarea
+26 |                 rows: 10
+27 |                 default: Color (American English) or colour (Commonwealth English) is the  
+   | visual perceptual property corresponding in humans to the categories called blue, green,  
+   | red, etc. Color derives from the spectrum of light (distribution of light power versus  
+   | wavelength) interacting in the eye with the spectral sensitivities of the light receptors.  
+   | Color categories and physical specifications of color are also associated with objects  
+   | or materials based on their physical properties such as light absorption, reflection,  
+   | or emission spectra. By defining a color space colors can be identified numerically by  
+   | their coordinates.
+28 |     planets:
+29 |        type: element
+30 |        fields:
+31 |           .favorites:
+32 |              type: text
+33 |              placeholder: What are your favorite planets?
+34 |              markdown: true
+35 |              description: 'Find a list of planets from [Wikipedia](https://en.wikipedia  
+   | .org/wiki/Planet)'
+</code></pre>
+<h2 id="Champ d'ensemble de champs">Champ d'ensemble de champs
+<a href="#Champ d'ensemble de champs" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ d'ensemble de champs" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/fieldset-gif.gif" /></p>
+<p>The champs <code>fieldset</code> regroupe un ensemble de champs à l'intérieur d'une boîte réductible.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | header.fieldset:
+2  |     type: fieldset
+3  |     title: Your title
+4  |     help: Help text
+5  |     info: Info text
+6  |     text: Text inside fieldset and before other fields
+7  |     icon: comments       # Fork Awesome icons system (see : forkaweso.me).
+8  |     collapsed: true      # Initial state of fieldset (see collapsible option)
+9  |     collapsible: true    # Whether one can expand the fieldset or not
+10 |     fields:
+11 |        header.fieldset.an_example_text:
+12 |           type: text
+13 |           label: text
+14 |        header.fieldset.an_example_textarea:
+15 |           type: textarea
+16 |           label: textarea
+</code></pre>
+<p>Les ensembles de champs doivent également être enregistrés dans le frontmatter, avec <code>header</code>, afin que leurs états de sous-champ soient correctement mémorisés !</p>
+<div class="notice info">
+<strong>Problème connu</strong> : si les champs d'un fieldset utilisent un <code>toggleable</code>:, leur état ne sera pas mémorisé si le fieldset nommé n'est pas préfixé par <code>header</code>. Voici un exemple de structure valide avec une modification de l'option pagination :
+</div>
+
+<pre><code class="language-yaml">1  | header.fieldset:
+2  |      type: fieldset
+3  |     ... etc...
+4  |     fields:
+5  |        header.content.pagination:
+6  |           type: toggle
+7  |           toggleable: true
+8  |           label: &quot;Activate Pagination ?&quot;
+9  |           highlight: 1
+10 |           default: 0
+11 |           options:
+12 |              1: Yes
+13 |              0: No
+14 |           validate:
+15 |              type: bool
+</code></pre>
+<h2 id="Icône du jeu de champs">Icône du jeu de champs
+<a href="#Icône du jeu de champs" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez utiliser une icône à placer dans l'en-tête de l'ensemble de champs. Le système d'icônes utilisé est <a href="https://forkaweso.me/">Fork Awesome</a>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>icon</code></td>
+<td>Une icône pour la boîte.</td>
+</tr>
+<tr>
+<td><code>collapsed</code></td>
+<td>Si <code>true</code>, la liste s'ouvre réduite. Par défaut, il est développé.</td>
+</tr>
+<tr>
+<td><code>collapsible</code></td>
+<td>Si l'on peut étendre ou non le jeu de champs.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de fichier">Champ de fichier
+<a href="#Champ de fichier" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ de fichier" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/file_field_bp.gif" /></p>
+<div class="notice info">
+Le champ <code>field</code> est destiné à être utilisé par les plans de <strong>configuration de thème</strong> et de <strong>plugins</strong>, <strong>PAS les plans de page</strong>. Pour les pages, vous devez utiliser le champ <code>pagemedia</code> existant, puis utiliser le champ <a href="#Champ de sélecteur de fichiers">filepicker</a> pour sélectionner les fichiers.
+</div>
+
+<div class="notice info">
+Le champ <code>field</code> ne fonctionne pas actuellement comme prévu dans un champ de liste. Utilisez un seul champ <code>pagemedia</code> distinct de la liste avec un ou plusieurs champs <code>filepicker</code> dans la liste.
+</div>
+
+<div class="notice note">
+Plus de détails peuvent être trouvés dans la section dédiée <a href="../formulaires-telechargement">Comment ajouter un téléchargement de fichiers</a>. Notez également que l'affichage d'une image téléchargée dans un champ de fichier ne se fait pas de la même manière qu'avec un champ filepicker. Plus de détails sur la façon d'accéder aux images téléchargées dans un champ de fichier peuvent être trouvés sur cette entrée de <a href="../cookbook-recettes-twig">livre de recettes</a>.
+</div>
+
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | custom_logo_login_screen:
+2 |      type: file
+3 |      label: Custom Logo Login Screen
+4 |      destination: 'plugins://admin/assets'
+5 |      accept:
+6 |         - image/*
+</code></pre>
+<pre><code class="language-yaml">1 | custom_file:
+2 |      type: file
+3 |      label: A Label
+4 |      destination: 'theme://assets'
+5 |      multiple: true
+6 |      limit: 5
+7 |      filesize: 1
+8 |      accept:
+9 |      - image/*
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>destination</code></td>
+<td>Le dossier où les fichiers seront stockés, en utilisant un flux ou par rapport à la <br>racine Grav. Par exemple : <code>plugins://mon-plugin/assets</code>.</td>
+</tr>
+<tr>
+<td><code>multiple</code></td>
+<td>S'il faut ou non autoriser plus d'un fichier par champ.</td>
+</tr>
+<tr>
+<td><code>limit</code></td>
+<td>Lorsque <code>multiple</code> est activé, permet de limiter le nombre de fichiers autorisés à <br>être téléchargés.</td>
+</tr>
+<tr>
+<td><code>filesize</code></td>
+<td>La taille en Mo de chaque fichier est autorisée.</td>
+</tr>
+<tr>
+<td><code>accept</code></td>
+<td>Ajouter une liste des types mime de page et des extensions acceptés. Par exemple <br><code>["image/*", '.mp3']</code>.</td>
+</tr>
+<tr>
+<td><code>random_name</code></td>
+<td>Utilise un nom de fichier aléatoire pour chaque fichier.</td>
+</tr>
+<tr>
+<td><code>avoid_overwriting</code></td>
+<td>Ajoute un horodatage avant chaque nom de fichier en cas de conflit.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de sélecteur de fichiers">Champ de sélecteur de fichiers
+<a href="#Champ de sélecteur de fichiers" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ de sélecteur de fichiers" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/filepicker_field.png" /></p>
+<p>Le type de champ <code>filepicker</code> peut être utilisé dans les configurations de pages, de plugins et de thèmes (blueprints). Gère la sélection d'un fichier à partir d'un emplacement et l'enregistre dans les en-têtes de page ou la configuration du thème/plug-in.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | picked_image:
+2 |      type: filepicker
+3 |      folder: 'theme://images/pages'
+4 |      label: Select a file
+5 |      preview_images: true
+6 |      accept:
+7 |         - .png
+8 |         - .jpg
+</code></pre>
+<pre><code class="language-yaml">1 | header.a_file :
+2 |      type : sélecteur de fichiers
+3 |      dossier : 'self@'
+4 |      preview_images : vrai
+5 |      label : sélectionnez un fichier
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>folder</code></td>
+<td>Le dossier où les fichiers seront recherchés, en utilisant un flux ou par rapport à la <br>racine Grav. Accepte n'importe quelle valeur dans le <a href="formulaires-telechargement#destination.md">format de destination du champ de fichier</a>.</td>
+</tr>
+<tr>
+<td><code>accept</code></td>
+<td>Une liste des extensions de fichiers acceptées.</td>
+</tr>
+<tr>
+<td><code>preview_images</code></td>
+<td>Si activé, les fichiers image auront un petit aperçu.</td>
+</tr>
+<tr>
+<td><code>on_demand</code></td>
+<td>Si activé, ne chargera les fichiers et les images que lorsque le sélecteur de fichiers <br>est focalisé. Ceci est utile pour réduire les temps de chargement de la page d'édition <br>de l'administrateur lorsqu'il y a de gros médias ou de nombreux champs de sélecteur <br>de fichiers.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de pot de miel">Champ de pot de miel
+<a href="#Champ de pot de miel" class="toc-anchor after"></a></h2>
+
+<p>Le type de champ <code>honeypot</code> crée un champ caché qui, une fois rempli, renverra une erreur. C'est un moyen utile d'empêcher les robots de remplir et de soumettre un formulaire.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | fields:
+2 |      - name: honeypot
+3 |      type: honeypot
+</code></pre>
+<p>Il s'agit d'un simple champ de texte qui n'apparaît pas sur le front-end. Les robots, qui détectent les champs dans le code et les remplissent automatiquement, rempliront probablement le champ. L'erreur empêche ce formulaire d'être correctement soumis. L'erreur revient à côté de l'élément de formulaire, plutôt qu'en haut dans un bloc de message.</p>
+<p>Un champ de pot de miel est une alternative populaire aux champs de captcha.
+Champ de liste</p>
+<h2 id="Champ de liste">Champ de liste
+<a href="#Champ de liste" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ de liste 1" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/list_field_bp.gif" /></p>
+<p>Le type de champ <code>list</code> est utilisé pour créer des collections de champs. Le champ accepte un attribut de <code>fields</code> qui hébergera des sous-champs, et il y aura un bouton "Ajouter un élément" pour permettre à l'utilisateur d'ajouter plus d'éléments à la collection.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | header.buttons:
+2  |     name: buttons
+3  |     type: list
+4  |     style: vertical
+5  |     label: Buttons
+6  |     fields:
+7  |        .text:
+8  |           type: text
+9  |           label: Text
+10 |        .url:
+11 |           type: text
+12 |           label: URL
+13 |        .primary:
+14 |           type: toggle
+15 |           label: Primary
+16 |           highlight: 1
+17 |           default: 1
+18 |           options:
+19 |              1: 'Yes'
+20 |              0: 'No'
+21 |           validate:
+22 |              type: bool
+</code></pre>
+<p>Cet exemple générera cette interface d'administration :</p>
+<p><img alt="Champ de liste 2" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/field_list_1.png" /></p>
+<p>Lors de l'enregistrement de la page, nous verrons le YAML suivant ajouté au frontmatter de la page :</p>
+<pre><code class="language-yaml">1 | buttons:
+2 |      -
+3 |         text: 'Some text'
+4 |         url: 'https://getgrav.org'
+5 |         primary: false
+6 |      -
+7 |         text: 'Another text'
+8 |         url: 'https://another-url.com'
+9 |         primary: true
+</code></pre>
+<p>Cela sera utilisé dans le thème Twig pour afficher la liste d'une manière agréable.</p>
+<p>Un autre exemple de cette définition de champ est cette liste de fonctionnalités, utilisée par la page enfant modulaire des fonctionnalités d'Antimatière. Chaque fonctionnalité a une icône, un en-tête et du texte :</p>
+<pre><code class="language-yaml">1  | header.features:
+2  |     name: features
+3  |     type: list
+4  |     label: Features
+5  | 
+6  |     fields:
+7  |        .icon:
+8  |           type: text
+9  |           label: Icon
+10 |        .header:
+11 |           type: text
+12 |           label: Header
+13 |        .text:
+14 |           type: text
+15 |           label: Text
+</code></pre>
+<p>L'accès et l'affichage des données d'un champ <code>list</code> se fait avec une simple boucle for twig, comme dans l'exemple ci-dessous :</p>
+<pre><code class="language-twig">1 | {% for feature in page.header.features %}
+2 |      {{ feature.icon }}
+3 |      {{ feature.header }}
+4 |      {{ feature.text }}
+5 | {% endfor %}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fields</code></td>
+<td>Les sous-champs.</td>
+</tr>
+<tr>
+<td><code>collapsed</code></td>
+<td>Si <code>true</code>, la liste s'ouvre réduite. Par défaut, il est développé.</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>Peut être réglé sur <code>vertical</code> pour conserver l'espace horizontal.</td>
+</tr>
+<tr>
+<td><code>btnLabel</code></td>
+<td>Le texte de l'étiquette "ajouter un nouvel élément".</td>
+</tr>
+<tr>
+<td><code>sort</code></td>
+<td>Booléen. Si négatif, désactive la possibilité de trier les éléments.</td>
+</tr>
+<tr>
+<td><code>controls</code></td>
+<td>Décide où le bouton "Ajouter un élément" sera placé. Peut être défini sur <code>[top|bottom|both]</code>. <br>Par défaut sur <code>bottom</code>.</td>
+</tr>
+<tr>
+<td><code>placement</code></td>
+<td>Décide où l'élément ajouté sera placé. Peut être défini sur <code>[top|bottom|position]</code>. <br>Par défaut sur <code>bottom</code>. Si la valeur de <code>placement</code> est <code>top</code> ou <code>bottom</code>, les deux boutons <br>ajoutent respectivement l'élément en haut ou en bas. Si la valeur de <code>placement</code> est <br> <code>position</code>, l'élément est ajouté en fonction de la position du bouton cliqué - si le <br>bouton du haut est cliqué, l'élément sera ajouté en haut et si c'est le bouton du bas - en bas.</td>
+</tr>
+<tr>
+<td><code>min</code></td>
+<td>Nombre minimum d'éléments autorisés dans la liste.</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>Nombre maximum d'éléments autorisés dans la liste. Le bouton "Ajouter un élément" <br>ne fonctionnera pas au-delà de ce numéro.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ PageMediaSelect">Champ PageMediaSelect
+<a href="#Champ PageMediaSelect" class="toc-anchor after"></a></h2>
+
+<p>Le type de champ <code>pagemediaselect</code> est utilisé pour permettre aux utilisateurs de choisir un média parmi l'un des médias de la page déjà téléchargé via FTP ou à l'aide du gestionnaire de médias de la page.</p>
+<p>Exemple</p>
+<pre><code class="language-yaml">1 | header.img_link:
+2 |      label: Choose media
+3 |      type: pagemediaselect
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>multiple</code></td>
+<td>Sélectionnez plusieurs fichiers</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">id</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">novalidate</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ Pages">Champ Pages
+<a href="#Champ Pages" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ Pages" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/pages_field_bp.gif" /></p>
+<p>Le type de champ <code>pages</code> affiche une liste des pages du site.</p>
+<p>Exemple</p>
+<pre><code class="language-yaml">1  | home.alias:
+2  |     type: pages
+3  |     size: medium
+4  |     classes: fancy
+5  |     label: PLUGIN_ADMIN.HOME_PAGE
+6  |     start_route: '/some_page'
+7  |      show_all: false
+8  |     show_modular: false
+9  |     show_root: false
+10 |     help: PLUGIN_ADMIN.HOME_PAGE_HELP
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>start_route</code></td>
+<td>Choisissez une route racine pour la liste.</td>
+</tr>
+<tr>
+<td><code>show_fullpath</code></td>
+<td>Afficher le chemin de la page au lieu du titre.</td>
+</tr>
+<tr>
+<td><code>show_slug</code></td>
+<td>Afficher le slug.</td>
+</tr>
+<tr>
+<td><code>show_all</code></td>
+<td>Affiche toutes les pages.</td>
+</tr>
+<tr>
+<td><code>show_modular</code></td>
+<td>Affiche les pages modulaires.</td>
+</tr>
+<tr>
+<td><code>show_root</code></td>
+<td>Affiche la page racine.</td>
+</tr>
+<tr>
+<td><code>options</code></td>
+<td>Une liste facultative de choix supplémentaires.</td>
+</tr>
+<tr>
+<td><code>multiple</code></td>
+<td>Sélectionnez plusieurs pages.</td>
+</tr>
+<tr>
+<td><code>limit_levels</code></td>
+<td>Combien de niveaux afficher.</td>
+</tr>
+<tr>
+<td><code>selectize</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Si vous définissez <code>multiple</code> sur true, vous devez ajouter <code>validate.type: array</code>. Sinon, le tableau des pages sélectionnées ne sera pas enregistré correctement.</p>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">novalidate</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de section">Champ de section
+<a href="#Champ de section" class="toc-anchor after"></a></h2>
+
+<p>Le type de champ <code>Section</code> est utilisé pour diviser une page de paramètres en sections.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | content:
+2 |      type: section
+3 |      title: PLUGIN_ADMIN.DEFAULTS
+4 |      underline: true
+5 | 
+6 |      fields:
+7 | 
+8 |         #..... subfields
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>Un titre de rubrique.</td>
+</tr>
+<tr>
+<td><code>underline</code></td>
+<td>Ajouter un soulignement après le titre.</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>Un texte à afficher en dessous.</td>
+</tr>
+<tr>
+<td><code>security</code></td>
+<td>Un tableau d'informations d'identification dont un utilisateur a besoin pour visualiser <br>cette section.</td>
+</tr>
+<tr>
+<td><code>title_level</code></td>
+<td>Définissez une balise de titre personnalisée. Par défaut : h3.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de sélection">Champ de sélection
+<a href="#Champ de sélection" class="toc-anchor after"></a></h2>
+
+<p><img alt="Champ de sélection" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/selectize_field_bp.gif" /></p>
+<p>Le type de champ <code>selectize</code> est utilisé pour afficher un hybride d'une zone de texte et d'une zone de sélection. Principalement utile pour le balisage et d'autres champs de sélection d'éléments.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1  | taxonomies:
+2  |     type: selectize
+3  |     selectize:
+4  |        options:
+5  |           - text: &quot;test&quot;
+6  |              value: &quot;real value 1&quot;
+7  |           - text: &quot;test-2&quot;
+8  |              value: &quot;real value 2&quot;
+9  |           - text: &quot;test-3&quot;
+10 |              value: &quot;real value 3&quot;
+11 |     size: large
+12 |     label: PLUGIN_ADMIN.TAXONOMY_TYPES
+13 |     classes: fancy
+14 |     help: PLUGIN_ADMIN.TAXONOMY_TYPES_HELP
+15 |     validate:
+16 |        type: commalist
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">toggleable</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.type</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Attribut communs DANS LE BLOC D'ENTRÉE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">autocomplete</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">id</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">placeholder</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">readonly</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">title</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.pattern</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.message</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Champ de taxonomie">Champ de taxonomie
+<a href="#Champ de taxonomie" class="toc-anchor after"></a></h2>
+
+<p><img alt="Taxonomie" src="https://learn.getgrav.org/user/pages/06.forms/01.blueprints/01.fields-available/taxonomy_field_bp.gif" /></p>
+<p>Le type de champ <code>taxonomy</code> est une sélection spéciale préconfigurée pour sélectionner une ou plusieurs valeurs de taxonomie.</p>
+<p>Exemple:</p>
+<pre><code class="language-yaml">1 | header.taxonomy:
+2 |   type: taxonomy
+3 |   label: PLUGIN_ADMIN.TAXONOMY
+4 |   multiple: true
+5 |   validate:
+6 |      type: array
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT</strong></th>
+<th><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>multiple</code></td>
+<td>Boléen. Si positif, le champ accepte plusieurs valeurs.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>ATTRIBUT COMMUN AUTORISÉ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Attributs des champs communs">autofocus</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">classes</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">default</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">disabled</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">help</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">id</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">label</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">name</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">novalidate</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">outerclasses</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">size</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">style</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.required</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.pattern</a></td>
+</tr>
+<tr>
+<td><a href="#Attributs des champs communs">validate.message</a></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../formulaires-blueprints/" class="btn btn-neutral float-left" title="Blueprints"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../formulaires-ex-blueprint/" class="btn btn-neutral float-right" title="Exemple - Plugin Blueprint">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../formulaires-blueprints/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../formulaires-ex-blueprint/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

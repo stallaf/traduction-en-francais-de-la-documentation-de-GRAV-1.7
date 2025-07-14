@@ -1,0 +1,555 @@
+<style>
+ :after, 
+::before {
+  --tw-content: "";
+}
+.ancre {
+ font-size: 18px;
+ font-weight: bold;
+ color: blue
+ }
+.awesome {
+ font-size: 45px;
+ font-weight: bold;
+ color: red
+}
+.box {
+display: block;
+border-style: none;
+text-align: center;
+background: white;
+max-width: 100%;
+margin: 3rem auto;
+padding: 3px;
+text-align: center;
+}
+.button {
+ background-color: #1a73ec;
+ color: white;
+ text-align: center;
+ font-size: 20px;
+ padding: 10px;
+ cursor: pointer;
+}
+.button-primary {
+ color:#fff!important;
+ border-color:#136be4;
+ background:#1a73ec;
+}
+.button-primary:focus,
+.button-primary:hover {
+ color:#fff;
+ border-color:#1160cc;
+ background:#1267da
+}
+.button-primary.active,
+.button-primary:active {
+ color:#fff;
+ border-color:#105cc3;
+ background:#1163d1
+ }
+.cadre {
+ margin-bottom:1.5em;
+ padding:1em;
+ color:black;
+ border:1px solid #ffffff;
+ background:#f5f5f5;
+ /*font-size:95%;*/
+ }
+.code-gras {
+ display: inline;
+ border:1px solid #dcdcdc;
+ background: #ffffff;
+ font-size: 22px;
+ color: red;
+ padding: 5px;
+}
+.content {
+ display: inline-block;
+}
+.content-bis {
+ margin: 1em;
+ height: 200px
+}
+.content-ter {
+ height: 300px
+}
+.content2 {
+ height: 400px
+}
+.content3 {
+  top: 20px;
+  left: 0;
+  background: #F1F1F1;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+/* ----- ONGLETS ----- */
+div.tabs {
+  min-height: auto;		/* 28em Pas de hauteur, peut s'agrandir si target: ne fonctionne pas */
+  height: 100px;
+  position: relative;   /* Le contenant */
+  line-height: 1;		   /* Plus facile de calculer avec */
+  z-index: 0            /* Pour mettre quelquechose derrière */
+}	
+div.tabs > div {
+  display: inline          /* Les boutons sur une seule ligne */
+}		
+div.tabs > div > a {
+  color: #424242;		      /* Ressemble plus à un bouton qu'à un lien  */
+  background: #585858;	               /* L'onglet actif */
+  padding: 0.2em;		                  /* Un peu d'espace */
+  border: 0.1em outset #BBB;	         /* Semblable à un bouton */
+  border-bottom: 0.1em solid #CCC;   /* Réuni l'onglet et son corps */
+  text-decoration: none;               /* pas de soulignement */
+} 
+div.tabs > div:not(:target) > a {
+  border-bottom: none;		         /* Plus de bordure inférieure */
+  background: #E6E6E6               /* L'onglet inactif est gris moyen */
+}	
+div.tabs > div:target > a,	         /* De l'article ciblé... */
+:target #defaut > a {		         /* ... à l'élément par défaut */
+  color: white;
+  border-bottom: 0.1em solid #CCC;   
+  background: #696969               /* L'onglet actif */
+}		
+div.tabs > div > div {
+  background: #F5F5F5;		/* Gris clair */
+  z-index: -2;			      /* Dérrière parce que les bords se chevauchent * */
+  left: 0; top: 1em;		/* Le sommet a besoin d'un peu de calcul... */
+  bottom: 0; right: 0;		/* Les autres côtés affleurent avec le contenant */
+  overflow: auto;		      /* Barre de défilement si besoin */
+  padding: 5px;
+  /*border: 0.1em outset #BBB   /* Look 3D*/
+}	
+div.tabs > div:not(:target) > div {    /* Pour les navigateurs CSS1 et 2 */
+  position: absolute                   /* Toutes ces DIV se chevauchent */
+}		
+div.tabs > div:target > div, :target #default2 > div {
+  position: absolute;		   /* Toutes ces DIV se chevauchent */
+  z-index: -1                 /* Placé au-dessus des autres */
+}			
+div.tabs :target {
+  outline: none
+}
+/* ----- CONTENT ONGLETS TEST ----- 
+.content, .content2 {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #FAFAFA;
+  right: 0;
+  bottom: 25px;
+  padding: 20px;
+  border: 1px solid #FAFAFA; 
+  margin-bottom: -20px;
+}*/
+.fa {
+ display: inline;
+ /*font: normal normal normal 14px/1 ForkAwesome;*/
+ font-family: "ForkAwesome";
+ font-size: inherit;
+ text-rendering: auto;
+ }
+.fa-eye:before {
+ content: "\f06e";
+}
+.fa-code:before {
+  content: "\f121";
+}
+.fa-bold:before {
+ content:"\f032"
+}
+.fa-italic:before {
+ content:"\f033"
+}
+.fa-strikethrough:before {
+ content:"\f0cc"
+}
+.fa-chain:before,
+.fa-link:before {
+ content:"\f0c1"
+}
+.fa-image:before,
+.fa-photo:before,
+.fa-picture-o:before {
+ content:"\f03e"
+}
+.fa-quote-right:before {
+ content:"\f10e"
+}
+.fa-list-ul:before {
+ content:"\f0ca"
+}
+.fa-list-ol:before {
+ content:"\f0cb"
+}
+.fa-expand:before {
+ content:"\f065"
+}
+.fa-plus:before {
+ content:"\f067"
+}
+.fa-check-circle:before {
+ content:"\f058"
+}
+.fa-toggle-on:before {
+ content:"\f205"
+}
+.fa-chevron-down:before {
+ content:"\f078"
+}
+.fa-mail-reply:before,
+.fa-reply:before {
+ content:"\f112"
+}
+.fa-github-alt:before {
+ content:"\f113"
+}
+.fa-github:before,
+.icon-github:before {
+ content:"\f098"
+}
+.fa-folder-o:before {
+ content:"\f114"
+}
+.fa-folder-open-o:before {
+ content:"\f115"
+}
+.fa-smile-o:before {
+ content:"\f118"
+}
+.fa-frown-o:before {
+ content:"\f119"
+}
+.fa-meh-o:before {
+ content:"\f11a"
+}
+.fa-gamepad:before {
+ content:"\f11b"
+}
+.fa-keyboard-o:before {
+ content:"\f11c"
+}
+.fa-flag-o:before {
+ content:"\f11d"
+}
+.fa-refresh:before,
+.fa-sync:before {
+ content:"\f021"
+}
+.fa-check:before {
+ content:"\f00c"
+}
+.fa-exclamation-triangle:before,
+.fa-warning:before {
+ content:"\f071"
+}
+.fa-star:before {
+ content:"\f005"
+}
+.fa-bookmark:before {
+ content:"\f02e"
+}
+.fa-arrow-right:before {
+ content:"\f061"
+}
+.fa-upload:before {
+content:"\f093"
+}
+.fa-clound-download:before {
+content: "\f0ed"
+}
+.fa-databse:before {
+content: "\f1c0"
+}
+.fa-circle:before {
+ content:"\f111";
+ font-size: x-small;
+}
+.yeux:before {
+ content: "\f06e";
+}
+.img { 
+display: block;
+margin: auto
+}
+.invisible {
+ display:none
+ }
+.lifecycle #body-inner .level {
+ position:relative
+}
+.lifecycle #body-inner .level h3 {
+ font-size:18px;
+ position:absolute;
+ z-index:1000;
+ left:0;
+ margin:0;
+ padding:2px 10px 4px;
+ color:#fff
+}
+.lifecycle #body-inner .level .level {
+ margin-top:.5rem;
+ margin-right:1rem;
+ margin-bottom:.5rem;
+ margin-left:-1rem;
+ padding-bottom:1rem
+}
+.lifecycle #body-inner .level ol li {
+ margin-top:.2rem;
+ padding-top:.1rem
+}
+.lifecycle #body-inner .level>ol {
+ margin-top:2rem
+}
+.lifecycle #body-inner .level.level-1 {
+ margin-bottom:1rem;
+ color:#1abc9c;
+ border:4px solid #1abc9c;
+ background:#f6fefc
+}
+.lifecycle #body-inner .level.level-1 h3 {
+ background:#1abc9c
+}
+.lifecycle #body-inner .level.level-2 {
+ color:#2ecc71;
+ border:4px solid #2ecc71;
+ background:#f7fdf9
+}
+.lifecycle #body-inner .level.level-2 h3 {
+ background:#2ecc71
+}
+.lifecycle #body-inner .level.level-3 {
+ color:#3498db;
+ border:4px solid #3498db;
+ background:#f3f9fd
+}
+.lifecycle #body-inner .level.level-3 h3 {
+ background:#3498db
+}
+.lifecycle #body-inner .level.level-4 {
+ color:#34495e;
+ border:4px solid #34495e;
+ background:#e4eaf0
+}
+.lifecycle #body-inner .level.level-4 h3 {
+ background:#34495e
+}
+.lifecycle.level {
+ position:relative
+}
+.lifecycle.level h3 {
+ font-size:18px;
+ position:absolute;
+ z-index:1000;
+ left:0;
+ margin:0;
+ padding:2px 10px 4px;
+ color:#fff
+}
+.lifecycle.level.level {
+ margin-top:.5rem;
+ margin-right:1rem;
+ margin-bottom:.5rem;
+ margin-left:-1rem;
+ padding-bottom:0.2rem
+}
+.lifecycle.level ol li {
+ margin-top:.2rem;
+ padding-top:.1rem
+}
+.lifecycle.level ol {
+ margin-top:2rem
+}
+.lifecycle.level.level-1 {
+ margin-bottom:1rem;
+ color:#1abc9c;
+ border:4px solid #1abc9c;
+/* background:#e3faef*/
+}
+.lifecycle.level.level-2 {
+ color:#2ecc71;
+ border:4px solid #2ecc71;
+ background:#f7fdf9
+}
+.lifecycle.level.level-3 {
+ color:#3498db;
+ border:4px solid #3498db;
+ background:#f3f9fd
+}
+.lifecycle.level.level-4 {
+ color:#34495e;
+ border:4px solid #34495e;
+ background:#e4eaf0
+}
+.lifecycle.level.level-1 h3 {
+ background:#1abc9c
+}
+.lifecycle.level.level-2 h3 {
+ background:#2ecc71
+}
+.lifecycle.level.level-3 h3 {
+ background:#3498db
+}
+.lifecycle.level.level-4 h3 {
+ background:#34495e
+}
+#mention ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+#mention ul li {
+ display:inline;
+ }
+ #mention ul li a {
+ /*display:block;
+ text-align:center;*/
+ padding:5px 20px;
+}
+/*
+.mention ul li a:hover {
+ background-color:#D3D3D3;
+ border-color:#696969 #DCDCDC #DCDCDC #696969;
+ }
+*/
+.ndt { 
+   vertical-align: super; 
+   font-size: smaller; 
+   line-height: 1em; 
+}
+.notice {
+ margin:1.2rem 0;
+ padding:.4rem;
+}
+.notice p {
+ margin:0 0 1.5rem .5rem
+}
+.notice p:last-child {
+ margin-bottom:0
+}
+.notice.cadre {
+ padding-left:0.9em;
+ color:black;
+ border:1px solid #DCDCDC;
+ background:#efefef;
+ font-size:78%;
+ }
+ .notice.defaut {
+ border-left:3px solid #d3d3d3
+}
+.notice.info {
+ color:#df8a13;
+ border-left:5px solid #f0ad4e;
+ background:#fcf8f3
+}
+.notice.note {
+ color:#28a1c5;
+ border-left:5px solid #5bc0de;
+ background:#f4f8fa
+}
+.notice.tip {
+ color:#3d8b3d;
+ border-left:5px solid #5cb85c;
+ background:#f1f9f1
+}
+.notice.warning {
+ color:#b52b27;
+ border-left:5px solid #d9534f;
+ background:#fdf7f7
+}
+#page-wrap {
+  width: 70%; 
+  margin: 10px auto;
+}
+.pluslarge {
+  font-size: larger;
+}
+.pluspetit {
+  font-size: smaller;
+}  
+.pourcentage {
+   font-size: 200%;
+}
+.pre {
+ color: #708090;
+ font-size: 80%;
+}
+.rem {
+  font-size: 3rem;
+}
+.selection {
+counter-reset: selection
+}
+.symbole {
+ display: inline-block;
+ font: normal normal normal 14px/1 ForkAwesome;
+ font-size: inherit;
+ text-rendering: auto;
+}
+.tabs {
+  position: relative;   
+  /*min-height: 150px; */
+  clear: both;
+  margin: 15px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: rgba(170, 185, 185, 0.97);
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.71);
+}
+.tab [type=radio] {
+  display: none;   
+}
+.tableau {
+box-sizing: border-box;
+display: table-cell;
+float: none;
+line-height: 25.5px;
+position: static;
+z-index: auto;
+}
+.toc-anchor {
+ transition:hover .2s ease;
+ position:absolute;
+ opacity:.0
+}
+.toc-anchor.after {
+ margin-left:5px
+}
+.toc-anchor.before {
+ margin-left:-22px;
+ padding-right:8px
+}
+.toc-anchor:after {
+ content:"#"
+}
+:hover>.toc-anchor,
+.toc-anchor:focus {
+ opacity:.5
+}
+.typo {
+ font-family: DejaVu Sans Mono;
+ font-size: 24px;
+ font-weight: 500;
+ padding-left: 5px;
+ padding-bottom: 15px;
+}
+.typo2 {
+ font-family: Typewriter Hand;
+ font-size: 28px;
+ padding-left: 5px;
+ padding-bottom: 15px;
+} 
+</style>
+

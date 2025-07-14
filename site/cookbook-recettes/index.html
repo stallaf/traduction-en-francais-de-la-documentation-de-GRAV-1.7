@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/cookbook-recettes/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Recettes Générales - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Recettes G\u00e9n\u00e9rales";
+        var mkdocs_page_input_path = "cookbook-recettes.md";
+        var mkdocs_page_url = "/cookbook-recettes/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>10. Cookbook &raquo;</li><li>Recettes Générales</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Recettes générales</h1>
+
+<p>Cette page contient un assortiment de problèmes et leurs solutions respectives liées à Grav en général.</p>
+<h2 id="Modifier la version de l'interface de ligne de commande PHP">Modifier la version de l'interface de ligne de commande PHP.
+<a href="#Modifier la version de l'interface de ligne de commande PHP" class="toc-anchor after"></a></h2>
+
+<p>Parfois, sur le terminal, la version de PHP est différente de la version de PHP utilisée par le serveur Web.</p>
+<p>Vous pouvez vérifier la version PHP en cours d'exécution dans la CLI en exécutant la commande <code>php -v</code>. Si la version de PHP est inférieure à 5.5.9, Grav ne fonctionnera pas car il nécessite au moins PHP 5.5.9.</p>
+<p>Comment réparer?</p>
+<p>Vous devez entrer une configuration dans <code>.bashrc</code> ou dans <code>.bash_profile</code> dans votre dossier d'accueil utilisateur. Créez ces fichiers si vous ne les avez pas déjà dans le dossier utilisateur. Ce sont des fichiers cachés, vous devrez donc peut-être faire <code>ls -al</code> pour les afficher. Une fois la configuration ajoutée, vous devrez démarrer une nouvelle session de terminal pour que ces paramètres s'appliquent.</p>
+<p>Un exemple de configuration pourrait être :</p>
+<pre><code>$ | alias php="/usr/local/bin/php53"
+$ | export PHP_PATH = /usr/local/bin/php53
+</code></pre>
+<p>Une autre façon consiste à ajouter :</p>
+<pre><code class="language-configuration">1  | # .bash_profile
+2  | 
+3  | # Get the aliases and functions
+4  | if [ -f ~/.bashrc ]; then
+5  |         . ~/.bashrc
+6  | fi
+7  | 
+8  | # User specific environment and startup programs
+9  | 
+10 |PATH=/usr/local/lib/php-5.5/bin:$PATH:$HOME/bin
+11 |
+12 |export PATH
+</code></pre>
+<p>Le chemin exact dépend bien sûr de la configuration de votre système, où il stocke les binaires de la version PHP la plus récente. Cela peut être quelque chose que vous trouverez dans la documentation de l'hébergement, ou vous pouvez demander à votre configuration d'hébergement si vous ne le trouvez nulle part.</p>
+<p>Vous pouvez également essayer de regarder dans les fichiers ou dossiers <code>php-something</code> sous les dossiers <code>/usr/local/bin</code> ou <code>/usr/local/lib</code>, avec <code>ls -la /usr/local/lib/ |grep -i php</code>.</p>
+<h2 id="Créer une galerie simple">Créer une galerie simple.
+<a href="#Créer une galerie simple" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-1 :">Problème :
+<a href="#Problème-1 :" class="toc-anchor after"></a></h3>
+
+<p>Une exigence courante en matière de conception de sites Web est d'avoir une galerie quelconque rendue sur une page. Il peut s'agir d'afficher des photos de votre nouvel animal de compagnie, un portefeuille de travaux de conception antérieurs ou même un catalogue de base de certains produits que vous souhaitez afficher et vendre à vos utilisateurs. Dans cet exemple, nous supposerons que vous souhaitez simplement afficher un groupe de photos avec une légende ci-dessous. Cela peut bien sûr être adapté à d'autres utilisations également.</p>
+<h3 id="La solution-1 :">La solution :
+<a href="#La solution-1 :" class="toc-anchor after"></a></h3>
+
+<p>Le moyen le plus simple de fournir une solution à ce problème est d'utiliser la <a href="/media">fonctionnalité média</a> de Grav qui permet à une page de connaître les images disponibles dans son dossier.</p>
+<p>Supposons que vous ayez une page que vous avez appelée <code>gallery.md</code> et que vous ayez également une variété d'images dans le même répertoire. Les noms de fichiers eux-mêmes ne sont pas importants car nous allons simplement parcourir chacune des images. Parce que nous voulons avoir des données supplémentaires associées à chaque image, nous inclurons un fichier <code>meta.yaml</code> pour chaque image. Par exemple, nous avons quelques images :</p>
+<pre><code class="language-configuration">1 | - fido-playing.jpg
+2 | - fido-playing.jpg.meta.yaml
+3 | - fido-dormir.jpg
+4 | - fido-dormir.jpg.meta.yaml
+5 | - fido-eating.jpg
+6 | - fido-eating.jpg.meta.yaml
+7 | - fido-grognement.jpg
+8 | - fido-growling.jpg.meta.yaml
+</code></pre>
+<p>Chacun des fichiers <code>.jpg</code> a une taille relativement bonne qui convient à une version pleine grandeur, 1280px x 720px. Chacun des fichiers <code>meta.yaml</code> contient quelques entrées clés, regardons <code>fido-playing.jpg.meta.yaml</code> :</p>
+<pre><code>1 | title : Fido jouant avec son os
+2 | description : L'autre jour, Fido a eu un nouvel os, et il en est devenu vraiment captivé.
+</code></pre>
+<p>Vous avez un <strong>contrôle total</strong> sur ce que vous mettez dans ces méta-fichiers, ils peuvent être absolument tout ce dont vous avez besoin.</p>
+<p>Nous devons maintenant afficher ces images dans l'ordre chronologique inverse afin que les images les plus récentes soient affichées en premier et les affichent. Parce que notre page s'appelle <code>gallery.md</code>, nous devons créer un <code>templates/gallery.html.twig</code> approprié pour contenir la logique de rendu dont nous avons besoin :</p>
+<pre><code class="language-html">1  | {% extends 'partials/base.html.twig' %}
+2  | 
+3  | {% block content %}
+4  |     {{ page.content|raw }}
+5  | 
+6  |     &lt;ul&gt;
+7  |     {% for image in page.media.images %}
+8  |     &lt;li&gt;
+9  |         &lt;div class=&quot;image-surround&quot;&gt;
+10 |             {{ image.cropResize(300,200).html|raw }}
+11 |         &lt;/div&gt;
+12 |         &lt;div class=&quot;image-info&quot;&gt;
+13 |             &lt;h2&gt;{{ image.meta.title }}&lt;/h2&gt;
+14 |             &lt;p&gt;{{ image.meta.description }}&lt;/p&gt;
+15 |         &lt;/div&gt;
+16 |     &lt;/li&gt;
+17 |     {% endfor %}
+18 |     &lt;/ul&gt;
+19 | 
+20 | {% endblock %}
+</code></pre>
+<p>Pour qu'une galerie modulaire s'affiche dans une autre page, supprimez le code suivant du fichier Twig afin de le faire fonctionner :</p>
+<pre><code class="language-twig">1 | {% extends 'partials/base.html.twig' %}
+2 | 
+3 | {% block content %}
+4 |     {{ page.content|raw }}
+</code></pre>
+<p>et</p>
+<pre><code class="language-twig">{% endblock %}
+</code></pre>
+<p>Fondamentalement, cela étend le standard <code>partials/base.html.twig</code> (en supposant que votre thème a ce fichier), il définit ensuite le bloc de contenu <code>content</code> et fournit le contenu pour celui-ci. La première chose que nous faisons est de faire écho à n'importe quelle <code>page.content</code>. Ce serait le contenu du fichier <code>gallery.md</code>, il pourrait donc contenir un titre et une description de cette page.</p>
+<p>La section suivante boucle simplement sur tous les médias de la page qui sont des <strong>images</strong>. Nous les publions dans une liste non ordonnée pour rendre la sortie sémantique et facile à styliser avec CSS. nous attribuons à chaque image le nom de la variable <code>image</code>, puis nous pouvons exécuter une simple méthode <code>cropResize()</code> pour redimensionner l'image à quelque chose de convenable, puis en dessous, nous fournissons une section d'informations avec le <code>title</code> et la <code>description</code>.</p>
+<p>Vous pouvez faire une implémentation de galerie plus avancée en utilisant la création de filtres pour les données de l'appareil photo, avec la fonction <a href="/fonction-twig">EXIF</a>.</p>
+<h2 id="Rendre le contenu en colonnes">Rendre le contenu en colonnes.
+<a href="#Rendre le contenu en colonnes" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-2 :">Problème :
+<a href="#Problème-2 :" class="toc-anchor after"></a></h3>
+
+<p>Une question qui a été soulevée à plusieurs reprises est de savoir comment afficher rapidement une seule page dans plusieurs colonnes.</p>
+<h3 id="La solution-2 :">La solution :
+<a href="#La solution-2 :" class="toc-anchor after"></a></h3>
+
+<p>Il existe de nombreuses solutions potentielles, mais une solution simple consiste à diviser votre contenu en sections logiques à l'aide d'un délimiteur tel que la balise HTML <code>&lt;hr /&gt;</code> ou la balise de <em>rupture thématique</em>. Dans le démarquage, cela est représenté par 3 tirets ou plus ou <code>---</code>. Nous créons simplement notre contenu et séparons nos sections de contenu avec ces tirets :</p>
+<h4 id="colonnes.md">colonnes.md.
+<a href="#colonnes.md" class="toc-anchor after"></a></h4>
+
+<pre><code class="language-configuration">1  | ---
+2  | title: 'Columns Page Test'
+3  | ---
+4  | 
+5  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu leo, hendrerit ut rhoncus eu, dictum vitae ligula. Suspendisse interdum at purus eget congue. Aliquam erat volutpat. Proin ultrices ligula vitae nisi congue sagittis. Nulla mollis, libero id maximus elementum, ante dolor auctor sem, sed volutpat mauris nisl non quam.
+6  | 
+7  | ---
+8  | Phasellus id eleifend risus. In dui tellus, dignissim id viverra non, convallis sed ante. Suspendisse dignissim, felis vitae faucibus dictum, dui mi tempor lectus, non porta elit libero quis orci. Morbi porta neque quis magna imperdiet hendrerit.
+9  | 
+10 | ---
+11 | Praesent eleifend commodo purus, sit amet viverra nunc dictum nec. Mauris vehicula, purus sed convallis blandit, massa sem egestas ex, a congue odio lacus non quam. Donec vitae metus vitae enim imperdiet tempus vitae sit amet quam. Nam sed aliquam justo, in semper eros. Suspendisse magna turpis, mollis quis dictum sit amet, luctus id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eu rutrum mi.
+</code></pre>
+<div class = "notice info">
+Remarque : la ligne supplémentaire après la colonne et avant le <code>---</code>. En effet, si vous mettez un triple tiret juste en dessous du texte, il est en fait interprété comme un en-tête.
+</div>
+
+<p>Ensuite, nous devons simplement restituer ce contenu avec un modèle <code>columns.html.twig</code> (car le fichier de page s'appelait <code>columns.md</code>) :</p>
+<pre><code class="language-twig">1  | {% étend 'partials/base.html.twig' %}
+2  | 
+3  | {% block content %}
+4  |   &lt;table&gt;
+5  |        &lt;tr&gt;
+6  |             {% for column in page.content|split('&lt;hr /&gt;') %}
+7  |             &lt;td&gt;{{ column|raw }}&lt;/td&gt;
+8  |            {% endfor %}
+9  |        &lt;/tr&gt;
+10 |    &lt;/table&gt;
+11 | {% endblock %}
+</code></pre>
+<p>Vous pouvez voir comment le contenu est <strong>divisé</strong> par la balise <code>&lt;hr /&gt;</code> et converti en un tableau de 3 colonnes que nous parcourons et restituons. Dans cet exemple, nous utilisons une simple balise de table HTML, mais vous pouvez utiliser tout ce que vous souhaitez.</p>
+<h2 id="Curseur d'image CSS vraiment simple">Curseur d'image CSS vraiment simple.
+<a href="#Curseur d'image CSS vraiment simple" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-3 :">Problème :
+<a href="#Problème-3 :" class="toc-anchor after"></a></h3>
+
+<p>Vous avez besoin d'un curseur d'image sans frais généraux.</p>
+<h3 id="La solution-3 :">La solution :
+<a href="#La solution-3 :" class="toc-anchor after"></a></h3>
+
+<p>Cette recette est pour 4 images et une page appelée <code>slider.md</code> ! Placez simplement les images là où se trouve le fichier .md. Ensuite, créez un nouveau modèle Twig et étendez <code>base.html.twig</code>.</p>
+<pre><code class="language-twig">1  | {% extends 'partials/base.html.twig' %}
+2  |
+3  | {% block content %}
+4  | 
+5  |    &lt;div id=&quot;slider&quot;&gt;
+6  |        &lt;figure&gt;
+7  |        {% for image in page.media.images %}
+8  |             {{ image.html|raw }}
+9  |         {% endfor %}
+10 |         &lt;/figure&gt;
+11 |     &lt;/div&gt;
+12 | 
+13 |     {{ page.content|raw }}
+14 | {% endblock %}
+</code></pre>
+<p>Pour le curseur modulaire, veuillez retirer le</p>
+<pre><code class="language-twig">1 | {% extends 'partials/base.html.twig' %}
+2 | 
+3 | {% block content %}
+</code></pre>
+<p>et</p>
+<pre><code>{% endblock %}
+</code></pre>
+<p>du fichier Twig précédent.</p>
+<p>C'est l'heure des trucs CSS. Ajoutez ceci à votre _custom.scss</p>
+<pre><code class="language-css">1  | @keyframes slidy {
+2  |     0% { left: 0%; }
+3  |     20% { left: 0%; }
+4  |     25% { left: -100%; }
+5  |     45% { left: -100%; }
+6  |     50% { left: -200%; }
+7  |     70% { left: -200%; }
+8  |     75% { left: -300%; }
+9  |     95% { left: -300%; }
+10 |    100% { left: -400%; }
+11 | }
+12 | body { margin: 0; }
+13 | div#slider {
+14 |     overflow: hidden;
+15 |     margin-top: -3rem;
+16 |     max-height: 30rem;
+17 | }
+18 | div#slider figure img { width: 20%; float: left; }
+19 | div#slider figure {
+20 |     position: relative;
+21 |     width: 500%;
+22 |     margin: 0;
+23 |     left: 0;
+24 |     animation: 30s slidy infinite;
+25 | }
+</code></pre>
+<p>C'est tout.</p>
+<h2 id="Envelopper markdown en html">Envelopper markdown en html.
+<a href="#Envelopper markdown en html" class="toc-anchor after"></a></h2>
+
+<p>Sur certaines pages, vous souhaiterez peut-être encapsuler des parties du contenu de démarquage dans un code html personnalisé au lieu de créer un nouveau modèle Twig.</p>
+<p>Pour y parvenir, suivez ces étapes :</p>
+<p>dans votre fichier de configuration système <code>user/config/system.yaml</code> assurez-vous d'activer l'option supplémentaire markdown :</p>
+<pre><code class="language-yaml">1 | pages:
+2 |   markdown:
+3 |     extra: true
+</code></pre>
+<p>dans votre balise wrapper assurez-vous d'ajouter le paramètre <code>markdown="1"</code> pour activer le traitement du contenu markdown :</p>
+<pre><code class="language-html">1 | &lt;div class=&quot;monWrapper&quot; markdown=&quot;1&quot;&gt;
+2 | # mon contenu markdown
+3 |
+4 | ce contenu est enveloppé dans un div avec la classe &quot;myWrapper&quot;
+5 | &lt;/div&gt;
+</code></pre>
+<p>Fini.</p>
+<h2 id="Ajouter un widget de publication récente à votre barre latérale">Ajouter un widget de publication récente à votre barre latérale.
+<a href="#Ajouter un widget de publication récente à votre barre latérale" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-4 :">Problème :
+<a href="#Problème-4 :" class="toc-anchor after"></a></h3>
+
+<p>Vous souhaitez créer un widget de publication récente sur la barre latérale</p>
+<h3 id="La solution-4 :">La solution :
+<a href="#La solution-4 :" class="toc-anchor after"></a></h3>
+
+<p>Il est toujours possible de créer un modèle partiel étendant <code>partials/base.html.twig</code> (voir d'autres solutions sur cette page), mais ici vous allez plutôt créer un modèle complet. Le code final de votre modèle Twig est présenté ci-dessous :</p>
+<pre><code class="language-html">1  | &lt;div class=&quot;sidebar-content recent-posts&quot;&gt;
+2  |     &lt;h3&gt;Recent Posts&lt;/h3&gt;
+3  |     {% for p in page.find('/blog').children.order('date', 'desc').slice(0, 5) %}
+4  |         {% set bannerimage = p.media['banner.jpg'] %}
+5  |         &lt;div class=&quot;recent-post&quot;&gt;
+6  |             {% if bannerimage %}
+7  |                 &lt;div class=&quot;recent-post-image&quot;&gt;{{ bannerimage.cropZoom(60,60).quality(60) }}&lt;/div&gt;
+8  |             {% else %}
+9  |                 &lt;div class=&quot;recent-post-image&quot;&gt;&lt;img src=&quot;{{ url('theme://images/logo.png') }}&quot; width=&quot;60&quot; height=&quot;60&quot;&gt;&lt;/div&gt;
+10 |             {% endif %}
+11 |            &lt;div class=&quot;recent-post-text&quot;&gt;
+12 |                &lt;h4&gt;&lt;a href=&quot;{{p.url}}&quot;&gt;{{ p.title }}&lt;/a&gt;&lt;/h4&gt;
+13 |                 &lt;p&gt;{{ p.date|date(&quot;M j, Y&quot;)}}&lt;/p&gt;
+14 |             &lt;/div&gt;
+15 |         &lt;/div&gt;
+16 |     {% endfor %}
+17 | &lt;/div&gt;
+</code></pre>
+<p>Tout ce que fait ce code est de trier les enfants (articles de blog) de la page <code>/blog</code> par ordre décroissant de date. Il prend ensuite les cinq premiers articles de blog en utilisant le filtre <code>slice</code> Twig. Au fait, <code>slice(n,m)</code> prend des éléments de <code>n</code> à <code>m-1</code>. Dans cet exemple, tous les articles de blog comportant une image de bannière ont été nommés <code>banner.jpg</code>. Ceci est défini dans une variable <code>bannerimage</code>. Si <code>bannerimage</code> existe, elle est réduite à une boîte de <code>60px x 60px</code> et apparaîtra à gauche du texte et de la date du titre du message. S'il n'existe pas, le logo du site Web est redimensionné à <code>60 px x 60 px</code> et placé à gauche du texte du titre et de la date à la place.</p>
+<p>Le CSS de ce widget est répertorié ci-dessous :</p>
+<pre><code class="language-css">1  | .sidebar-content .recent-post {
+2  |     margin-bottom: 25px;
+3  |     padding-bottom: 25px;
+4  |     border-bottom: 1px solid #F0F0F0;
+5  |     float: left;
+6  |     clear: both;
+7  |     width: 100%;
+8  | }
+9  | 
+10 | .sidebar-content [class~='recent-post']:last-of-type {
+11 |     border-bottom: none;
+12 | }
+13 | 
+14 | .sidebar-content .recent-post .recent-post-image,
+15 | .sidebar-content .recent-post .recent-post-text {
+16 |     float: left;
+17 | }
+18 | 
+19 | .sidebar-content .recent-post .recent-post-image {
+20 |     margin-right: 10px;
+21 | }
+22 | 
+23 | .sidebar-content .recent-post .recent-post-text h4 {
+24 |     font-family: serif;
+25 |     margin-bottom: 10px;
+26 | }
+27 | 
+28 | .sidebar-content .recent-post .recent-post-text h4 a {
+29 |     color: #193441;
+30 | }
+31 | 
+32 | .sidebar-content .recent-post .recent-post-text p {
+33 |     font-family: Arial, sans-serif;
+34 |     font-size: 1.5rem;
+35 |     color: #737373;
+36 |     margin: 0;
+37 | }
+</code></pre>
+<p>Ajustez l'espacement entre les éléments de publication récents, la famille de polices, la taille de police et l'épaisseur de police à votre goût.</p>
+<h2 id="Créer un espace privé">Créer un espace privé.
+<a href="#Créer un espace privé" class="toc-anchor after"></a></h2>
+
+<p>Grav permet de créer très facilement un espace privé sur un site web. Tout fonctionne grâce au plugin de connexion.</p>
+<h2 id="Exiger que les utilisateurs se connectent avant d'accéder à une partie du site">Exiger que les utilisateurs se connectent avant d'accéder à une partie du site.
+<a href="#Exiger que les utilisateurs se connectent avant d'accéder à une partie du site" class="toc-anchor after"></a></h2>
+
+<p>Si vous ne l'avez pas déjà, installez-le via le panneau d'administration ou à l'aide de l'utilitaire de ligne de commande GPM.</p>
+<p>Ensuite, ouvrez une page dans Admin, passez en mode expert et dans la section FrontMatter ajoutez</p>
+<pre><code>1 | access:
+2 |     site.login: true
+</code></pre>
+<p>Les utilisateurs accédant à la page devront se connecter avant de voir le contenu de la page.</p>
+<p>Notez que l'autorisation ne s'étend pas par défaut aux sous-pages. Pour cela, depuis la configuration du plugin Login, activez "Utiliser les règles d'accès parent".</p>
+<p>Cette option vous permet de créer des zones privées étendues sans vous soucier davantage du niveau d'accès. Il suffit de tout mettre sous une page dont l'accès est restreint.</p>
+<h2 id="Exiger des autorisations spéciales pour afficher une ou plusieurs pages">Exiger des autorisations spéciales pour afficher une ou plusieurs pages.
+<a href="#Exiger des autorisations spéciales pour afficher une ou plusieurs pages" class="toc-anchor after"></a></h2>
+
+<p>De la même manière que pour le processus ci-dessus, vous pouvez attribuer n'importe quelle autorisation à une page. Vous pouvez même créer vos propres noms d'autorisation.</p>
+<p>Par exemple:</p>
+<pre><code>1 | access:
+2 |    site.onlybob: true
+</code></pre>
+<p>Ensuite, ajoutez la permission <code>site.onlybob</code> à Bob, dans son fichier utilisateur <code>bob.yaml</code> sous le dossier <code>user/accounts</code> :</p>
+<pre><code>1 | access:
+2 |    site.onlybob: true
+</code></pre>
+<h2 id="Utiliser les autorisations basées sur le groupe">Utiliser les autorisations basées sur le groupe.
+<a href="#Utiliser les autorisations basées sur le groupe" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez également affecter des utilisateurs à un groupe et affecter des autorisations au groupe plutôt qu'à des utilisateurs individuels. Les utilisateurs hériteront des autorisations de groupe.</p>
+<p>Ajoutez un fichier <code>user/config/groups.yaml</code>, par exemple avec ce contenu :</p>
+<pre><code class="language-yaml">1  | registered:
+2  |   readableName: 'Registered Users'
+3  |   description: 'The group of registered users'
+4  |   access:
+5  |     site:
+6  |       login: true
+7  | premium:
+8  |   readableName: 'Premium Members'
+9  |   description: 'The group of premium members'
+10 |   access:
+11 |     site:
+12 |       login: true
+13 |       paid: true
+</code></pre>
+<p>Attribuez maintenant des utilisateurs à un groupe en ajoutant</p>
+<pre><code>1 | groups:
+2 |       - premium
+</code></pre>
+<p>à leur fichier utilisateur yaml, sous <code>user/accounts</code></p>
+<p>Désormais, les utilisateurs appartenant au groupe <code>premium</code> seront autorisés à accéder aux pages avec une autorisation <code>site.paid</code>.</p>
+<h2 id="Ajouter JavaScript au pied de page">Ajouter JavaScript au pied de page.
+<a href="#Ajouter JavaScript au pied de page" class="toc-anchor after"></a></h2>
+
+<p>Dans de nombreux cas, vous voudriez que "certains" javascripts soient ajoutés au pied de page au lieu de l'en-tête de la page, à charger après le rendu du contenu.</p>
+<p>Un bon exemple de cela est de vérifier le thème Antimatière.</p>
+<p>Les <code>templates/partials/base.html.twig</code> d'Antimatter définissent un bloc inférieur pour js en appelant <code>{{ assets.js('bottom') }}</code></p>
+<pre><code class="language-twig">1 | {% block bottom %}
+2 |     {{ assets.js('bottom') }}
+3 | {% endblock %}
+</code></pre>
+<p>Vous pouvez ajouter des actifs dans ce bloc dans Twig par exemple en appelant</p>
+<p><code>{% do assets.addJs('theme://js/slidebars.min.js', {group: 'bottom'}) %}</code></p>
+<p>ou en PHP en appelant</p>
+<p><code>$this-&gt;grav['assets']-&gt;addJs($this-&gt;grav['base_url'] . '/user/plugins/yourplugin/js/somefile.js', ['group' =&gt; 'bottom'] );</code></p>
+<h2 id="Remplacer l'emplacement du dossier des journaux par défaut">Remplacer l'emplacement du dossier des journaux par défaut.
+<a href="#Remplacer l'emplacement du dossier des journaux par défaut" class="toc-anchor after"></a></h2>
+
+<p>L'emplacement par défaut pour la sortie des journaux de Grav est simplement appelé <code>logs/</code>. Malheureusement, il existe des cas où ce dossier <code>logs/</code> est déjà utilisé ou est interdit. Le système de flux flexible de Grav permet de personnaliser les emplacements de ces dossiers.</p>
+<p>Tout d'abord, vous devez créer votre nouveau dossier. Dans cet exemple, nous allons créer un nouveau dossier à la racine de votre installation Grav appelé <code>grav-logs/</code>. Créez ensuite un nouveau fichier de niveau racine appelé <code>setup.php</code> et collez le code suivant :</p>
+<pre><code class="language-php">1  | &lt;?php
+2  | use Grav\Common\Utils;
+3  | 
+4  | return [
+5  |     'streams' =&gt; [
+6  |         'schemes' =&gt; [
+7  |             'log' =&gt; [
+8  |                'type' =&gt; 'ReadOnlyStream',
+9  |                'prefixes' =&gt; [
+10 |                    '' =&gt; [&quot;grav-logs&quot;],
+11 |                ]
+12 |             ]
+13 |         ]
+14 |     ]
+15 | ];
+</code></pre>
+<p>Cela remplace essentiellement le flux de journaux avec le dossier <code>grav-logs/</code> plutôt que le dossier <code>logs/</code>par défaut tel que défini dans <code>system/src/Grav/Common/Config/Setup.php</code>.</p>
+<h2 id="Système de menu vertical divisé">Système de menu vertical divisé.
+<a href="#Système de menu vertical divisé" class="toc-anchor after"></a></h2>
+
+<p>Pour créer un menu de pages vertical, pliable et hiérarchique, vous avez besoin d'une boucle Twig, d'un peu de CSS et d'un peu de JavaScript. Le résultat final, lors de l'utilisation du thème Antimatière, ressemblera à ceci :</p>
+<p><img alt="Menu vertical" src="https://learn.getgrav.org/user/pages/10.cookbook/01.general-recipes/vertical_menu.png" /></p>
+<p>Commençons par Twig :</p>
+<pre><code class="language-html">1  | &lt;ol class=&quot;tree&quot;&gt;
+2  |     {% for page in pages.children.visible %}
+3  |         {% if page.children.visible is empty %}
+4  |             &lt;li class=&quot;item&quot;&gt;
+5  |             &lt;a href=&quot;{{ page.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;
+6  |         {% else %}
+7  |             &lt;li class=&quot;parent&quot;&gt;
+8  |             &lt;a href=&quot;javascript:void(0);&quot;&gt;{{ page.title }}&lt;/a&gt;
+9  |             &lt;ol&gt;
+10 |                 {% for child in page.children.visible %}
+11 |                     {% if child.children.visible is empty %}
+12 |                         &lt;li class=&quot;item&quot;&gt;
+13 |                         &lt;a href=&quot;{{ child.url }}&quot;&gt;{{ child.title }}&lt;/a&gt;
+14 |                     {% else %}
+15 |                         &lt;li class=&quot;parent&quot;&gt;
+16 |                         &lt;a href=&quot;javascript:void(0);&quot;&gt;{{ child.title }}&lt;/a&gt;
+17 |                         &lt;ol&gt;
+18 |                             {% for subchild in child.children.visible %}
+19 |                                 &lt;li&gt;&lt;a href=&quot;{{ subchild.url }}&quot;&gt;{{ subchild.title }}&lt;/a&gt;&lt;/li&gt;
+20 |                            {% endfor %}
+21 |                         &lt;/ol&gt;
+22 |                     {% endif %}
+23 |                     &lt;/li&gt;
+24 |                 {% endfor %}
+25 |             &lt;/ol&gt;
+26 |         {% endif %}
+27 |         &lt;/li&gt;
+28 |     {% endfor %}
+29 | &lt;/ol&gt;
+</code></pre>
+<p>Cela crée une liste ordonnée qui itère sur toutes les pages visibles dans Grav, en allant sur trois niveaux pour créer une structure pour chaque niveau. La liste enroulée autour de la structure entière a <em>l'arborescence</em> des classes, et chaque élément de la liste a le <em>parent</em> de la classe s'il contient des enfants ou un <em>élément</em> s'il n'en a pas.</p>
+<p>Cliquer sur un parent ouvre la liste, tandis que les éléments réguliers renvoient à la page elle-même. Vous pouvez l'ajouter à pratiquement n'importe quel modèle Twig dans un thème Grav, à condition que Grav puisse accéder aux pages visibles.</p>
+<p>Pour ajouter du style, nous ajoutons du CSS :</p>
+<pre><code class="language-css">1  | &lt;style&gt;
+2  | ol.tree li {
+3  |      position : relative ;
+4  | }
+5  | ol.tree li ol {
+6  |      affichage : aucun ;
+7  | }
+8  | ol.tree li.open &gt; ol {
+9  |      bloc de visualisation;
+10 | }
+11 | ol.tree li.parent:après {
+12 |      contenu : '[+]' ;
+13 | }
+14 | ol.tree li.parent.open:après {
+15 |      contenu: '';
+16 | }
+17 | &lt;/style&gt;
+</code></pre>
+<p>Cela devrait généralement être placé avant la structure Twig, ou idéalement être diffusé dans le <a href="/asset-manager">gestionnaire d'actifs</a> de votre thème. L'effet est d'ajouter <strong>[+]</strong> après chaque élément parent, indiquant qu'il peut être ouvert, qui disparaît lorsqu'il est ouvert.</p>
+<p>Enfin, ajoutons un peu de JavaScript pour <a href="https://stackoverflow.com/a/36297446/603387">gérer le basculement</a> de la classe <em>ouverte</em> :</p>
+<pre><code class="language-html">1  | &lt;script type=&quot;text/javascript&quot;&gt;
+2  | var tree = document.querySelectorAll('ol.tree a:not(:last-child)');
+3  | for(var i = 0; i &lt; tree.length; i++){
+4  |     tree[i].addEventListener('click', function(e) {
+5  |         var parent = e.target.parentElement;
+6  |         var classList = parent.classList;
+7  |         if(classList.contains(&quot;open&quot;)) {
+8  |             classList.remove('open');
+9  |             var opensubs = parent.querySelectorAll(':scope .open');
+10 |             for(var i = 0; i &lt; opensubs.length; i++){
+11 |                 opensubs[i].classList.remove('open');
+12 |             }
+13 |         } else {
+14 |             classList.add('open');
+15 |         }
+16 |     });
+17 | }
+18 | &lt;/script&gt;
+</code></pre>
+<p>Celui-ci doit toujours être placé après la structure Twig, idéalement également dans <a href="/asset-manager">l'Asset Manager</a></span>.</p>
+<h2 id="Styliser dynamiquement une ou plusieurs pages">Styliser dynamiquement une ou plusieurs pages.
+<a href="#Styliser dynamiquement une ou plusieurs pages" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez styliser dynamiquement différentes pages/publications de votre site Grav (indépendamment de l'affectation du fichier de modèle) en personnalisant le fichier Twig d'un thème pour appliquer une classe CSS transmise en tant que variable dans le FrontMatter d'une page.</p>
+<p>Vous pouvez styliser différents articles/pages de votre site Grav de deux manières :</p>
+<ol>
+<li>Si vous utilisez le thème Antimatière, vous pouvez utiliser la propriété d'en-tête <code>body_classes</code> existante pour définir votre classe CSS personnalisée pour cette page.</li>
+<li>Si vous utilisez un thème non basé sur Antimatière (ou n'implémentant pas <code>body_classes</code> comme il le fait), vous pouvez personnaliser un fichier Twig du thème pour appliquer une classe CSS passée en tant que variable dans la propriété d'en-tête d'une page.</li>
+</ol>
+<p>Par exemple, dans le fichier <code>base.html.twig</code> de votre thème ou un modèle plus spécifique tel que le fichier <code>page.html.twig</code>, vous pouvez ajouter une classe à l'affichage du contenu de la page, comme :</p>
+<pre><code class="language-html">1 | &lt;div class=&quot;{{ page.header.body_classes }}&quot;&gt;
+2 | ...
+3 | &lt;/div&gt;
+</code></pre>
+<p>Ensuite, pour chaque page que vous souhaitez avoir un style unique, vous ajouterez la propriété d'en-tête suivante (en supposant que vous avez défini une classe CSS pour <code>featurepost</code>) :</p>
+<pre><code>1 | body_classes : featurepost
+</code></pre>
+<p>Remarque : c'est ainsi que le thème Antimatière applique des classes spécifiques à la page, et c'est donc une bonne norme à suivre.</p>
+<h2 id="Migrer un thème HTML vers Grav">Migrer un thème HTML vers Grav.
+<a href="#Migrer un thème HTML vers Grav" class="toc-anchor after"></a></h2>
+
+<p>Migrer un thème HTML vers Grav est une tâche courante. Voici un processus pratique étape par étape qui peut être utilisé pour atteindre cet objectif.</p>
+<p>Vous avez probablement téléchargé le thème, et il est composé de plusieurs fichiers HTML. Commençons simplement par faire en sorte que Grav charge la page d'accueil. Pas de contenu personnalisé, répliquez simplement le thème HTML, mais dans une structure Grav.</p>
+<p>Tout d'abord, <a href="/tutoriel-theme">utilisez le plugin Grav Devtools</a> pour créer un thème vierge et configurez Grav pour l'utiliser dans les paramètres système.</p>
+<p>Créez un template <code>templates/home.html.twig</code> Twig dans le dossier templates du thème. Cela représentera un modèle spécifique pour la page d'accueil. Habituellement, la page d'accueil est une page unique sur le site, elle mérite donc probablement un fichier Twig dédié.</p>
+<p>Copiez le code HTML de la page d'accueil du modèle, commençant à <code>&lt;html&gt;</code> et se terminant à <code>&lt;/html&gt;</code> dans votre nouveau fichier <code>home.html.twig</code>.</p>
+<p>Maintenant, déplacez tous les éléments du thème HTML (images, CSS, JS) dans votre dossier de thème. Vous pouvez conserver la structure de dossiers de thèmes existante ou la modifier.</p>
+<p>Créez un fichier <code>pages/01.home/home.md</code> vide. Pointez maintenant votre navigateur vers yoursite.com/home : il devrait afficher le contenu, mais le CSS, le JS et les images ne seront pas chargés, probablement parce que le thème les a codés en dur sous forme de liens <code>/img/*</code> ou /<code>css/*</code>.</p>
+<h3 id="Ajouter les bons liens d'actifs">Ajouter les bons liens d'actifs.
+<a href="#Ajouter les bons liens d'actifs" class="toc-anchor after"></a></h3>
+
+<p>Dans Grav, les liens sont rompus car ils pointent vers la route d'accueil, donc au lieu de pointer vers <code>/user/themes/mytheme/img</code>, ils pointent vers <code>/img</code> dans la racine Grav. Puisqu'il est préférable de conserver tous les éléments liés au thème à l'intérieur du thème, nous devons pointer Grav vers l'emplacement correct.</p>
+<p>Recherchez des ressources dans la page et modifiez les références des images de <code>img/*.*</code> à <code>&lt;img src="{{ url('theme://img/*.*', true) }}" /&gt;</code>.</p>
+<p>Les feuilles de style nécessitent un peu plus de réflexion car il y a un pipeline d'actifs que nous voudrons activer à un moment donné, nous les déplaçons donc vers un bloc de feuilles de style dans la balise <code>&lt;head&gt;</code>.</p>
+<p>Exemple:</p>
+<pre><code class="language-twig">1 | {% block stylesheets %}
+2 |     {% do assets.addCss('theme://css/styles.min.css', 100) %}
+3 | {% endblock %}
+4 | {{ assets.css()|raw }}
+</code></pre>
+<p>Il en va de même pour les fichiers JavaScript, avec l'exigence supplémentaire que du JS soit chargé dans le pied de page.</p>
+<p>Exemple:</p>
+<pre><code class="language-twig">1 | {% block javascripts %}
+2 |     {% do assets.addJs('theme://js/custom.js') %}
+3 |     {% do assets.addJs('jquery', 101) %}
+4 | {% endblock %}
+5 | {{ assets.js()|raw }}
+</code></pre>
+<p>Les changements de page devraient maintenant être affichés dans votre navigateur. Si ce n'est pas le cas, assurez-vous que le cache des pages et le cache des brindilles sont désactivés dans les paramètres de configuration du système Grav.</p>
+<p>Ce n'est que le début. Maintenant, vous devrez peut-être ajouter plus de pages et trouver de meilleures façons de présenter le contenu de vos pages à l'aide de l'en-tête FrontMatter et de Twig personnalisé qui traite les éléments de base habituels : les témoignages de la page d'accueil, les critiques, les fonctionnalités du produit, etc. .</p>
+<h3 id="Ajouter une autre page">Ajouter une autre page.
+<a href="#Ajouter une autre page" class="toc-anchor after"></a></h3>
+
+<p>Pour ajouter une autre page, le processus est similaire. Par exemple, supposons que vous souhaitiez ensuite créer la page de blog. Répétez le processus pour ajouter un fichier <code>templates/blog.html.twig</code>, collez la source HTML et créez une page <code>pages/02.blog/blog.md.</code></p>
+<p>Maintenant, alors que les liens d'images à l'intérieur des pages doivent encore être migrés vers la syntaxe des actifs de Grav (ou simplement changer le chemin), vous ne voulez pas répéter le même travail que vous avez fait ci-dessus pour les actifs CSS et JS. Cela devrait être réutilisé sur l'ensemble du site.</p>
+<h3 id="Éléments partagés">Éléments partagés.
+<a href="#Éléments partagés" class="toc-anchor after"></a></h3>
+
+<p>Identifiez les parties communes des pages (en-tête et pied de page) et déplacez-les vers le fichier <code>templates/partials/base.html.twig</code>.</p>
+<p>Chaque modèle de page doit ensuite étendre <code>partials/base.html.twig</code> (https://github.com/getgrav/grav-theme-antimatter/blob/develop/templates/default.html.twig#L1) et ajouter simplement leur unique contenu.</p>
+<h2 id="Ajouter un élément à une page spécifique">Ajouter un élément à une page spécifique.
+<a href="#Ajouter un élément à une page spécifique" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-5 :">Problème :
+<a href="#Problème-5 :" class="toc-anchor after"></a></h3>
+
+<p>Vous devez ajouter un atout à un modèle spécifique sur votre thème.</p>
+<h3 id="La solution-5 :">La solution :
+<a href="#La solution-5 :" class="toc-anchor after"></a></h3>
+
+<p>La plupart du temps, vos actifs seront ajoutés à l'intérieur d'un bloc de brindilles dans votre modèle de base comme ci-dessous.</p>
+<pre><code class="language-twig">1 | {% block javascripts %}
+2 |     {% do assets.addJs('theme://js/jquery.js', 91) %}
+3 | {% endblock %}
+4 | {{ assets.js()|raw }}
+</code></pre>
+<p>Afin d'ajouter votre actif, vous devez étendre ce bloc dans votre modèle et appeler <code>{{ parent() }}</code> qui obtiendra les actifs déjà ajoutés dans votre modèle de base. Supposons que vous souhaitiez ajouter un fichier "gallery.js" sur votre page "Portfolio Gallery". Modifiez votre modèle et ajoutez votre élément avec le <code>{{ parent() }}</code>.</p>
+<pre><code class="language-twig">1 | {% block javascripts %}
+2 |   {% do assets.addJs('theme://js/gallery.js', 100) %}
+3 |   {{ parent() }}
+4 | {% endblock %}
+</code></pre>
+<h2 id="Réutiliser la page ou le contenu modulaire sur une autre page">Réutiliser la page ou le contenu modulaire sur une autre page.
+<a href="#Réutiliser la page ou le contenu modulaire sur une autre page" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-6 : ">Problème : 
+<a href="#Problème-6 : " class="toc-anchor after"></a></h3>
+
+<p>Vous avez de nombreuses pages ou modules et souhaitez partager le même bloc de contenu sur plusieurs pages sans avoir à gérer plusieurs instances distinctes du même texte.</p>
+<h3 id="La solution-6 :">La solution :
+<a href="#La solution-6 :" class="toc-anchor after"></a></h3>
+
+<p>Il s'agit d'une méthode directe très simple qui ne nécessite pas de plugin et peut être utilisée dans le panneau d'administration.</p>
+<p><strong>Remarque :</strong> Il existe également un plugin <a href="https://github.com/getgrav/grav-plugin-page-inject">Grav Page Inject Plugin</a> pour cette fonctionnalité qui peut convenir à des scénarios plus avancés.</p>
+<p>Tout d'abord, créez un nouveau fichier de modèle pour agir comme un espace réservé pour le contenu - il peut avoir n'importe quel nom, celui-ci est nommé "modular<em>reuse" et sera stocké dans le dossier templates/modular de votre thème</em> pour cet exemple mais peut être stocké n'importe où dans le dossier des modèles.</p>
+<p><code>modular_reuse.html.twig</code> ne contient qu'une seule ligne :</p>
+<pre><code>1 | {{ page.content|brut }}
+</code></pre>
+<p>Ensuite, créez une nouvelle page modulaire dans le panneau d'adm*inistration où ce contenu doit être affiché à l'aide de ce nouveau modèle de "réutilisation modulaire". Le nouveau nom de page peut être ce que vous voulez car il ne sera pas affiché - le titre de la page d'origine sera affiché.</p>
+<p>Le contenu de la page est d'une seule ligne : Page :</p>
+<pre><code>1 | {% include 'modular_reuse.html.twig' with {'page': page.find('/test-page/amazing-offers')} %}
+</code></pre>
+<p>Modulaire :</p>
+<pre><code>1 | {% include 'modular/modular_reuse.html.twig' with {'page': page.find('/test-page/_amazing-offers')} %}
+</code></pre>
+<p>Ce qui vient après "include" est l'endroit où le modèle de la première étape est stocké, probablement dans le dossier <code>templates</code> pour les pages du dossier <code>templates/modular</code> pour les modulaires.</p>
+<p>Après page.find devrait venir le lien réel vers le contenu original que vous souhaitez réutiliser. Le contenu modulaire commence par un _ mais pas les pages. Le moyen le plus simple de trouver le bon lien est d'ouvrir la page dans le panneau d'administration et de copier l'URL après le mot admin.</p>
+<p>La page finale devrait ressembler à ceci :</p>
+<pre><code class="language-html">1 | ---
+2 | title: 'Modular Reuse Example'
+3 | ---
+4 | 
+5 | {% include 'modular/modular_reuse.html.twig' with {'page': page.find('/test-page/_amazing-offers')} %}
+</code></pre>
+<p>Désormais, les "offres incroyables" peuvent être affichées à plusieurs endroits, mais ne doivent être mises à jour qu'une seule fois.</p>
+<h2 id="Créez un champ anti-spam personnalisé pour votre formulaire de contact">Créez un champ anti-spam personnalisé pour votre formulaire de contact.
+<a href="#Créez un champ anti-spam personnalisé pour votre formulaire de contact" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-7 :">Problème :
+<a href="#Problème-7 :" class="toc-anchor after"></a></h3>
+
+<p>Les méthodes normales de prévention du spam, comme le champ de pot de miel, sont contournées par certains spam-bots.</p>
+<h3 id="La solution-7 :">La solution :
+<a href="#La solution-7 :" class="toc-anchor after"></a></h3>
+
+<p>Faites en sorte qu'il soit plus difficile pour le bot de deviner ce qu'il peut et ne peut pas remplir lorsqu'il remplit le formulaire de contact. En termes simples, posez une question à laquelle l'utilisateur ne manquera pas de répondre, mais dont les réponses sont difficiles à comprendre pour un bot. Dans votre fichier Markdown avec <a href="/formulaires-ex-formulaire-contact">Form-data</a>, ajoutez ce champ :</p>
+<pre><code class="language-configuration">1  | - name: personality
+2  |       type: radio
+3  |       label: What is five times eight?
+4  |       options:
+5  |         alaska: 32
+6  |         oklahoma: 40
+7  |         california: 48
+8  |       validate:
+9  |         required: true
+10 |         pattern: &quot;^oklahoma$&quot;
+11 |         message: Not quite, try that math again.
+</code></pre>
+<p>La question devrait être quelque chose de simple, mais accompagnée de plusieurs mauvaises réponses simples. Ce qui compte, c'est l'ordre des réponses. La bonne réponse ne devrait jamais être la première ; viser quelque part au milieu. Il est important de randomiser vous-même les valeurs derrière les réponses (étiquettes), de sorte qu'une base de données de valeurs et de réponses associées n'aidera pas à répondre.</p>
+<p>Les robots deviennent de plus en plus intelligents, mais ils ont tendance à renoncer à répondre plusieurs fois à la même question si la première tentative échoue. De plus, même les plus intelligents d'entre eux s'appuient sur des dictionnaires de données connues pour deviner une réponse. Nous posons une question simple, "Qu'est-ce que cinq fois huit?", Et donnons trois options, "32", "40" et "48". La bonne réponse est évidemment "40", mais au lieu de vérifier les compétences en mathématiques du bot, nous attribuons respectivement les valeurs "alaska", "oklahoma" et "californie" à ces nombres. Parce que les bots regardent les valeurs possibles, plutôt que leur étiquette, les réponses n'ont aucun rapport avec la question. Vous pouvez même ajouter une réponse "Ananas" avec la valeur "mississippi" et valider par rapport à cela, et simplement dire à vos utilisateurs de choisir cela comme réponse. Il s'agit de personnaliser la randomisation des données.</p>
+<h2 id="Afficher différents contenus robots.txt pour différents environnements">Afficher différents contenus robots.txt pour différents environnements.
+<a href="#Afficher différents contenus robots.txt pour différents environnements" class="toc-anchor after"></a></h2>
+
+<h3 id="Problème-8 :">Problème :
+<a href="#Problème-8 :" class="toc-anchor after"></a></h3>
+
+<p>Vous avez configuré un sous-domaine, <code>dev.votredomaine.com</code>, en tant que site de développement pour prévisualiser ce sur quoi vous travaillez avant de publier des modifications sur <code>votredomaine.com</code>, et souhaitez interdire aux indexeurs de recherche de l'explorer tout en gardant le site de production visible dans la recherche résultats.</p>
+<h3 id="La solution-8 :">La solution :
+<a href="#La solution-8 :" class="toc-anchor after"></a></h3>
+
+<p>Bien que vous deviez protéger votre site de développement par un mot de passe pour le garder vraiment privé, il est parfois suffisant, et simplement plus pratique, d'interdire simplement aux indexeurs des moteurs de recherche d'explorer votre site. Heureusement, Grav peut gérer les pages au format txt comme il le fait en html, nous pouvons donc utiliser des <a href="avance-config-environnement">configurations d'environnement</a> et des modèles Twig pour terminer le travail.</p>
+<p>Commençons par créer un fichier de configuration <code>site.yaml</code> qui indiquera à notre modèle que <code>dev.votredomaine.com</code> est un environnement de développement.</p>
+<p><code>/user/[dev.votredomaine.com]/config/site.yaml :</code></p>
+<p><code>environment : dev</code></p>
+<p>Ensuite, créez un modèle de page <code>robots.txt.twig</code> qui vérifie si Grav est actuellement en cours d'exécution sur notre site de développement et affiche un contenu différent si c'est le cas.</p>
+<p><code>/user/themes/[votre thème]/templates/robots.txt.twig :</code></p>
+<pre><code class="language-twig">1 | {% if config.site.environment == 'dev' %}
+2 | {% for rule in page.header.dev %}
+3 | {{ rule }}
+4 | {% endfor %}
+5 | 
+6 | {% else %}
+7 | {{ page.content|raw }}
+8 | 
+9 | {% endif %}
+</code></pre>
+<p>Enfin, créez une page routée vers <code>/robots.txt</code> avec les règles <code>robots.txt</code> par défaut dans le contenu de la page, et nos règles de version de développement alternative dans le frontmatter de la page. Pour rendre le contenu de la page sous forme de texte brut au lieu de HTML, nous désactiverons également le rendu Markdown.</p>
+<p><code>/user/pages/robots/robots.md :</code></p>
+<pre><code class="language-configuration">1  | ---
+2  | routes:
+3  |   default: /robots.txt
+4  | process:
+5  |   markdown: false
+6  | 
+7  | dev:
+8  |   - 'User-agent: *'
+9  |   - 'Disallow: /'
+10 | ---
+11 |
+12 | User-agent: *
+13 | Disallow: /backup/
+14 | Disallow: /bin/
+15 | Disallow: /cache/
+16 | Disallow: /grav/
+17 | Disallow: /logs/
+18 | Disallow: /system/
+19 | Disallow: /vendor/
+20 | Disallow: /user/
+21 | Allow: /user/pages/
+22 | Allow: /user/themes/
+23 | Allow: /user/images/
+24 | Allow: /user/plugins/*.css$
+25 | Allow: /user/plugins/*.js$
+</code></pre>
+<p>Vous devriez maintenant avoir un fichier <code>robots.txt</code> placé à la racine de votre site avec un contenu dynamique, également modifiable avec le plugin Admin.</p>
+<p>Remarque : assurez-vous que votre site de production n'affichera pas <code>Disallow: /</code>, car cela oblitérera complètement la visibilité de votre moteur de recherche.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../server-win-pour-linux/" class="btn btn-neutral float-left" title="Sous-système Windows pour Linux"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../cookbook-recettes-twig/" class="btn btn-neutral float-right" title="Recettes Twig">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../server-win-pour-linux/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../cookbook-recettes-twig/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/avance-flex-collection/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Collection Flex - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Collection Flex";
+        var mkdocs_page_input_path = "avance-flex-collection.md";
+        var mkdocs_page_url = "/avance-flex-collection/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Objets Flexibles</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Utilisation d'objets flexibles</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>8. Avancé &raquo;</li>
+          <li>Objets Flexibles &raquo;</li>
+          <li>Utilisation d'objets flexibles &raquo;</li><li>Collection Flex</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Flex Collection</h1>
+
+<p><strong>Flex Collection</strong> est une <strong>carte ordonnée d'objets</strong> qui peut également être utilisée comme une liste.</p>
+<p>Collection fournit quelques méthodes utiles, qui peuvent être utilisées pour rendre la sortie, récupérer des objets, filtrer et trier, etc.</p>
+<div class="notice note">
+<strong>ASTUCE</strong> : Flex Collection étend <a href="https://www.doctrine-project.org/projects/doctrine-collections/en/1.6/index.html">Doctrine Collections</a>.
+</div>
+
+<h1 class="rem" id="Collection de rendu">Collection de rendu.
+<a href="#Collection de rendu" class="toc-anchor after"></a></h1>
+
+<h2 id="render()">render().
+<a href="#render()" class="toc-anchor after"></a></h2>
+
+<p><code>render( [layout], [context] ): Block</code> Rend la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>layout</strong> Nom de la mise en page (<code>string</code>)</li>
+<li><strong>context</strong> Variables supplémentaires pouvant être utilisées dans le fichier de modèle Twig (<code>array</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Bloc</strong> (<code>object</code>) Classe HtmlBlock contenant la sortie</li>
+</ul>
+<div class="notice tip">
+<strong>REMARQUE</strong> : dans twig, il existe une balise <code>{% render %}</code>, qui doit être utilisée au lieu d'appeler directement la méthode. Cela permettra aux ressources JS/CSS de la collection de fonctionner correctement.
+</div>
+
+<p><strong> - Twig</strong></p>
+<pre><code class="language-twig">{% set contacts = grav.get('flex').collection('contacts') %}
+{% set page = 2 %}
+{% set limit = 10 %}
+{% set start = (page - 1) * limit %}
+
+&lt;h2&gt;Contacts:&lt;/h2&gt;
+
+{% render contacts.limit(start, limit) layout: 'cards' with { background: 'gray', color: 'white' } %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\ContentBlock\HtmlBlock;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$page = 2;
+$limit = 10;
+$start = ($page-1)*$limit;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;limit($start, $limit);
+
+    /** @var HtmlBlock $block */
+    $block = $collection-&gt;render('cards', ['background' =&gt;'gray', 'color' =&gt; 'white']);
+
+}
+</code></pre>
+<h1 class="rem" id="Manipulation de collection">Manipulation de collection.
+<a href="#Manipulation de collection" class="toc-anchor after"></a></h1>
+
+<p>Toutes ces méthodes renvoient <strong>une copie modifiée</strong> de la collection. La collection originale reste inchangée.</p>
+<h2 id="sort()">sort().
+<a href="#sort()" class="toc-anchor after"></a></h2>
+
+<p><code>sort( orderings ): Collection</code> Trie la collection par liste paires de <code>property : direction</code>.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>orderings</strong> Ordres Paires de <code>property : direction</code> où la direction est soit 'ASC' soit 'DESC' (<code>array</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance triée de la collection</li>
+</ul>
+<div class="notice note">
+<strong>ASTUCE</strong> : L'ordre de tri par défaut peut être défini pour le frontend dans les blueprints <strong>Flex Type</strong>.
+</div>
+
+<p><strong> - Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.sort({last_name: 'ASC', first_name: 'ASC'}) %}
+
+&lt;div&gt;Displaying all contacts in alphabetical order:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;sort(['last_name' =&gt; 'ASC', 'first_name' =&gt; 'ASC']);
+    // Collection has now be sorted by last name, first name...
+
+}
+</code></pre>
+<h2 id="limit()">limit().
+<a href="#limit()" class="toc-anchor after"></a></h2>
+
+<p><code>limit( start, limit ): Collection</code> Renvoie un sous-ensemble de la collection à partir de <code>start</code> et n'incluant qu'un nombre <code>limit</code> d'objets.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>start</strong> Indice de départ à partir de 0 (`int)</li>
+<li><strong>limit</strong> Nombre maximal d'objets (<code>int</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance filtrée de la collection</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% set page = 3 %}
+{% set limit = 6 %}
+{% set start = (page - 1) * limit %}
+
+{% set contacts = contacts.limit(start, limit) %}
+
+&lt;div&gt;Displaying page {{ page|e }}:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$start = 0;
+$limit = 6;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;limit($start, $limit);
+    // Collection contains only the objects in the current page...
+
+}
+</code></pre>
+<h2 id="filterBy()">filterBy().
+<a href="#filterBy()" class="toc-anchor after"></a></h2>
+
+<p><code>filterBy( filter ): Collection</code> Filtrer la collection par liste de paires <code>property : value</code>.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>filter</strong> Paires de èproperty : value<code>qui sont utilisées pour filtrer la collection (</code>array`)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance filtrée de la collection</li>
+</ul>
+<div class="notice note">
+<strong>ASTUCE</strong> : le filtrage par défaut peut être défini pour le frontend dans les blueprints <strong>Flex Type</strong>.
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.filterBy({'published': true}) %}
+
+&lt;div&gt;Displaying only published contacts:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$start = 0;
+$limit = 6;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;filterBy(['published' =&gt; true]);
+    // Collection contains only published objects...
+
+}
+</code></pre>
+<h2 id="reverse()">reverse().
+<a href="#reverse()" class="toc-anchor after"></a></h2>
+
+<p><code>reverse() : Collection</code> Inverse l'ordre des objets dans la Collection.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance inversée de la collection</li>
+</ul>
+<div class="notice note">
+<strong>ASTUCE</strong> : si vous utilisez <code>sort()</code>, il est recommandé d'inverser l'ordre car cela permet d'économiser une étape supplémentaire.
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.reverse() %}
+
+&lt;div&gt;Displaying contacts in reverse ordering:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$start = 0;
+$limit = 6;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;reverse();
+    // Collection is now in reverse ordering...
+
+}
+</code></pre>
+<h2 id="shuffle()">shuffle().
+<a href="#shuffle()" class="toc-anchor after"></a></h2>
+
+<p><code>shuffle() : Collection</code> Mélange les objets dans un ordre aléatoire.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>)  Nouvelle instance ordonnée au hasard de la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.shuffle().limit(0, 6) %}
+
+&lt;div&gt;Displaying 6 random contacts:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;shuffle()-&gt;limit(0,6);
+    // Collection contains 6 random contacts...
+
+}
+</code></pre>
+<h2 id="select()">select().
+<a href="#select()" class="toc-anchor after"></a></h2>
+
+<p><code>select( keys ): Collection</code> Sélectionne des objets (par leurs clés) dans la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>keys</strong> Liste des clés d'objets utilisées pour sélectionner les objets (<code>array</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance de la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% set selected = ['gizwsvkyo5xtms2s', 'gjmva53uoncdo4sb', 'mfzwwtcugv5hkocd', 'k5nfctkeoftwi4zu'] %}
+
+{% set contacts = contacts.select(selected) %}
+
+&lt;div&gt;Displaying 4 selected contacts:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$selected = ['gizwsvkyo5xtms2s', 'gjmva53uoncdo4sb', 'mfzwwtcugv5hkocd', 'k5nfctkeoftwi4zu'];
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;select($selected);
+    // Collection now contains the 4 selected contacts...
+
+}
+</code></pre>
+<h2 id="unselect()">unselect().
+<a href="#unselect()" class="toc-anchor after"></a></h2>
+
+<p><code>unselect( keys ): Collection</code> Supprime les objets (par leurs clés) de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>keys</strong> Liste des clés d'objet utilisées pour supprimer les objets (<code>array</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance de la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% set ignore = ['gizwsvkyo5xtms2s', 'gjmva53uoncdo4sb', 'mfzwwtcugv5hkocd', 'k5nfctkeoftwi4zu'] %}
+
+{% set contacts = contacts.unselect(ignore) %}
+
+&lt;div&gt;Displaying all but 4 ignored contacts:&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+$ignore = ['gizwsvkyo5xtms2s', 'gjmva53uoncdo4sb', 'mfzwwtcugv5hkocd', 'k5nfctkeoftwi4zu'];
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;unselect($ignore);
+    // Collection now contains all but 4 ignored contacts...
+
+}
+</code></pre>
+<h2 id="search()">search().
+<a href="#search()" class="toc-anchor after"></a></h2>
+
+<p><code>search( string, [properties], [options] ): Collection</code> Recherche une chaîne dans la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>string</strong> Chaîne de recherche (<code>string</code>)</li>
+<li><strong>property</strong> Propriétés à rechercher, si null (ou non fournies), utilisez les valeurs par défaut (<code>array</code> ou <code>null</code>)</li>
+<li><strong>options</strong> Options supplémentaires utilisées lors de la recherche (<code>array</code>)<ul>
+<li>commence_par : <code>bool</code></li>
+<li>se termine par : <code>bool</code></li>
+<li>contient : <code>bool</code></li>
+<li>sensible à la casse : <code>bool</code></li>
+</ul>
+</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Nouvelle instance filtrée de la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.search('Jack', ['first_name', 'last_name', 'email'], {'contains': true}) %}
+
+&lt;div&gt;Displaying all search results for 'Jack':&lt;/div&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;search('Jack', ['first_name', 'last_name', 'email'], ['contains' =&gt; true]);
+    // Collection now contains all search results...
+
+}
+</code></pre>
+<h2 id="copy()">copy().
+<a href="#copy()" class="toc-anchor after"></a></h2>
+
+<p><code>copy() : Collection</code> Crée une copie de la collection en clonant tous les objets de la collection.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>)  Nouvelle instance de la collection, maintenant avec des objets clonés.</li>
+</ul>
+<div class="notice warning">
+<strong>ATTENTION</strong> : Si vous modifiez des objets dans votre collection, vous devez toujours utiliser des copies !
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contacts = contacts.shuffle().limit(0, 10) %}
+{% set fakes = contacts.copy() %}
+
+{% do fakes.setProperty('first_name', 'JACK') %}
+
+&lt;h2&gt;Fake cards&lt;/h2&gt;
+{% render fakes layout: 'cards' %}
+
+&lt;h2&gt;Original cards&lt;/h2&gt;
+{% render contacts layout: 'cards' %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    $collection = $collection-&gt;search('Jack', ['first_name', 'last_name', 'email'], ['contains' =&gt; true]);
+    // Collection now contains all search results...
+
+}
+</code></pre>
+<h1 id="Itérer dans la collection">Itérer dans la collection.
+<a href="#Itérer dans la collection" class="toc-anchor after"></a></h1>
+
+<p>Les <strong>Collections</strong> peuvent être itérées.</p>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+&lt;h2&gt;All contacts:&lt;/h2&gt;
+&lt;ul&gt;
+  {% for contact in contacts %}
+    &lt;li&gt;{{ contact.first_name|e }} {{ contact.last_name|e }}&lt;/li&gt;
+  {% endfor %}
+&lt;/ul&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface $object */
+    foreach ($collection as $object) {
+        // Do something with the object...
+    }
+
+}
+</code></pre>
+<h2 id="first()">first().
+<a href="#first()" class="toc-anchor after"></a></h2>
+
+<p><code>first() : Object | false</code> Définit l'itérateur sur le premier objet de la collection et renvoie cet objet.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Premier objet</li>
+<li><strong>false</strong> Aucun objet dans la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contact = contacts.first() %}
+
+{% if contact %}
+    &lt;h2&gt;First contact:&lt;/h2&gt;
+    &lt;div&gt;{{ contact.first_name|e }} {{ contact.last_name|e }}&lt;/div&gt;
+{% endif %}
+&lt;/ul&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface|false $object */
+    $object = $collection-&gt;first();
+    if ($object) {
+        // Do something with the object...
+    }
+
+}
+</code></pre>
+<h2 id="last()">last().
+<a href="#last()" class="toc-anchor after"></a></h2>
+
+<p><code>last() : Object | false</code> Définit l'itérateur sur le dernier objet de la collection et renvoie cet objet.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Dernier objet</li>
+<li><strong>false</strong> Aucun objet dans la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contact = contacts.last() %}
+
+{% if contact %}
+    &lt;h2&gt;Last contact:&lt;/h2&gt;
+    &lt;div&gt;{{ contact.first_name|e }} {{ contact.last_name|e }}&lt;/div&gt;
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface|false $object */
+    $object = $collection-&gt;last();
+    if ($object) {
+        // Do something with the object...
+    }
+
+}
+</code></pre>
+<h2 id="next()">next().
+<a href="#next()" class="toc-anchor after"></a></h2>
+
+<p><code>next() : object | false</code> Déplace la position de l'itérateur vers l'objet suivant et renvoie cet élément.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Objet suivant</li>
+<li><strong>false</strong> Plus d'objets dans la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% set first = contacts.first() %}
+...
+
+{% set contact = contacts.next() %}
+
+{% if contact %}
+    &lt;h2&gt;Next contact is:&lt;/h2&gt;
+    &lt;div&gt;{{ contact.first_name|e }} {{ contact.last_name|e }}&lt;/div&gt;
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface|false $object */
+    while ($object = $collection-&gt;next()) {
+        // Do something with the object...
+    }
+
+}
+</code></pre>
+<h2 id="current()">current().
+<a href="#current()" class="toc-anchor after"></a></h2>
+
+<p><code>current() : object | false</code> Obtient l'objet de la collection à la position actuelle de l'itérateur.</p>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Collection</a> (<code>object</code>) Objet courant</li>
+<li><strong>false</strong> Plus d'objets dans la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% do contacts.next() %}
+{% do contacts.next() %}
+...
+
+{% set contact = contacts.current() %}
+
+{% if contact %}
+    &lt;h2&gt;Current contact is:&lt;/h2&gt;
+    &lt;div&gt;{{ contact.first_name|e }} {{ contact.last_name|e }}&lt;/div&gt;
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+    while ($collection-&gt;next()) {
+
+        /** @var FlexObjectInterface|false $object */
+        $object = $collection-&gt;current();
+        // Do something with the object...
+
+    }
+}
+</code></pre>
+<h2 id="key()">key().
+<a href="#key()" class="toc-anchor after"></a></h2>
+
+<p>key<code>() : key | null</code> Obtient la clé de l'objet à la position actuelle de l'itérateur.</p>
+<p>Retour:</p>
+<ul>
+<li><strong>key</strong> (<code>string</code>) Clé d'objet</li>
+<li><code>null</code> Plus d'objets dans la collection.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+{% do contacts.next() %}
+{% do contacts.next() %}
+...
+
+{% set key = contacts.key() %}
+
+{% if key %}
+    Current contact key is: &lt;strong&gt;{{ key|e }}&lt;/strong&gt;
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+    while ($collection-&gt;next()) {
+
+        $key = $collection-&gt;key();
+        // Do something with the key...
+
+    }
+}
+</code></pre>
+<h1 id="Obtenir objet/clé">Obtenir objet/clé.
+<a href="#Obtenir objet/clé" class="toc-anchor after"></a></h1>
+
+<h2 id="Accès au tableau">Accès au tableau.
+<a href="#Accès au tableau" class="toc-anchor after"></a></h2>
+
+<p>Les <strong>Collections</strong> sont accessibles comme des tableaux associatifs ou des cartes.</p>
+<div class="notice tip">
+<strong>REMARQUE</strong> : <code>null</code> est renvoyé si l'objet avec la clé donnée n'est pas dans la collection.
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contact = contacts['ki2ts4cbivggmtlj']
+
+{# Do something #}
+{% if contact %}
+  {# Got Bruce Day #}
+  Email for {{ contact.first_name|e }} {{ contact.last_name|e }} is {{ contact.email|e }}
+{% else %}
+  Oops, contact has been removed!
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface|null $object */
+    $object = $collection['ki2ts4cbivggmtlj'];
+    if ($object) {
+        // Object exists, do something with it...
+    }
+
+}
+</code></pre>
+<h2 id="get()">get().
+<a href="#current()" class="toc-anchor after"></a></h2>
+
+<p><code>get( clé ): Object | null</code> Obtient l'objet avec la clé spécifiée.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>key</strong> Clé d'objet (<code>string</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Object</strong> (<code>object</code>)</li>
+<li><code>null</code> L'objet avec la clé donnée n'est pas dans la collection.</li>
+</ul>
+<p>Alternative à <a href="#Accès au tableau">l'accès aux tableaux</a>.</p>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set contact = contacts.get('ki2ts4cbivggmtlj')
+
+{# Do something #}
+{% if contact %}
+  {# Got Bruce Day #}
+  Email for {{ contact.first_name|e }} {{ contact.last_name|e }} is {{ contact.email|e }}
+{% else %}
+  Oops, contact has been removed!
+{% endif %}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface|null $object */
+    $object = $collection-&gt;get('ki2ts4cbivggmtlj');
+    if ($object) {
+        // Object exists, do something with it...
+    }
+
+}
+</code></pre>
+<h1 id="Collection en tant que tableau">Collection en tant que tableau.
+<a href="#Collection en tant que tableau" class="toc-anchor after"></a></h1>
+
+<h2 id="getKeys()">getKeys().
+<a href="#getKeys()" class="toc-anchor after"></a></h2>
+
+<p><code>getKeys() : array</code> Récupère toutes les clés de la collection.</p>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste des clés</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set keys = contacts.keys() %}
+
+Keys are: {{ keys|join(', ')|e }}
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var string[] $keys */
+    $keys = $collection-&gt;getKeys();
+    $keysList = implode(', ', $keys);
+
+}
+</code></pre>
+<h2 id="GetObjectKeys()">GetObjectKeys().
+<a href="#GetObjectKeys()" class="toc-anchor after"></a></h2>
+
+<p><code>GetObjectKeys() : array</code> Alias ​​de la méthode <code>getKeys().</code></p>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste des clés</li>
+</ul>
+<h2 id="getValues()">getValues().
+<a href="#getValues()" class="toc-anchor after"></a></h2>
+
+<p><code>getValues() : array</code> Récupère tous les objets de la collection.</p>
+<p>Convertit la collection en tableau. Les clés ne sont pas conservées.</p>
+<p>Retour:</p>
+<ul>
+<li>Liste des <strong>Objects</strong> (<code>array</code>)</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set list = contacts.values() %}
+&lt;ol&gt;
+{% for i,object in list %}
+    &lt;li&gt;#{{ (i+1)|e }}: {{ object.email|e }}&lt;/li&gt;
+{% endfor %}
+&lt;/ol&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var FlexObjectInterface[] $objects */
+    $objects = $collection-&gt;getValues();
+    foreach ($objects as $pos =&gt; $object) {
+        // Do something with the object and its position...
+    }
+
+}
+</code></pre>
+<h2 id="toArray()">toArray().
+<a href="#toArray()" class="toc-anchor after"></a></h2>
+
+<p><code>toArray() : array</code> Obtient une représentation PHP native de tableau de la collection.</p>
+<p>Similaire à <code>getValues()</code> mais préserve les clés.</p>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste de paires <code>key : Objects</code>.</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set list = contacts.toArray() %}
+&lt;ol&gt;
+{% for key,object in list %}
+    &lt;li&gt;ID: {{ key|e }}: {{ object.email|e }}&lt;/li&gt;
+{% endfor %}
+&lt;/ol&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var array&lt;string, FlexObjectInterface&gt; $objects */
+    $objects = $collection-&gt;toArray();
+    foreach ($objects as $key =&gt; $object) {
+        // Do something with the object and its key...
+    }
+
+}
+</code></pre>
+<h2 id="slice()">slice().
+<a href="#slice()" class="toc-anchor after"></a></h2>
+
+<p><code>slice( offset, length ): array</code> Extrait une tranche de <code>lenght</code> éléments  commençant à la position <code>offset</code> de la Collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>offset</strong> Décalage de départ à partir de 0 (int).</li>
+<li><strong>lenght</strong> Nombre maximal d'objets (int).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste de paires <code>key : Objects</code>.</li>
+</ul>
+<div class="notice note">
+<strong>CONSEIL</strong> : Cette méthode peut être utilisée pour la pagination.
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set list = contacts.slice(10, 5) %}
+
+&lt;div&gt;Displaying 5 emails starting from offset 10:&lt;/div&gt;
+&lt;ol&gt;
+{% for key,object in list %}
+    &lt;li&gt;ID: {{ key|e }}: {{ object.email|e }}&lt;/li&gt;
+{% endfor %}
+&lt;/ol&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var array&lt;string, FlexObjectInterface&gt; $objects */
+    $objects = $collection-&gt;slice(10, 5);
+
+    // Do something with the object and its key...
+
+}
+</code></pre>
+<h2 id="chunk()">chunk().
+<a href="#chunk()" class="toc-anchor after"></a></h2>
+
+<p><code>chunk( size ): array</code> Divise la collection en morceaux d'objets de taille.</p>
+<p>Paramètres:</p>
+<ul>
+<li><code>size</code> Taille des morceaux (int).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste bidimensionnelle de paires <code>key : Objects</code>.</li>
+</ul>
+<div class="notice note">
+<strong>CONSEIL</strong> : Cette méthode peut être utilisée pour diviser le contenu en lignes et en colonnes.
+</div>
+
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set columns = contacts.limit(0, 10).chunk(5) %}
+
+&lt;div&gt;Displaying two columns of 5 emails each:&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+{% for column,list in columns %}
+    &lt;div class=&quot;column&quot;&gt;
+    {% for object in list %}
+        &lt;div&gt;{{ object.email|e }}&lt;/div&gt;
+    {% endfor %}
+    &lt;/div&gt;
+{% endfor %}
+&lt;/div&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var array $columns */
+    $columns = $collection-&gt;limit(0, 10)-&gt;chunk(5);
+    /** @var
+        int $column
+        array&lt;string, FlexObjectInterface&gt; $objects
+    */
+    foreach ($columns as $column =&gt; $objects) {
+        // Do something with the objects...
+    }
+}
+
+}
+</code></pre>
+<h2 id="group()">group().
+<a href="#group()" class="toc-anchor after"></a></h2>
+
+<p><code>group( property ): array</code> Regrouper les objets de la collection par une propriété et les renvoyer sous forme de tableau associé.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété utilisée pour regrouper les objets (<code>string</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Liste bidimensionnelle de paires <code>key : Objects</code> où la valeur de la propriété est la clé du premier niveau</li>
+</ul>
+<p><strong>- Twig</strong></p>
+<pre><code class="language-console">{% set contacts = grav.get('flex').collection('contacts') %}
+
+{% set by_name = contacts.sort({last_name: 'ASC', first_name: 'ASC'}).group('last_name') %}
+
+&lt;div&gt;Displaying contacts grouped by last name:&lt;/div&gt;
+&lt;div&gt;
+{% for last_name,list in by_name %}
+    {{ last_name|e }}:
+    &lt;ul&gt;
+    {% for object in list %}
+        &lt;li&gt;{{ object.first_name|e }}&lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+{% endfor %}
+&lt;/div&gt;
+</code></pre>
+<p><strong> - PHP</strong></p>
+<pre><code class="language-php">use Grav\Common\Grav;
+use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
+use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+
+/** @var FlexCollectionInterface|null $collection */
+$collection = Grav::instance()-&gt;get('flex')-&gt;getCollection('contacts');
+if ($collection) {
+
+    /** @var array $byName */
+    $byName = $collection-&gt;group('last_name');
+    /** @var
+        string $lastName
+        array&lt;string, FlexObjectInterface&gt; $objects
+    */
+    foreach ($byName as $lastName =&gt; $objects) {
+        // Do something with the objects...
+    }
+}
+
+}
+</code></pre>
+<h1 id="Ajout et suppression d'objets">Ajout et suppression d'objets.
+<a href="#Ajout et suppression d'objets" class="toc-anchor after"></a></h1>
+
+<h2 id="add()">add().
+<a href="#add()" class="toc-anchor after"></a></h2>
+
+<p><code>add( Object )</code> Ajoute un Object à la fin de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><a href="./">Objet</a> Objet à ajouter (<code>objet</code>).</li>
+</ul>
+<h2 id="remove()">remove().
+<a href="#remove()" class="toc-anchor after"></a></h2>
+
+<p><code>remove (key): Objet | null</code> Supprime l'élément à l'index spécifié de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>key</strong> Clé de l'objet à supprimer (<code>object</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><a href="./">Objet</a> Objet supprimé (<code>object</code>) ou <code>null</code> s'il n'a pas été trouvé</li>
+</ul>
+<h2 id="removeElement()">removeElement().
+<a href="#removeElement()" class="toc-anchor after"></a></h2>
+
+<p><code>removeElement( Object ): bool</code> Supprime l'objet spécifié de la collection, s'il est trouvé.</p>
+<p>Paramètres:</p>
+<ul>
+<li><a href="./">Objet</a> Objet à supprimer (<code>object</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>true</code> si l'objet était dans la collection, <code>false</code> sinon.</li>
+</ul>
+<h2 id="clear()">clear().
+<a href="#clear()" class="toc-anchor after"></a></h2>
+
+<p><code>clear()</code> Efface la collection, supprimant tous les éléments.</p>
+<h1 id="Essais">Essais.
+<a href="#Essais" class="toc-anchor after"></a></h1>
+
+<h2 id="containsKey()">containsKey().
+<a href="#containsKey()" class="toc-anchor after"></a></h2>
+
+<p><code>containsKey( key ): bool</code> Vérifie si la collection contient un objet avec la clé spécifiée.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>key</strong> Clé à tester (<code>string</code>)</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>true</code> si l'objet est dans la collection, <code>false</code> sinon</li>
+</ul>
+<h2 id="contains()">contains().
+<a href="#contains()" class="toc-anchor after"></a></h2>
+
+<p><code>contains( object ): bool</code> Vérifie si un élément est contenu dans la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><a href="./">Objet</a> Objet à tester (<code>object</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>true</code> si l'objet est dans la collection, <code>false</code> sinon</li>
+</ul>
+<h2 id="indesOf()">indesOf().
+<a href="#indesOf()" class="toc-anchor after"></a></h2>
+
+<p><code>indexOf( objet ): string | false</code> Obtient l'index/la clé d'un objet donné.</p>
+<p>Paramètres:</p>
+<ul>
+<li><a href="./">Objet</a> Objet à tester (<code>object</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>string</code> index/key de l'objet, <code>false</code> si l'objet n'a pas été trouvé.</li>
+</ul>
+<h2 id="isEmpty()">isEmpty().
+<a href="#isEmpty()" class="toc-anchor after"></a></h2>
+
+<p><code>isEmpty() : bool</code> Vérifie si la collection est vide (ne contient aucun objet).</p>
+<p>Retour:</p>
+<ul>
+<li><code>true</code> si la collection est vide, <code>false</code> sinon.</li>
+</ul>
+<h2 id="count()">count().
+<a href="#count()" class="toc-anchor after"></a></h2>
+
+<p><code>count') : int</code></p>
+<p>Retour:</p>
+<ul>
+<li><code>int</code> Nombre d'objets dans la collection.</li>
+</ul>
+<h1 id="Actions groupées pour les objets">Actions groupées pour les objets.
+<a href="#Actions groupées pour les objets" class="toc-anchor after"></a></h1>
+
+<h2 id="hasProperty()">hasProperty().
+<a href="#hasProperty()" class="toc-anchor after"></a></h2>
+
+<p><code>hasProperty( property ): array</code> Renvoie une liste de paires <code>key:boolean</code> si l'objet avec key a une propriété définie ou non.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété (<code>string</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> de paires de <code>key: bool</code>, où <code>key</code> est la clé de l'objet et <code>bool</code> est soit vrai soit faux.</li>
+</ul>
+<h2 id="getProperty()">getProperty().
+<a href="#getProperty()" class="toc-anchor after"></a></h2>
+
+<p><code>getProperty( property, default ): array</code> Renvoie une liste de <code>key: value</code> pour chaque objet.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété (<code>string</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> de paires de <code>key: value</code>, où <code>key</code> est la clé de l'objet et <code>value</code> est la valeur de la propriété.</li>
+</ul>
+<h2 id="setProperty()">setProperty().
+<a href="#setProperty()" class="toc-anchor after"></a></h2>
+
+<p><code>setProperty( property, value ): Collection</code> Définit une nouvelle valeur pour la propriété de chaque objet de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété (<code>string</code>).</li>
+<li><strong>value</strong>  Nouvelle valeur (<code>mixed</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) La collection pour enchaîner les appels de méthode.</li>
+</ul>
+<div class="notice warning">
+<strong>AVERTISSEMENT</strong> : Cette méthode modifie les instances d'objet partagées entre toutes les collections, si ce n'est pas prévu, veuillez <a href="#copy().">copy </a> la collection avant d'utiliser cette méthode.
+</div>
+
+<h2 id="defProperty()">defProperty().
+<a href="#defProperty()" class="toc-anchor after"></a></h2>
+
+<p><code>defProperty( property, default ): Collection</code> Définit la valeur par défaut de la propriété pour chaque objet de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété (<code>string</code>).</li>
+<li><strong>default</strong> Valeur par défaut (<code>mixed</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) La collection pour enchaîner les appels de méthode.</li>
+</ul>
+<div class="notice warning">
+<strong>AVERTISSEMENT</strong> : Cette méthode modifie les instances d'objet partagées entre toutes les collections, si ce n'est pas prévu, veuillez <a href="#copy().">copy </a> la collection avant d'utiliser cette méthode.
+</div>
+
+<h2 id="unsetProperty()">unsetProperty().
+<a href="#unsetProperty()" class="toc-anchor after"></a></h2>
+
+<p><code>unsetProperty( property ): Collection</code> Supprime la valeur de la propriété pour chaque objet de la collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> Nom de la propriété (<code>string</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) La collection pour enchaîner les appels de méthode.</li>
+</ul>
+<div class="notice warning">
+<strong>AVERTISSEMENT</strong> : Cette méthode modifie les instances d'objet partagées entre toutes les collections, si ce n'est pas prévu, veuillez <a href="#copy().">copy </a> la collection avant d'utiliser cette méthode.
+</div>
+
+<h2 id="call()">call().
+<a href="#call()" class="toc-anchor after"></a></h2>
+
+<p><code>call( method, arguments): array</code> Appelle une méthode pour chaque objet de la collection. Renvoie les résultats de chaque appel.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>method</strong> Nom de la méthode (<code>string</code>).</li>
+<li><strong>arguments</strong> Liste des arguments (<code>array</code>).</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li>Liste de paires <code>key: result</code> (<code>array</code>)</li>
+</ul>
+<div class="notice warning">
+<strong>AVERTISSEMENT</strong> : Si la méthode modifie l'objet, veuillez <a href="#copy().">copy </a> la collection avant d'utiliser cette méthode.
+</div>
+
+<h2 id="getTimestamps()">getTimestamps().
+<a href="#getTimestamps()" class="toc-anchor after"></a></h2>
+
+<p><code>getTimestamps() : array</code> Renvoie une liste de <code>key : timestamp</code> pour chaque objet.</p>
+<p>Retour:</p>
+<ul>
+<li>Liste de paires <code>key : timestamp</code> où l'horodatage est un entier (<code>array</code>).</li>
+</ul>
+<h2 id="getStorageKeys()">getStorageKeys().
+<a href="#getStorageKeys()" class="toc-anchor after"></a></h2>
+
+<p><code>getStorageKeys() : array</code> Renvoie une liste de key: storage_key pour chaque objet.</p>
+<p>Retour:</p>
+<ul>
+<li>Liste de paires <code>key : storage_key</code> (<code>array</code>).</li>
+</ul>
+<h2 id="getFlexKeys()">getFlexKeys().
+<a href="#getFlexKeys()" class="toc-anchor after"></a></h2>
+
+<p><code>getFlexKeys() : array</code> Renvoie une liste de <code>key : flex_key</code> pour chaque objet.</p>
+<p>Retour:</p>
+<ul>
+<li>Liste de paires <code>key : flex_key</code> (<code>array</code>).</li>
+</ul>
+<h2 id="withKeyField()">withKeyField().
+<a href="#withKeyField()" class="toc-anchor after"></a></h2>
+
+<p><code>withKeyField( field ): Collection</code> Renvoie une nouvelle collection avec une clé différente.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>field</strong> Champ clé (<code>string</code>)<ul>
+<li>'key' : clé par défaut utilisée par le répertoire</li>
+<li>'storage_key' : clé de la couche de stockage</li>
+<li>'flex_key' : clé unique pouvant être utilisée sans connaître le répertoire</li>
+</ul>
+</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) La collection, mais indexée avec la nouvelle clé.</li>
+</ul>
+<h1 id="Tests de fermeture (PHP uniquement)">Tests de fermeture (PHP uniquement).
+<a href="#Tests de fermeture (PHP uniquement)" class="toc-anchor after"></a></h1>
+
+<h2 id="exist()">exist().
+<a href="#exist()" class="toc-anchor after"></a></h2>
+
+<p><code>exists( Closure ): bool</code> Teste l'existence d'un objet qui satisfait le prédicat donné.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>Closure</strong> Méthode utilisée pour tester chaque objet.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>bool</code> True si votre fonction de rappel renvoie true pour n'importe quel objet.</li>
+</ul>
+<h2 id="forAll()">forAll().
+<a href="#forAll()" class="toc-anchor after"></a></h2>
+
+<p><code>forAll( Closure ): bool</code> Teste si le prédicat donné est valable pour tous les objets de cette collection.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>Closure</strong> Méthode utilisée pour tester chaque objet.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>bool</code> True si votre fonction de rappel renvoie true pour n'importe quel objet.</li>
+</ul>
+<h1 id="Filtrage de fermeture (PHP uniquement)">Filtrage de fermeture (PHP uniquement).
+<a href="#Filtrage de fermeture (PHP uniquement)" class="toc-anchor after"></a></h1>
+
+<h2 id="filter()">filter.
+<a href="#filter()" class="toc-anchor after"></a></h2>
+
+<p><code>filter( Closure ): Collection</code> Renvoie tous les objets de cette collection qui satisfont le prédicat.</p>
+<p>L'ordre des éléments est conservé.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>Closure</strong> Méthode utilisée pour tester un seul objet.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) Nouvelle collection avec tous les objets pour lesquels votre fonction de rappel renvoie true.</li>
+</ul>
+<h2 id="map()">map().
+<a href="#map()" class="toc-anchor after"></a></h2>
+
+<p><code>map( Closure ): Collection</code> Applique la fonction donnée à chaque objet de la collection et renvoie une nouvelle collection avec les objets renvoyés par la fonction.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>Closure</strong> Méthode utilisée pour tester un seul objet.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) Nouvelle collection avec des objets renvoyés par la fonction de rappel.</li>
+</ul>
+<h2 id="collectionGroup()">collectionGroup().
+<a href="#collectionGroup()" class="toc-anchor after"></a></h2>
+
+<p><code>collectionGroup( property ): Collection[]</code> Regrouper les objets de la collection par un champ et les renvoyer sous forme de tableau associé de collections.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>property</strong> (<code>string</code>) Propriété utilisée pour regrouper les objets.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Plusieurs collections dans un tableau, key étant la valeur de la propriété.</li>
+</ul>
+<h2 id="matching()">matching().
+<a href="#matching()" class="toc-anchor after"></a></h2>
+
+<p><code>matching( Criteria ): Collection</code> Sélectionne tous les objets qui correspondent à l'expression et renvoie une nouvelle collection contenant ces objets.</p>
+<p>Paramètres:</p>
+<ul>
+<li><a href="https://www.doctrine-project.org/projects/doctrine-collections/en/1.6/expression-builder.html#expression-builder">Criteria</a> Expression.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) Nouvelle collection avec des objets correspondant aux critères.</li>
+</ul>
+<div class="notice tip">
+<strong>ASTUCE</strong> : consultez la documentation de Doctrine pour le <a href="(https://www.doctrine-project.org/projects/doctrine-collections/en/1.6/expression-builder.html#expression-builder">générateur d'expressions</a> et les <a href="https://www.doctrine-project.org/projects/doctrine-collections/en/1.6/expressions.html#expressions">expressions</a>.
+</div>
+
+<h2 id="orderBy()">orderBy().
+<a href="#orderBy()" class="toc-anchor after"></a></h2>
+
+<p><code>orderBy( array ): Collection</code> Réorganise la collection par liste de paires propriété/valeur.</p>
+<p>Paramètres:</p>
+<ul>
+<li><code>array</code></li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><strong>Collection</strong> (<code>object</code>) Nouvelle collection avec le nouvel ordre.</li>
+</ul>
+<h2 id="partition()">partition().
+<a href="#partition()" class="toc-anchor after"></a></h2>
+
+<p><code>partition( Closure ): array</code> Partitionne cette collection en deux collections selon un prédicat.</p>
+<p>Les clés sont conservées dans les collections résultantes.</p>
+<p>Paramètres:</p>
+<ul>
+<li><strong>Closue</strong> Méthode utilisée pour partitionner un seul objet. Renvoie vrai ou faux.</li>
+</ul>
+<p>Retour:</p>
+<ul>
+<li><code>array</code> Objets partitionnés <code>[[a, b], [c, d, e]]</code>.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../avance-flex-repertoire/" class="btn btn-neutral float-left" title="Répertoire Flex"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../avance-flex-objets-flex/" class="btn btn-neutral float-right" title="Objets Flex">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../avance-flex-repertoire/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../avance-flex-objets-flex/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

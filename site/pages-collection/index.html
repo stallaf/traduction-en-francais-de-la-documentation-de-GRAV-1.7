@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/pages-collection/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Collection de pages - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Collection de pages";
+        var mkdocs_page_input_path = "pages-collection.md";
+        var mkdocs_page_url = "/pages-collection/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>2. Contenu &raquo;</li><li>Collection de pages</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class = "rem">Collections de pages</h1>
+
+<p>Dans Grav, le type de collection le plus courant est une liste de pages qui peut être définie soit dans le frontmatter de la page, soit dans le Twig lui-même. La plus courante consiste à définir une collection dans le frontmatter. Avec une collection définie, elle est disponible dans le Twig de la page pour en faire ce que vous voulez. En utilisant des méthodes de collecte de pages ou en parcourant chaque <a href="./variables-theme#objet page">objet de page</a> et en utilisant les méthodes ou propriétés de page, vous pouvez faire des choses puissantes. Des exemples courants de ceci incluent l'affichage d'une liste d'articles de blog ou l'affichage de sous-pages modulaires pour rendre une conception de page complexe.</p>
+<h2 id="Collection d'objets">Collection d'objets
+<a href="#Collection d'objets" class="toc-anchor after"></a></h2>
+
+<p>Lorsque vous définissez une collection dans l'en-tête de la page, vous créez dynamiquement une <a href="https://github.com/getgrav/grav/blob/develop/system/src/Grav/Common/Page/Collection.php">Collection Grav</a> qui est disponible dans le Twig de la page. Cet Collection d'objets est <strong>itérable</strong> et peut être traité comme un <strong>tableau</strong> qui vous permet de faire des choses telles que :</p>
+<pre><code>1 | {{ dump(page.collection[page.path]) }}
+</code></pre>
+<h2 id="Exemple de définition de collection">Exemple de définition de collection
+<a href="#Exemple de définition de collection" class="toc-anchor after"></a></h2>
+
+<p>Un exemple de collection définie dans le frontmatter de la page :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.children'
+3 |     order:
+4 |         by: date
+5 |          dir: desc
+6 |     limit: 10
+7 |     pagination: true
+</code></pre>
+<p>La valeur <code>content.items</code> dans le frontmatter de la page indique à Grav de rassembler une collection d'éléments et les informations transmises à ceci définissent comment la collection doit être construite.</p>
+<p>Cette définition crée une collection pour la page qui se compose de toutes les <strong>pages enfants</strong> triées par <strong>date</strong> dans l'ordre <strong>décroissant</strong> avec une <strong>pagination</strong> affichant <strong>10 éléments</strong> par page.</p>
+<h2 id="Accéder aux collections dans Twig">Accéder aux collections dans Twig
+<a href="#Accéder aux collections dans Twig" class="toc-anchor after"></a></h2>
+
+<p>Lorsque cette collection est définie dans le header, Grav crée une collection <strong>page.collection</strong> à laquelle vous pouvez accéder dans un template twig avec :</p>
+<pre><code class="language-yaml">1 | {% for p in page.collection %}
+2 | &lt;h2&gt;{{ p.title|e }}&lt;/h2&gt;
+3 | {{ p.summary|raw }}
+4 | {% endfor %}
+</code></pre>
+<p>Cela boucle simplement sur les <a href="./variables-theme#objet page">pages</a> de la collection affichant le titre et le résumé.</p>
+<p>Vous pouvez également inclure un paramètre d'ordre pour modifier l'ordre par défaut des pages :</p>
+<pre><code class="language-yaml">1 | {% for p in page.collection.order('folder','asc') %}
+2 | &lt;h2&gt;{{ p.title|e }}&lt;/h2&gt;
+3 | {{ p.summary|raw }}
+4 | {% endfor %}
+</code></pre>
+<h2 id="En-têtes de collection">En-têtes de collection
+<a href="#En-têtes de collection" class="toc-anchor after"></a></h2>
+
+<p>Pour indiquer à Grav qu'une page spécifique doit être une page de liste et contenir des pages enfants, il existe un certain nombre de variables qui peuvent être utilisées :</p>
+<h3 id="Résumé des options de collection">Résumé des options de collection
+<a href="#Résumé des options de collection" class="toc-anchor after"></a></h3>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>CHAINE</strong></th>
+<th align="left"><strong>RÉSULTAT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>'@root.pages'</code></td>
+<td align="left">Récupère les pages de niveau supérieur.</td>
+</tr>
+<tr>
+<td align="left"><code>'@root.descendants'</code></td>
+<td align="left">Récupère toutes les pages du site.</td>
+</tr>
+<tr>
+<td align="left"><code>'@root.all'</code></td>
+<td align="left">Récupère toutes les pages et modules du site.</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>'@self.page'</code></td>
+<td align="left">Obtenir une collection avec uniquement la page actuelle.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.parent'</code></td>
+<td align="left">Récupère une collection avec uniquement le parent de la page actuelle.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.siblings'</code></td>
+<td align="left">Obtenir les frères et sœurs de la page actuelle.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.children'</code></td>
+<td align="left">Récupère les enfants de la page actuelle.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.modules'</code></td>
+<td align="left">Récupère les modules de la page en cours.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.all'</code></td>
+<td align="left">Récupère à la fois les enfants et les modules de la page actuelle.</td>
+</tr>
+<tr>
+<td align="left"><code>'@self.descendants'</code></td>
+<td align="left">Parcourir tous les enfants de la page en cours.</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>'@page.page': '/fruit'</code></td>
+<td align="left">Obtenir une collection avec uniquement la page <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.parent': '/fruit'</code></td>
+<td align="left">Récupère une collection avec uniquement le parent de la page <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.siblings' : '/fruit'</code></td>
+<td align="left">Récupère les frères et sœurs de la page <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.children': '/fruit'</code></td>
+<td align="left">Récupère les enfants de la page  <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.modules' : '/fruit'</code></td>
+<td align="left">Récupère les modules de la page  <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.all': '/fruit'</code></td>
+<td align="left">Récupère à la fois les enfants et les modules de la page <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@page.descendants': '/fruit'</code></td>
+<td align="left">Obtenir et parcourir tous les enfants de la page <code>/fruit</code>.</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>'@taxonomy.tag'</code> :</td>
+<td align="left">taxonomie de la photographie avec tag= <code>photography</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>'@taxonomy' : {tag: birds, category: blog}'</code></td>
+<td align="left">taxonomie avec tag= <code>birds</code> &amp;&amp; category= <code>blog</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="notice note">
+Ce document décrit l'utilisation de <code>@page</code>, <code>@taxonomy.category</code>, etc., mais un format alternatif plus sûr pour YAML est <code>page@</code>, <code>taxonomy@.category</code>. Toutes les commandes <code>@</code> peuvent être écrites au format préfixe ou postfixe.
+</div>
+
+<div class="notice info">
+Les options de collection ont été améliorées et modifiées depuis <strong>Grav 1.6.</strong>  Les anciennes versions fonctionneront toujours, mais leur utilisation n'est pas recommandée.
+</div>
+
+<p>Nous allons les couvrir plus en détail.</p>
+<h2 id="Root Collections">Root Collections
+<a href="#Root Collections" class="toc-anchor after"></a></h2>
+
+<h5 id="@root.pages - Pages de niveau supérieur">@root.pages - Pages de niveau supérieur
+<a href="#@root.pages - Pages de niveau supérieur" class="toc-anchor after"></a></h5>
+
+<p>Cela peut être utilisé pour récupérer les <strong>pages publiées</strong> de niveau supérieur/racine d'un site. Particulièrement utile pour récupérer les éléments qui composent la navigation principale par exemple :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@root.pages'
+</code></pre>
+<p>Un alias de <code>'@root.children'</code> est également valide. L'utilisation de <code>'@root'</code> est obsolète car sa signification peut changer à l'avenir.</p>
+<h5 id="@root.descendants - Toutes les pages">@root.descendants - Toutes les pages
+<a href="#@root.descendants - Toutes les pages" class="toc-anchor after"></a></h5>
+
+<p>Cela permettra d'obtenir efficacement chaque page de votre site car il navigue de manière récursive à travers tous les enfants de la page racine vers le bas, et construit une collection de <strong>toutes</strong> les <strong>pages publiées</strong> d'un site :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@root.descendants'
+</code></pre>
+<h5 id="@root.all - Toutes les pages et modules">@root.all - Toutes les pages et modules
+<a href="#@root.all - Toutes les pages et modules" class="toc-anchor after"></a></h5>
+
+<p>Cela fera la même chose que ci-dessus, mais cela inclut <strong>toutes</strong> les <strong>pages et modules publiés</strong> du site.</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@root.all'
+</code></pre>
+<h2 id="Self-collections">Self-collections
+<a href="#Self-collections" class="toc-anchor after"></a></h2>
+
+<h5 id="@self.page - Page actuelle uniquement">@self.page - Page actuelle uniquement
+<a href="#@self.page - Page actuelle uniquement" class="toc-anchor after"></a></h5>
+
+<p>Cela renverra une collection contenant uniquement la page actuelle.</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.page'
+</code></pre>
+<p>Un alias de <code>'@self.self'</code> est également valide.</p>
+<p>Une collection vide sera renvoyée si la page n'a pas été publiée.</p>
+<h5 id="@self.parent - La page parent de la page actuelle">@self.parent - La page parent de la page actuelle
+<a href="#@self.parent - La page parent de la page actuelle" class="toc-anchor after"></a></h5>
+
+<p>Il s'agit d'une collection de cas particuliers car elle renverra toujours uniquement le <strong>parent</strong> de la page actuelle :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.parent'
+</code></pre>
+<p>Une collection vide sera retournée si la page est au niveau supérieur.</p>
+<h5 id="@self.siblings - Frères et sœurs de la page actuelle">@self.siblings - Frères et sœurs de la page actuelle
+<a href="#@self.siblings - Frères et sœurs de la page actuelle" class="toc-anchor after"></a></h5>
+
+<p>Cette collection collectera toutes les <strong>pages publiées</strong> au même niveau de la page courante, à l'exclusion de la page courante :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.siblings'
+</code></pre>
+<h5 id="@self.children - Enfants de la page actuelle">@self.children - Enfants de la page actuelle
+<a href="#@self.children - Enfants de la page actuelle" class="toc-anchor after"></a></h5>
+
+<p>Ceci est utilisé pour lister les <strong>enfants publiés</strong> de la page actuelle :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.children'
+</code></pre>
+<p>Un alias de <code>'@self.pages'</code> est également valide. L'utilisation de <code>'@self'</code> est obsolète car sa signification peut changer à l'avenir.</p>
+<h5 id="@self.modules - Modules de la page courante">@self.modules - Modules de la page courante
+<a href="#@self.modules - Modules de la page courante" class="toc-anchor after"></a></h5>
+
+<p>Cette méthode récupère uniquement les modules publiés de la page en cours (<code>_features</code>, <code>_showcase</code>, etc.) :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.modules'
+</code></pre>
+<p>L'utilisation de l'alias <code>@self.modular</code> est obsolète.</p>
+<h5 id="@self.all - Enfants et modules de la page actuelle">@self.all - Enfants et modules de la page actuelle
+<a href="#@self.all - Enfants et modules de la page actuelle" class="toc-anchor after"></a></h5>
+
+<p>Cette méthode récupère uniquement les <strong>enfants et modules publiés</strong> de la page actuelle :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.all'
+</code></pre>
+<h5 id="@self.descendants - Enfants + tous les descendants de la page actuelle">@self.descendants - Enfants + tous les descendants de la page actuelle
+<a href="#@self.descendants - Enfants + tous les descendants de la page actuelle" class="toc-anchor after"></a></h5>
+
+<p>Semblable à <code>.children</code>, la collection <code>.descendants</code> récupérera tous les <strong>enfants publiés</strong> mais continuera à parcourir tous leurs enfants :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items: '@self.descendants'
+</code></pre>
+<h2 id="Collections de pages">Collections de pages
+<a href="#Collections de pages" class="toc-anchor after"></a></h2>
+
+<h5 id="@page.page - Collection de la page spécifique uniquement">@page.page - Collection de la page spécifique uniquement
+<a href="#@page.page - Collection de la page spécifique uniquement" class="toc-anchor after"></a></h5>
+
+<p>Cette collection prend une route slug d'une page comme argument et renverra la collection contenant cette page (s'il s'agit d'une <strong>page publiée</strong>):</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.page': '/blog'
+</code></pre>
+<p>Un alias de <code>'@page.self' : '/blog'</code> est également valide.</p>
+<div class="notice note">
+Une collection vide sera renvoyée si la page n'a pas été publiée.
+</div>
+
+<h5 id="@page.parent - La page parent d'une page spécifique">@page.parent - La page parent d'une page spécifique
+<a href="#@page.parent - La page parent d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Il s'agit d'une collection de cas particuliers car elle renverra toujours uniquement le <strong>parent</strong> de la page actuelle :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.parent': '/blog'
+</code></pre>
+<p>@</p>
+<div class="notice note">
+Une collection vide sera retournée si la page est au niveau supérieur.
+</div>
+
+<h5 id="@page.siblings - Frères et sœurs d'une page spécifique">@page.siblings - Frères et sœurs d'une page spécifique
+<a href="#@page.siblings - Frères et sœurs d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Cette collection collectera toutes les <strong>pages publiées</strong> au même niveau de la page, à l'exclusion de la page elle-même :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.siblings': '/blog'
+</code></pre>
+<h5 id="@page.children - Enfants d'une page spécifique">@page.children - Enfants d'une page spécifique
+<a href="#@page.children - Enfants d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Cette collection prend une route slug d'une page comme argument et renverra tous les <strong>enfants publiés</strong> de cette page :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.children': '/blog'
+</code></pre>
+<p>Un alias de <code>'@page.pages' : '/blog'</code> est également valide. Utilisation de <code>'@page' : '/blog'</code> est obsolète car sa signification peut changer à l'avenir.</p>
+<h5 id="@page.modules - Modules d'une page spécifique">@page.modules - Modules d'une page spécifique
+<a href="#@page.modules - Modules d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Cette collection prend une route slug d'une page comme argument et renverra tous les <strong>modules publiés</strong> de cette page :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.modules': '/blog'
+</code></pre>
+<p>Utiliser l'alias de <code>'@page.modular' : '/blog'</code> est obsolète.</p>
+<h5 id="@self.all - Enfants et modules d'une page spécifique">@self.all - Enfants et modules d'une page spécifique
+<a href="#@self.all - Enfants et modules d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Cette méthode récupère uniquement les <strong>enfants et modules publiés</strong> de la page spécifique :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.all': '/blog'
+</code></pre>
+<h5 id="@page.descendants - Collection d'enfants + tous les descendants d'une page spécifique">@page.descendants - Collection d'enfants + tous les descendants d'une page spécifique
+<a href="#@page.descendants - Collection d'enfants + tous les descendants d'une page spécifique" class="toc-anchor after"></a></h5>
+
+<p>Cette collection prend une route slug d'une page comme argument et renverra tous les <strong>enfants publiés</strong> et tous leurs descendants de cette page :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@page.descendants': '/blog'
+</code></pre>
+<h2 id="Collections de taxonomie">Collections de taxonomie
+<a href="#Collections de taxonomie" class="toc-anchor after"></a></h2>
+
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@taxonomy.tag': foo
+</code></pre>
+<p>En utilisant l'option <code>@taxonomy</code>, vous pouvez utiliser la puissante fonctionnalité de taxonomie de Grav. C'est là que la variable <code>taxonomy</code> dans le fichier de <a href="../configuration/#Configuration du site">configuration du site</a> entre en jeu. Il <strong>doit</strong> y avoir une définition pour la taxonomie définie dans ce fichier de configuration pour que Grav interprète une référence de page comme valide.</p>
+<p>En définissant <code>@taxonomy.tag:foo</code>, Grav trouvera toutes les <strong>pages publiées</strong> dans le dossier <code>/user/pages</code> qui ont elles-mêmes défini <code>tag:foo</code> dans leur variable de taxonomie :</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |         '@taxonomy.tag': [foo, bar]
+</code></pre>
+<p>La variable <code>content.items</code> peut prendre un tableau de taxonomies et rassemblera toutes les pages qui satisfont à ces règles. Les pages publiées contenant <strong>à la fois</strong> des balises <code>foo</code> et <code>bar</code> seront collectées. Le chapitre <a href="./taxonomy">Taxonomie</a> couvrira ce concept plus en détail.</p>
+<div class="notice info">
+Si vous souhaitez placer plusieurs variables en ligne, vous devrez séparer les sous-variables de leurs parents avec des crochets <code>{}</code>. Vous pouvez ensuite séparer les variables individuelles à ce niveau par une virgule. Par exemple : <code>'@taxonomy' : {category : [blog, feature], tag : [foo, bar]}</code>. Dans cet exemple, les sous-variables <code>category</code> et <code>tag</code> sont placées sous <code>@taxonomy</code> dans la hiérarchie, chacune avec des valeurs répertoriées placées entre crochets <code>[]</code>. Les pages doivent répondre à toutes ces exigences pour être trouvées.
+</div>
+
+<p>Si vous avez plusieurs variables à définir dans un seul parent, vous pouvez le faire en utilisant la méthode en ligne, mais pour plus de simplicité, nous vous recommandons d'utiliser la méthode standard. Voici un exemple:</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |        '@taxonomy':
+4 |           category: [blog, featured]
+5 |           tag: [foo, bar]
+</code></pre>
+<p>Chaque niveau de la hiérarchie ajoute deux espaces avant la variable. YAML vous permettra d'utiliser autant d'espaces que vous le souhaitez ici, mais deux sont une pratique courante. Dans l'exemple ci-dessus, les variables <code>category</code> et <code>tag</code> sont définies sous <code>@taxonomy</code>.</p>
+<p>Les collections de pages seront automatiquement filtrées par taxonomie lorsqu'une a été définie dans l'URL (par exemple, /archive/category:news). Cela vous permet de créer un seul modèle d'archive de blog mais de filtrer la collection de manière dynamique à l'aide de l'URL. Si votre collection de pages doit ignorer la taxonomie définie dans l'URL, utilisez l'indicateur <code>url_taxonomy_filters:false</code> pour désactiver cette fonctionnalité.</p>
+<h2 id="Collections complexes">Collections complexes
+<a href="#Collections complexes" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez également fournir plusieurs définitions de collection complexes et la collection résultante sera la somme de toutes les pages trouvées à partir de chacune des définitions de collection. Par exemple:</p>
+<pre><code class="language-yaml">1 | content:
+2 |     items:
+3 |       - '@self.children'
+4 |       - '@taxonomy':
+5 |            category: [blog, featured]
+</code></pre>
+<p>En outre, vous pouvez filtrer la collection à l'aide de <code>filter : type : value</code>. Le type peut être l'un des suivants : <code>published</code>, <code>visible</code>, <code>page</code>, <code>module</code>, <code>routable</code>. Celles-ci correspondent aux <a href="#Méthodes de collection d'objets">méthodes spécifiques à la collection</a>, et vous pouvez en utiliser plusieurs pour filtrer votre collection. Ils sont tous <code>true</code> ou <code>false</code>. De plus, il existe un <code>type</code> qui prend un seul nom de modèle, un <code>types</code> qui prent un tableau de noms de modèles et <code>access</code> qui prend un tableau de niveaux d'accès. Par exemple:</p>
+<pre><code class="language-yaml">1 | content:
+2 |   items: '@self.siblings'
+3 |   filter:
+4 |     visible: true
+5 |     type: 'blog'
+6 |     access: ['site.login']
+</code></pre>
+<p>Le type peut aussi être négatif : <code>non-published</code>, <code>non-visible</code>, <code>non-page</code> (=module), <code>non-module</code> (=page) et <code>non-routable</code>, mais il est préférable d'utiliser la version positive avec la valeur <code>false</code>.</p>
+<pre><code class="language-yaml">1 | content:
+2 |   items: '@self.children'
+3 |   filter:
+4 |     published: false
+</code></pre>
+<div class="notice info">
+Les filtres de collecte ont été simplifiés depuis <strong>Grav 1.6.</strong> Les anciennes variantes <code>modular</code> et <code>non-modular</code> fonctionneront toujours, mais leur utilisation n'est pas recommandée. Utilisez <code>module</code> et <code>page</code> à la place.
+</div>
+
+<h2 id="Options de commande">Options de commande
+<a href="#Options de commande" class="toc-anchor after"></a></h2>
+
+<pre><code class="language-yaml">1 | content:
+2 |   order:
+3 |      by: date
+4 |      dir: desc
+5 |   limit: 5
+6 |   pagination: true
+</code></pre>
+<p>L'ordre des sous-pages suit les mêmes règles que l'ordre des dossiers, les options disponibles sont :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>COMMANDE</strong></th>
+<th align="left"><strong>DÉTAILS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>default</code></td>
+<td align="left">L'ordre est basé sur le système de fichiers, c'est-à-dire <code>01.home</code> avant <code>02.advark</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>title</code></td>
+<td align="left">L'ordre est basé sur le titre tel que défini dans chaque page.</td>
+</tr>
+<tr>
+<td align="left"><code>basename</code></td>
+<td align="left">L'ordre est basé sur le nom alphabétique du dossier après qu'il a été traité par la fonction PHP <code>basename()</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>date</code></td>
+<td align="left">L'ordre est basé sur la date telle que définie dans chaque page.</td>
+</tr>
+<tr>
+<td align="left"><code>modified</code></td>
+<td align="left">L'ordre est basé sur l'horodatage modifié de la page.</td>
+</tr>
+<tr>
+<td align="left"><code>folder</code></td>
+<td align="left">L'ordre est basé sur le nom du dossier avec tout préfixe numérique, c'est-à-dire <code>01</code>., supprimé.</td>
+</tr>
+<tr>
+<td align="left"><code>header.x</code></td>
+<td align="left">L'ordre est basé sur n'importe quel champ d'en-tête de page. c'est-à-dire <code>header.taxonomy.year</code>. <br>Une valeur par défaut peut également être ajoutée via un tube. c'est-à-dire <code>header.taxonomy.year|2015</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>random</code></td>
+<td align="left">La commande est aléatoire.</td>
+</tr>
+<tr>
+<td align="left"><code>custom</code></td>
+<td align="left">La commande est basée sur la variable <code>content.order.custom</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>manual</code></td>
+<td align="left">La commande est basée sur la variable <code>order_manual</code>. <strong>DÉPRECIÉ</strong></td>
+</tr>
+<tr>
+<td align="left"><code>sort_flag</code></td>
+<td align="left">Permet de remplacer les drapeaux de tri pour le classement par en-tête de page ou par défaut.<br> Si l'extension PHP <code>intl</code> est chargée, seuls <a href="https://secure.php.net/manual/en/collator.asort.php">ces drapeaux</a> sont disponibles. Sinon, vous<br> pouvez utiliser les <a href="https://secure.php.net/manual/en/array.constants.php">indicateurs de tri standard</a> PHP.</td>
+</tr>
+</tbody>
+</table>
+<p>La variable <code>content.order.dir</code> contrôle la direction dans laquelle le classement doit être dans des valeurs admises. Les valeurs valides sont <code>desc</code> ou <code>asc</code>.</p>
+<pre><code class="language-yaml">1  | content:
+2  |    order:
+3  |       by: default
+4  |       custom:
+5  |          - _showcase
+6  |          - _highlights
+7  |          - _callout
+8  |          - _features
+9  |    limit: 5
+10 |    pagination: true
+</code></pre>
+<p>Dans la configuration ci-dessus, vous pouvez voir que <code>content.order.custom</code> définit une <strong>commande manuelle personnalisée</strong> pour s'assurer que la page est construite avec <strong>showcase</strong> en premier, la section <strong>highlights</strong> en second, etc. Veuillez noter que si une page n'est pas spécifiée dans la liste de commande personnalisée , puis Grav se rabat sur le <code>content.order.by</code> pour les pages non spécifiées.</p>
+<p>Si une page a un slug personnalisé, vous devez utiliser ce slug dans la liste <code>content.order.custom</code>.</p>
+<p>Le <code>content.pagination</code> est un simple indicateur booléen à utiliser par les plugins, etc. pour savoir si la <strong>pagination</strong> doit être initialisée pour cette collection,<code>content.limit</code> est le nombre d'éléments affichés par page lorsque la pagination est activée.</p>
+<h2 id="Plage de dates">Plage de dates
+<a href="#Plage de dates" class="toc-anchor after"></a></h2>
+
+<p>Il est également possible de filtrer les pages par plage de dates :</p>
+<pre><code class="language-yaml">1 | content:
+2 |    items: '@self.children'
+3 |    dateRange:
+4 |       start: 1/1/2014
+5 |       end: 1/1/2015
+</code></pre>
+<p>Vous pouvez utiliser n'importe quel format de date de chaîne pris en charge par <a href="https://php.net/manual/en/function.strtotime.php">strtotime()</a> tel que <code>-6 semaines</code> ou <code>lundi dernier</code> ainsi que des dates plus traditionnelles telles que <code>23/01/2014</code> ou <code>23 janvier 2014</code>. Le dateRange filtrera toutes les pages qui ont une date en dehors la plage de dates fournie. Les dates de <strong>début</strong> et de <strong>fin</strong> sont facultatives, mais au moins une doit être fournie.</p>
+<h2 id="Collections multiples">Collections multiples
+<a href="#Collections multiples" class="toc-anchor after"></a></h2>
+
+<p>Lorsque vous créez une collection avec du <code>content : items:</code> dans votre YAML, vous définissez une seule collection basée sur plusieurs conditions. Cependant, Grav vous permet de créer un ensemble arbitraire de collections par page, il vous suffit d'en créer une autre :</p>
+<pre><code class="language-yaml">1  | content:
+2  |    items: '@self.children'
+3  |    order:
+4  |       by: date
+5  |       dir: desc
+6  |    limit: 10
+7  |    pagination: true
+8  |
+9  | fruit:
+10 |    items:
+11 |       '@taxonomy.tag': [fruit]
+</code></pre>
+<p>Cela configure <strong>2 collections</strong> pour cette page, la première utilise <code>content</code> de la collection par défaut, mais la seconde définit une collection basée sur la taxonomie appelée <code>fruit</code>. Pour accéder à ces deux collections via Twig vous pouvez utiliser la syntaxe suivante :</p>
+<pre><code class="language-yaml">1 | {% set default_collection = page.collection %}
+2 | {% set fruit_collection = page.collection('fruit') %}
+</code></pre>
+<h2 id="Méthodes de collection d'objets">Méthodes de collection d'objets
+<a href="#Méthodes de collection d'objets" class="toc-anchor after"></a></h2>
+
+<p>Les méthodes itérables incluent :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Collection::append($items)</code></td>
+<td align="left">Ajouter une autre collection ou tableau.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::first()</code></td>
+<td align="left">Récupère le premier élément de la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::last()</code></td>
+<td align="left">Récupère le dernier élément de la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::random($num)</code></td>
+<td align="left">Choisissez <code>$num</code> éléments aléatoires de la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::reverse()</code></td>
+<td align="left">Inverse l'ordre de la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::shuffle()</code></td>
+<td align="left">Randomise toute la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::slice($offset, $length)</code></td>
+<td align="left">Coupe la liste.</td>
+</tr>
+</tbody>
+</table>
+<p>Dispose également de plusieurs méthodes utiles spécifiques à la collection :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Collection::addPage($page)</code></td>
+<td align="left">Vous pouvez ajouter une autre page à cette collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::copy()</code></td>
+<td align="left">Crée une copie de la collection courante.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::current()</code></td>
+<td align="left">Obtient l'élément actuel de la collection.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::key()</code></td>
+<td align="left">Renvoie le slug de l'élément courant.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::remove($path)</code></td>
+<td align="left">Supprime une page spécifique de la collection, ou actuelle si <code>$path = null</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::order($by, $dir, $manual)</code></td>
+<td align="left">Ordonne la collection actuelle</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::intersect($collection2)</code></td>
+<td align="left">Fusionne deux collections, en conservant les éléments qui se produisent dans <br>les deux collections (comme une condition "ET").</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::merge($collection2)</code></td>
+<td align="left">Fusionne deux collections, en conservant les éléments qui se produisent dans <br>l'une ou l'autre des collections (comme une condition "OU").</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::isFirst($path)</code></td>
+<td align="left">Détermine si la page identifiée par path est la première.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::isLast($path)</code></td>
+<td align="left">Détermine si la page identifiée par path est la dernière.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::prevSibling($path)</code></td>
+<td align="left">Renvoie la page sœur précédente si possible.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::nextSibling($path)</code></td>
+<td align="left">Renvoie la page sœur suivante si possible.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::currentPosition($path)</code></td>
+<td align="left">Renvoie l'index courant.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::dateRange($startDate, $endDate, $field)</code></td>
+<td align="left">Filtre la collection actuelle avec des dates.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::visible()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages visibles.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::nonVisible()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages non visibles.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::pages()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages (et non les modules).</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::modules()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les modules (et non les pages).</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::published()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages publiées.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::nonPublished()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages non</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::routable()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages routables.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::nonRoutable()</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages non routables.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::ofType($type)</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages où template = <code>$type</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::ofOneOfTheseTypes($types)</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages où le modèle est dans le tableau <code>$types</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>Collection::ofOneOfTheseAccessLevels($levels)</code></td>
+<td align="left">Filtre la collection actuelle pour n'inclure que les pages où l'accès à la <br>page se trouve dans le tableau de <code>$levels</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="notice info">
+Les méthodes suivantes ont été dépréciées dans <strong>Grav 1.7</strong> : <code>Collection::modular()</code> et <code>Collection::nonModular()</code>. Utilisez <code>Collection::modules()</code> et <code>Collection::pages()</code> respectivement.
+</div>
+
+<p>Voici un exemple tiré du thème <strong>Learn2 docs.html.twig</strong> qui définit une collection basée sur la taxonomie (et éventuellement des balises si elles existent) et utilise les méthodes <code>Collection::isFirst</code> et <code>Collection::isLast</code> pour ajouter conditionnellement la navigation de page :</p>
+<pre><code class="language-html">1  | {% set tags = page.taxonomy.tag %}
+2  | {% if tags %}
+3  |    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs', 'tag': tags}},'order': {'by': 'default', 'dir': 'asc'}}) %}
+4  | {% else %}
+5  |    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs'}},'order': {'by': 'default', 'dir': 'asc'}}) %}
+6  | {% endif %}
+7  | 
+8  | {% block navigation %}
+9  |     &lt;div id=&quot;navigation&quot;&gt;
+10 |     {% if not progress.isFirst(page.path) %}
+11 |        &lt;a class=&quot;nav nav-prev&quot; href=&quot;{{ progress.nextSibling(page.path).url|e }}&quot;&gt; &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+12 |     {% endif %}
+13 |
+14 |     {% if not progress.isLast(page.path) %}
+15 |        &lt;a class=&quot;nav nav-next&quot; href=&quot;{{ progress.prevSibling(page.path).url|e }}&quot;&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+16 |     {% endif %}
+17 |     &lt;/div&gt;
+18 | {% endblock %}
+</code></pre>
+<p><code>nextSibling()</code> est en haut de la liste et <code>prevSibling(</code>) en bas de la liste, voici comment cela fonctionne :</p>
+<p>En supposant que vous ayez les pages :</p>
+<pre><code class="language-console">1 | Projet A
+2 | Projet B
+3 | Projet C
+</code></pre>
+<p>Vous êtes sur le projet A, la page précédente est le projet B. Si vous êtes sur le projet B, la page précédente est le projet C et la suivante est le projet A.</p>
+<h2 id="Collections programmatiques">Collections programmatiques
+<a href="#Collections programmatiques" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez prendre le contrôle total des collections directement depuis PHP dans les plugins Grav, les thèmes ou même depuis Twig. Il s'agit d'une approche plus codée en dur par rapport à leur définition dans le frontmatter de votre page, mais elle permet également une logique de collecte plus complexe et flexible.</p>
+<h3 id="Collections PHP">Collections PHP
+<a href="#Collections PHP" class="toc-anchor after"></a></h3>
+
+<p>Vous pouvez effectuer une collection logique avancée avec PHP, par exemple :</p>
+<pre><code class="language-php">1 | $collection = new Collection($pages);
+2 | $collection-&gt;setParams(['taxonomies' =&gt; ['tag' =&gt; ['dog', 'cat']]])-&gt;dateRange('01/01/2016', '12/31/2016')-&gt;published()-&gt;ofType('blog-item')-&gt;order('date', 'desc');
+3 | 
+4 | $titles = [];
+5 | 
+6 | foreach ($collection as $page) {
+7 |    $titles[] = $page-&gt;title();
+8 | }
+</code></pre>
+<p>La fonction <code>order()</code> peut également, en plus des paramètres <code>by</code> et <code>dir</code>, prendre un paramètre manual et <code>sort_flags</code>. Ceux-ci sont <a href="#Options de commande">documentés ci-dessus</a>. Vous pouvez également utiliser la même méthode <code>évalue()</code> que celle utilisée par les collections de pages basées sur le frontmatter :</p>
+<pre><code class="language-php">1 | $page = Grav::instance()['page'];
+2 | $collection = $page-&gt;evaluate(['@page.children' =&gt; '/blog', '@taxonomy.tag' =&gt; 'photography']);
+3 | $ordered_collection = $collection-&gt;order('date', 'desc');
+</code></pre>
+<p>Et un autre exemple de commande personnalisée serait :</p>
+<pre><code>1 | $collection_commandée = $collection-&gt;commande('header.price','asc',null,SORT_NUMERIC);
+</code></pre>
+<p>Vous pouvez également faire la même chose directement dans <strong>Twig Templates</strong> :</p>
+<pre><code class="language-html">1 | {% set collection = page.evaluate([{'@page.children':'/blog', '@taxonomy.tag':'photography'}]) %}
+2 | {% set order_collection = collection.order('date','desc') %}
+</code></pre>
+<h3 id="Collections avancées">Collections avancées
+<a href="#Collections avancées" class="toc-anchor after"></a></h3>
+
+<p>Par défaut, lorsque vous appelez <code>page.collection()</code> dans le Twig d'une page qui a une collection définie dans l'en-tête, Grav recherche une collection appelée <code>content</code>. Cela permet de définir <a href="#Collections multiples">plusieurs collections</a>, mais vous pouvez même aller plus loin.</p>
+<p>Si vous avez besoin de générer par programmation une collection, vous pouvez le faire en appelant <code>page.collection()</code> et en transmettant un tableau au même format que la définition de collection d'en-tête de page. Par exemple:</p>
+<pre><code class="language-html">1 | {% set options = { items: {'@page.children': '/my/pages'}, 'limit': 5, 'order': {'by': 'date', 'dir': 'desc'}, 'pagination': true } %}
+2 | {% set my_collection = page.collection(options) %}
+3 |    
+4 | &lt;ul&gt;
+5 | {% for p in my_collection %}
+6 | &lt;li&gt;{{ p.title|e }}&lt;/li&gt;
+7 | {% endfor %}
+8 | &lt;/ul&gt;
+</code></pre>
+<p>Génération du menu pour l'ensemble du site (vous devez définir la propriété du <em>menu</em> dans le frontmatter de la page) :</p>
+<pre><code class="language-html">1  | ---
+2  | titre : Home
+3  | Menu : Home
+4  | ---
+
+
+1  | {% set options = { items: {'@root.descendants':''}, 'order': {'by': 'folder', 'dir': 'asc'}} %}
+2  | {% set my_collection = page.collection(options) %}
+3  |
+4  | {% for p in my_collection %}
+5  | {% if p.header.menu %}
+6  |   &lt;ul&gt;
+7  |   {% if page.slug == p.slug %}
+8  |     &lt;li class=&quot;{{ p.slug|e }} active&quot;&gt;&lt;span&gt;{{ p.menu|e }}&lt;/span&gt;&lt;/li&gt;
+9  |   {% else %}
+10 |     &lt;li class=&quot;{{ p.slug|e }}&quot;&gt;&lt;a href=&quot;{{ p.url|e }}&quot;&gt;{{ p.menu|e }}&lt;/a&gt;&lt;/li&gt;
+11 |   {% endif %}
+12 |   &lt;/ul&gt;
+13 | {% endif %}
+14 | {% endfor %}
+</code></pre>
+<h3 id="Pagination avec les collections avancées">Pagination avec les collections avancées
+<a href="#Pagination avec les collections avancées" class="toc-anchor after"></a></h3>
+
+<p>Une question courante que nous entendons est de savoir comment activer la pagination pour les collections personnalisées. Pagination est un plugin qui peut être installé via GPM avec le nom <code>pagination</code>. Une fois installé, il fonctionne "prêt à l'emploi" avec les collections configurées par page, mais ne sait rien des collections personnalisées créées dans Twig. Pour faciliter ce processus, la pagination est livrée avec sa propre fonction Twig appelée <code>paginate()</code> qui fournira la fonctionnalité de pagination dont nous avons besoin.</p>
+<p>Après avoir transmis la collection et la limite à la fonction <code>paginate()</code>, nous devons également transmettre les informations de pagination directement au modèle <code>partials/pagination.html.twig</code> pour un rendu correct.</p>
+<pre><code class="language-html">1  | {% set options = { items: {'@root.descendants':''}, 'order': {'by': 'folder', 'dir': 'asc'}} %}
+2  | {% set my_collection = page.collection(options) %}
+3  | {% do paginate( my_collection, 5 ) %}
+4  |
+5  | {% for p in my_collection %}
+6  |     &lt;ul&gt;
+7  |          {% if page.slug == p.slug %}
+8  |              &lt;li class=&quot;{{ p.slug|e }} active&quot;&gt;&lt;span&gt;{{ p.menu|e }}&lt;/span&gt;&lt;/li&gt;
+9  |          {% else %}
+10 |              &lt;li class=&quot;{{ p.slug|e }}&quot;&gt;&lt;a href=&quot;{{ p.url|e }}&quot;&gt;{{ p.menu|e }}&lt;/a&gt;&lt;/li&gt;
+11 |          {% endif %}
+12 |    &lt;/ul&gt;
+13 | {% endfor %}
+14 |
+15 | {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':my_collection.params.pagination} %}
+</code></pre>
+<h3 id="Gestion personnalisée des collections avec l'événement onCollectionProcessed()">Gestion personnalisée des collections avec l'événement <code>onCollectionProcessed()</code>
+<a href="#Gestion personnalisée des collections avec l'événement onCollectionProcessed()" class="toc-anchor after"></a></h3>
+
+<p>Il y a des moments où les options d'événement ne suffisent pas. Parfois, lorsque vous souhaitez obtenir une collection, mais que vous manipulez ensuite la collection en fonction de quelque chose de très personnalisé. Imaginez si vous voulez, un cas d'utilisation où vous avez ce qui semble être une liste de blogs plutôt standard, mais votre client veut avoir un contrôle précis sur ce qui s'affiche dans la liste. Ils veulent avoir une bascule personnalisée sur chaque élément de blog qui leur permet de le supprimer de la liste, tout en le faisant publier et disponible via un lien direct.</p>
+<p>Pour ce faire, nous pouvons simplement ajouter une option personnalisée <code>display_in_listing : false</code> dans l'en-tête de page de l'élément :</p>
+<pre><code class="language-yaml">1 | ---
+2 | title: 'My Story'
+3 | date: '13:34 04/14/2020'
+4 | taxonomy:
+5 |    tag:
+6 |       - journal
+7 |  display_in_listing: false
+8 |  ---
+9 |  ...
+</code></pre>
+<p>Le problème est qu'il n'y a aucun moyen de définir ou d'inclure ce filtre lors de la définition d'une collection dans la page de liste. Il est probablement défini quelque chose comme ceci :</p>
+<pre><code class="language-yaml">1  | ---
+2  | menu: News
+3  | title: 'My Blog'
+4  | content:
+5  |     items:
+6  |        - self@.children
+7  |     order:
+8  |        by: date
+9  |        dir: desc
+10 |     limit: 8
+11 |     pagination: true
+12 |     url_taxonomy_filters: true
+13 | ---
+14 | ...
+</code></pre>
+<p>Ainsi, la collection est simplement définie par la directive <code>self@.children</code> pour obtenir tous les enfants publiés de la page en cours. Alors qu'en est-il des pages qui ont le <code>display_in_listing: false</code> défini ? Nous devons faire un travail supplémentaire sur cette collection avant qu'elle ne soit retournée pour nous assurer que nous supprimons tous les éléments que nous ne voulons pas voir. Pour ce faire, nous pouvons utiliser l'événement <code>onCollectionProcessed()</code> dans un plugin personnalisé. Nous devons ajouter l'écouteur :</p>
+<pre><code class="language-php">1 | public static function getSubscribedEvents(): array
+2 |   {
+3 |     return [
+4 |        ['autoload', 100000],
+5 |         'onPluginsInitialized' =&gt; ['onPluginsInitialized', 0],
+6 |         'onCollectionProcessed' =&gt; ['onCollectionProcessed', 10]
+7 |      ];
+8 |   }
+</code></pre>
+<p>Ensuite, nous devons définir la méthode et parcourir les éléments de la collection, en recherchant toutes les pages avec ce champ <code>display_in_listing :</code> défini, puis le supprimer s'il est <code>false</code> :</p>
+<pre><code class="language-php">1  | /**
+2  |  * Supprimez n'importe quelle page de la collection avec display_in_listing : false|0
+3  |  *
+4  |  * @param Event $event
+5  |  */
+6  |  public function onCollectionProcessed(Event $event): void
+7  |  {
+8  |     /** @var Collection $collection */
+9  |     $collection = $event['collection'];
+10 |        
+11 |     foreach ($collection as $item) {
+12 |        $display_in_listing = $item-&gt;header()-&gt;display_in_listing ?? true;
+13 |        if ((bool) $display_in_listing === false) {
+14 |           $collection-&gt;remove($item-&gt;path());
+15 |        }
+16 |     }
+17 |
+18 |  }
+</code></pre>
+<p>Maintenant, votre collection contient les bons éléments, et tous les autres plugins ou modèles Twig qui s'appuient sur cette collection verront cette collection modifiée afin que des choses comme la pagination fonctionnent comme prévu.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../en-tete-frontmatter/" class="btn btn-neutral float-left" title="En-têtes"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../syntaxe-markdown/" class="btn btn-neutral float-right" title="Syntaxe Markdown">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../en-tete-frontmatter/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../syntaxe-markdown/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

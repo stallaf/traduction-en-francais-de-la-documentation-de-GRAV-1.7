@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/vps-hebergement-digitalocean/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>DigitalOcean - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DigitalOcean";
+        var mkdocs_page_input_path = "vps-hebergement-digitalocean.md";
+        var mkdocs_page_url = "/vps-hebergement-digitalocean/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">VPS partagé</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>9. Serveurs Web et Hébergement &raquo;</li>
+          <li>VPS partagé &raquo;</li><li>DigitalOcean</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">DigitalOcean</h1>
+
+<p>Peut-être le plus populaire et le plus utilisé de tous les fournisseurs de VPS, <a href="https://www.digitalocean.com/">DigitalOcean</a> propose une gamme d'options VPS. À partir de <strong>5 $/mois pour un système à 1 processeur, 1024 Mo</strong> jusqu'à 960 $/mois pour une configuration à 32 processeurs, 192 Go, <a href="https://www.digitalocean.com/">DigitalOcean</a> propose des solutions qui peuvent évoluer avec vous. Tous leurs serveurs sont construits avec des <strong>disques SSD RAID, du matériel hexa-core moderne, une virtualisation KVM</strong> et une <strong>bande passante de niveau 1</strong> fiable pour garantir des performances maximales. Ils constituent une option fantastique pour héberger votre site basé sur Grav.</p>
+<p><img alt="Digitalocean" src="https://learn.getgrav.org/user/pages/09.webservers-hosting/02.vps/01.digitalocean/digitalocean.png" /></p>
+<p>Après avoir créé un compte et y avoir déposé du crédit, vous pouvez commencer. DigitalOcean vous permet de créer des <strong>Droplets</strong> qui représentent une instance VPS. Cliquez simplement sur le bouton <strong>Create Droplet</strong> dans votre panneau de configuration et remplissez le formulaire :</p>
+<p><img alt="formulaire" src="https://learn.getgrav.org/user/pages/09.webservers-hosting/02.vps/01.digitalocean/step-1.png" /></p>
+<p>Choisissez simplement un nom pour votre Droplet et <strong>choisissez une taille</strong> en fonction du prix et des besoins du serveur. Grav fonctionnera bien sur n'importe quelle configuration, même l'option de base à 5 $/mois exécutera Grav rapidement et efficacement.</p>
+<p><img alt="choix région" src="https://learn.getgrav.org/user/pages/09.webservers-hosting/02.vps/01.digitalocean/step-2.png" /></p>
+<p>Ensuite, <strong>sélectionnez une région</strong> où votre VPS sera situé. Il est préférable de choisir une région qui servira le mieux votre public cible. Si le serveur est uniquement à des fins de développement, choisissez celui qui est le plus proche de vous.</p>
+<p><img alt="choix image" src="https://learn.getgrav.org/user/pages/09.webservers-hosting/02.vps/01.digitalocean/step-3.png" /></p>
+<p>Enfin, vous devrez sélectionner une image à installer. DigitalOcean vous permet de choisir parmi une grande variété de distributions Linux en stock, ainsi que des applications complètes et même des instantanés enregistrés précédemment. Pour les besoins de ce guide, nous allons installer la dernière version <strong>d'Ubuntu 18.04 LTS</strong> qui est très populaire et très bien prise en charge.</p>
+<p>Vous pouvez laisser toutes les autres options à leurs valeurs par défaut. Après avoir cliqué sur <strong>Créer un droplet</strong>, votre droplet sera créé dans les 55 secondes et vous le verrez répertorié dans votre liste de droplets. Vous devriez recevoir un email avec votre mot de passe root. En cliquant sur le droplet que vous venez de créer, vous verrez différentes options.</p>
+<p><img alt="options" src="https://learn.getgrav.org/user/pages/09.webservers-hosting/02.vps/01.digitalocean/droplet.png" /></p>
+<p>L'onglet <strong>Accès</strong> du Droplet Manager vous permet de vous connecter rapidement à votre instance, mais l'utilisation de SSH est une expérience plus agréable. L'authentification par clé publique est également recommandée, et DigitalOcean dispose d'une excellente <a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets">documentation d'authentification par clé publique SSH</a> qui vous guide à travers les étapes requises.</p>
+<h2 id="Mettre à jour et mettre à niveau les packages">Mettre à jour et mettre à niveau les packages.
+<a href="#Mettre à jour et mettre à niveau les packages" class="toc-anchor after"></a></h2>
+
+<p>À ce stade, vous souhaiterez peut-être soit configurer une entrée <code>/etc/hosts</code> locale pour donner à l'adresse IP fournie un nom convivial tel que <code>digitalocean.dev.</code> De cette façon, vous pouvez plus facilement vous connecter en SSH à votre serveur avec <code>ssh root@digitalocean.dev.</code></p>
+<p>Après avoir réussi à vous connecter en SSH à votre serveur en tant que <strong>root</strong>, la première chose à faire est de mettre à jour et de mettre à niveau tous les packages installés. Cela garantira que vous utilisez le dernier et le meilleur :</p>
+<pre><code class="language-console">$ | # apt update
+$ | # apt upgrade
+</code></pre>
+<p>Répondez simplement <code>Y</code> si vous y êtes invité.</p>
+<p>Avant d'aller plus loin, supprimons <strong>Apache2</strong> que nous remplacerons par <strong>Nginx</strong> :</p>
+<pre><code class="language-console">$ | # apt remove apache2*
+$ | # apt autoremove
+</code></pre>
+<div class = "notice info">
+REMARQUE : Vous ne l'avez peut-être pas installé. Mais mieux vaut prévenir que guérir !
+</div>
+
+<p>Ensuite, vous voudrez installer certains packages essentiels :</p>
+<pre><code>$ | # apt install vim zip unzip nginx git php-fpm php-cli php-gd php-curl php-mbstring php-xml php-zip php-apcu
+</code></pre>
+<p>Cela installera l'éditeur VIM complet (plutôt que la version mini fournie avec Ubuntu), le serveur Web Nginx, les commandes GIT et <strong>PHP 7.2</strong>.</p>
+<h2 id="Configurer PHP7.2 FPM">Configurer PHP7.2 FPM.
+<a href="#Configurer PHP7.2 FPM" class="toc-anchor after"></a></h2>
+
+<p>Une fois php-fpm installé, il y a un léger changement de configuration qui doit avoir lieu pour une configuration plus sécurisée.</p>
+<pre><code>$ | # vim /etc/php/7.2/fpm/php.ini
+</code></pre>
+<p>Recherchez <code>cgi.fix_pathinfo</code>. Ceci sera commenté par défaut et mis à '1'.</p>
+<p>Il s'agit d'un paramètre extrêmement peu sûr car il indique à PHP d'essayer d'exécuter le fichier le plus proche qu'il peut trouver si le fichier PHP demandé est introuvable. Cela permettrait essentiellement aux utilisateurs de créer des requêtes PHP d'une manière qui leur permettrait d'exécuter des scripts qu'ils ne devraient pas être autorisés à exécuter.</p>
+<p>Décommentez cette ligne et changez '1' en '0' pour qu'elle ressemble à ceci :</p>
+<pre><code>$ | cgi.fix_pathinfo=0
+</code></pre>
+<p>Enregistrez et fermez le fichier, puis redémarrez le service.</p>
+<pre><code>$ | # systemctl restart php7.2-fpm
+</code></pre>
+<h2 id="Configurer le pool de connexions Nginx">Configurer le pool de connexions Nginx.
+<a href="#Configurer le pool de connexions Nginx" class="toc-anchor after"></a></h2>
+
+<p>Nginx a déjà été installé, mais vous devez le configurer pour qu'il utilise un pool de connexions PHP spécifique à l'utilisateur. Cela garantira votre sécurité et évitera toute autorisation de fichier potentielle lorsque vous travaillez sur les fichiers en tant que compte d'utilisateur et via le serveur Web.</p>
+<p>Accédez au répertoire du pool et créez une nouvelle configuration <code>grav</code> :</p>
+<pre><code class="language-console">$ | # cd /etc/php/7.2/fpm/pool.d
+$ | # mv www.conf www.conf.bak
+$ | # vim grav.conf
+</code></pre>
+<p>Dans Vim, vous pouvez coller la configuration de pool suivante :</p>
+<pre><code class="language-configuration">1  | [grav]
+2  | 
+3  | user = grav
+4  | group = grav
+5  | 
+6  | listen = /var/run/php/php7.2-fpm.sock
+7  | 
+8  | listen.owner = www-data
+9  | listen.group = www-data
+10 |
+11 | pm = dynamic
+12 | pm.max_children = 5
+13 | pm.start_servers = 2
+14 | pm.min_spare_servers = 1
+15 | pm.max_spare_servers = 3
+16 | 
+17 | chdir = /
+</code></pre>
+<p>Les éléments clés ici sont que <code>user</code> et <code>droup</code> sont définis sur un utilisateur appelé <code>grav</code> et que le socket d'écoute a un nom unique à partir du socket standard. Enregistrez et quittez ce fichier.</p>
+<p>Nous devons créer l'utilisateur <code>grav</code> dédié maintenant :</p>
+<pre><code>$ | # adduser grav
+</code></pre>
+<p>Fournissez un mot de passe fort et laissez les autres valeurs par défaut. Nous devons ensuite créer un emplacement approprié pour que Nginx serve les fichiers, alors changeons d'utilisateur et créons ces dossiers, et créons quelques fichiers de test :</p>
+<pre><code class="language-console">$ | # su - grav
+$ | $ mkdir -p www/html
+$ | $ cd www/html
+</code></pre>
+<p>Créez un <code>index.html</code> simple avec le contenu de :</p>
+<pre><code>&lt;h1&gt;Ça marche !&lt;/h1&gt;
+</code></pre>
+<p>...et un fichier appelé <code>info.php</code> avec le contenu de :</p>
+<pre><code>&lt;?php phpinfo();
+</code></pre>
+<p>Nous pouvons maintenant quitter cet utilisateur et revenir à root afin de configurer la configuration du serveur Nginx :</p>
+<pre><code class="language-console">$ | $ exit
+$ | # cd /etc/nginx/sites-available/
+$ | # vim grav
+</code></pre>
+<p>Ensuite, collez simplement cette configuration :</p>
+<pre><code class="language-configation">1  | server {
+2  |     #listen 80;
+3  |     index index.html index.php;
+4  | 
+5  |     ## Begin - Server Info
+6  |     root /home/grav/www/html;
+7  |     server_name localhost;
+8  |     ## End - Server Info
+9  | 
+10 |     ## Begin - Index
+11 |     # for subfolders, simply adjust:
+12 |     # `location /subfolder {`
+13 |     # and the rewrite to use `/subfolder/index.php`
+14 |     location / {
+15 |         try_files $uri $uri/ /index.php?$query_string;
+16 |     }
+17 |     ## End - Index
+18 | 
+19 |     ## Begin - Security
+20 |     # deny all direct access for these folders
+21 |     location ~* /(\.git|cache|bin|logs|backup|tests)/.*$ { return 403; }
+22 |     # deny running scripts inside core system folders
+23 |     location ~* /(system|vendor)/.*\.(txt|xml|md|html|yaml|yml|php|pl|py|cgi|twig|sh| bat)$ { return 403; }
+24 |     # deny running scripts inside user folder
+25 |     location ~* /user/.*\.(txt|md|yaml|yml|php|pl|py|cgi|twig|sh|bat)$ { return 403; }
+26 |     # deny access to specific files in the root folder
+27 |     location ~ /(LICENSE\.txt|composer\.lock|composer\.json|nginx\.conf|web\.config|htaccess\.txt|\.htaccess) { return 403; }
+28 |     ## End - Security
+29 | 
+30 |     ## Begin - PHP
+31 |     location ~ \.php$ {
+32 |         # Choose either a socket or TCP/IP address
+33 |         fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+34 |         # fastcgi_pass unix:/var/run/php5-fpm.sock; #legacy
+35 |         # fastcgi_pass 127.0.0.1:9000;
+36 | 
+37 |         fastcgi_split_path_info ^(.+\.php)(/.+)$;
+38 |         fastcgi_index index.php;
+39 |         include fastcgi_params;
+40 |         fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+41 |     }
+42 |     ## End - PHP
+43 | }
+</code></pre>
+<p>Il s'agit du fichier stock <code>nginx.conf</code> fourni avec Grav avec 2 modifications. 1) <code>root</code> a été adaptée à notre utilisateur/dossier que nous venons de créer et l'option <code>fastcgi_pass</code> a été définie sur le socket que nous avons défini dans notre pool <code>grav</code>. Il ne nous reste plus qu'à lier ce fichier de manière appropriée pour qu'il soit activé :</p>
+<pre><code class="language-console">$ | # cd ../sites-enabled
+$ | # ln -s ../sites-available/grav
+$ | # rm default
+</code></pre>
+<p>Vous pouvez tester la configuration avec la commande <code>nginx -t</code>. Il devrait renvoyer ce qui suit.</p>
+<pre><code class="language-console">$ | nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+$ | nginx: configuration file /etc/nginx/nginx.conf test is successful
+</code></pre>
+<p>Maintenant, tout ce que nous avons à faire est de redémarrer Nginx et le processus php7-fpm et de tester pour nous assurer que nous avons correctement configuré Nginx et le pool de connexion PHP :</p>
+<pre><code class="language-console">$ | # systemctl restart nginx 
+$ | # systemctl restart php7.2-fpm
+</code></pre>
+<p>Pointez maintenant votre navigateur sur votre serveur : <code>http://digitalocean.dev</code> et vous devriez voir le texte : <strong>Working !</strong></p>
+<p>Vous pouvez également tester pour vous assurer que PHP est installé et fonctionne correctement en pointant votre navigateur vers : <code>http://digitalocean.dev/info.php</code>. Vous devriez voir une page d'informations PHP standard avec APCu, Opcache, etc.</p>
+<h2 id="Installation de Grav">Installation de Grav.
+<a href="#Installation de Grav" class="toc-anchor after"></a></h2>
+
+<p>C'est la partie facile ! Nous devons d'abord revenir à l'utilisateur Grav, donc SSH en tant que <code>grav@digitalocean.dev</code> ou <code>su - grav</code> à partir de la connexion root. puis suivez ces étapes :</p>
+<pre><code class="language-console">$ | $ cd ~/www
+$ | $ wget -O grav.zip https://getgrav.org/download/core/grav/latest
+$ | $ unzip grav.zip
+$ | $ rm -Rf html
+$ | $ mv grav html
+</code></pre>
+<p>Maintenant que c'est fait, vous pouvez confirmer que Grav est installé en pointant votre navigateur sur <code>http://digitalocean.dev</code> et vous devriez être accueilli avec la page <strong>Grav est en cours d'exécution !</strong>.</p>
+<p>Parce que vous avez suivi ces instructions avec diligence, vous pourrez également utiliser les commandes <a href="/cli-commandes-grav">Grav CLI</a> et <a href="/cli-commandes-gpm">Grav GPM</a> telles que :</p>
+<pre><code class="language-console">$ | $ cd ~/www/html
+$ | $ bin/grav clear
+$ | 
+$ | Clearing cache
+$ | 
+$ | Cleared:  cache/twig/*
+$ | Cleared:  cache/compiled/*
+$ | 
+$ | Touched: /home/grav/www/html/user/config/system.yaml
+</code></pre>
+<p>et commandes GPM :</p>
+<pre><code>$ | $ bin/gpm index
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../web-hebergement-alwaysdata/" class="btn btn-neutral float-left" title="alwaysdata"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../vps-hebergement-linode/" class="btn btn-neutral float-right" title="Linode">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../web-hebergement-alwaysdata/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../vps-hebergement-linode/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

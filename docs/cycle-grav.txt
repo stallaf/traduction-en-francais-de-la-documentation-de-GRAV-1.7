@@ -1,0 +1,223 @@
+index.php
+   1- Vérifiez la version de PHP pour vous assurer que nous exécutons au moins la version 7.1.3
+   2- Initialisation du chargeur de classe
+   3- Obtenir l'instance Grav
+   
+      Grav.php
+      1- Aucune instance n'existe, donc appelez load()
+      2- Ajouter loader
+      3- Ajouter et initialiser debugger
+      4- Ajouter grav (obsolète)
+      5- Enregistrer les services par défaut
+      6- Enregistrer les fournisseurs de services
+         1- Fournisseur de services de comptes
+            1- Ajouter permissions (1.7)
+            2- Ajouter accounts (1.6)
+            3- Ajouter user_groups (1.7)
+            4- Ajouter users (obsolète)
+         2- Fournisseur de services d'actifs
+            1- Ajouter assets
+         3- Fournisseur de services de sauvegardes
+            1- Ajouter backups (1.6)
+         4- Fournisseur de services de configuration
+            1- Ajouter setup
+            2- Ajouter blueprints
+            3- Ajouter config
+            4- Ajouter langueges
+            5- Ajouter language
+         5- Fournisseur de services d'erreur
+            1- Ajouter error
+         6- Fournisseur de services de système de fichiers
+            1- Ajouter filesystem
+         7- Fournisseur de services flexibles
+            1- Ajouter flex (1.7)
+         8- Fournisseur de services d'inflecteur
+            1- Ajouter inflector
+         9- Fournisseur de services d'enregistrement
+            1- Ajouter log
+        10- Fournisseur de services de sortie
+            1- Ajouter output
+        11- Fournisseur de services de pages
+            1- Ajouter pages
+            2- Ajouter page
+        12- Demander un fournisseur de services
+            1- Ajouter request (1.7)
+        13- Fournisseur de services de planification
+            1- Ajouter scheduler (1.6)
+        14- Fournisseur de services de session
+            1- Ajouter session
+            2- Ajouter messages
+        15- Fournisseur de services de flux
+            1- Ajouter locator
+            2- Ajouter actor
+        16- Fournisseur de services de tâches
+            1- Ajouter task
+            2- Ajouter action
+        17- Fournisseurs de services simples
+            1- Ajouter browser
+            2- Ajouter cache
+            3- Ajouter events
+            4- Ajouter exif
+            5- Ajouter plugins
+            6- Ajouter taxonomy
+            7- Ajouter themes
+            8- Ajouter twig
+            9- Ajouter uri
+            
+   4- appeler Grav::process()
+   
+      Grav.php
+      1- Exécutez l'initialisation du processeur
+         1-Configuration
+            1- Initialiser $grav['config']
+            2- Initialiser $grav['plugins']
+         2- Enregistreur
+            1- Initialiser $grav['log']
+         3- les erreurs
+            1- Initialiser $grav['errors']
+            2- Enregistre les gestionnaires d'erreurs PHP
+         4- Débogueur
+            1- Initialiser $grav['debugger']
+         5- Gérer les requêtes du débogueur
+         6- Démarrer la mise en mémoire tampon de sortie
+         7- Localisation
+            1- Définir les paramètres régionaux et le fuseau horaire
+         8- Plugins
+            1- Initialiser $grav['plugins']
+         9- pages
+            1- Initialiser $grav['pages']
+        10- Uri
+            1- Initialiser $grav['uri']
+            2- Ajouter $grav['base_url_absolute']
+            3- Ajouter $grav['base_url_relative']
+            4- Ajouter $grav['base_url']
+        11- Gérer la redirection
+            1- Rediriger si system.pages.redirect_trailing_slash est vrai et la barre oblique finale dans l'URL
+        12- Comptes
+            1- Initialiser $grav['accounts']
+        13- Session
+            1- Initialiser $grav['session'] si Si system.session.initialize est vrai
+      2- Exécuter le processeur de plugins
+         1- Événement Fire onPluginsInitialized
+      3- Exécuter le processeur de thèmes
+         1- Initialiser $grav['themes']
+         2- Événement Fire onThemeInitialized
+      4- Exécuter le processeur de requêtes
+         1- Initialiser $grav['request']
+         2- Lancer l'événement onRequestHandlerInit avec [request, handler]
+         3- Si la réponse est définie à l'intérieur de l'événement, arrêter le traitement ultérieur et générer la réponse
+      5- Exécuter le processeur de tâches
+         1- Si la demande a l'attribut controller.class et une tâche ou une action :
+            1- Exécutez le contrôleur
+            2- Si NotFoundException : continuer (vérifier la tâche et l'action)
+            3- Si code de réponse 418 : continuer (ignorer la tâche et l'action)
+            4- Sinon : arrêter le traitement ultérieur et générer la réponse
+         2- Si tâche :
+            1- Événement Fire onTask
+            2- Evénement Fire onTask.[TASK]
+         3- Si action :
+            1- Événement Fire onAction
+            2- Evénement Fire onAction.[ACTION]
+      6- Exécuter le processeur de sauvegardes
+            1- Initialiser $grav['sauvegardes']
+            2- Événement Fire onBackupsInitialized
+      7- Exécuter le processeur du planificateur
+            1- Initialiser $grav['scheduler']
+            2- Événement Fire onSchedulerInitialized
+      8- Exécuter le processeur d'actifs
+            1- Initialiser $grav['assets']
+            2- Événement Fire onAssetsInitialized
+      9- Exécuter le processeur Twig
+            1- Initialiser $grav['twig']
+   
+            Twig.php
+            1- Définir les chemins du modèle Twig en fonction de la configuration
+            2- Gérer les modèles de langue si disponibles
+            3- Événement Fire onTwigTemplatePaths
+            4- Événement Fire onTwigLoader
+            5- Charger la configuration Twig et la chaîne du chargeur
+            6- Événement Fire onTwigInitialized
+            7- Charger les extensions Twig
+            8- Événement Fire onTwigExtensions
+            9-Définissez des variables Twig standard (config, uri, taxonomie, actifs, navigateur, etc.)
+     10- Exécuter le processeur de pages
+            1- Initialiser $grav['pages']
+            
+            Pages.php
+            1- Appelez buildPages()
+            2- (la logique diffère quelque peu pour les Flex Pages, mais l'idée est la même)
+            3- Vérifiez si le cache est bon
+            4- Si le cache est bon, les pages de chargement datent de
+            5- Si le cache n'est pas bon, appelez recurse()
+            6- Lancer l'événement onBuildPagesInitialized dans recurse()
+            7- Si un fichier .md est trouvé :
+            
+               Page.php
+               1- Appelez init() pour charger les détails du fichier
+               2- Définissez le filePath, modifié, id
+               3- Appelez header() pour initialiser les variables d'en-tête
+               4- Appelez slug() pour définir le slug d'URL
+               5- Appelez visible() pour définir l'état visible
+               6- Définissez le statut de modularTwig() en fonction du fait que le
+                  dossier commence par _
+            8- Événement Fire onPageProcessed
+            9- Si un dossier trouve recurse() les enfants
+           10- Événement Fire onFolderProcessed
+           11- Appelez buildRoutes()
+           12- Initialiser la taxonomie pour toutes les pages
+           13- Créer une table de routage pour une recherche rapide
+            
+            2- Événement Fire onPagesInitialized avec [pages]
+            3- Lancer l'événement onPageInitialized avec [page]
+            4- Si la page n'est pas routable :
+                1- Lancer l'événement onPageNotFount avec [page]
+            5- Si tâche :
+                1- Lancer l'événement onPageTask avec [tâche, page]
+                2- Lancer l'événement onPageTask.[TASK] avec [task, page]
+            6- Si action :
+               1- Lancer l'événement onPageAction avec [action, page]
+               2- Lancer l'événement onPageAction.[ACTION] avec [action, page]
+     11- Exécuter le processeur d'actifs du débogueur
+           1- Barre de débogage uniquement : ajoutez le débogueur CSS/JS aux ressources
+     12- Exécuter le processeur de rendu
+           1- Initialiser $grav['sortie']
+           2- Si instance de sortie de ResponseInterface :
+               1- Arrêter le traitement ultérieur et générer la réponse
+           3- Sinon:
+               1- Rendre la page avec la méthode processSite() de Twig
+               
+               Twig.php
+                   1- Événement Fire onTwigSiteVariables
+                   2- Obtenir la sortie de la page
+                   3- Fire onTwigPageVariables, également appelé pour chaque sous-page modulaire
+                   4- Si une page n'est pas trouvée ou n'est pas routable, déclenchez d'abord
+                      l'événement onPageFallBackUrl pour voir si nous avons une solution de
+                      secours pour un élément multimédia, puis déclenchez onPageNotFound si ce
+                      n'est pas le cas.
+                   5- Définir toutes les variables Twig sur l'objet Twig
+                   6- Définissez le nom du modèle en fonction des informations de fichier
+                      /en-tête/extension
+                   7- Appelez la méthode render()
+                   8- Renvoyer le HTML résultant
+               2- Événement Fire onOutputGenerated
+               3- Faites écho à la sortie dans le tampon de sortie
+               4- Événement Fire onOutputRendered
+               5- Construire un objet de réponse
+               6- Arrêter le traitement ultérieur et générer la réponse
+     13- En-tête et corps HTTP de sortie
+     14- Débogueur de rendu (si activé)
+     15 Fermer
+            1- Fermer la session
+            2- Fermer la connexion au client
+            3- Événement Fire onShutdown
+
+Chaque fois qu'une page a sa méthode content() appelée, le cycle de vie suivant se produit :
+
+Page.php
+    1- Si le contenu n'est PAS mis en cache :
+        1- Lancer l'événement onPageContentRaw
+        2- Traitez la page en fonction des paramètres Markdown et Twig. Événement
+           Fire onMarkdownInitialized
+        3- Événement Fire onPageContentProcessed
+    2- Événement Fire onPageContent         
+    

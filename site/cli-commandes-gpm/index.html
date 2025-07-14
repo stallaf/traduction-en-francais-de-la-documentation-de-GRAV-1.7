@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/cli-commandes-gpm/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Commandes GPM - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Commandes GPM";
+        var mkdocs_page_input_path = "cli-commandes-gpm.md";
+        var mkdocs_page_url = "/cli-commandes-gpm/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>7. CLI Console &raquo;</li><li>Commandes GPM</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Commande GPM</h1>
+
+<p>Depuis la sortie de la version <strong>0.9.3</strong>, Grav inclut un GPM (Grav Package Manager) qui vous permet d'installer, de mettre à jour, de désinstaller et de lister tous les thèmes et plugins disponibles sur le référentiel Grav, ainsi que de mettre à jour Grav lui-même vers la dernière version .</p>
+<p>Comme le <a href="../cli-commandes-grav/">Grav CLI</a>, le <em>GPM</em> est un outil de ligne de commande qui oblige l'utilisateur à exécuter des commandes via une interface de ligne de commande, telle que <strong>Terminal</strong> sous MacOS. Les commandes de style UNIX ne sont pas disponibles en mode natif dans Windows cmd. L'installation du package <a href="https://msysgit.github.io/">msysgit</a> sur une machine Windows ajoute <a href="https://git-scm.com/">Git</a> et Git BASH, qui est une invite de commande alternative qui rend les commandes UNIX disponibles.</p>
+<p>Pour démarrer avec <em>GPM</em>, vous pouvez exécuter la commande suivante pour recevoir une liste de toutes les commandes actuellement disponibles :</p>
+<pre><code class="language-console">$ | bin/gpm list
+</code></pre>
+<p>Pour recevoir de l'aide pour une commande spécifique, vous pouvez ajouter de l'aide à la ligne avant la commande :</p>
+<pre><code class="language-console">$ | bin/gpm help install
+</code></pre>
+<div class="notice info">
+Pour pouvoir effectuer <strong>l'installation</strong>, <strong>la mise à niveau</strong> et <strong>l'auto-mise à niveau</strong>, PHP doit avoir l'extension <code>php_openssl</code> activée. Si vous obtenez une erreur fatale lors du téléchargement, c'est probablement la cause.
+</div>
+
+<h3 id="Informations PHP CGI-FCGI">Informations PHP CGI-FCGI.
+<a href="#Informations PHP CGI-FCGI" class="toc-anchor after"></a></h3>
+
+<p>Pour déterminer si votre serveur exécute <code>cgi-fcgi</code> sur la ligne de commande, tapez ce qui suit :</p>
+<pre><code class="language-console">$ | php -v
+  | PHP 5.5.17 (cgi-fcgi) (built: Sep 19 2014 09:49:55)
+  | Copyright (c) 1997-2014 The PHP Group
+  | Zend Engine v2.5.0, Copyright (c) 1998-2014 Zend Technologies
+  |  with the ionCube PHP Loader v4.6.1, Copyright (c) 2002-2014, by ionCube Ltd.
+</code></pre>
+<p>Si vous voyez une référence à <code>(cgi-fcgi)</code>, vous devrez préfixer toutes les commandes <code>bin/gpm</code> avec <code>php-cli</code>. Alternativement, vous pouvez configurer un alias dans votre shell avec quelque chose comme : <code>alias php="php-cli"</code> qui garantira que la version <strong>CLI</strong> de PHP s'exécute à partir de la ligne de commande.</p>
+<h2 id="Comment ça marche ?">Comment ça marche ?
+<a href="#Comment ça marche ?" class="toc-anchor after"></a></h2>
+
+<p><em>GPM</em> télécharge les métadonnées du référentiel à partir de <strong>GetGrav.org</strong>. Le référentiel contient tous les détails sur les packages disponibles et GPM est également capable de déterminer si l'un de ces packages est déjà installé et s'il doit être mis à jour.</p>
+<p>Le référentiel lui-même est mis en cache localement, sur la machine d'instance Grav exécutant la commande, pendant 24 heures. Toute autre demande après la génération du cache ne contactera pas le serveur <strong>GetGrav.org</strong>, mais servira plutôt à partir du référentiel stocké localement. Cette approche garantit une réponse beaucoup plus rapide.</p>
+<p>La plupart des commandes (listées ci-dessous) sont livrées avec l'option <code>--force (-f)</code> qui permet de forcer une nouvelle récupération du référentiel. Cela pourrait être extrêmement utile dans le cas où une mise à jour est connue et que l'utilisateur ne veut pas attendre un cycle complet de 24 heures avant que le cache ne soit effacé.</p>
+<h2 id="Commandes">Commandes.
+<a href="#Commandes" class="toc-anchor after"></a></h2>
+
+<p>Ci-dessous, nous avons décomposé toutes les commandes disponibles pour <em>GPM</em>. Pour exécuter une commande, lancez votre application de terminal préférée et depuis la racine de votre instance Grav, vous pouvez taper <code>bin/gpm &lt;command&gt;</code>.</p>
+<h2 id="Index">Index.
+<a href="#Index" class="toc-anchor after"></a></h2>
+
+<p>La commande <code>index</code> affiche une liste de toutes les ressources disponibles dans le référentiel Grav, organisées par thèmes et plugins.</p>
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/index.jpg" alt="Commande GPM 1"></p>
+<p>Chaque ligne affiche le <strong>nom</strong>, le <strong>slug</strong>, la <strong>version</strong> et s'il est déjà installé ou non.</p>
+<p>Dans cette vue, vous pouvez également déterminer rapidement s'il existe une nouvelle version de l'une des ressources que vous avez déjà installées.</p>
+<p>Par exemple, si nous avions une très ancienne version d'Antimatière (v1.1.1), mais que la dernière version était la v1.1.3, elle apparaîtra dans l'index comme indiqué ci-dessous.</p>
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/index-outdated.jpg" alt="Commande GPM 2"></p>
+<div class="notice info">
+Vous pouvez utiliser l'option --installed-only` pour afficher <strong>uniquement</strong> l'état de <strong>vos</strong> plugins et thèmes <strong>installés</strong>.
+</div>
+
+<h2 id="Info">Info.
+<a href="#Info" class="toc-anchor after"></a></h2>
+
+<p>La commande <code>info</code> affiche les détails du package souhaité, tels que la description, l'auteur, la page d'accueil, etc.</p>
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/info.jpg" alt="Commande GPM 3"></p>
+<div class="notice info">
+Vous serez également invité à consulter le <strong>journal des modification</strong>s du plugin/thème via cette option.
+</div>
+
+<h2 id="Installer">Installer.
+<a href="#Installer" class="toc-anchor after"></a></h2>
+
+<p>La commande <code>install</code> fait exactement ce qu'elle indique. Elle installe une ressource du référentiel sur votre instance Grav actuelle avec une simple commande.</p>
+<p>La commande détectera également si une ressource est déjà installée, ou si elle est symboliquement liée, et vous demandera quoi faire.</p>
+<p>Vous pouvez également installer plusieurs ressources à la fois en séparant les slugs par un espace.</p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/SUUtcYl2xrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><br></p>
+<div class="notice info">
+Vous pouvez utiliser l'option <code>--all-yes (-y)</code> pour ignorer les invites. Les ressources existantes seront remplacées et s'il s'agit de liens symboliques, elles seront automatiquement ignorées.
+</div>
+
+<h2 id="Mise à jour">Mise à jour.
+<a href="#Mise à jour" class="toc-anchor after"></a></h2>
+
+<p>La commande <code>update</code> affiche une liste de ressources pouvant être mises à jour et fonctionne de la même manière que pour <code>install</code>.</p>
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/update.jpg" alt="Commande GPM 4"></p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/jkxk2xBr5TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Vous pouvez également limiter les mises à jour à des ressources spécifiques uniquement.</p>
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/update-limit.jpg" alt="Commande GPM 5"></p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/rSWdmdx9TDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><br></p>
+<h2 id="Désinstaller">Désinstaller.
+<a href="#Désinstaller" class="toc-anchor after"></a></h2>
+
+<p>La commande <code>uninstall</code> supprime un thème ou un plug-in installé et efface le cache. Parce que Grav est purement un système de fichiers, la désinstallation d'un thème ou d'un plugin signifie la suppression physique du dossier.</p>
+<p>La commande détectera également si une ressource est symboliquement liée et vous demandera quoi faire.</p>
+<p>Vous pouvez également désinstaller plusieurs ressources à la fois en séparant les slugs par un espace.</p>
+<div class="notice info">
+Vous pouvez utiliser l'option <code>--all-yes (-y)</code> pour ignorer les invites. Si une ressource est détectée comme lien symbolique, elle sera automatiquement ignorée.
+</div>
+
+<h2 id="Auto-mise à niveau">Auto-mise à niveau.
+<a href="#Auto-mise à niveau" class="toc-anchor after"></a></h2>
+
+<p>Le <code>self-upgrade</code> (ou selfupgrade) vous permet de mettre à jour Grav vers la dernière version disponible. Si aucune mise à niveau n'est nécessaire, un message vous le dira, notant également la version que vous utilisez actuellement et la date de publication de la version.</p>
+<p>Il est fortement conseillé de toujours faire une sauvegarde avant d'effectuer une auto-mise à jour (voir <em>Création d'une sauvegarde</em> dans la <a href="../cli-commandes-grav/">section CLI</a>.</p>
+<div class="notice info">
+L'auto-mise à niveau ne met à niveau que des parties de votre instance Grav, comme le dossier <code>system/</code>, <code>vendor</code>, <code>index.php</code>, et autres. Vos dossiers <code>user</code> et <code>images</code> ne seront jamais touchés.
+</div>
+
+<p><img class="img" src="https://learn.getgrav.org/user/pages/07.cli-console/04.grav-cli-gpm/upgrade.jpg" alt="Commande GPM 6"></p>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/15-E8l5aaUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><br></p>
+<h2 id="Informations importantes pour les développeurs">Informations importantes pour les développeurs.
+<a href="#Informations importantes pour les développeurs" class="toc-anchor after"></a></h2>
+
+<h3 id="Plans">Plans.
+<a href="#Plans" class="toc-anchor after"></a></h3>
+
+<p>Avec l'introduction de <em>GPM</em>, nous avons maintenant des règles strictes concernant les <code>blueprints</code> valides. Qu'il s'agisse d'un thème ou d'un plugin que vous développez, vous devez toujours vous assurer que les <code>blueprints</code> sont correctement formatés.</p>
+<p>Un blueprint peut servir plusieurs objectifs différents, y compris la définition de l'identité de votre ressource. Veuillez vous référer aux <a href="../formulaires-blueprints/">Blueprints</a> pour une documentation plus détaillée sur ce que sont les Blueprints et comment ils doivent être compilés.</p>
+<h3 id="Releases">Releases.
+<a href="#Releases" class="toc-anchor after"></a></h3>
+
+<p>Le référentiel Grav est actualisé toutes les heures et détecte automatiquement les nouvelles versions, cela implique qu'en tant que développeur, vous avez suivi nos exigences de <a href="https://github.com/getgrav/grav#contributing">contribution</a>.</p>
+<p>De votre côté, tout ce que vous avez à faire est de vous assurer que vous avez mis à jour les plans avec la nouvelle version, et que vous avez marqué et publié la nouvelle version. Le référentiel Grav fera le reste pour vous et dès que votre version sera récupérée, elle sera disponible pour tout le monde via le site Web de Grav ou via <em>GPM</em>.</p>
+<h3 id="Ajouter votre ressource au dépôt.">Ajouter votre ressource au dépôt.
+<a href="#Ajouter votre ressource au dépôt." class="toc-anchor after"></a></h3>
+
+<p><a href="#ndt2" class="ndt">(1)</a> Suivez les instructions de la section <a href="../avance-grav-developpement/#Processus de publication de thème/plugin">Thème/Plugin Release Process</a>.</p>
+<p>Pour ajouter votre nouveau plugin/thème au référentiel Grav, veuillez ouvrir un problème Grav sur GitHub. Vous pouvez également <a href="https://github.com/getgrav/grav/issues/new?title=%5Badd-resource%5D%20New%20Plugin%2FTheme&amp;body=I%20would%20like%20to%20add%20my%20new%20plugin%2Ftheme%20to%20the%20Grav%20Repository.%0AHere%20are%20the%20project%20details%3A%20%2A%2Auser%2Frepository%2A%2A">utiliser ce lien précompilé</a>. Assurez-vous de mettre à jour le corps vers <code>user/repository</code> approprié.</p>
+<p>Plus de détails sur ce que fait le plugin/thème sont les bienvenus et peuvent être placés dans le numéro.</p>
+<p>Sachez également qu'avant d'ajouter un référentiel, l'équipe Grav inspectera votre plugin/thème en s'assurant qu'il correspond aux normes Grav. L'équipe peut également répondre avec des demandes d'informations supplémentaires, suggérer des améliorations mineures, etc. avant de fermer le problème et d'ajouter le plugin/thème.</p>
+<hr />
+<div id="ndt2">NDT : J'ai supprimé à cet endroit ce qui semble être une erreur d'affichage de la documentation d'origine <a href ="https://learn.getgrav.org/17/cli-console/grav-cli-gpm#add-your-resource-to-the-repository">advanced/grav-development#themeplugin-release-process</a>.</div>
+
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../cli-commandes-plugin/" class="btn btn-neutral float-left" title="Commandes de plugin"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../cli-mise-a-niveau/" class="btn btn-neutral float-right" title="Mises à niveau scripté">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cli-commandes-plugin/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../cli-mise-a-niveau/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

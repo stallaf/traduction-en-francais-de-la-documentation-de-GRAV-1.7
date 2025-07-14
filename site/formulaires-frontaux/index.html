@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/formulaires-frontaux/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Formulaire frontaux - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Formulaire frontaux";
+        var mkdocs_page_input_path = "formulaires-frontaux.md";
+        var mkdocs_page_url = "/formulaires-frontaux/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Formulaires</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>6. Formulaires &raquo;</li>
+          <li>Formulaires &raquo;</li><li>Formulaire frontaux</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Formulaires frontaux</h1>
+
+<p>Le plugin <strong>Form</strong> vous donne la possibilité de créer pratiquement n'importe quel type de formulaire frontal. Il s'agit essentiellement d'un kit de construction de formulaire, que vous pouvez utiliser dans vos propres pages. Avant d'aller plus loin, n'oubliez pas d'installer le <a href="https://github.com/getgrav/grav-plugin-form">plugin <strong>Form</strong></a> avec le formulaire d'installation <code>bin/gpm install form</code> s'il n'est pas encore installé.</p>
+<p>Pour comprendre le fonctionnement du plugin<strong> Form</strong>, commençons par expliquer comment créer un formulaire simple.</p>
+<div class="notice warning">
+Avec la version <strong>Form 2.0</strong>, il est désormais nécessaire de transmettre le <strong>nom du formulaire</strong> en tant que champ masqué. Si vous utilisez le form-plugin-provided <code>forms.html.twig</code>, cela est géré automatiquement, cependant, si vous avez remplacé le <code>forms.html.twig</code> par défaut dans votre thème ou plugin, vous devez ajouter manuellement <code>{% include "forms/ fields/formname/formname.html.twig" %}</code> dans votre fichier Twig de rendu de formulaire.
+</div>
+
+<h2 id="Créer un formulaire unique simple">Créer un formulaire unique simple.
+<a href="#Créer un formulaire unique simple" class="toc-anchor after"></a></h2>
+
+<p>Pour ajouter un formulaire à une page de votre site, créez une page et définissez son fichier de page sur "Formulaire". Vous pouvez le faire via le panneau d'administration, ou directement via le système de fichiers en nommant la page <code>form.md</code>.</p>
+<p>Ainsi, par exemple, <code>user/pages/03.your-form/form.md</code>.</p>
+<p>Le contenu de cette page sera :</p>
+<pre><code class="language-yaml">1  | ---
+2  | title: A Page with an Example Form
+3  | form:
+4  |     name: contact-form
+5  |     fields:
+6  |        name: name
+7  |        label: Name
+8  |        placeholder: Enter your name
+9  |        autofocus: on
+10 |        autocomplete: on
+11 |        type: text
+12 |        validate:
+13 |           required: true
+14 | 
+15 |        email
+16 |           label: Email
+17 |           placeholder: Enter your email address
+18 |           type: email
+19 |           validate:
+20 |              required: true
+21 | 
+22 |     buttons:
+23 |        submit:
+24 |           type: submit
+25 |           value: Submit
+26 |        reset:
+27 |           type: reset
+28 |           value: Reset
+29 | 
+30 |     process:
+31 |        email:
+32 |           from: &quot;{{ config.plugins.email.from }}&quot;
+33 |           to:
+34 |              - &quot;{{ config.plugins.email.to }}&quot;
+35 |              - &quot;{{ form.value.email }}&quot;
+36 |           subject: &quot;[Feedback] {{ form.value.name|e }}&quot;
+37 |           body: &quot;{% include 'forms/data.html.twig' %}&quot;
+38 |        save:
+39 |           fileprefix: feedback-
+40 |           dateformat: Ymd-His-u
+41 |           extension: txt
+42 |           body: &quot;{% include 'forms/data.txt.twig' %}&quot;
+43 |        message: Thank you for your feedback!
+44 |        display: thankyou
+45 | 
+46 | ---
+47 | 
+48 | # My Form
+49 | 
+50 | Regular **markdown** content goes here...
+</code></pre>
+<div class="notice tip">
+Il s'agit du contenu du fichier <code>form.md</code>, lorsqu'il est visualisé via le système de fichiers. Pour ce faire via Admin Plugin, ouvrez la page en <strong>mode expert</strong>, copiez la partie entre les triples tirets <code>---</code> et collez-la dans le champ Frontmatter.
+</div>
+
+<p>Cela suffit pour afficher un formulaire dans la page, sous le contenu de la page. C'est un formulaire simple avec un nom, un champ email, deux boutons : un pour soumettre le formulaire et un pour réinitialiser les champs. Pour plus d'informations sur les champs disponibles fournis par le plugin Form, <a href="../formulaires-ref-options-formulaires/">consultez la section suivante</a>.</p>
+<p>Que se passe-t-il lorsque vous appuyez sur le bouton <code>Submit</code> ? Il exécute les actions du <code>process</code> en série. Pour découvrir d'autres actions, <a href="../formulaires-ref-formulaire-actions/">consultez les options disponibles</a></id> ou <a href="../formulaires-ref-formulaire-actions/">créez la vôtre</a>.</p>
+<ol>
+<li>
+<p>Un e-mail est envoyé à l'adresse e-mail saisie, avec pour objet <code>[Feedback] [name entered]</code>. Le corps de l'email est défini dans le fichier <code>forms/data.html.twig</code> du thème utilisé.</p>
+</li>
+<li>
+<p>Un fichier est créé dans <code>user/data</code> pour stocker les données d'entrée du formulaire. Le modèle est défini dans <code>forms/data.txt.twig</code> du thème utilisé.</p>
+</li>
+<li>
+<p>La sous-page de <code>thankyou</code> s'affiche, ainsi que le message passé. La page de <code>thankyou</code> doit être une sous-page de la page contenant le formulaire.</p>
+</li>
+</ol>
+<div class="notice tip">
+Assurez-vous d'avoir configuré le plugin <strong>Email</strong> pour vous assurer qu'il a la bonne configuration afin d'envoyer des emails avec succès.
+</div>
+
+<h2 id="Formulaires multiples">Formulaires multiples.
+<a href="#Formulaires multiples" class="toc-anchor after"></a></h2>
+
+<p>Avec la sortie de <strong>Form Plugin v2.0</strong>, vous pouvez désormais définir plusieurs formulaires sur une seule page. La syntaxe est similaire mais chaque formulaire est différencié par le nom du formulaire, en l'occurrence <code>contact-form</code> et <code>newletter-form</code> :</p>
+<pre><code class="language-yaml">1  | forms:
+2  |     contact-form:
+3  |         fields:
+4  |             ...
+5  |         buttons:
+6  |             ...
+7  |         process:
+8  |             ...
+9  | 
+10 |     newsletter-form:
+11 |         fields:
+12 |             ...
+13 |         buttons:
+14 |             ...
+15 |         process:
+16 |             ...
+</code></pre>
+<p>Vous pouvez même utiliser ce format pour des formulaires uniques, en fournissant simplement un formulaire sous <code>form:</code> :</p>
+<pre><code class="language-yaml">1 | forms:
+2 |     contact-form:
+3 |         fields:
+4 |             ...
+5 |         buttons:
+6 |             ...
+7 |         process:
+8 |             ...
+</code></pre>
+<h2 id="Affichage des formulaires de Twig">Affichage des formulaires de Twig.
+<a href="#Affichage des formulaires de Twig" class="toc-anchor after"></a></h2>
+
+<p>Le moyen le plus simple d'inclure un formulaire consiste simplement à inclure un fichier Twig dans le modèle qui affiche la page où le formulaire est défini. Par example:</p>
+<pre><code class="language-twig">1 | {% include &quot;forms/form.html.twig&quot; %}
+</code></pre>
+<p>Cela utilisera le modèle Twig fourni par le plugin Form lui-même. À son tour, il affichera le formulaire tel que vous l'avez défini dans la page et gérera l'affichage d'un message de réussite ou d'erreurs lorsque le formulaire est soumis.</p>
+<p>Il existe cependant une méthode plus puissante d'affichage des formulaires qui peut tirer parti du nouveau support multi-formulaires. Avec cette méthode, vous passez en fait un paramètre <code>form:</code> au modèle Twig en spécifiant le formulaire que vous souhaitez afficher :</p>
+<pre><code class="language-twig">1 | {% include &quot;forms/form.html.twig&quot; with { form: forms('contact-form') } %}
+</code></pre>
+<p>En utilisant cette méthode, vous pouvez choisir un nom spécifique d'un formulaire à afficher. Vous pouvez même fournir le nom d'un formulaire défini dans d'autres pages. Tant que tous vos noms de formulaires sont uniques sur votre site, Grav trouvera et affichera le formulaire correct !</p>
+<p>Vous pouvez même afficher plusieurs formulaires sur une seule page :</p>
+<pre><code class="language-twig">1 | # Contact Form
+2 | {% include &quot;forms/form.html.twig&quot; with { form: forms('contact-form') } %}
+3 |
+4 | # Newsletter Signup
+5 | {% include &quot;forms/form.html.twig&quot; with { form: forms('newsletter-form') } %}
+</code></pre>
+<p>Une autre façon d'afficher un formulaire consiste à référencer la route de la page plutôt que le nom du formulaire à l'aide d'un tableau, par exemple :</p>
+<pre><code class="language-twig">1 | # Contact Form
+2 | {% include &quot;forms/form.html.twig&quot; with { form: forms( {route:'/forms/contact'} ) } %}
+</code></pre>
+<p>Cela trouvera le premier formulaire de la page avec route <code>/forms/contact</code></p>
+<h2 id="Affichage des formulaires dans le contenu de la page">Affichage des formulaires dans le contenu de la page.
+<a href="#Affichage des formulaires dans le contenu de la page" class="toc-anchor after"></a></h2>
+
+<p>Vous pouvez également afficher un formulaire à partir du contenu de votre page (par exemple <code>default.md</code>) directement sans que cette page ait même un formulaire défini à l'intérieur. Passez simplement le nom ou l'itinéraire au formulaire.</p>
+<div class="notice info">
+Le <strong>traitement Twig</strong> doit être activé et le <strong>cache de page</strong> doit être désactivé pour garantir que le formulaire est traité de manière dynamique sur la page et non mis en cache de manière statique et que la gestion du formulaire peut se produire.
+</div>
+
+<pre><code class="language-yaml">1  | ---
+2  | title: Page with Forms
+3  | process:
+4  |   twig: true
+5  | cache_enable: false
+6  | ---
+7  | 
+8  | # Contact Form
+9  | {% include &quot;forms/form.html.twig&quot; with {form: forms('contact-form')} %}
+10 | # Newsletter Signup
+11 | {% include &quot;forms/form.html.twig&quot; with {form: forms( {route: '/12 | newsletter-signup'} ) } %}
+</code></pre>
+<h2 id="Formulaires modulaires">Formulaires modulaires.
+<a href="#Formulaires modulaires" class="toc-anchor after"></a></h2>
+
+<p>Avec les versions précédentes du plugin Form, pour obtenir un formulaire à afficher dans une sous-page <strong>modulaire</strong> de votre page modulaire globale, vous deviez définir le formulaire dans la <strong>page modulaire de niveau supérieur</strong>. De cette façon, le formulaire serait traité et disponible pour être affiché dans la sous-page modulaire.</p>
+<p>Dans <strong>Form v2.0</strong>, vous pouvez désormais définir le formulaire directement dans la sous-page modulaire comme n'importe quel autre formulaire. Cependant, s'il n'est pas trouvé, le plugin de formulaire cherchera dans la 'page actuelle', c'est-à-dire la page modulaire de niveau supérieur pour un formulaire, il est donc entièrement rétrocompatible avec la façon de faire 1.0.</p>
+<p>Vous pouvez également configurer le modèle Twig de votre sous-page modulaire pour utiliser un formulaire d'une autre page, comme dans les exemples ci-dessus.</p>
+<div class="notice note">
+Lorsque vous utilisez un formulaire défini dans une sous-page modulaire, vous devez définir l'<strong>action :</strong> sur la page modulaire parente et configurer votre formulaire avec une <strong>redirect :</strong> ou <strong>fficher :</strong> l'action, car cette sous-page modulaire n'est pas une page appropriée à charger sur le formulaire soumission car il n'est <strong>pas routable</strong>, et donc pas accessible par un navigateur.
+</div>
+
+<p>Voici un exemple qui existe dans <code>form/modular/_form/form.md</code> :</p>
+<pre><code class="language-yaml">1  | ---
+2  | title: Modular Form
+3  | 
+4  | form:
+5  |   action: '/form/modular'
+6  |   inline_errors: true
+7  |   fields:
+8  |     person.name:
+9  |       type: text
+10 |       label: Name
+11 |       validate:
+12 |         required: true
+13 | 
+14 |   buttons:
+15 |     submit:
+16 |       type: submit
+17 |       value: Submit
+18 | 
+19 |   process:
+20 |     message: &quot;Thank you from your submission &lt;b&gt;{{ form.value('person.name') }}&lt;/b&gt;!&quot;
+21 |     reset: true
+22 |     display: '/form/modular'  
+23 | ---
+24 |
+25 | ## Modular Form
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../formulaires-blueprint-avance/" class="btn btn-neutral float-left" title="Fonctionnalités avancés Blueprint"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../formulaires-ref-options-formulaires/" class="btn btn-neutral float-right" title="Référence - Options de formulaires">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../formulaires-blueprint-avance/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../formulaires-ref-options-formulaires/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

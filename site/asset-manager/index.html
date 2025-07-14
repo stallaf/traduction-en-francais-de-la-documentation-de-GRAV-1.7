@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/asset-manager/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Asset Manager - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Asset Manager";
+        var mkdocs_page_input_path = "asset-manager.md";
+        var mkdocs_page_url = "/asset-manager/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>3. Themes &raquo;</li><li>Asset Manager</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Gestionnaire d'actifs</h1>
+
+<p>Dans Grav 1.6, le <strong>Gestionnaire d'Actifs</strong> a été complètement réécrit pour fournir un mécanisme plus flexible de gestion des actifs <strong>CSS</strong> et <strong>JavaScript</strong> dans les thèmes. L'objectif principal du gestionnaire d'actifs est de simplifier le processus d'ajout d'actifs à partir de thèmes et de plug-ins tout en offrant des fonctionnalités améliorées telles que la priorité et en fournissant un <strong>Pipeline d'Actifs</strong> pouvant être utilisé pour <strong>réduire</strong>, <strong>compresser</strong> et intégrer des actifs afin de réduire le nombre de requêtes de navigateur. , ainsi que la taille globale des actifs.</p>
+<p>C'est beaucoup plus flexible et plus fiable qu'auparavant. De plus, c'est considérablement plus "propre" et plus facile à suivre si vous commencez à parcourir le code. Le gestionnaire d'actifs est disponible dans Grav et est accessible dans les crochets d'événement du plugin, mais aussi directement dans les thèmes via des appels Twig.</p>
+<div class="notice note">
+<strong>Détails techniques</strong> : la classe d'actifs principale a été considérablement simplifiée et réduite. Une grande partie de la logique a été divisée en 3 traits. Un <em>trait de test</em> qui contient des fonctions principalement utilisées dans notre suite de tests, un <em>trait utils</em> qui contient des méthodes partagées entre les types d'actifs réguliers (js, inline_js, css, inline_css) et le pipeline d'actifs qui peut minifier et compresser, et enfin un <em>trait hérité</em> qui contient des méthodes qui sont des raccourcis ou des solutions de contournement, et ne doivent généralement pas être utilisées à l'avenir.
+</div>
+
+<div class="notice tip">
+Le gestionnaire d'actifs est entièrement rétrocompatible avec la syntaxe utilisée dans les versions antérieures à Grav 1.6, cependant, la documentation ci-dessous couvrira la nouvelle <strong>syntaxe préférée</strong>.
+</div>
+
+<h2 id="Configuration">Configuration
+<a href="#Configuration" class="toc-anchor after"></a></h2>
+
+<p>Le Grav Asset Manager dispose d'un ensemble simple d'options de configuration. Les valeurs par défaut se trouvent dans le fichier système <code>system.yaml</code>, mais vous pouvez remplacer tout ou partie d'entre elles dans votre fichier <code>user/config/system.yaml</code> :</p>
+<pre><code class="language-yaml">1  | assets:                                         # Configuration for Assets Manager (JS, CSS)
+2  |     css_pipeline: false                         # The CSS pipeline is the unification of multiple CSS resources into one file
+3  |     css_pipeline_include_externals: true        # Include external URLs in the pipeline by default
+4  |     css_pipeline_before_excludes: true          # Render the pipeline before any excluded files
+5  |     css_minify: true                            # Minify the CSS during pipelining
+6  |     css_minify_windows: false                   # Minify Override for Windows platforms, also applies to js. False by default due to ThreadStackSize
+7  |     css_rewrite: true                           # Rewrite any CSS relative URLs during pipelining
+8  |     js_pipeline: false                          # The JS pipeline is the unification of multiple JS resources into one file
+9  |     js_pipeline_include_externals: true         # Include external URLs in the pipeline by default
+10 |     js_pipeline_before_excludes: true           # Render the pipeline before any excluded files
+11 |     js_module_pipeline: false                   # The JS Module pipeline is the unification of multiple JS Module resources into one file
+12 |     js_module_pipeline_include_externals: true  # Include external URLs in the pipeline by default
+13 |     js_module_pipeline_before_excludes: true    # Render the pipeline before any excluded files
+14 |     js_minify: true                             # Minify the JS during pipelining
+15 |     enable_asset_timestamp: false               # Enable asset timestamps
+16 |     collections:
+17 |        jquery: system://assets/jquery/jquery-2.x.min.js
+</code></pre>
+<h2 id="Structure">Structure
+<a href="#Structure" class="toc-anchor after"></a></h2>
+
+<p>Il existe plusieurs niveaux de contrôle de positionnement, comme indiqué dans le schéma ci-dessous. Dans l'ordre de portée, ils sont:</p>
+<ul>
+<li><strong>Group</strong> - permet le regroupement d'actifs tels que la tête (par défaut) et le bas</li>
+<li><strong>Position</strong> - <code>before</code>, <code>pipeline</code> (par défaut) et <code>after</code>. Fondamentalement, cela vous permet de spécifier où dans le groupe l'actif doit être chargé.</li>
+<li><strong>Priority</strong> - Ceci contrôle <strong>l'ordre</strong>, où les entiers plus grands (par exemple <code>100</code>) seront sortis avant les entiers inférieurs. <code>10</code> est la valeur par défaut.</li>
+</ul>
+<div class="content3 pre">
+<pre>
+CSS
+┌───────────────────────┐
+│ Group (head)          │
+│┌─────────────────────┐│       ┌──────────────────┐
+││ Position            ││       │   priority 100   │───┐    ┌───────────┐
+││┌───────────────────┐││       ├──────────────────┤   ├───>│   CSS     │
+│││                   │││       │   priority 99    │───┤    └───────────┘
+│││      before       │├┼──┬───>├──────────────────┤   │
+│││                   │││  │    │    priority 1    │───┤    ┌───────────┐
+││├───────────────────┤││  │    ├──────────────────┤   ├───>│inline CSS │
+│││                   │││  │    │    priority 0    │───┘    └───────────┘
+│││     pipeline      │├┼──┤    └──────────────────┘
+│││                   │││  │
+││├───────────────────┤││  │
+│││                   │││  │
+│││       after       │├┼──┘
+│││                   │││
+││└───────────────────┘││
+│└─────────────────────┘│
+└───────────────────────┘
+
+JS
+┌───────────────────────┐
+│ Group (head)          │
+│┌─────────────────────┐│       ┌──────────────────┐
+││ Position            ││       │   priority 100   │───┐     ┌──────────┐
+││┌───────────────────┐││       ├──────────────────┤   ├───> │   JS     │
+│││                   │││       │   priority 99    │───┤     └──────────┘
+│││      before       │├┼──┬───>├──────────────────┤   │
+│││                   │││  │    │    priority 1    │───┤     ┌──────────┐
+││├───────────────────┤││  │    ├──────────────────┤   ├───> │inline JS │
+│││                   │││  │    │    priority 0    │───┘     └──────────┘
+│││     pipeline      │├┼──┤    └──────────────────┘
+│││                   │││  │
+││├───────────────────┤││  │
+│││                   │││  │
+│││       after       │├┼──┘
+│││                   │││
+││└───────────────────┘││
+│└─────────────────────┘│
+└───────────────────────┘
+
+JS Module
+┌───────────────────────┐
+│ Group (head)          │
+│┌─────────────────────┐│       ┌──────────────────┐
+││ Position            ││       │   priority 100   │───┐    ┌───────────┐
+││┌───────────────────┐││       ├──────────────────┤   ├───>│ JS Module │
+│││                   │││       │   priority 99    │───┤    └───────────┘
+│││      before       │├┼──┬───>├──────────────────┤   │
+│││                   │││  │    │    priority 1    │───┤    ┌────────────────┐
+││├───────────────────┤││  │    ├──────────────────┤   ├───>│inline JS Module│
+│││                   │││  │    │    priority 0    │───┘    └────────────────┘
+│││     pipeline      │├┼──┤    └──────────────────┘
+│││                   │││  │
+││├───────────────────┤││  │
+│││                   │││  │
+│││       after       │├┼──┘
+│││                   │││
+││└───────────────────┘││
+│└─────────────────────┘│
+└───────────────────────┘
+</pre>
+</div>
+<p><br></p>
+<p>Par défaut, <code>CSS</code>, <code>JS</code> et <code>JS Module</code> s'affichent par défaut dans la position du <code>pipeline</code> lors de leur sortie. Alors que <code>InlineCSS</code>, <code>InlineJS</code> et <code>Inline JS Module</code> sont par défaut dans la position <code>after</code>. Ceci est cependant configurable et vous pouvez définir n'importe quel actif dans n'importe quelle position.</p>
+<h2 id="Assets dans les thèmes">Assets dans les thèmes
+<a href="#Assets dans les thèmes" class="toc-anchor after"></a></h2>
+
+<h3 id="Aperçu">Aperçu
+<a href="#Aperçu" class="toc-anchor after"></a></h3>
+
+<p>En général, vous ajoutez des actifs CSS un par un à l'aide des appels <code>assets.addCss()</code> ou <code>assets.addInlineCss()</code>, puis restituez ces actifs via <code>assets.css()</code>. Les options contrôlant la priorité, le pipelining ou l'inlining peuvent être spécifiées par ressource lors de son ajout, ou au moment du rendu pour un groupe de ressources.</p>
+<p>Les ressources JS sont gérées de la même manière avec les appels <code>assets.addJs()</code> et <code>assets.addInlineJs()</code>. Il existe également une méthode générique <code>assets.add()</code> qui essaie de deviner le type d'actif que vous ajoutez, mais il est recommandé d'utiliser les appels de méthode plus spécifiques.</p>
+<p>Depuis la version 1.7.27, Grav's Assets Manager prend également en charge les modules JS. Ces actifs fonctionnent exactement comme les actifs JS mais leur type est <code>type="module"</code> et ils sont gérés avec des appels <code>assets.addJsModule()</code> et <code>assets.addInlineJsModule()</code>. La méthode générique <code>assets.add()</code> ne reviendra au module JS que si l'extension détectée est <code>.mjs</code>. Sinon, tout fichier <code>.js</code> sera traité comme JS normal.</p>
+<div class="notice note">
+Pour en savoir plus sur les modules JS
+<p>
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules]" title="Lien  mort">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules</a></li>
+  <li><a href="https://v8.dev/features/modules">https://v8.dev/features/modules</a></li>
+  <li><a href="https://javascript.info/modules-intro">https://javascript.info/modules-intro</a></li>
+</p>
+</div>
+
+<p>L'Asset Manager prend également en charge :</p>
+<ul>
+<li>ajouter des actifs à des groupes nommés afin de rendre ces groupes à différents endroits et/ou avec différents ensembles d'options,</li>
+<li>configurer des collections de ressources nommées, qui peuvent être ajoutées en un seul appel <code>assets.add*()</code>.</li>
+</ul>
+<h3 id="Exemple">Exemple
+<a href="#Exemple" class="toc-anchor after"></a></h3>
+
+<p>Un exemple de la façon dont vous pouvez ajouter des fichiers CSS dans votre thème peut être trouvé dans le thème <strong>quark</strong> par défaut fourni avec Grav. Si vous regardez le partiel <code>templates/partials/base.html.twig</code>, vous verrez quelque chose de similaire à ce qui suit :</p>
+<pre><code>1  | &lt;!DOCTYPE html&gt;
+2  | &lt;html&gt;
+3  |     &lt;head&gt;
+4  |     ...
+5  | 
+6  |     {% block stylesheets %}
+7  |         {% do assets.addCss('theme://css-compiled/spectre.css') %}
+8  |         {% do assets.addCss('theme://css-compiled/theme.css') %}
+9  |         {% do assets.addCss('theme://css/custom.css') %}
+10 |         {% do assets.addCss('theme://css/line-awesome.min.css') %}
+11 |     {% endblock %}
+12 | 
+13 |     {% block javascripts %}
+14 |         {% do assets.addJs('jquery', 101) %}
+15 |         {% do assets.addJs('theme://js/jquery.treemenu.js', { group: 'bottom' }) %}
+16 |         {% do assets.addJs('theme://js/site.js', { group: 'bottom' }) %}
+17 |         {% do assets.addJsModule('plugin://my_plugin/app/main.js', { group: 'bottom' }) %}
+18 |     {% endblock %}
+19 | 
+20 |     {% block assets deferred %}
+21 |         {{ assets.css()|raw }}
+22 |         {{ assets.js()|raw }}
+23 |     {% endblock %}
+24 |     &lt;/head&gt;
+25 | 
+26 |     &lt;body&gt;
+27 |     ...
+28 | 
+29 |     {% block bottom %}
+30 |         {{ assets.js('bottom')|raw }}
+31 |     {% endblock %}
+32 |     &lt;/body&gt;
+33 | &lt;/html&gt;
+</code></pre>
+<p>La balise twig <code>block stylesheets</code> définit simplement une région qui peut être remplacée ou ajoutée dans les modèles qui étendent celle-ci. Dans le bloc, vous verrez un certain nombre d'appels à <code>do assets.addCss()</code>.</p>
+<p>La balise <code>{% do %}</code>est en fait <a href="https://twig.symfony.com/doc/1.x/tags/do.html">intégrée à Twig</a> lui-même, et elle vous permet de manipuler des variables sans générer de sortie.</p>
+<p>La méthode <code>addCss()</code> ajoute des assets CSS au Asset Manager. Si vous spécifiez un deuxième paramètre numérique, cela définit la priorité de la feuille de style. Si vous ne spécifiez pas de priorité, la priorité à laquelle les ressources sont ajoutées dictera l'ordre dans lequel elles sont rendues. Vous remarquerez l'utilisation d'un <strong>wrapper de flux PHP</strong> <code>theme://</code> pour fournir à Grav un moyen simple de déterminer le chemin relatif du thème actuel.</p>
+<div class="notice info">
+Le fichier <code>assets.addJs('jquery', 101)</code> inclura la collection <code>jquery</code> définie dans la configuration globale des actifs. Le paramètre facultatif ici de <code>101</code> définit la priorité sur une valeur assez élevée pour s'assurer qu'il est rendu en premier. La priorité par défaut lorsqu'elle n'est pas fournie est une valeur de <code>10</code>. Une manière plus flexible d'écrire ceci serait <code>assets.addJs('jquery', {priority: 101})</code>. Cela vous permet d'ajouter d'autres paramètres à côté de la priorité.
+</div>
+
+<p>L'appel <code>assets.css()|raw</code> restitue les ressources CSS sous forme de balises HTML. Comme il n'y a pas de paramètre fourni à cette méthode, le groupe est défini par défaut sur <code>head</code>. Notez comment cela est enveloppé dans un bloc <code>assets defered</code>. Il s'agit d'une nouvelle fonctionnalité de Grav 1.6 qui vous permet d'ajouter des ressources à partir d'autres modèles Twig qui sont inclus plus bas dans la page (ou n'importe où en réalité), tout en garantissant qu'ils peuvent s'afficher dans ce bloc <code>head</code> si nécessaire.</p>
+<p>Le bloc <code>bottom</code> à la toute fin de la sortie de votre thème rend le JavaScript qui a été attribué au groupe <code>bottom</code>.</p>
+<h2 id="Ajout d'actifs">Ajout d'actifs
+<a href="#Ajout d'actifs" class="toc-anchor after"></a></h2>
+
+<h4 id="add(asset, [options])">add(asset, [options])
+<a href="#add(asset, [options])" class="toc-anchor after"></a></h4>
+
+<p>La méthode d'ajout fait de son mieux pour faire correspondre un actif en fonction de l'extension de fichier. C'est une méthode de commodité, il est préférable d'appeler l'une des méthodes directes pour CSS, Link, JS et JS Module. Voir les méthodes directes pour plus de détails.</p>
+<div class="notice info">
+Le tableau d'options est l'approche préférée pour passer plusieurs options. Cependant, comme dans l'exemple précédent avec <code>jquery</code>, vous pouvez utiliser un raccourci et passer un entier pour le <strong>deuxième argument</strong> de la méthode si tout ce que vous souhaitez définir est la <strong>priorité</strong>.
+</div>
+
+<h4 id="addCss(asset, [options])">addCss(asset, [options])
+<a href="#addCss(asset, [options])" class="toc-anchor after"></a></h4>
+
+<p>Cette méthode ajoutera des actifs à la liste des actifs CSS. La priorité par défaut est 10 si elle n'est pas fournie. Un nombre plus élevé signifie qu'il s'affichera avant les éléments de priorité inférieure. L'option de <code>pipeline</code> contrôle si cet actif doit être inclus dans le pipeline de combinaison/réduction. S'il n'est pas en pipeline, l'option <code>loading</code> contrôle si la ressource doit être rendue sous forme de lien vers une feuille de style externe ou si son contenu doit être intégré dans une balise de style en ligne.</p>
+<h4 id="addLink($asset, [options])">addLink($asset, [options])
+<a href="#addLink($asset, [options])" class="toc-anchor after"></a></h4>
+
+<p>Cette méthode ajoutera des actifs aux actifs de Link, sous la forme d'une balise <code>&lt;link&gt;</code>. Il est utile pour ajouter des balises de lien à la tête de n'importe où sur votre site qui ne sont pas des fichiers CSS. La priorité par défaut est 10 si elle n'est pas fournie. Un nombre plus élevé signifie qu'il s'affichera avant les éléments de priorité inférieure.</p>
+<p>Contrairement aux autres méthodes d'ajout d'actifs, <code>link()</code> ne prend pas en charge le pipelining, ni ne prend en charge <code>inline</code>.</p>
+<h4 id="addInlineCss(css, [options])">addInlineCss(css, [options])
+<a href="#addInlineCss(css, [options])" class="toc-anchor after"></a></h4>
+
+<p>Vous permet d'ajouter une chaîne de CSS à l'intérieur d'une balise de style en ligne. Utile pour l'initialisation ou tout ce qui est dynamique. Pour incorporer le contenu d'un fichier de ressources standard, consultez l'option <code>{ 'loading': 'inline' }</code> des méthodes <code>addCss()</code> et <code>css()</code>.</p>
+<h4 id="addJs(asset, [options])">addJs(asset, [options])
+<a href="#addJs(asset, [options]))" class="toc-anchor after"></a></h4>
+
+<p>Cette méthode ajoutera des actifs à la liste des actifs JavaScript. La priorité par défaut est 10 si elle n'est pas fournie. Un nombre plus élevé signifie qu'il s'affichera avant les éléments de priorité inférieure. L'option de <code>pipeline</code> contrôle si cet actif doit être inclus dans le pipeline de combinaison/réduction. S'il n'est pas en pipeline, l'option <code>loading</code> contrôle si la ressource doit être rendue sous forme de lien vers un fichier de script externe ou si son contenu doit être intégré dans une balise de script en ligne.</p>
+<h4 id="addInlineJs(javascript, [options])">addInlineJs(javascript, [options])
+<a href="#addInlineJs(javascript, [options])" class="toc-anchor after"></a></h4>
+
+<p>Vous permet d'ajouter une chaîne de caractères JavaScript dans une balise de script en ligne. Utile pour l'initialisation ou tout ce qui est dynamique. Pour incorporer le contenu d'un fichier de ressources standard, consultez l'option <code>{ 'loading': 'inline' }</code> des méthodes <code>addJs()</code> et <code>js()</code>.</p>
+<h4 id="addJsModule(asset, [options])">addJsModule(asset, [options])
+<a href="#addJsModule(asset, [options])" class="toc-anchor after"></a></h4>
+
+<p>Cette méthode ajoutera des actifs à la liste des actifs des modules JavaScript. La priorité par défaut est 10 si elle n'est pas fournie. Un nombre plus élevé signifie qu'il s'affichera avant les éléments de priorité inférieure. L'option <code>pipeline</code> contrôle si cet actif doit être inclus dans le pipeline de combinaison/réduction. S'il n'est pas en pipeline, l'option <code>loading</code> contrôle si la ressource doit être rendue sous forme de lien vers un fichier de script externe ou si son contenu doit être intégré dans une balise de script en ligne.</p>
+<h4 id="addInlineJsModule(javascript, [options])">addInlineJsModule(javascript, [options])
+<a href="addInlineJsModule(javascript, [options])" class="toc-anchor after"></a></h4>
+
+<p>Vous permet d'ajouter une chaîne de caractères JavaScript à l'intérieur d'une balise de script de module en ligne. Pour incorporer le contenu d'un fichier de ressources standard, consultez l'option <code>{ 'loading': 'inline' }</code> des méthodes <code>addJsModule()</code> et <code>js()</code>.</p>
+<h4 id="registerCollection(name, array)">registerCollection(name, array)
+<a href="#registerCollection(name, array)" class="toc-anchor after"></a></h4>
+
+<p>Vous permet d'enregistrer un tableau d'actifs CSS et JavaScript avec un nom pour une utilisation ultérieure par la méthode <code>add()</code>. Particulièrement utile si vous souhaitez enregistrer une collection pouvant être utilisée par plusieurs thèmes ou plugins, tels que jQuery ou Bootstrap.</p>
+<h2 id="Options">Options
+<a href="#Options" class="toc-anchor after"></a></h2>
+
+<p>Le cas échéant, vous pouvez transmettre un tableau d'options d'actifs. Les options de base sont :</p>
+<h4 id="Pour CSS">Pour CSS
+<a href="#Pour CSS" class="toc-anchor after"></a></h4>
+
+<ul>
+<li><strong>priority</strong> : valeur entière (la valeur par défaut est <code>10</code>)</li>
+<li><strong>position</strong> : le <code>pipeline</code> est par défaut mais peut également être <code>before</code> ou <code>after</code> les actifs en position <code>pipeline</code>.</li>
+<li><strong>loading</strong> : <code>inline</code> si cet élément doit être sorti plutôt en ligne (par défaut : référencé via un lien vers la feuille de style). Doit être utilisé en conjonction avec <code>position : before</code> ou <code>position : after</code> car il n'aura aucun effet avec <code>position : pipeline</code> (par défaut).</li>
+<li><strong>group</strong> : chaîne permettant de spécifier un nom de groupe unique pour l'actif (la valeur par défaut est <code>head</code>)</li>
+</ul>
+<h4 id="Pour JS et les modules JS">Pour JS et les modules JS
+<a href="#Pour JS et les modules JS" class="toc-anchor after"></a></h4>
+
+<ul>
+<li><strong>priority</strong> : valeur entière (la valeur par défaut est <code>10</code>)</li>
+<li><strong>position</strong> : le <code>pipeline</code> est par défaut mais peut également être avant ou après les actifs en position de pipeline.</li>
+<li><strong>loading</strong> : prend en charge tout type de chargement, tel que <code>async</code>, <code>defer</code>, <code>asyncdefer</code> ou <code>inline</code>. Doit être utilisé en conjonction avec <code>position : before</code> ou <code>position : after</code> car il n'aura aucun effet avec <code>position : pipeline</code> (par défaut).</li>
+<li><strong>group</strong> : chaîne permettant de spécifier un nom de groupe unique pour l'actif (la valeur par défaut est head)</li>
+</ul>
+<h4 id="Autres attributs">Autres attributs
+<a href="#Autres attributs" class="toc-anchor after"></a></h4>
+
+<p>Vous pouvez également passer tout ce que vous voulez dans le tableau d'options, et s'il ne s'agit pas de ces types standard, ils seront simplement rendus sous forme d'attributs tels que <code>{id : 'custom-id'}</code> sera rendu comme <code>id="custom-id"</code> dans la balise HTML. Cela peut également être utilisé pour inclure des données structurées telles que json-ld via <code>addInlineJs()</code> en utilisant <code>{type : 'application/ld+json'}</code>.</p>
+<h4 id="Exemples">Exemples
+<a href="#Exemples" class="toc-anchor after"></a></h4>
+
+<p>Par exemple:</p>
+<pre><code class="language-twig">{% do assets.addCss('page://01.blog/assets-test/example.css?foo=bar',
+   { priority: 20, loading: 'inline', position: 'before'}) %}
+</code></pre>
+<p>Rendu comme suit :</p>
+<pre><code class="language-css">1 | &lt;style&gt;
+2 | h1.clignotant {
+3 |     décoration de texte : souligné ;
+4 | }
+5 | &lt;/style&gt;
+6 | &lt;lien.....
+</code></pre>
+<p>Un autre exemple:</p>
+<pre><code class="language-twig">{% do assets.addJs('page://01.blog/assets-test/example.js',
+   {loading: 'async', id: 'custom-css'}) %}
+</code></pre>
+<p>Rendu comme suit :</p>
+<pre><code class="language-html">&lt;script src=&quot;/grav/user/pages/01.blog/assets-test/example.js&quot; async id=&quot;custom-css&quot;&gt;&lt;/script&gt;`
+</code></pre>
+<p>Un exemple de lien :</p>
+<pre><code class="language-twig">{% do assets.addLink('theme://images/favicon.png', { rel: 'icon', type: 'image/png' }) %}
+{% do assets.addLink('plugin://grav-plugin/build/js/vendor.js', { rel: 'modulepreload' }) %}
+</code></pre>
+<p>Rendu comme suit :</p>
+<pre><code class="language-html">&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/user/themes/quark/images/favicon.png&quot;&gt;
+&lt;link href=&quot;/user/plugins/grav-plugin/build/js/vendor.js&quot; rel=&quot;modulepreload&quot;&gt;
+</code></pre>
+<h4 id="Actifs de rendu">Actifs de rendu
+<a href="#Actifs de rendu" class="toc-anchor after"></a></h4>
+
+<p>Les éléments suivants vous permettent de rendre l'état actuel des actifs CSS et JavaScript.</p>
+<h4 id="css(group, [options], include_link = true)">css(group, [options], include_link = true)
+<a href="#css(group, [options], include_link = true)" class="toc-anchor after"></a></h4>
+
+<p>Rend les actifs CSS qui ont été ajoutés au groupe d'un gestionnaire d'actifs (la valeur par défaut est <code>head</code>). Les options sont :</p>
+<ul>
+<li><strong>loading</strong> : <code>inline</code> si <strong>tous</strong> les éléments de ce groupe doivent être alignés (par défaut : afficher chaque élément en fonction de son option de <code>position</code>).</li>
+<li><strong><em>link attribute</em></strong> : attributs de lien, voir ci-dessous (par défaut : <code>{'type' : 'text/css', 'rel' : 'stylesheet'}</code>). Efficace uniquement si <code>inline</code> n'est pas utilisé comme option de rendu de ce groupe.</li>
+</ul>
+<p>Lorsque <code>include_link</code> est activé, ce qui est le cas par défaut, l'appel de <code>css()</code> se propagera également à l'appel de <code>link()</code>.</p>
+<p>Si le pipelining est <strong>désactivé</strong> dans la configuration, les actifs du groupe sont rendus individuellement, classés par priorité d'actif (de haut en bas), suivis de l'ordre dans lequel les actifs ont été ajoutés.</p>
+<p>Si le pipelining est <strong>activé</strong> dans la configuration, les actifs dans la position du pipeline sont combinés dans l'ordre dans lequel les actifs ont été ajoutés, puis traités en fonction de la configuration du pipeline.</p>
+<p>Chaque élément est rendu soit sous forme de lien de feuille de style, soit en ligne, selon l'option <code>loading</code> de l'élément et si <code>loading' : 'inline'}</code> est utilisé pour le rendu de ce groupe. Le CSS ajouté par <code>addInlineCss()</code> sera rendu dans la position <code>after</code> par défaut, mais vous pouvez le configurer pour qu'il soit rendu avant la sortie en pipeline avec la <code>position : before</code>.</p>
+<h4 id="link(group, [options]">link(group, [options]
+<a href="#link(group, [options]" class="toc-anchor after"></a></h4>
+
+<p>Renders Link assets qui ont été ajoutés au groupe d'un Asset Manager (la valeur par défaut est <code>head</code>). Il n'est pas recommandé d'utiliser un groupe différent de head, c'est là que le navigateur s'attend à ce que la balise soit trouvée et traitée.</p>
+<p>Contrairement aux autres méthodes d'ajout d'actifs, <code>link()</code> ne prend pas en charge le pipelining, ni ne prend en charge <code>inline</code>.</p>
+<h4 id="js(group, [options], include_js_module = true)">js(group, [options], include_js_module = true)
+<a href="#js(group, [options], include_js_module = true)" class="toc-anchor after"></a></h4>
+
+<p>Rend les actifs JavaScript qui ont été ajoutés au groupe d'un gestionnaire d'actifs (la valeur par défaut est <code>head</code>). Les options sont :</p>
+<ul>
+<li><strong>loading</strong> : <code>inline</code> si <strong>tous</strong> les éléments de ce groupe doivent être alignés (par défaut : afficher chaque élément en fonction de son option de <code>position</code>).</li>
+<li><strong><em>script attributes</em></strong>, voir ci-dessous (par défaut : <code>{'type' : 'text/javascript'}</code>). Efficace uniquement si <code>inline</code> <strong>n'est pas</strong> utilisé comme option de rendu de ce groupe.</li>
+</ul>
+<p>Lorsque <code>include_js_module</code> est activé, ce qui est le cas par défaut, l'appel de <code>js()</code> se propagera également à l'appel de <code>jsModule()</code>.</p>
+<p>Si le pipelining est <strong>désactivé</strong> dans la configuration, les actifs du groupe sont rendus individuellement, classés par priorité d'actif (de haut en bas), suivis de l'ordre dans lequel les actifs ont été ajoutés.</p>
+<p>Si le pipelining est <strong>activé</strong> dans la configuration, les actifs dans la position du pipeline sont combinés dans l'ordre dans lequel les actifs ont été ajoutés, puis traités en fonction de la configuration du pipeline. Le résultat du pipeline combiné est ensuite rendu avant ou après les actifs non pipelinés en fonction du paramètre de <code>js_pipeline_before_excludes</code>.</p>
+<p>Chaque élément est rendu sous forme de lien de script ou en ligne, selon l'option <code>loading</code> de l'élément et si <code>{'loading' : 'inline'}</code> est utilisé pour le rendu de ce groupe. Notez que la seule façon d'intégrer un pipeline JS est d'utiliser le chargement en ligne comme option de la méthode <code>js()</code>. JS ajouté par <code>addInlineJs()</code> sera rendu dans la position après par défaut, mais vous pouvez le configurer pour qu'il soit rendu avant la sortie en pipeline avec la <code>position : before</code>.</p>
+<h4 id="jsModule(group, [options])">jsModule(group, [options])
+<a href="#jsModule(group, [options])" class="toc-anchor after"></a></h4>
+
+<p>Fonctionne exactement comme le moteur de rendu <code>js()</code>, mais pour les modules JavaScript. L'attribut de type de script par défaut est <code>type="module"</code>, même lors du rendu <code>inline</code>.</p>
+<h4 id="all(group, [options])">all(group, [options])
+<a href="#all(group, [options])" class="toc-anchor after"></a></h4>
+
+<p>Rend chaque élément ci-dessus dans l'ordre : <code>css()</code>, <code>link()</code>, <code>js()</code>, <code>jsModule()</code>.</p>
+<p>C'est la méthode recommandée pour inclure les actifs différés dans votre fichier twig principal (généralement <code>base.html.twig</code>).</p>
+<pre><code class="language-twig">1 | {% block assets deferred %}
+2 |   {{ assets.all()|raw }}
+3 | {% endblock %}
+</code></pre>
+<h2 id="Actifs et collections nommés">Actifs et collections nommés
+<a href="#Actifs et collections nommés" class="toc-anchor after"></a></h2>
+
+<p>Grav dispose désormais d'une fonctionnalité puissante appelée <strong>named assts</strong> qui vous permet d'enregistrer une collection d'actifs CSS et JavaScript avec un nom. Ensuite, vous pouvez simplement <strong>ajouter</strong> ces actifs au gestionnaire d'actifs via le nom avec lequel vous avez enregistré la collection. Grav est préconfiguré avec <strong>jQuery</strong> mais a la capacité de définir des collections personnalisées dans le <code>system.yaml</code> à utiliser par n'importe quel thème ou plugin :</p>
+<pre><code class="language-yaml">1 | assets:
+2 |   collections:
+3 |     jquery: system://assets/jquery/jquery-2.1.3.min.js
+4 |     bootstrap:
+5 |         - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/ bootstrap.min.css
+6 |         - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css
+7 |         - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js
+</code></pre>
+<p>Vous pouvez également utiliser la méthode <code>registerCollection()</code> par programmation.</p>
+<pre><code class="language-php">1 | $assets = $this-&gt;grav['assets'];
+2 | $bootstrapper_bits = [https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css,
+3 |                      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css,
+4 |                      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js];
+5 | $assets-&gt;registerCollection('bootstrap', $bootstrap_bits);
+6 | $assets-&gt;add('bootstrap', 100);
+</code></pre>
+<p>Un exemple de cette action peut être trouvé dans le <a href="https://github.com/getgrav/grav-plugin-bootstrapper/blob/develop/bootstrapper.php#L51-L71"><strong>plugin</strong> bootstrapper</a>.</p>
+<h4 id="Collections avec attributs">Collections avec attributs
+<a href="#Collections avec attributs" class="toc-anchor after"></a></h4>
+
+<p>Parfois, vous souhaiterez peut-être spécifier des attributs personnalisés et/ou différents pour des éléments spécifiques d'une collection, par exemple si vous chargez des actifs à partir d'un CDN distant et que vous souhaitez inclure le contrôle d'intégrité (SRI). Ceci est possible en traitant la valeur de l'actif nommé comme un tableau où la clé est l'emplacement de l'actif et la valeur est la liste des attributs supplémentaires. Par example:</p>
+<pre><code class="language-yaml">1 | assets:
+2 |   collections:
+3 |     jquery_and_ui:
+4 |        https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js:
+5 |            integrity: 'sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+6 |            group: 'bottom'
+7 |        https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js:
+8 |            integrity: 'sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=='
+9 |            group: 'bottom'
+</code></pre>
+<p>Ensuite, après avoir ajouté le JS dans votre twig via <code>{% do assets.addJs('jquery_and_ui', { defer: true }) %}</code>, les actifs se chargeront comme :</p>
+<pre><code class="language-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot; defer=&quot;1&quot;
+integrity=&quot;sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaM7TubfWG7Tubf= &quot;&gt;
+&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js&quot; defer=&quot;1&quot;
+integrity=&quot;sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da +f9mvkYrmj5MCLZWEtQuA==&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+<p>Notez que <code>defer</code> a été défini au niveau de la brindille et qu'il a été appliqué à tous les actifs de la collection. En effet, Grav fusionnera les attributs de la définition twig et yaml, en donnant la priorité à ceux de la définition yaml.</p>
+<p>Si l'actif <code>jquery-ui.min.js</code> incluait également un attribut <code>defer : null</code>, il aurait alors pris le pas sur le twig <code>defer : 1</code> et il n'aurait pas été rendu.</p>
+<h2 id="Actifs groupés">Actifs groupés
+<a href="#Actifs groupés" class="toc-anchor after"></a></h2>
+
+<p>Le gestionnaire d'actifs vous permet de transmettre un <code>group</code> facultatif dans le cadre d'un tableau d'options lors de l'ajout d'actifs. Bien que cela soit d'une utilité marginale pour CSS, il est particulièrement utile pour JavaScript où vous devrez peut-être avoir des fichiers JS ou Inline JS référencés dans l'en-tête, et d'autres au bas de la page.</p>
+<p>Pour tirer parti de cette fonctionnalité, vous devez spécifier le groupe lors de l'ajout de l'actif et utiliser la syntaxe des options :</p>
+<pre><code>{% do assets.addJs('theme://js/example.js', {'priority':102, 'group':'bottom'}) %}
+</code></pre>
+<p>Ensuite, pour que ces actifs du groupe inférieur s'affichent, vous devez ajouter les éléments suivants à votre thème :</p>
+<pre><code>{{ assets.js('bottom')|raw }}
+</code></pre>
+<p>Si aucun groupe n'est défini pour un actif, <code>head</code> est le groupe par défaut. Si aucun groupe n'est défini pour le rendu, le groupe <code>head</code> sera rendu. Cela garantit que la nouvelle fonctionnalité est 100 % rétrocompatible avec les thèmes existants.</p>
+<p>Il en va de même pour les fichiers CSS :</p>
+<pre><code>{% do assets.addCss('theme://css/ie8.css', {'group':'ie'}) %}
+</code></pre>
+<p>rendu comme suit :</p>
+<pre><code>{{ assets.css('ie')|raw }}
+</code></pre>
+<h2 id="Modifier l'attribut des éléments CSS/JS rendus">Modifier l'attribut des éléments CSS/JS rendus
+<a href="#Modifier l'attribut des éléments CSS/JS rendus" class="toc-anchor after"></a></h2>
+
+<p>CSS est ajouté par défaut en utilisant l'attribut <code>rel="stylesheet"</code> et <code>type="text/css"</code> , tandis que JS a <code>type="text/javascript"</code>.</p>
+<p>Pour modifier les valeurs par défaut ou pour ajouter de nouveaux attributs, vous devez créer un nouveau groupe d'actifs et dire à Grav de le rendre avec cet attribut.</p>
+<p>Exemple de modification de l'attribut <code>rel</code> sur un groupe d'assets :</p>
+<pre><code class="language-twig">1 | {% do assets.addCSS('theme://whatever.css', {'group':'my-alternate-group'}) %}
+2 | ...
+3 | {{ assets.css('my-alternate-group', {'rel': 'alternate'})|raw }}
+</code></pre>
+<h2 id="Inlining Assets">Inlining Assets
+<a href="#Inlining Assets" class="toc-anchor after"></a></h2>
+
+<p>L'inlining permet de placer le code CSS (et JS) critique directement dans le document HTML et permet au navigateur d'afficher une page immédiatement sans attendre les téléchargements de feuilles de style ou de scripts externes. Cela peut améliorer sensiblement les performances du site pour les utilisateurs, en particulier sur les réseaux mobiles. Vous trouverez des détails dans <a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">cet article sur l'optimisation de la livraison CSS</a>.</p>
+<p>Cependant, l'insertion directe de code CSS ou JavaScript dans un modèle de page n'est pas toujours possible, par exemple, lorsque le CSS conforme à Sass est utilisé. La conservation des actifs CSS et JS dans des fichiers séparés simplifie également la maintenance. L'utilisation de la capacité en ligne d'Asset Manager vous permet d'optimiser la vitesse sans modifier la façon dont vos actifs sont stockés. Même des pipelines entiers peuvent être alignés.</p>
+<p>Pour incorporer le contenu d'un fichier de ressources, utilisez l'option <code>{'loading' : 'inline'}</code> avec <code>addCss()</code> ou <code>addJs()</code>. Vous pouvez également intégrer tous les actifs lors du rendu d'un groupe avec <code>js()</code> ou <code>css()</code>, qui fournissent la même option.</p>
+<p>Exemple d'utilisation de <code>system.yaml</code> pour définir des collections de ressources nommées en fonction des exigences de chargement des ressources, avec <code>app.css</code> étant un fichier CSS généré par <a href="http://sass-lang.com/">Sass</a> :</p>
+<pre><code class="language-yaml">1  | assets:
+2  |    collections:
+3  |       css-inline:
+4  |          - 'http://fonts.googleapis.com/css?family=Ubuntu:400|Open+Sans: 400,400i,700'
+5  |          - 'theme://css-compiled/app.css'
+6  |       js-inline:
+7  |          - 'https://use.fontawesome.com/&lt;embedcode&gt;.js'
+8  |       js-async:
+9  |          - 'theme://foundation/dist/assets/js/app.js'
+10 |          - 'theme://js/header-display.js'
+</code></pre>
+<p>Le modèle insère chaque collection dans son groupe correspondant, à savoir <code>head</code> et <code>head-link</code> pour CSS, <code>head</code> et <code>head-async</code> pour JS. L'en-tête de groupe par défaut est utilisé pour le chargement en ligne dans chaque cas :</p>
+<pre><code class="language-twig">1  | {% block stylesheets %}
+2  |     {% do assets.addCss('css-inline') %}
+3  |     {% do assets.addCss('css-link', {'group': 'head-link'}) %}
+4  | {% endblock %}
+5  | {{ assets.css('head-link')|raw }}
+6  | {{ assets.css('head', {'loading': 'inline'})|raw }}
+7  | {% block javascripts %}
+8  |     {% do assets.addJs('js-inline') %}
+9  |     {% do assets.addJs('js-async', {'group': 'head-async'}) %}
+10 | {% endblock %}
+11 | {{ assets.js('head-async', {'loading': 'async'})|raw }}
+12 | {{ assets.js('head', {'loading': 'inline'})|raw }}
+</code></pre>
+<h2 id="Actifs statiques">Actifs statiques
+<a href="#Actifs statiques" class="toc-anchor after"></a></h2>
+
+<p>Parfois, il est nécessaire de référencer des actifs sans utiliser Asset Manager. Il existe une méthode d'assistance <code>url()</code> disponible pour y parvenir. Un exemple de cela pourrait être si vous vouliez référencer une image du thème. La syntaxe pour cela est :</p>
+<pre><code>&lt;img src="{{ url("theme://" ~ widget.image)|e }}" alt="{{ widget.text|e }}" /&gt;
+</code></pre>
+<p>La méthode <code>url()</code> prend un deuxième paramètre facultatif <code>true</code> ou <code>false</code> pour permettre à l'URL d'inclure le schéma et le domaine. Par défaut, cette valeur est supposée <code>false</code>, ce qui donne uniquement l'URL relative. Par example:</p>
+<pre><code>&lt;script src="{{ url('theme://some/extra.css', true)|e }}"&gt;&lt;/script&gt;
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../variables-theme/" class="btn btn-neutral float-left" title="Variables"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../personnalisation/" class="btn btn-neutral float-right" title="Personnalisation">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../variables-theme/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../personnalisation/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

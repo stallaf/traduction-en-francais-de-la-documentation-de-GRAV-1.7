@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/avance-grav-up-to-1-7/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Mise à niveau vers Grav 1.7 - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Mise \u00e0 niveau vers Grav 1.7";
+        var mkdocs_page_input_path = "avance-grav-up-to-1-7.md";
+        var mkdocs_page_url = "/avance-grav-up-to-1-7/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Développement Grav</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Mise à niveau vers Grav 1.7</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>8. Avancé &raquo;</li>
+          <li>Développement Grav &raquo;</li><li>Mise à niveau vers Grav 1.7</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Mise à niveau vers Grav 1.7</h1>
+
+<p>Grav 1.7 introduit quelques nouvelles fonctionnalités, améliorations, corrections de bogues et fournit de nombreux changements architecturaux qui ouvrent la voie vers Grav 2.0. Voici quelques faits saillants :</p>
+<ul>
+<li><strong>Objets flexibles</strong> : une nouvelle façon de créer vos propres types de données.</li>
+<li><strong>Symfony Server</strong> : Exécutez Grav sans avoir à installer de serveur Web.</li>
+<li><strong>Multilingue amélioré</strong> : meilleures solutions de remplacement de langue, meilleure prise en charge de l'administration.</li>
+<li><strong>Multi-site amélioré</strong> : l'administrateur a amélioré la prise en charge multi-site.</li>
+<li><strong>Amélioration de l'ACL d'administration</strong> : prise en charge complète de CRUD pour les utilisateurs et les pages.</li>
+<li><strong>Prise en charge multimédia améliorée</strong> : prend en charge le format d'image <code>webp</code>, le chargement paresseux et plus encore.</li>
+<li><strong>Mise en cache améliorée</strong> : nouvelle balise <code>{% cache %}</code> et performances améliorées, en particulier dans l'administration.</li>
+<li><strong>Détection XSS dans les formulaires</strong> : les formulaires ne seront pas soumis si un potentiel XSS y est détecté. Consultez la <a href="/formulaires-ref-options-formulaires/#XSS Checks">documentation</a> pour savoir comment désactiver les vérifications.</li>
+<li><strong>Meilleurs outils de débogage</strong> : intégration <a href = "https://underground.works/clockwork/">Clockwork</a>, profilage Twig et prise en charge de l'extension PHP <a href = "https://github.com/tideways/php-xhprof-extension">Tideways XHProf</a> pour le profilage des performances.</li>
+</ul>
+<div class = "notice warning">
+I<strong>MPORTANT</strong> : Pour la plupart des gens, Grav 1.7 devrait être une simple mise à niveau sans aucun problème, mais comme toute mise à niveau, il est recommandé <strong>de faire une sauvegarde</strong> de votre site et de tester <strong>la mise à niveau dans un environnement</strong> de test avant de mettre à niveau votre site en ligne.
+</div>
+
+<h3 id="Problèmes les plus courants">Problèmes les plus courants.
+<a href="#Problèmes les plus courants" class="toc-anchor after"></a></h3>
+
+<ol>
+<li>
+<h6 id="le-html-est-affiche-sous-forme-de-code-sur-votre-site-plutot-que-detre-rendu-sous-forme-de-html-comme-prevu">Le HTML est affiché sous forme de code sur votre site plutôt que d'être rendu sous forme de HTML comme prévu.</h6>
+<p>Ce comportement est le résultat de la nouvelle valeur par défaut de l'<strong>auto-escaping</strong> étant vrai dans Grav 1.7. Il s'agit d'une amélioration de la sécurité, et si vous effectuez une mise à niveau à partir d'une version antérieure à 1.7, nous activons automatiquement le paramètre de <strong>compatibilité Twig</strong> dans la configuration du système pour garantir que votre ancien code Twig continuera à fonctionner. Si vous effectuez une mise à jour manuelle vers la version 1.7 ou une mise à niveau d'une manière qui ne passe pas par le processus de mise à niveau automatique de GPM, vous devez définir ce paramètre vous-même.</p>
+<p>Consultez la <a href="#Twig">section Twig</a> de ce guide pour plus de détails...</p>
+</li>
+<li>
+<h6 id="obtention-derreurs-a-propos-de-yaml-non-valide">Obtention d'erreurs à propos de YAML non valide.</h6>
+<p>Comme nous avons mis à niveau vers une version plus récente du framework Symfony, l'analyseur YAML est plus strict qu'il ne l'était dans les versions antérieures à 1.7. Pour gérer cela, nous avons inclus une ancienne version de l'analyseur qui est disponible lors de l'activation de la compatibilité Yaml. Ceci est automatiquement géré pour vous si vous mettez à niveau vers Grav 1.7 via GPM, mais si vous avez mis à niveau manuellement, vous devrez définir cette valeur vous-même.</p>
+<p>Consultez la <a href="#YAML">section YAML</a> de ce guide pour plus de détails...</p>
+</li>
+<li>
+<h6 id="ladministrateur-apparait-avec-des-chaines-non-traduites">L'administrateur apparaît avec des chaînes non traduites</h6>
+<p>Si votre administrateur affiche des chaînes non traduites dans l'interface, c'est probablement parce que vous avez précédemment désactivé les <strong>traductions linguistiques</strong>. C'était bogué dans les versions précédentes de Grav et sa désactivation ne désactivait pas réellement les traductions dans l'administration comme prévu. Ceci est <strong>corrigé</strong> dans Grav 1.7 et ce paramètre fait ce qu'il est censé faire, afficher les codes de traduction en majuscules plutôt que les chaînes traduites elles-mêmes.</p>
+<p>Consultez la section <a href="#Dépannages des problèmes">Dépannage</a> pour le correctif.</p>
+</li>
+<li>
+<h6 id="erreurs-lors-de-lenregistrement-ou-des-plugins-dadministration-non-fonctionnels">Erreurs lors de l'enregistrement ou des plugins d'administration non fonctionnels</h6>
+<p>Dans Grav 1.7, nous avons introduit <strong>Flex Pages</strong> comme nouvelle interface utilisateur de gestion de page par défaut. De plus, pour optimiser les performances, nous avons arrêté d'initialiser les pages à chaque appel de l'administrateur. Revenir aux <strong>pages Grav</strong> normales peut temporairement résoudre votre problème. Cela se fait en éditant le plugin <strong>FlexObjects</strong> et en désactivant <strong>Pages (Admin)</strong>.</p>
+<p>Pour résoudre correctement le problème, les plugins personnalisés doivent être mis à jour pour prendre en charge à la fois les <strong>pages Grav</strong> et les <strong>pages Flex</strong> en utilisant <code>PageInterface</code> et doivent également explicitement Pages si nécessaire.</p>
+<p>Consultez la <a href="#Pages">section Pages</a> et la <a href="#Administration">section Admin</a></span> de ce guide pour plus de détails...</p>
+<p>Il y a également eu des problèmes de plugins spécifiques qui ont déjà été découverts. Consultez la <a href="#Dépanages">section Dépannage</a> de cette page pour des problèmes spécifiques avec les plugins.</p>
+</li>
+<li>
+<h6 id="les-plans-de-page-cessent-de-fonctionner-ou-generent-une-erreur-a-propos-dune-boucle">Les plans de page cessent de fonctionner ou génèrent une erreur à propos d'une boucle</h6>
+<p><strong>Grav 1.7.8</strong> ajoute le support pour définir n'importe quel <strong>blueprint</strong> dans votre thème. Cela signifie que si vous avez des plans de page dans le dossier <code>blueprints/pages/</code>, les emplacements de plans standard sont utilisés, tout comme dans les plugins. Malheureusement, certains thèmes plus anciens peuvent avoir un mélange de fichiers dans <code>blueprints/</code> et <code>blueprint/pages</code>, ce qui interrompt la détection et provoque soit des champs manquants dans l'administrateur lors de l'édition des pages, soit une erreur fatale : <code>boucle détectée lors de l'extension du fichier blueprint</code>.</p>
+<p>Si l'une de ces erreurs se produit, consultez la <a href="#Dépannag">section Dépannage</a> pour le correctif.</p>
+</li>
+</ol>
+<h3 id="Guide de mise à jour rapide">Guide de mise à jour rapide.
+<a href="#Guide de mise à jour rapide" class="toc-anchor after"></a></h3>
+
+<div class = "notice note">
+<strong>Grav 1.7</strong> nécessite <strong>PHP 7.3.6</strong> ou une version ultérieure. La version recommandée est la dernière version de <strong>PHP 7.4</strong>.
+</div>
+
+<h2 id="YAML">YAML.
+<a href="#YAML" class="toc-anchor after"></a></h2>
+
+<div class = "notice warning">
+<strong>IMPORTANT</strong> : l'analyseur YAML Grav 1.7 est plus strict et votre site peut tomber en panne si vous avez des erreurs de syntaxe dans vos fichiers de configuration ou vos en-têtes de page. Cependant, si vous mettez à jour votre site existant à l'aide de `bin/gpm` ou du processus de mise à niveau de `Admin Plugin`, la majeure partie de la syntaxe YAML endommagée fonctionne.
+</div>
+
+<p>Pour revenir à l'ancien comportement, vous devez vous assurer que vous disposez des paramètres suivants dans <code>user/config/system.yaml</code> :</p>
+<pre><code class="language-yaml">strict_mode:
+  yaml_compat: true
+</code></pre>
+<p>ou dans Admin sous <strong>Configuration → Advanced -&gt; Yaml Compability</strong></p>
+<p><img alt="Compatibilité YAML" src="https://learn.getgrav.org/user/pages/08.advanced/09.grav-development/03.grav-17-upgrade-guide/yaml-compat.png" /></p>
+<div class = "notice tip">
+<strong>ASTUCE : Le guide de mise à jour Grav 1.6</strong> a une section <a href="../avance-grav-up-to-1-6/#Analyse YAML">YAML Parsing</a> intégrée. Il est très important de le lire avant !
+</div>
+
+<p>Par défaut, Grav 1.7 utilise un <strong>analyseur Symfony 4.4 YAML</strong>, qui suit plus étroitement la <a href="https://yaml.org/spec">spécification standard YAML</a> que les anciennes versions de Grav. Cela signifie que les fichiers YAML qui fonctionnaient correctement auparavant peuvent provoquer des erreurs résultant d'un YAML non valide. Cependant, Grav reviendra par défaut à l'ancienne version 3.4 de l'analyseur pour que votre site reste opérationnel.</p>
+<div class = "notice tip">
+<strong>ASTUCE</strong> : vous devez exécuter la <strong>commande CLI</strong> <code>bin/grav yamllinter</code> ou visiter dans <strong>Admin > Tools > Reports</strong> avant et après la mise à niveau et corriger tous les avertissements et erreurs liés à YAML.
+</div>
+
+<h3 id="Twig">Twig.
+<a href="#Twig" class="toc-anchor after"></a></h3>
+
+<div class = "notice warning">
+<strong>IMPORTANT</strong> : Grav 1.7 active <strong>Twig Auto-Escaping</strong> par défaut. Cependant, si vous mettez à jour votre site existant à l'aide de <code>bin/gpm</code> ou le processus de mise à niveau de <code>Admin Plugin</code> conserve les paramètres d'échappement automatique existants.
+</div>
+
+<p>Pour revenir à l'ancien comportement, vous devez vous assurer que vous disposez des paramètres suivants dans <code>user/config/system.yaml</code> :</p>
+<pre><code class="language-yaml">twig:
+  autoescape: false
+strict_mode:
+  twig_compat: true
+</code></pre>
+<p>ou dans Admin sous <strong>Configuration → Advanced -&gt; Yaml Compability</strong></p>
+<p>Et n'oubliez pas de vider le cache après avoir fait cela !</p>
+<p><img alt="Compatibilité Twing" src="https://learn.getgrav.org/user/pages/08.advanced/09.grav-development/03.grav-17-upgrade-guide/twig-compat.png" /></p>
+<div class = "notice tip">
+<strong>ASTUCE</strong> : Le guide de mise à niveau Grav 1.6 comporte une section <a href="../avance-grav-up-to-1-6/#Twig"><strong>Twig</strong></a> dédiée. Il est très important de la lire d'abord !
+</div>
+
+<p>Le moteur de template Twig a été mis à jour vers la version 1.43, mais il prend également en charge Twig 2.13. Afin de prendre en charge cette nouvelle version de Twig, vous devez mettre à jour toute ancienne syntaxe dans vos modèles Twig. <strong>Grav 1.6 Upgrade Guide</strong> vous aide à le faire.</p>
+<p>Les changements supplémentaires dans les modèles sont :</p>
+<ul>
+<li>Ajout d'une nouvelle balise Twig <code>{% cache %}</code> éliminant le besoin d'extension twigcache.</li>
+<li>Ajout de la fonction twig <code>array_diff()</code>.</li>
+<li>Ajout de la fonction twig <code>template_from_string()</code>.</li>
+<li>Ajout d'une nouvelle fonction twig <code>svg_image()</code> pour faciliter l'inclusion de la source SVG dans Twig.</li>
+<li>Amélioration de la fonction <code>url()</code> twig pour prendre le troisième paramètre <code>(true)</code> pour renvoyer l'URL sur un fichier inexistant au lieu de renvoyer false.</li>
+<li>Amélioration du filtre <code>|array</code> twig pour travailler avec les itérateurs et les objets avec la méthode <code>toArray()</code>.</li>
+<li>Amélioration de la fonction twig <code>authorize()</code> pour mieux fonctionner avec les paramètres de règle imbriqués.</li>
+<li>Amélioration du filtre de twig <code>|yaml_serialize</code> : prise en charge ajoutée des objets <code>JsonSerializable</code> et d'autres objets de type tableau.</li>
+<li>Ajout de modèles par défaut pour <code>external.html.twig</code>, <code>default.html.twig</code> et <code>modular.html.twig</code>.</li>
+<li><strong>RUPTURE DE COMPATIBILITÉ ARRIÈRE</strong> : Utilisez <code>{% script 'file.js' at 'bottom' %}</code> au lieu de <code>in 'bottom'</code> qui est cassé.</li>
+</ul>
+<h2 id="Formulaires">Formulaires.
+<a href="#Formulaires" class="toc-anchor after"></a></h2>
+
+<div class = "notice warning">
+<strong>IMPORTANT</strong> : Grav 1.7 modifie le comportement de <strong>Strict Validation</strong>. Toutefois, si vous mettez à jour votre site existant à l'aide de <code>bin/gpm</code> ou du processus de mise à niveau de <code>Admin Plugin</code>, le comportement en mode strict existant est conservé.
+</div>
+
+<p><strong>Améliorations du mode strict</strong> : Dans les formulaires, déclaration de <code>validation : strict</code> n'était pas aussi strict que nous l'espérions à cause d'un bogue. Le mode strict devrait empêcher les formulaires d'envoyer des champs supplémentaires et cela a été corrigé dans Grav 1.7. Malheureusement, bon nombre des anciens formulaires étaient déclarés stricts même s'ils contenaient des données supplémentaires.</p>
+<p>Pour revenir à l'ancien comportement, vous devez vous assurer que vous disposez du paramètre suivant dans <code>user/config/system.yaml</code> :</p>
+<pre><code class="language-yaml">strict_mode:
+  blueprint_compat: true
+</code></pre>
+<p><strong>La détection d'injection XSS</strong> est désormais activée par défaut dans tous les formulaires frontaux. Consultez la <a href="/formulaires-ref-options-formulaires/#XSS Checks">documentation</a> pour savoir comment désactiver ou personnaliser les vérifications par formulaire et par champ.</p>
+<p>Pour cette raison, nous avons ajouté une nouvelle option de configuration <code>system.strict_mode.blueprint_compat: true</code> pour conserver l'ancien comportement de <code>validation :  strict</code>. Il est recommandé de désactiver ce paramètre pour améliorer la sécurité du site, mais avant cela, veuillez rechercher dans tous vos formulaires si vous utilisiez la fonctionnalité  <code>validation : strict</code>. Si tel était le cas, supprimez la ligne ou testez si le formulaire fonctionne toujours.</p>
+<div class = "notice note">
+<strong>REMARQUE</strong> : Ce mécanisme de secours de rétrocompatibilité sera supprimé dans Grav 2.0.
+</div>
+
+<h3 id="Environnements et Multi-Sites">Environnements et Multi-Sites.
+<a href="#Environnements et Multi-Sites" class="toc-anchor after"></a></h3>
+
+<div class = "notice warning">
+<strong>Important</strong> : Grav 1.7 déplace les <a href="../avance-config-environnement">environnements</a> dans le dossier <code>user://env</code>. L'ancien emplacement fonctionne toujours, mais il est préférable de déplacer les environnements dans un seul emplacement, les futures fonctionnalités pourraient en dépendre.
+</div>
+
+<p>Grav 1.7 ajoute également la prise en charge de la <a href="/avance-config-environnement/#Configuration de l'environnement basé sur le serveur">configuration de l'environnement basé sur le serveur</a> et de la <a href="/avance-config-multisite/#Configuration multisite basée sur serveur">configuration multisite basée sur le serveur</a>. Cette fonctionnalité est pratique si vous souhaitez utiliser par exemple des conteneurs Docker et que vous souhaitez les rendre indépendants du domaine que vous utilisez. Ou si vous ne souhaitez pas stocker de secrets dans la configuration, mais les stocker dans la configuration de votre serveur.</p>
+<p>De plus, le fichier <code>setup.php</code> peut désormais se trouver dans <code>GRAV_ROOT/setup.php</code> ou <code>GRAV_ROOT/GRAV_USER_PATH/setup.php</code>. Le deuxième emplacement facilite l'utilisation des environnements avec des référentiels git contenant uniquement le dossier utilisateur.</p>
+<h3 id="Comptes utilisateur">Comptes utilisateur.
+<a href="#Comptes utilisateur" class="toc-anchor after"></a></h3>
+
+<p>L'administrateur dispose désormais d'une nouvelle <a href="/comptes">administration de comptes</a> à l'aide <strong>d'utilisateurs flexibles</strong> :</p>
+<ul>
+<li><a href="/compte-utilisateur">Gestionnaire de comptes utilisateurs</a></li>
+<li><a href="/groupe-utilisateur">Gestionnaire de groupes d'utilisateurs</a></li>
+</ul>
+<div class = "notice tip">
+<strong>REMARQUE</strong> : la fonctionnalité Utilisateurs flexibles n'est pas encore utilisée dans l'interface de votre site.
+</div>
+
+<h3 id="Pages">Pages.
+<a href="#Pages" class="toc-anchor after"></a></h3>
+
+<p><a href="/dashboard-pages">L'administration des pages</a></span> existantes a été grandement améliorée avec les <strong>pages flexibles</strong> :</p>
+<ul>
+<li>Affichage de liste retravaillé : bien meilleur support pour les grands sites</li>
+<li>Meilleur contrôle d'accès : prise en charge <a href="/dashboard-pages-permissions/">CRUD ACL</a> avec les propriétaires de pages</li>
+<li>Meilleure prise en charge multilingue</li>
+</ul>
+<div class = "notice info">
+<strong>RUPTURE DE COMPATIBILITÉ ARRIÈRE</strong> : Nous avons corrigé la page d'erreur 404 lorsque vous accédez à une page non routable avec des pages enfants routables et visibles en dessous. Maintenant, vous êtes redirigé vers la première page enfant routable et visible à la place. C'est probablement ce que vous vouliez en premier lieu.
+</div>
+
+<div class = "notice note">
+<strong>REMARQUE</strong> : la fonctionnalité Flex Pages n'est pas encore utilisée dans l'interface de votre site.
+</div>
+
+<h3 id="Multilingue">Multilingue.
+<a href="#Multilingue" class="toc-anchor after"></a></h3>
+
+<p>Grav 1.7 a changé le comportement du fonctionnement des replis multilingues pour les pages.</p>
+<p>Auparavant, si la page n'existait pas avec la langue demandée, l'ancienne implémentation recherchait la prochaine langue prise en charge. Cela signifiait que la page non traduite était toujours affichée, mais la page pouvait utiliser une langue inconnue du lecteur.</p>
+<p>Le nouveau comportement consiste à se rabattre uniquement sur la langue par défaut du site. Ce comportement par défaut peut être remplacé en définissant des langues de secours par langue à l'aide de l'option de configuration <code>system.languages.content_fallback</code>.</p>
+<p>Si la page n'existe dans aucune des langues de secours, <strong>404 Not Found</strong> s'affichera à la place.</p>
+<div class = "notice info">
+<strong>RUPTURE DE COMPATIBILITÉ ARRIÈRE</strong>  : Veuillez ajouter les langues de secours correctes pour le contenu de la page dans <code>system.yaml</code> ou admin : <strong>Configuration > System > Languages > Content Language Fallback</strong>
+</div>
+
+<h3 id="Médias">Médias.
+<a href="#Médias" class="toc-anchor after"></a></h3>
+
+<p>La gestion des médias a été grandement améliorée dans Grav 1.7. Certains faits saillants sont :</p>
+<ul>
+<li>Prise en charge du format d'image <code>webp</code>.</li>
+<li>Markdown : Ajout de la prise en charge des attributs natifs <code>loading=lazy</code> sur les images. Peut être défini dans <code>system.images.defaults</code> ou par image md avec <code>?loading=lazy</code>.</li>
+<li>Ajout de la possibilité de ne pas traiter des éléments spécifiques <code>noprocess</code> uniquement dans les extraits de lien/d'image, par ex. <code>http://foo.com/page?id=foo&amp;target=_blank&amp;noprocess=id</code>.</li>
+</ul>
+<h2 id="CLI">CLI.
+<a href="#CLI" class="toc-anchor after"></a></h2>
+
+<p>Certains faits marquants sont :</p>
+<ul>
+<li>Toutes les commandes CLI acceptent maintenant les paramètres <code>--env</code> et <code>--lang</code> pour définir respectivement l'environnement et la langue utilisée (<code>-e</code> ne fonctionne plus).</li>
+<li>Ajout d'une nouvelle commande CLI <code>bin/grav server</code> pour exécuter facilement les serveurs Web intégrés Symfony ou PHP.</li>
+<li>Vérification améliorée de la commande cron du <code>Scheduler</code> et informations CLI plus utiles.</li>
+<li>Ajout de la nouvelle option <code>-r &lt;job-id&gt;</code> pour la commande CLI du planificateur pour forcer l'exécution d'un travail.</li>
+<li>Amélioration de la commande CLI <code>bin/grav yamllinter</code> en ajoutant une option pour rechercher les problèmes de YAML Linting à partir de l'ensemble du site ou du dossier personnalisé.</li>
+<li>Les échecs de la commande CLI/GPM renvoient désormais un code non nul (permettant la détection d'erreur si la commande échoue).</li>
+</ul>
+<h3 id="Configuration">Configuration.
+<a href="#Configuration" class="toc-anchor after"></a></h3>
+
+<p>Ajout d'une nouvelle option de configuration pour conserver la langue par défaut dans les fichiers <code>.md</code> si elle est définie sur <code>false</code>.</p>
+<ul>
+<li>system.yaml : <code>langues.include_default_lang_file_extension</code> : <strong>true</strong>|false</li>
+<li>Admin : <strong>Configuration &gt; Systèmes &gt; Langues &gt; Inclure la langue par défaut dans l'extension de fichier</strong>.</li>
+</ul>
+<p>Ajout d'une nouvelle option de configuration pour définir les langues de contenu de secours individuellement pour chaque langue.</p>
+<ul>
+<li>system.yaml : <code>languages.content_fallback</code> : voir <a href="/multi-langue/">Configuration de la langue</a></li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Langues &gt; Langue de remplacement du contenu</strong>.</li>
+</ul>
+<p>Ajout d'une nouvelle option de configuration pour choisir entre la barre de débogage et le mouvement d'horloge.</p>
+<ul>
+<li>system.yaml : <code>debugger.provider</code> :  <strong>clockwork</strong>|debugbar.
+<em>Admin : </em><em>Configuration &gt; Système &gt; Débogueur &gt; Fournisseur de débogueur</em>*.</li>
+</ul>
+<p>Ajout d'une nouvelle option de configuration pour masquer les informations potentiellement sensibles.</p>
+<ul>
+<li>system.yaml : <code>debugger.censored</code> : <strong>false</strong>|true.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Débogueur &gt; Données sensibles au censeur</strong>.</li>
+</ul>
+<p>Ajout d'une nouvelle option de configuration pour conserver l'ancienn comportement <code>validation: strict</code>.</p>
+<ul>
+<li>system.yaml : <code>strict_mode.blueprint_compat</code> : <strong>true</strong>|false.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Avancé &gt; Compatibilité Blueprint</strong>.</li>
+</ul>
+<p>Ajout de la prise en charge de la configuration système pour les en-têtes<code>HTTP_X_FORWARDED</code> (hôte désactivé par défaut).</p>
+<ul>
+<li>system.yaml : <code>http_x_forwarded.protocol</code> : <strong>true</strong>|false.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Avancé &gt; HTTP_X_FORWARDED_PROTO activé</strong>.</li>
+<li>system.yaml : <code>http_x_forwarded.host</code> : true|<strong>false</strong>.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Avancé &gt; HTTP_X_FORWARDED_HOST activé</strong>.</li>
+<li>system.yaml : `http_x_forwarded.port : <strong>true</strong>|false.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Avancé &gt; HTTP_X_FORWARDED_PORT activé</strong>.</li>
+<li>system.yaml : `http_x_forwarded.ip : true|<strong>false</strong>.</li>
+<li>Admin : <strong>Configuration &gt; Système &gt; Avancé &gt; IP HTTP_X_FORWARDED activé</strong>.</li>
+</ul>
+<p>Ajout d'une nouvelle option de configuration <code>security.sanitize_svg</code> pour supprimer le code potentiellement dangereux des fichiers SVG.</p>
+<ul>
+<li>security.yaml : <code>sanitize_svg</code> : <strong>true</strong>|false.</li>
+<li>Admin : <strong>Configuration &gt; Sécurité &gt; Nettoyer SVG</strong>.</li>
+</ul>
+<h2 id="DÉVELOPPEURS">DÉVELOPPEURS.
+<a href="#DÉVELOPPEURS" class="toc-anchor after"></a></h2>
+
+<h3 id="Débogage">Débogage.
+<a href="#Débogage" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout de la prise en charge des outils de développement <a href="https://underground.works/clockwork">Clockwork</a> (maintenant débogueur par défaut).</li>
+<li>Ajout de la prise en charge de l'extension PHP <a href="https://github.com/tideways/php-xhprof-extension">Tideways XHProf</a> pour les appels de méthode de profilage.</li>
+<li>Ajout du profilage Twig pour le débogueur Clockwork.</li>
+</ul>
+<h3 id="Utiliser le chargeur automatique de compositeur">Utiliser le chargeur automatique de compositeur.
+<a href="#Utiliser le chargeur automatique de compositeur" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>
+<p>Mise à jour de <code>bin/composer.phar</code> vers <code>2.0.2</code> qui est tout nouveau et beaucoup plus rapide.</p>
+</li>
+<li>
+<p>Veuillez ajouter le fichier <code>composer.json</code> à votre plugin et exécuter <code>composer update --no-dev</code> (et n'oubliez pas de le maintenir à jour) :</p>
+<p>compositeur.json</p>
+</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;getgrav/grav-plugin-example&quot;,
+    &quot;type&quot;: &quot;grav-plugin&quot;,
+    &quot;description&quot;: &quot;Example plugin for Grav CMS&quot;,
+    &quot;keywords&quot;: [&quot;example&quot;, &quot;plugin&quot;],
+    &quot;homepage&quot;: &quot;https://github.com/getgrav/grav-plugin-example&quot;,
+    &quot;license&quot;: &quot;MIT&quot;,
+    &quot;authors&quot;: [
+        {
+            &quot;name&quot;: &quot;...&quot;,
+            &quot;email&quot;: &quot;...&quot;,
+            &quot;homepage&quot;: &quot;...&quot;,
+            &quot;role&quot;: &quot;Developer&quot;
+        }
+    ],
+    &quot;support&quot;: {
+        &quot;issues&quot;: &quot;https://github.com/getgrav/grav-plugin-example/issues&quot;,
+        &quot;docs&quot;: &quot;https://github.com/getgrav/grav-plugin-example/blob/master/README.md&quot;
+    },
+    &quot;require&quot;: {
+        &quot;php&quot;: &quot;&gt;=7.1.3&quot;
+    },
+    &quot;autoload&quot;: {
+        &quot;psr-4&quot;: {
+            &quot;Grav\\Plugin\\Example\\&quot;: &quot;classes/&quot;,
+            &quot;Grav\\Plugin\\Console\\&quot;: &quot;cli/&quot;
+        },
+        &quot;classmap&quot;:  [
+            &quot;example.php&quot;
+        ]
+    },
+    &quot;config&quot;: {
+        &quot;platform&quot;: {
+            &quot;php&quot;: &quot;7.1.3&quot;
+        }
+    }
+}
+</code></pre>
+<p>Voir le <a href="https://getcomposer.org/doc/04-schema.md">schéma Composer</a></p>
+<ul>
+<li>
+<p>Veuillez utiliser autoloader au lieu de <code>require</code> dans le code :</p>
+<p>exemple.php</p>
+</li>
+</ul>
+<pre><code class="language-php">/**
+ * @return array
+ */
+public static function getSubscribedEvents(): array
+{
+   return [
+      'onPluginsInitialized' =&gt; [
+         // This is only required in Grav 1.6. Grav 1.7 automatically calls $plugin-&gt;autolaod() method.
+         ['autoload', 100000],
+      ]
+   ];
+ }
+
+/**
+ * Composer autoload.
+ *
+ * @return \Composer\Autoload\ClassLoader
+ */
+public function autoload(): \Composer\Autoload\ClassLoader
+{
+   return require __DIR__ . '/vendor/autoload.php';
+}
+</code></pre>
+<ul>
+<li>
+<p>Plugins &amp; Thèmes : Appelez <code>$plugin-&gt;autoload()</code> et <code>$theme-&gt;autoload()</code> automatiquement lorsque l'objet est initialisé.</p>
+</li>
+<li>
+<p>Assurez-vous que votre code n'utilise pas <code>require</code> ou <code>include</code> pour charger des classes.</p>
+</li>
+</ul>
+<h3 id="Blueprints de plugins/thèmes <code>(blueprints.yaml</code>)">Blueprints de plugins/thèmes <code>(blueprints.yaml</code>).
+<a href="#Blueprints de plugins/thèmes <code>(blueprints.yaml</code>)" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>S'il-vous-plait ajoutez:</li>
+</ul>
+<pre><code class="language-yaml">slug: folder-name
+type: plugin|theme
+</code></pre>
+<ul>
+<li>Assurez-vous de mettre à jour vos dépendances. Je recommande de régler Grav sur 1.6 ou 1.7 et de mettre à jour votre code/fournisseur vers PHP 7.1.</li>
+</ul>
+<pre><code class="language-yaml">dependencies:
+    - { name: grav, version: '&gt;=1.6.0' }
+</code></pre>
+<ul>
+<li>
+<p><code>themes</code> ajoutés aux plans et à la configuration mis en cache.</p>
+</li>
+<li>
+<p><strong>Grav 1.7.8</strong> ajoute le support pour définir n'importe quel <strong>blueprint</strong> dans votre thème. Déplacez tous les fichiers et dossiers de <code>blueprints/</code> dans <code>blueprints/pages/</code> pour que votre thème reste compatible. N'oubliez pas également de mettre à jour la dépendance Grav minimale à <code>&gt; = 1.7.8.</code>.</p>
+</li>
+</ul>
+<h3 id="Sessions">Sessions.
+<a href="#Sessions" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>L'ID de session change maintenant lors de la connexion pour éviter les problèmes de fixation de session.</li>
+<li>Ajout de la méthode <code>Session :: regenerateId()</code> pour éviter correctement les problèmes de fixation de session.</li>
+</ul>
+<h3 id="ACL">ACL.
+<a href="#ACL" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>
+<p><code>user.authorize()</code> exige maintenant que l'utilisateur soit autorisé (vérification 2FA réussie), à ​​moins que la règle ne contienne <code>login</code> dans son nom.</p>
+</li>
+<li>
+<p>Ajout de la prise en charge d'ACL plus avancées (CRUD)</p>
+</li>
+<li>
+<p><strong>BC BREAK</strong> <code>user.authorize()</code> et Flex <code>object.isAuthorized()</code> ont maintenant deux états de refus : <code>false</code> et <code>null</code>..</p>
+<p>Assurez-vous que vous n'avez pas de contrôles stricts contre false : <code>$user-&gt;authorize($action) === false</code> (PHP) ou <code>user.authorize(action) is same as(false)</code> (Twig).</p>
+<p>Pour les vérifications négatives, vous devez utiliser <code>!user-&gt;authorize($action)</code> (PHP) ou <code>not user.authorize(action)</code>(Twig).</p>
+<p>Le changement a été fait pour permettre des règles de refus fortes en enchaînant les actions si les précédentes ne correspondent pas : <code>user.authorize(action1) ?? user.authorize(action2) ?? user.authorize(action3)</code>.</p>
+<p>Notez que la fonction Twig <code>authorize ()</code> <strong>conservera</strong> toujours l'ancien comportement !</p>
+</li>
+</ul>
+<h3 id="Pages">Pages.
+<a href="#Pages" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>
+<p>Ajout de modèles par défaut pour <code>external.html.twig</code>, <code>default.html.twig</code> et <code>modular.html.twig</code>.</p>
+</li>
+<li>
+<p>L'administrateur utilise <code>Flex Pages</code> par défaut (peut être désactivé à partir du plugin <code>Flex-Objects</code>).</p>
+</li>
+</ul>
+<p><img alt="Désactiver les pages flexibles" src="https://learn.getgrav.org/user/pages/08.advanced/09.grav-development/03.grav-17-upgrade-guide/disable-flex-pages.png" /></p>
+<ul>
+<li>
+<p>Ajout de la prise en charge des autorisations d'administrateur spécifiques à la page pour les <code>Flex Pages</code>.</p>
+</li>
+<li>
+<p>Ajout de la prise en charge de la page racine pour les <code>Flex Pages</code>.</p>
+</li>
+<li>
+<p>Correction des mauvais appels <code>Pages::dispatch()</code> (avec redirection) alors que nous voulions vraiment appeler <code>Pages::find()</code>.</p>
+</li>
+<li>
+<p>Ajout de la méthode : <code>Pages::getCollection()</code>.</p>
+</li>
+<li>
+<p>Déplacement de la logique de <code>collection()</code> et <code>evaluate()</code> de la classe <code>Page</code> vers la classe <code>Pages</code>.</p>
+</li>
+<li>
+<p><strong>OBSOLETE</strong> <code>$page-&gt;modular()</code> en faveur de <code>$page-&gt;isModule()</code>.</p>
+</li>
+<li>
+<p><strong>OBSOLETE</strong>  <code>PageCollectionInterface::nonModular()</code> en faveur de <code>PageCollectionInterface::pages()</code>.</p>
+</li>
+<li>
+<p><strong>OBSOLETE</strong>  <code>PageCollectionInterface::modular()</code> en faveur de <code>PageCollectionInterface::modules()</code>.</p>
+</li>
+<li>
+<p><strong>BC BREAK</strong> Fixed <code>Page::modular()</code> et <code>Page::modularTwig()</code> retournant <code>null</code> pour les dossiers et autres pages non initialisées. Ne devrait pas affecter votre code à moins que vous ne vérifiiez contre <code>false</code> ou <code>null</code>.</p>
+</li>
+<li>
+<p><strong>BC BREAK</strong> Toujours utiliser <code>\Grav\Common\Page\Interfaces\PageInterface</code> au lieu de <code>\Grav\Common\Page\Page</code> dans les signatures de méthode.</p>
+</li>
+<li>
+<p>L'administrateur utilise désormais les <code>Flex Pages</code> par défaut, la collecte se comportera de manière légèrement différente.</p>
+</li>
+<li>
+<p><strong>BC BREAK</strong> <code>$page-&gt;topParent()</code> peut renvoyer la page elle-même au lieu de <code>null</code>.</p>
+</li>
+<li>
+<p>*<em>BC BREAK</em> <code>$page-&gt;header()</code> peut maintenant <code>\Grav\Common\Page\Header</code> renvoyer un objet au lieu de <code>stdClass</code>, vous devez gérer les deux (Flex vs regular).</p>
+</li>
+</ul>
+<h3 id="Médias">Médias.
+<a href="#Médias" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout de la méthode <code>MediaTrait :: freeMedia ()</code> pour libérer les médias (et la mémoire).</li>
+<li>Ajout de la prise en charge du téléchargement et de la suppression d'images directement dans <code>Media</code> en utilisant PSR-7.</li>
+<li>Types d'actifs ajustés pour permettre l'extension des actifs dans la classe.</li>
+<li><strong>BC BREAK</strong> Media n'étend plus les <code>Getters</code>, l'accès à <code>$media-&gt;$filename</code> ne fonctionne plus, utilisez plutôt <code>$media[$filename]</code> !</li>
+</ul>
+<h3 id="Markdown">Markdown.
+<a href="#Markdown" class="toc-anchor after"></a></h3>
+
+<ul>
+<li><strong>BC BREAK</strong> Mise à niveau de Parsedown vers 1.7 pour Parsedown-Extra 0.8. Les plugins qui étendent Parsedown peuvent avoir besoin d'un correctif pour s'afficher en HTML.</li>
+<li>Ajout de la nouvelle méthode <code>Excerpts :: processLinkHtml()</code>.</li>
+</ul>
+<h3 id="Utilisateurs">Utilisateurs.
+<a href="#Utilisateurs" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout d'un support expérimental pour <code>Flex Users</code> dans le frontend (pas encore recommandé d'utiliser).</li>
+<li>L'administrateur utilise <code>Flex Users</code> par défaut (peut être désactivé à partir du plug-in <code>Flex-Objects</code>).</li>
+<li><code>Flex Users</code> améliorés : respectez les plans et autorisez l'utilisation de Flex uniquement en mode administrateur.</li>
+<li><code>Flex Users</code> améliorés : l'ACL des utilisateurs et des groupes prend désormais en charge les autorisations de refus.</li>
+<li><code>UserInterface ::authorize()</code> modifié pour renvoyer <code>null</code> ayant la même signification que <code>false</code> si l'accès est refusé en raison de l'absence de règle correspondante.</li>
+<li><strong>OBSOLETE</strong> <code>\Grav\Common\User\Group</code> en faveur de <code>$grav['user_groups']</code>, qui contient la collection Flex UserGroup.</li>
+<li><strong>BC BREAK</strong> Toujours utiliser `Grav\Common\User\Interfaces\UserInterface<code>au lieu de</code>\Grav\Common\User\User` dans les signatures de méthode.</li>
+</ul>
+<h3 id="Flex">Flex.
+<a href="#Flex" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>N'utilisez pas directement les classes Flex <code>Framework</code>, il est préférable d'utiliser ou d'étendre les classes sous l'espace de noms <code>Grav\Common\Flex\Types\Generic</code>.</li>
+<li>Ajout de <code>$grav['flex']</code> pour accéder à tous les répertoires Flex enregistrés<ul>
+<li>Ajout <code>de FlexRegisterEvent</code> qui se déclenche lorsque <code>$grav['flex']</code>est accédé pour la première fois.</li>
+</ul>
+</li>
+<li>Ajout de la méthode <code>hasFlexFeature()</code> pour tester si <code>FlexObject</code> ou <code>FlexCollection</code> implémente une fonctionnalité donnée.</li>
+<li>Ajout de la méthode <code>getFlexFeatures()</code> pour renvoyer toutes les fonctionnalités implémentées par <code>FlexObject</code> ou <code>FlexCollection</code>.</li>
+<li>Ajout de la méthode <code>FlexObject :: refresh ()</code> pour s'assurer que l'objet est à jour.</li>
+<li>Ajout de <code>FlexStorage :: getMetaData()</code> pour obtenir des méta-informations d'objet mises à jour pour les clés répertoriées.</li>
+<li>Ajout de l'interface <code>FlexDirectoryInterface</code>.</li>
+<li>Ajout de l'option de recherche <code>same_as</code> aux Flex Objects.</li>
+<li>La méthode <code>Flex Pages $page-&gt;header()</code> renvoie l'objet <code>\Grav\Common\Page\Header</code>, l'ancienne classe <code>Page</code> renvoie toujours <code>stdClass</code>.</li>
+<li>Renommé <code>PageCollectionInterface::nonModular()</code> en <code>PageCollectionInterface::pages()</code> et obsolète l'ancienne méthode
+    Renommé PageCollectionInterface::modular() en PageCollectionInterface::modules() et l'ancienne méthode est obsolète.</li>
+<li><code>FlexDirectory::getObject()</code> peut maintenant être appelé sans aucun paramètre pour créer un nouvel objet.</li>
+<li>Implémentation d'une configuration personnalisable par type de répertoire flexible.</li>
+<li><strong>OBSOLETE</strong> <code>FlexDirectory::update()</code> et <code>FlexDirectory::remove()</code>.</li>
+<li><strong>BC BREAK</strong> Déplacement de toutes les classes de type <code>Flex sous Grav\Common\Flex</code>.</li>
+<li><strong>BC BREAK</strong> <code>FlexStorageInterface::getStoragePath()</code> et <code>getMediaPath()</code>peuvent maintenant renvoyer <code>null</code>.</li>
+<li><strong>BC BREAK</strong> Les objets Flex ne renvoient plus de clé temporaire s'ils n'en ont pas ; la clé vide est renvoyée à la place.</li>
+<li><strong>BC BREAK</strong> Argument de rechargement ajouté à <code>FlexStorageInterface::getMetaData()</code>.</li>
+<li>Vous pouvez ajouter le fichier <code>edit_list.html.twig</code> à un champ de formulaire afin de personnaliser l'apparence dans la vue de la liste.</li>
+</ul>
+<h3 id="Multilingue">Multilingue.
+<a href="#Multilingue" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Prise en charge améliorée de la langue pour la classe <code>Route</code>.</li>
+<li>Traductions : renommer MODULAIRE en MODULE partout.</li>
+<li>Ajout de <code>Language::getPageExtensions()</code> pour obtenir la liste complète des extensions de langue de page prises en charge.</li>
+<li><strong>BC BREAK</strong> Fixed <code>Language::getFallbackPageExtensions()</code> pour revenir uniquement à la langue par défaut au lieu de parcourir toutes les langues.</li>
+</ul>
+<h3 id="Multi-sites">Multi-sites.
+<a href="#Multi-sites" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout du support pour avoir tous les sites/environnements sous le dossier <code>user/env</code>.</li>
+</ul>
+<h3 id="Sérialisation">Sérialisation.
+<a href="#Sérialisation" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Toutes les classes utilisent maintenant la sérialisation PHP 7.4. Les anciennes méthodes <code>Serializable</code> sont désormais définitives et ne peuvent pas être remplacées.</li>
+</ul>
+<h3 id="Blueprints">Blueprints.
+<a href="#Blueprints" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout du filtre <code>flatten_array</code> pour la validation des champs de formulaire. </li>
+<li>Ajout de la prise en charge de <code>security@: ou : [admin.super, admin.pages]</code> dans les plans (prise en charge du mode ET/OU imbriqué).</li>
+<li>Validation du Blueprint : Ajout de <code>validate : value_type : bool|int|float|string|trim</code> to <code>array</code> pour filtrer toutes les valeurs à l'intérieur du tableau.</li>
+<li>Si vos plugins ont un dossier blueprints, l'initialiser dans l'événement sera trop tard. Faites ceci à la place :</li>
+</ul>
+<pre><code class="language-yaml">class MyPlugin extends Plugin
+{
+    /** @var array */
+    public $features = [
+        'blueprints' =&gt; 0, // Use priority 0
+    ];
+}
+</code></pre>
+<h3 id="Événements">Événements.
+<a href="#Événements" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Utilisez <code>Symfony EventDispatcher</code> directement au lieu de <code>rockettheme/toolbox wrapper</code>.</li>
+<li>Ajout de la méthode <code>$grav-&gt;dispatchEvent()</code> pour les événements PSR-14.</li>
+<li>Ajout de <code>PluginsLoadedEvent</code> qui se déclenche après que les plugins ont été chargés mais pas encore initialisés.</li>
+<li>Ajout de <code>SessionStartEvent</code> qui se déclenche au démarrage de la session.</li>
+<li>Ajout de <code>FlexRegisterEvent</code> qui se déclenche lorsque <code>$grav['flex']</code> est accédé pour la première fois.</li>
+<li>Ajout de <code>PermissionsRegisterEvent</code> qui se déclenche lors du premier accès à <code>$grav['permissions']</code>.</li>
+<li>Ajout de l'événement <code>onAfterCacheClear</code>.</li>
+<li>Vérifiez l'événement <code>onAdminTwigTemplatePaths</code>, il ne doit PAS être :</li>
+</ul>
+<pre><code class="language-yaml">public function onAdminTwigTemplatePaths($event)
+{
+    // This code breaks all the other plugins in admin, including Flex Objects
+    $event['paths'] = [__DIR__ . '/admin/themes/grav/templates'];
+}
+</code></pre>
+<p>mais:</p>
+<pre><code class="language-yaml">public function onAdminTwigTemplatePaths($event)
+{
+    // Add plugin template path for admin.
+    $paths = $event['paths'];
+    $paths[] = __DIR__ . '/admin/themes/grav/templates';
+    $event['paths'] = $paths;
+}
+</code></pre>
+<h3 id="Javascript">Javascript.
+<a href="#Javascript" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Mise à jour de JQuery groupé vers la dernière version <code>3.5.1</code>.</li>
+</ul>
+<h3 id="Divers">Divers.
+<a href="#Divers" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout de <code>Utils ::functionExists()</code> : compatible avec PHP 8 <code>function_exists()</code>.</li>
+<li>Ajout des méthodes d'assistance <code>Utils::isAssoc()</code> et <code>Utils::isNegative()</code>.</li>
+<li>Ajout de la méthode <code>Utils :: simpleTemplate()</code> pour une modélisation très simple des variables.</li>
+<li>Ajout de <code>Utils ::fullPath()</code> pour obtenir le chemin complet d'un fichier, qu'il s'agisse d'un flux, d'un relatif, etc.</li>
+<li>Prend en charge le remplacement personnalisable des caractères nuls dans <code>CSVFormatter :: decode ()</code>.</li>
+<li>Ajout de la nouvelle fonction <code>Security :: sanitizeSVG()</code>.</li>
+<li>Ajout de la méthode <code>$grav-&gt;close()</code> pour terminer correctement la requête avec une réponse.</li>
+<li>Ajout de la méthode <code>Folder::countChildren()</code> pour déterminer si un dossier a des dossiers enfants.</li>
+<li>Prise en charge des liens symboliques lors de l'enregistrement du fichier.</li>
+<li>Ajout de la méthode <code>Route :: getBase()</code>.</li>
+<li><strong>BC BREAK</strong> Rend les objets <code>Route</code> immuables. Cela signifie que vous devez faire : <code>{% set route = route.withExtension('.html') %}</code> (pour toutes les méthodes <code>withX</code>) pour conserver la version mise à jour.</li>
+<li>Meilleure gestion de <code>Content-Encoding</code> dans Apache lorsque la compression de contenu est désactivée.</li>
+<li>Ajout d'une fonction de compatibilité <code>Uri::getAllHeaders()</code>.</li>
+<li>Autoriser le passage des options <code>JsonFormatter</code> sous forme de chaîne.</li>
+</ul>
+<h3 id="CLI">CLI.
+<a href="#CLI" class="toc-anchor after"></a></h3>
+
+<ul>
+<li><strong>BC BREAK</strong> De nombreux plugins initialisent Grav d'une mauvaise manière, il n'est pas sûr d'initialiser les plugins et le thème par vous-même<ul>
+<li>Les appels suivants nécessitent Grav 1.6.21 ou une version ultérieure, il est donc recommandé de définir la dépendance Grav sur cette version</li>
+<li>Dans la méthode <code>serve()</code> :</li>
+<li>Appelez <code>$this-&gt;setLanguage($langCode)</code>; avant de faire quoi que ce soit d'autre si vous voulez définir la langue (ou utiliser par défaut).</li>
+<li>Appelez l'un des suivants :<ul>
+<li><code>$this-&gt;initializeGrav()</code>; Déjà appelé si vous êtes dans bin/plugin, sinon vous devrez peut-être appeler celui-ci :</li>
+<li><code>$this-&gt;initializePlugins()</code>; Cela initialise grav, plugins (jusqu'à onPluginsInitialized).</li>
+<li><code>$this-&gt;initializeThemes()</code>; Cela initialise grav, plugins et thème.</li>
+<li><code>$this-&gt;initializePages()</code>; Cela initialise grav, plugins, thème et tout ce dont les pages ont besoin.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>C'est une bonne idée de préfixer vos classes de commandes CLI avec le nom de votre plugin, sinon il peut y avoir des conflits de noms (nous en avons déjà !).</li>
+</ul>
+<h3 id="Bibliothèques utilisées">Bibliothèques utilisées.
+<a href="#Bibliothèques utilisées" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Mise à jour des composants Symfony vers la version 4.4, veuillez mettre à jour toutes les fonctionnalités obsolètes dans votre code.</li>
+<li><strong>BC BREAK</strong> Veuillez exécuter <code>bin/grav yamllinter</code> pour trouver toute erreur d'analyse YAML sur votre site (y compris vos plugins et thèmes).</li>
+</ul>
+<h2 id="PLUGINS">PLUGINS.
+<a href="#PLUGINS" class="toc-anchor after"></a></h2>
+
+<h3 id="Administrateur">Administrateur.
+<a href="#Administrateur" class="toc-anchor after"></a></h3>
+
+<ul>
+<li>Ajout de l'option <code>Content Editor</code> au plan de compte d'utilisateur.</li>
+<li><strong>BC BREAK</strong> Admin n'initialisera plus les pages frontend, cela a été fait pour accélérer considérablement le plugin Admin.
+    Veuillez appeler <code>$grav['admin']-&gt;enablePages()</code> ou <code>{% do admin.enablePages() %}</code> si vous avez besoin d'accéder aux pages frontales. Cet appel peut être effectué plusieurs fois en toute sécurité.
+    Si vous utilisez <code>Flex Pages</code>, veuillez utiliser Flex Directory à la place, cela rendra votre code beaucoup plus rapide.</li>
+<li>L'administrateur utilise désormais Flex pour modifier <code>Accounts</code> et <code>Pages</code>. Si votre plugin s'accroche à l'un de ceux-ci, assurez-vous qu'il fonctionne toujours.</li>
+<li>Le cache administrateur est activé par défaut, assurez-vous que votre plugin efface le cache si nécessaire. Veuillez éviter de vider tout le cache !</li>
+</ul>
+<h3 id="Noyau de code court">Noyau de code court.
+<a href="#Noyau de code court" class="toc-anchor after"></a></h3>
+
+<ul>
+<li><strong>OBSOLETE</strong> Chaque shortcode doit avoir la méthode <code>init()</code>, les classes sans elle cesseront de fonctionner à l'avenir.</li>
+</ul>
+<h2 id="Dépannage des problèmes">Dépannage des problèmes.
+<a href="#Dépannage des problèmes" class="toc-anchor after"></a></h2>
+
+<p><code>ERREUR : modèle flex-objects.html.twig introuvable pour la page</code>.</p>
+<p>Si vous obtenez cette erreur après la mise à niveau vers Grav 1.7, cela peut être lié à un plugin appelé <code>content-edit</code>. Si vous désactivez ce plugin, l'erreur devrait se résoudre d'elle-même. <a href="https://github.com/getgrav/grav/issues/3169">Grav Numéro #3169</a></p>
+<h3 id="Administrateur non traduit">Administrateur non traduit.
+<a href="#Administrateur non traduit" class="toc-anchor after"></a></h3>
+
+<p>Si votre plugin d'administration ressemble à ceci :</p>
+<p><img alt="Administrateur non traduit" src="https://learn.getgrav.org/user/pages/08.advanced/09.grav-development/03.grav-17-upgrade-guide/untranslated.png" /></p>
+<p>La correction est très simple et peut être effectuée même lorsqu'elle n'est pas entièrement traduite. Accédez simplement à <code>PLUGIN_ADMIN.CONFIGURATION</code>, puis dans <code>PLUGIN_ADMIN.LANGUAGES</code>, définissez <code>PLUGIN_ADMIN.LANGUAGE_TRANLATIONS</code> sur <code>PLUGIN_ADMIN.YES</code> :</p>
+<p><img alt="Corriger les traductions" src="https://learn.getgrav.org/user/pages/08.advanced/09.grav-development/03.grav-17-upgrade-guide/fix-translations.png" /></p>
+<h3 id="Les plans de page cessent de fonctionner dans l'administration">Les plans de page cessent de fonctionner dans l'administration.
+<a href="#Les plans de page cessent de fonctionner dans l'administration" class="toc-anchor after"></a></h3>
+
+<p>Si vous ne pouvez pas voir vos champs personnalisés lors de la modification de la page, votre thème utilise deux emplacements en conflit pour les plans de page.</p>
+<p>Si le thème n'a pas été créé par vous, veuillez signaler un bogue à l'auteur du thème.</p>
+<p>Pour corriger le bogue, vous devez déplacer tous les fichiers et dossiers de votre thème de <code>blueprints/</code> vers <code>blueprints/pages/</code> (nécessite <strong>Grav 1.7.8+</strong>). Sinon, si le thème doit prendre en charge les anciennes versions de Grav, faites l'inverse.</p>
+<h3 id="Erreur : boucle détectée lors de l'extension du fichier Blueprint">Erreur : boucle détectée lors de l'extension du fichier Blueprint.
+<a href="#Erreur : boucle détectée lors de l'extension du fichier Blueprint" class="toc-anchor after"></a></h3>
+
+<p>La solution la plus simple pour une erreur de boucle consiste à déplacer les fichiers à leur emplacement approprié, veuillez consulter le problème ci-dessus.</p>
+<p>Vous pouvez également résoudre le problème en modifiant le plan de la page cassée à partir de :</p>
+<pre><code class="language-yaml">extends@:
+    type: [NAME]
+    context: 'blueprints://pages'
+</code></pre>
+<p>où <code>[NAME</code>] est le nom de fichier (sans l'extension de fichier) du plan lui-même, pour :</p>
+<pre><code class="language-yaml">extends@: self@
+</code></pre>
+<h3 id="Style CSS manquant dans l'administration">Style CSS manquant dans l'administration.
+<a href="#Style CSS manquant dans l'administration" class="toc-anchor after"></a></h3>
+
+<p>Il a été signalé qu'après la mise à niveau vers les derniers Grav 1.7 et Admin 1.10, certaines pages d'administration semblent cassées et pas entièrement stylées. Cela pourrait être lié au plugin <code>imagecreate</code>. Désactiver ce plugin ne suffit pas, vous devez supprimer complètement le plugin, puis l'erreur devrait se résoudre d'elle-même. <a href="https://github.com/getgrav/grav-plugin-admin/issues/2035">Problème d'administration #2035</a></p>
+<h2 id="Revenir à Grav 1.6">Revenir à Grav 1.6.
+<a href="#Revenir à Grav 1.6" class="toc-anchor after"></a></h2>
+
+<p>Bien que nous vous recommandons de résoudre tous les problèmes que vous pourriez avoir pour vous assurer que Grav 1.7 et les futures mises à jour seront une mise à niveau facile, il y aura des scénarios où vous avez une fonctionnalité de plug-in personnalisée, ou n'avez pas les ressources de développement à portée de main, et avez juste besoin de revenir rapidement à Grav 1.6.</p>
+<p>Si vous avez un accès CLI au site, cela peut être fait en exécutant ces commandes à partir de la <strong>racine de votre site Grav 1.7</strong> :</p>
+<pre><code class="language-console">wget -q https://getgrav.org/download/core/grav-update/1.6.31 -O tmp/grav-update-v1.6.31.zip
+wget -q https://getgrav.org/download/plugins/admin/1.9.19 -O tmp/grav-plugin-admin-v1.9.19.zip
+unzip tmp/grav-update-v1.6.31.zip -d tmp
+unzip tmp/grav-plugin-admin-v1.9.19.zip -d tmp
+cp -rf tmp/getgrav-grav-plugin-admin-5d86394/* user/plugins/admin/
+cp -rf tmp/grav-update/* ./
+</code></pre>
+<p>Fondamentalement, il effectue une <strong>installation directe</strong> de la dernière version de Grav 1.6 et Admin 1.9 en plus de votre installation actuelle. Il ne touche pas le dossier <code>user/</code> afin que votre contenu et vos plugins ne soient pas impactés.</p>
+<p>Pour ceux qui n'ont pas accès à la CLI, téléchargez les fichiers <a href="https://github.com/getgrav/grav/releases/download/1.6.31/grav-update-v1.6.31.zip">grav-update-v1.6.31.zip</a> et <a href="https://github.com/getgrav/grav-plugin-admin/archive/1.9.19.zip">grav-plugin-admin-1.9.19.zip</a> en utilisant les liens donnés ici. Décompressez les fichiers dans votre système de fichiers. Utilisez ensuite votre client FTP/SFTP préféré pour copier tous les fichiers Grav dans vos fichiers <code>WEBROOT</code> et Admin dans <code>WEBROOT/user/plugins/admin</code>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../avance-grav-up-to-1-6/" class="btn btn-neutral float-left" title="Mise à niveau vers Grav 1.6"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../avance-syntaxe-yaml/" class="btn btn-neutral float-right" title="Syntaxe YAML">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../avance-grav-up-to-1-6/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../avance-syntaxe-yaml/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

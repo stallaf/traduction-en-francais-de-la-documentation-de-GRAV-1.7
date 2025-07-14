@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/routage/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Routage - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Routage";
+        var mkdocs_page_input_path = "routage.md";
+        var mkdocs_page_url = "/routage/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>2. Contenu &raquo;</li><li>Routage</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Routage</h1>
+
+<p>Comme nous l'avons déjà décrit dans la section d'ouverture <a href="../pages/#Dossiers">Page -&gt; Dossiers</a>, le <strong>routage</strong> dans Grav est principalement contrôlé par la structure de dossiers que vous utilisez lorsque vous créez le contenu de votre site.</p>
+<p>Il existe certains scénarios où vous avez besoin de plus de flexibilité et Grav est livré avec une variété d'outils et d'options de configuration pour vous simplifier la vie à cet égard.</p>
+<p>Imaginez que vous déplaciez votre site d'une autre plate-forme CMS vers Grav, vous avez plusieurs choix pour configurer votre nouveau site :</p>
+<ol>
+<li>Essayez de répliquer les URL de votre ancien site en créant la structure de dossiers correspondante.</li>
+<li>Créez votre nouveau site comme vous le souhaitez, puis demandez à votre serveur Web de "réécrire" les anciennes URL pour rediriger les clients vers les nouveaux emplacements.</li>
+<li>Créez votre nouveau site comme vous le souhaitez et configurez Grav pour rediriger les clients des anciennes URL vers les nouveaux emplacements.</li>
+</ol>
+<p>Il existe de nombreux autres cas d'utilisation dans lesquels vous souhaiterez peut-être que le site Grav réponde à des URL différentes de celles dictées par la structure des dossiers, et Grav dispose des fonctionnalités suivantes pour vous aider à atteindre vos objectifs.</p>
+<h2 id="Remplacements de routage et de redirection au niveau de la page">Remplacements de routage et de redirection au niveau de la page
+<a href="#Remplacements de routage et de redirection au niveau de la page" class="toc-anchor after"></a></h2>
+
+<p>Comme indiqué dans la section <a href="../en-tete-frontmatter/#Routes">En-têtes -&gt; Routes</a>, vous pouvez fournir des options de routage explicites pour la <strong>route par défaut</strong> ainsi qu'un tableau <strong>d'alias de route</strong> :</p>
+<pre><code class="language-yaml">routes:
+   default: '/my/example/page'
+   canonical: '/canonical/url/alias'
+   aliases:
+      - '/some/other/route'
+      - '/can-be-any-valid-slug'
+</code></pre>
+<p>Ceux-ci sont traités et mis en cache par page, et sont disponibles avec ce que nous appelons la <strong>route brute</strong> qui est la route basée sur les <strong>slugs</strong> de la hiérarchie des pages (c'est ainsi que Grav établit une route par défaut). Ainsi, même si vous fournissez des routes de page personnalisées, la <strong>route brute</strong> est toujours valide également.</p>
+<p>Semblable au routage au niveau de la page, Grav prend également en charge les redirections au niveau de la page en spécifiant la page cible dans l'en-tête de la page. Voir la section <a href="../en-tete-frontmatter/#Redirection">En-têtes -&gt; Redirection</a> pour plus de détails.</p>
+<pre><code>redirect: '/some/custom/route[303]'
+</code></pre>
+<h2 id="Routes et redirections au niveau du site">Routes et redirections au niveau du site
+<a href="#Routes et redirections au niveau du site"
+class="toc-anchor after"></a></h2>
+
+<p>Grav dispose d'un puissant mécanisme basé sur les regex pour gérer les <strong>alias de route</strong> et les <strong>redirections</strong> d'une page à une autre. Cette fonctionnalité est particulièrement utile lorsque vous migrez un site vers Grav et que vous souhaitez vous assurer que les anciennes URL fonctionneront toujours avec le nouveau site. Ceci est souvent mieux réalisé via des <strong>règles de réécriture</strong> à l'aide de votre serveur Web, mais il est parfois plus pratique et flexible de laisser Grav les gérer.</p>
+<p>Ceux-ci sont gérés via la <a href="../configuration/#Configuration du site">Configuration du Site</a>. Grav est livré avec un exemple <code>system/config/site.yaml</code> mais vous pouvez remplacer ou ajouter n'importe lequel de vos propres paramètres en éditant le fichier <code>user/config/site.yaml</code>.</p>
+<div class="notice info">
+Toutes les règles de redirection s'appliquent sur le slug-path commençant après la partie langue (si vous utilisez des pages multilingues)
+</div>
+
+<div class="notice warning">
+Vous devez échapper certains caractères dans tous les itinéraires que vous souhaitez faire correspondre. Ceci est particulièrement important à savoir si vous migrez un ancien site qui utilisait des liens contenant des extensions de fichiers héritées (par exemple <code>.php</code>) ou des paramètres d'URL (<code>?foo=bar`</code>). Dans ces exemples, le point et le point d'interrogation <strong>doivent être échappés</strong> comme <code>/index\.php\?foo=bar: '/new/location'</code>.
+</div>
+
+<h3 id="Alias ​​de route">Alias ​​de route
+<a href="#Alias ​​de route" class="toc-anchor after"></a></h3>
+
+<h4 id="Alias ​​simples">Alias ​​simples
+<a href="#Alias ​​simples" class="toc-anchor after"></a></h4>
+
+<p>Le type d'alias le plus basique est un mappage direct un à un. Dans la section <code>routes:</code> du <code>site.yaml</code>, vous pouvez créer une liste de mappages pour indiquer l'alias et la route réelle à utiliser.</p>
+<div class="notice info">
+Il est important de noter que ces alias ne sont utilisés que si aucune page valide n'est trouvée avec la route fournie.
+</div>
+
+<pre><code>routes:
+  /something/else: '/blog/focus-and-blur'
+</code></pre>
+<p>Si vous avez demandé une URL <code>http://mysite.com/something/else</code> et que ce n'était pas une page valide, la définition des itinéraires vous servirait en fait la page située à <code>/blog/focus-and-blur</code>, en supposant qu'elle existe. Cela ne <strong>redirige</strong> pas réellement l'utilisateur vers la page fournie, il affiche simplement la page lorsque vous demandez l'alias.</p>
+<div class="notice info">
+L'indentation est la clé ici, sans elle, la redirection de route ne fonctionnera pas.
+</div>
+
+<h4 id="Alias ​​basés sur Regex">Alias ​​basés sur Regex
+<a href="#Alias ​​basés sur Regex" class="toc-anchor after"></a></h4>
+
+<p>Un type plus avancé de redirection d'alias permet l'utilisation d'une <strong>expression régulière</strong> simple pour mapper une partie d'un alias sur une route. Par exemple, si vous aviez :</p>
+<pre><code>routes:
+   /another/(.*): '/blog/$1'
+</code></pre>
+<p>Cela acheminerait le caractère générique de l'alias vers la route, donc <code>http://mysite.com/another/focus-and-blur</code> afficherait en fait la page trouvée sur la route <code>/blog/focus-and-blur</code>. C'est un moyen puissant de mapper un ensemble d'URL à un autre. Idéal pour déplacer votre site de WordPress vers Grav :)</p>
+<p>Vous pouvez également effectuer la correspondance pour capturer n'importe quel alias et le mapper à une route spécifique :</p>
+<pre><code>routes:
+  /one-ring/(.*): '/blog/sunshine-in-the-hills'
+</code></pre>
+<p>Avec cet alias de route, toute URL qui confirme le caractère générique : /<code>one-ring/to-rule-them-all</code>ou <code>/one-ring/is-mine.html</code> affichera toutes les deux le contenu de la page avec la route <code>/blog/sunshine-in-the-hills</code>.</p>
+<p>Vous pouvez même être beaucoup plus créatif et mapper plusieurs éléments ou utiliser n'importe quelle syntaxe regex :</p>
+<pre><code>routes:
+  /complex/(category|section)/(.*): /blog/$1/folder/$2
+</code></pre>
+<p>Cela correspondrait et réécrirait ce qui suit :</p>
+<pre><code>/complex/category/article-1      -&gt; /blog/category/folder/article-1
+/complex/section/article-2.html  -&gt; /blog/section/folder/article-2.html
+</code></pre>
+<p>Cet itinéraire ne correspondra à rien qui ne commence pas par <code>complex/catégory</code> ou <code>complex/section</code>. </p>
+<p>Pour plus d'informations, <a href="https://regexr.com/">Regexr.com</a> est une ressource fantastique pour apprendre et tester les expressions régulières.</p>
+<h4 id="Redirections">Redirections
+<a href="#Redirections" class="toc-anchor after"></a></h4>
+
+<p>L'autre option corollaire pour <strong>router les alia</strong>s est fournie par les <strong>redirections</strong>. Celles-ci sont similaires, mais plutôt que de conserver l'URL et de simplement servir le contenu de la route aliasée, Grav redirige en fait le navigateur vers la page mappée.</p>
+<p>Il existe trois options de configuration au niveau du système qui affectent les redirections :</p>
+<pre><code class="language-yaml">pages:
+   redirect_default_route: false
+   redirect_default_code: 302
+   redirect_trailing_slash: true
+</code></pre>
+<ul>
+<li><code>redirect_default_route</code> permet à Grav de rediriger automatiquement vers la route par défaut de la page.</li>
+<li><code>redirect_default_code</code> vous permet de définir les codes de redirection HTTP par défaut :<ul>
+<li><strong>301</strong> : redirection permanente. Les clients effectuant des demandes ultérieures pour cette ressource doivent utiliser le nouvel URI. Les clients ne doivent pas suivre automatiquement la redirection pour les requêtes POST/PUT/DELETE.</li>
+<li><strong>302</strong> : Rediriger pour une raison indéfinie. Les clients effectuant des demandes ultérieures pour cette ressource ne doivent pas utiliser le nouvel URI. Les clients ne doivent pas suivre automatiquement la redirection pour les requêtes POST/PUT/DELETE.</li>
+<li><strong>303</strong> : Rediriger pour une raison indéfinie. Typiquement, 'L'opération est terminée, continuez ailleurs.' Les clients effectuant des demandes ultérieures pour cette ressource ne doivent pas utiliser le nouvel URI. Les clients doivent suivre la redirection pour les requêtes POST/PUT/DELETE.</li>
+<li><strong>307</strong> : Redirection temporaire. La ressource peut revenir à cet emplacement ultérieurement. Les clients effectuant des demandes ultérieures pour cette ressource doivent utiliser l'ancien URI. Les clients ne doivent pas suivre automatiquement la redirection pour les requêtes POST/PUT/DELETE.</li>
+</ul>
+</li>
+<li>L'option <code>redirect_trailing_slash</code> vous permet de rediriger vers une version slash non finale de l'URL actuelle</li>
+</ul>
+<p>Par exemple :</p>
+<pre><code class="language-yaml">redirects:
+   /jungle: '/blog/the-urban-jungle'
+</code></pre>
+<p>Vous pouvez également transmettre explicitement le code de redirection entre crochets <code>[]</code> dans le cadre de l'URL :</p>
+<pre><code class="language-yaml">redirects:
+   /jungle: '/blog/the-urban-jungle[303]'
+</code></pre>
+<p>Si vous deviez pointer votre navigateur vers <code>http://mysite.com/jungle</code>, vous seriez en fait redirigé et vous vous retrouveriez sur la page : <code>http://mysite.com/blog/the-urban-jungle</code>.</p>
+<p>Les mêmes fonctionnalités d'expression régulière qui existent pour les Alias de Route existent également pour les redirections. Par example:</p>
+<pre><code class="language-yaml">redirects:
+   /redirect-test/(.*): /$1
+   /complex/(category|section)/(.*): /blog/$1/folder/$2
+</code></pre>
+<h2 id="Masquer l'itinéraire d'origine">Masquer l'itinéraire d'origine
+<a href="#Masquer l'itinéraire d'origine" class="toc-anchor after"></a></h2>
+
+<p>Lorsque vous définissez une certaine page comme page d'accueil de votre site via le fichier <code>system.yaml</code> :</p>
+<pre><code class="language-yaml">home:
+   alias: '/home'
+</code></pre>
+<p>Vous dites effectivement à Grav d'ajouter une route de / comme alias pour cette page. Cela signifie que lorsque Grav demande la page pour l'URL <code>/</code>, il trouve la page que vous avez définie.</p>
+<p>Cependant, Grav ne fait vraiment rien de spécial pour les pages qui se trouvent sous cette page d'accueil. Donc, si vous avez une page appelée <code>/blog</code> qui affiche une liste de vos articles de blog et que vous la définissez comme votre page d'accueil, cela fonctionnera comme prévu. Si toutefois, vous cliquez sur un article de blog qui se trouve sous le dossier <code>/blog</code>, l'URL peut être <code>/blog/my-blog-post</code>. C'est un comportement attendu, mais ce n'est peut-être pas ce que vous avez l'intention de faire. Il y a une nouvelle option disponible via le <code>system.yaml</code> qui vous permet de cacher ce <code>/blog</code> de niveau supérieur de la route si activé.</p>
+<p>Vous pouvez activer ce comportement en basculant la valeur suivante :</p>
+<pre><code class="language-yaml">home:
+  hide_in_urls: true
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../pages-modulaires/" class="btn btn-neutral float-left" title="Pages modulaires"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../multi-langue/" class="btn btn-neutral float-right" title="Multi langue">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../pages-modulaires/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../multi-langue/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

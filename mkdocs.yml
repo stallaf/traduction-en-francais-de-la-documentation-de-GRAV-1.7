@@ -1,0 +1,225 @@
+site_name: grav.stallaf.net
+site_url: https://grav.stallaf.net/
+site_author: SF aka stallaf
+site_description: Traduction en français de la documentation de Grav 1.7
+
+theme: 
+   name: readthedocs
+   locale: fr   
+   highlightjs: true             # coloration du code source
+   hljs_languages:               # langages utilisés
+      - yaml
+      - html
+      - php
+      - md
+      - json
+      - bash
+      - shell
+      - css
+      - ini
+      - txt
+      - twig
+      - console
+   sticky_navigation: false      # le menu reste fixe
+
+extra_css:
+   - css/stallafgrav.css         # pour la prise en charge du css personalisé
+    
+nav:
+    - 1. Bases:
+        - C'est quoi Grav ?: quesque-grav.md
+        - Prérequis: prerequis.md
+        - Installation: installation.md
+        - Tutoriel de base: tutoriel.md
+        - Configuration: configuration.md
+        - Structure des dossiers: structure-dossiers.md
+        - Obtenir de l'aide: obtenir-aide.md
+        - Mise à jour: maj-grav.md
+    - 2. Contenu:
+        - Pages: pages.md
+        - En-têtes: en-tete-frontmatter.md
+        - Collection de pages: pages-collection.md
+        - Syntaxe Markdown: syntaxe-markdown.md
+        - Liaison de pages: liaison-pages.md
+        - Liaison d'images: liaison-images.md
+        - Média: media.md
+        - Taxonomie: taxonomy.md
+        - Pages modulaires: pages-modulaires.md
+        - Routage: routage.md
+        - Multi langue: multi-langue.md
+        - Types de contenu: types-contenu.md
+    - 3. Themes:
+        - Theme de base: themes-base.md
+        - Tutoriel: tutoriel-theme.md
+        - Approche de Twig: bases-twig.md
+        - Balises, Filtres & Fonctions Twig:
+            - Résumé: resume-twig.md 
+            - Balises Twig: balises-twig.md
+            - Filtres Twig: filtres-twig.md
+            - Fonctions Twig: fonctions-twig.md
+        - Configuration: configuration-theme.md 
+        - Variables: variables-theme.md
+        - Asset Manager: asset-manager.md
+        - Personnalisation: personnalisation.md
+    - 4. Plugins:
+        - Les Bases: plugin-bases.md
+        - Installation: plugin-installation.md 
+        - Tutoriel: plugin-tutoriel.md
+        - Crochets d'évènements: crochets-evenements.md
+        - Cycle de vie de Grav: cycle-vie.md
+    - 5. Panneau d'Administration:
+        - Introduction: panneau-admin-intro.md
+        - Tableau de bord:  
+            - Tableau de bord: dashboard.md
+            - Configuration (systeme): configuration-systeme.md
+            - Configuration (site): configuration-site.md
+            - Profil: profil.md
+        - Comptes:
+            - Comptes: comptes.md
+            - Compte utilisateur: compte-utilisateur.md
+            - Groupe d'utilisateurs: groupe-utilisateur.md
+            - Configuration: configuration-comptes.md
+            - Permissions: permissions.md   
+        - Pages:
+            - Pages: dashboard-pages.md    
+            - Editeur (Contenu): dashboard-pages-editeur-contenu.md
+            - Editeur (Options): dashboard-pages-editeur-options.md
+            - Editeur (Avancé): dashboard-pages-editeur-avance.md
+            - Editeur (Sécurité): dashboard-pages-editeur-securite.md
+            - Configuration: dashboard-pages-configuration.md
+            - Permissions: dashboard-pages-permissions.md
+        - Plugins:
+            - Plugins: dashboard-plugin.md
+            - Options: dashboard-plugins-options.md
+        - Thémes: dashboard-themes.md
+        - Sécurité: 
+            - Authentification à 2 facteurs: dashboard-authentification.md
+            - Protection contre le Flood: dashboard-flood.md
+        - Outils: dashboard-outils.md
+        - Extensions: 
+            - Modifier le panneau: dashboard-extensions.md
+            - Crochets d'évènements: dashboard-evenements.md
+        - FAQ: dashboard-faq.md        
+    - 6. Formulaires:
+        - Blueprints: 
+            - Blueprints: formulaires-blueprints.md
+            - Référence - Champs de formulaire Blueprint: formulaires-references.md
+            - Exemple - Plugin Blueprint: formulaires-ex-blueprint.md
+            - Exemple - Plugin Configuration: formulaires-ex-config.md
+            - Exemple - Page Blueprint: formulaires-ex-page-blueprint.md
+            - Exemple - Config Blueprint: formulaires-ex-config-blueprint.md
+            - Comment ajouter un téléchargement de fichier: formulaires-telechargement.md
+            - Fonctionnalités avancés Blueprint: formulaires-blueprint-avance.md
+        - Formulaires:
+            - Formulaire frontaux: formulaires-frontaux.md
+            - Référence - Options de formulaires: formulaires-ref-options-formulaires.md
+            - Référence - Index des champs de formulaires: formulaires-ref-index-formulaires.md
+            - Exemple - Formulaire de contact: formulaires-ex-formulaire-contact.md
+            - Référence - Formulaire actions: formulaires-ref-formulaire-actions.md
+            - Procedure - Formulaire pages modulaires: formulaires-procedure-formulaire-pages.md
+            - Procédure - Traitement Ajax: formulaires-procedure-traitement-ajax.md
+    - 7. CLI Console:
+        - Introduction ligne de commandes: cli-intro.md
+        - Commandes Grav: cli-commandes-grav.md
+        - Commandes de plugin: cli-commandes-plugin.md
+        - Commandes GPM: cli-commandes-gpm.md
+        - Mises à niveau scripté: cli-mise-a-niveau.md
+    - 8. Avancé:
+        - Objets Flexibles: 
+            - Objets flexibles : avance-flex-objets.md
+            - Administration:
+                - Résumé: avance-flex-administration.md            
+                - Introduction: avance-flex-intro.md
+                - Liste de contenus: avance-flex-liste-contenus.md
+                - Editeur de contenu: avance-flex-editeur-contenus.md
+                - Configuration: avance-flex-configuration.md
+            - Utilisation d'objets flexibles:
+                - Utilisation: avance-flex-utilisation.md 
+                - Flex: avance-flex-flex.md
+                - Répertoire Flex: avance-flex-repertoire.md
+                - Collection Flex: avance-flex-collection.md
+                - Objets Flex: avance-flex-objets-flex.md
+            - Type de répertoires personnalisés:
+                - Résumé: avance-flex-type-repertoires.md
+                - Blueprintt : avance-flex-type-blueprint.md
+        - Performances et mise en cache: avance-perf-cache.md
+        - Débogage et journalisation: avance-debogage-journalisation.md
+        - Configuration de l'envirronement: avance-config-environnement.md
+        - Configuration multisite: avance-config-multisite.md
+        - Priorisarion  des plugins: avance-priorisation-plugin.md
+        - Planificateur: avance-planificateur.md
+        - Sauvegardes: avance-sauvegardes.md
+        - Développement Grav:
+            - Développement Grav: avance-grav-developpement.md
+            - Mise à niveau depuis Grav <1.6: avance-grav-up-1-6.md
+            - Mise à niveau vers Grav 1.6: avance-grav-up-to-1-6.md
+            - Mise à niveau vers Grav 1.7: avance-grav-up-to-1-7.md
+        - Syntaxe YAML: avance-syntaxe-yaml.md
+        - Groupes et autorisations: avance-groupes-autorisations.md               
+        - Modifier l'URL du site : avance-url.md    
+    - 9. Serveurs Web et Hébergement:
+        - Serveurs Web: 
+            - Nginx : web-nginx.md                                
+            - Serveur Web Grav intégré: web-serveur-grav.md
+        - Hébergement partagé:
+            - Rochen: web-hebergement-rochen.md
+            - WireNine: web-hebergement-wirenine.md
+            - Crucial: web-hebergement-crucial.md
+            - SiteGround: web-hebergement-siteground.md
+            - Arvixe: web-hebergement-arvixe.md
+            - Dreamhost: web-hebergement-dreamhost.md
+            - alwaysdata: web-hebergement-alwaysdata.md
+        - VPS partagé:
+            - DigitalOcean: vps-hebergement-digitalocean.md
+            - Linode: vps-hebergement-linode.md
+            - RoseHosting: vps-hebergement-rosehosting.md
+            - Vultr: vps-hebergement-vultr.md
+        - Hébergement PaaS:
+            - Fortrabbit: paas-hebergement-fortrabbit.md       
+            - Heroku: paas-hebergement-heroku.md
+            - Cloudways: paas-hebergement-cloudways.md
+            - Microsoft Azure: paas-hebergement-azure.md
+            - Dokku: paas-hebergement-dokku.md
+        - Développement local avec ddev: server-ddev.md
+        - Déployer avec Git: server-deploy-git.md
+        - Serveur Web PHP intégré: server-php.md
+        - Sous-système Windows pour Linux: server-win-pour-linux.md
+    - 10. Cookbook:        
+          - Recettes Générales: cookbook-recettes.md
+          - Recettes Twig: cookbook-recettes-twig.md
+          - Recettes Plugin: cookbook-recettes-plugin.md
+          - Recettes Administration: cookbook-recettes-admin.md
+          - Tuotirel: 
+              - Créer un Blog: cookbook-tutoriel.md
+    - 11. Dépannage:
+          - 404 non trouvé: depannage-404.md
+          - Erreus du Serveur Grav: depannage-erreur-serveur.md
+          - 500 Erreur Interne au Serveur: depannage-500.md
+          - 403 Interdit: depannage-403.md
+          - Jeton de Sécurité non Valide: depannage-token.md
+          - Autorisations: depannage-autorisations.md
+          - Problèmes de Proxy: depannage-proxy.md
+          - Problèmes Communs: depannage-communs.md
+          - htacces: depannage-htaccess.md
+    - 12. Migration:
+          - Migrer de Drupal 7 vers Grav: migrer.md
+    - 13. Sécurité:
+          - Aperçu: securite-apercu.md
+          - Configuration: securite-config.md
+          - Utilisateurs: securite-utilisateurs.md
+          - Développeurs: securite-dev.md
+          - Ducôté Serveur: securite-server.md
+          - Rapports: securite-rapports.md      
+    - 14. API Grav: 
+          - Api: api.md 
+    - 15. Trucs et Astuces:     
+          - Métadonnées des Blogs: trucs-metadonnees.md     
+
+not_in_nav: | 
+   index.md
+   a-propos.md
+   mentions-legales.md
+
+exclude_docs: |
+
+

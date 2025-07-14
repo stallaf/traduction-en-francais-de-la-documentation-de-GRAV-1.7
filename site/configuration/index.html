@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/configuration/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Configuration - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configuration";
+        var mkdocs_page_input_path = "configuration.md";
+        var mkdocs_page_url = "/configuration/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>1. Bases &raquo;</li><li>Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class = "rem">Configuration</h1>
+
+<p>Tous les fichiers de configuration Grav sont écrits en <a href="../avance-syntaxe-yaml/">syntaxe YAML</a> avec une extension de fichier <code>.yaml</code>. YAML est très intuitif, ce qui le rend très facile à lire et à écrire, cependant, vous pouvez consulter la <a href="../avance-syntaxe-yaml/">page YAML dans le chapitre Avancé</a> pour avoir une compréhension complète de la syntaxe disponible.</p>
+<div class = "notice tip">
+<strong>ASTUCE</strong> : Voir <a href="/securite-config">Sécurité > Configuration</a> pour un guide rapide sur la manière de sécuriser et d'optimiser votre site de production.
+</div>
+
+<h2 id="Configuration du système">Configuration du système
+<a href="#Configuration du système" class="toc-anchor after"></a></h2>
+
+<p>Grav s'attache à rendre les choses aussi simples que possible pour l'utilisateur, et il en va de même pour la configuration. Grav est livré avec quelques options par défaut, et celles-ci sont contenues dans un fichier qui réside dans le fichier <code>system/config/system.yaml</code>.</p>
+<p>Cependant, <strong>vous ne devez jamais modifier ce fichier</strong>, à la place, toutes les modifications de configuration que vous devez apporter doivent être stockées dans un fichier appelé <code>user/config/system.yaml</code>. Tout paramètre de ce fichier ayant la même structure et le même nom remplacera le paramètre fourni dans le fichier de configuration système par défaut.</p>
+<div class = "notice warning">
+De manière générale, vous ne devez <strong>JAMAIS</strong> modifier quoi que ce soit dans le dossier <code>system/</code>. Toutes les actions de l'utilisateur (création de contenu, installation de plugins, modification de la configuration, etc.) doivent être effectuées dans le dossier <code>user/</code>. De cette façon, cela permet une mise à niveau plus simple et conserve également vos modifications au même endroit pour la sauvegarde, la synchronisation, etc.
+</div>
+
+<p>Voici les variables présentes dans le fichier par défaut <code>system/config/system.yaml</code> :</p>
+<h3 id="Options de base">Options de base
+<a href="#Options de base" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | absolute_urls: false
+2  | timezone: ''
+3  | default_locale:
+4  | param_sep: ':'
+5  | wrapped_site: false
+6  | reverse_proxy_setup: false
+7  | force_ssl: false
+8  | force_lowercase_urls: true
+9  | custom_base_url: ''
+10 | username_regex: '^[a-z0-9_-]{3,16}$'
+11 | pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
+12 | intl_enabled: true
+13 | http_x_forwarded:
+14 |    protocol: true
+15 |    host: false
+16 |    port: true
+17 |    ip: true
+</code></pre>
+<p>Ces options de configuration n'apparaissent pas dans leurs propres sections enfant. Ce sont des options générales qui affectent le fonctionnement du site, son fuseau horaire et son URL de base.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>absolue_urls</strong> :</td>
+<td align="left">URL absolues ou relatives pour <code>base_url</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>timezone</strong> :</td>
+<td align="left">Les valeurs valides peuvent être trouvées <a href="https://php.net/manual/en/timezones.php">ici</a></td>
+</tr>
+<tr>
+<td align="left"><strong>default_locale</strong> :</td>
+<td align="left">Paramètres régionaux par défaut (système par défaut).</td>
+</tr>
+<tr>
+<td align="left"><strong>param_sep</strong> :</td>
+<td align="left">Ceci est utilisé pour les paramètres Grav dans l'URL. Ne changez pas cela à moins que vous ne sachiez ce que vous faites.<br> Grav le définit automatiquement sur <code>;</code> pour les utilisateurs exécutant le serveur Web Apache sous Windows.</td>
+</tr>
+<tr>
+<td align="left"><strong>wrapped_site</strong> :</td>
+<td align="left">Pour les thèmes/plugins pour savoir si Grav est enveloppé par une autre plateforme. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>reverse_proxy_setup</strong> :</td>
+<td align="left">Exécuté dans un scénario de proxy inverse avec des ports de serveur Web différents de ceux du proxy. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>force_ssl</strong> :</td>
+<td align="left">Si activé, Grav force l'accès via HTTPS (REMARQUE : pas une solution idéale). Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>force_lowercase_urls</strong> :</td>
+<td align="left">Si vous souhaitez prendre en charge les URL à casse mixte, définissez-le sur <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>custom_base_url</strong> :</td>
+<td align="left">Définissez manuellement la base_url ici.</td>
+</tr>
+<tr>
+<td align="left"><strong>username_regex</strong> :</td>
+<td align="left">Uniquement les caractères minuscules, les chiffres, les tirets, les traits de soulignement. 3 - 16 caractères.</td>
+</tr>
+<tr>
+<td align="left"><strong>pwd_regex</strong> :</td>
+<td align="left">Au moins un chiffre, une lettre majuscule et minuscule, et au moins 8 caractères.</td>
+</tr>
+<tr>
+<td align="left"><strong>intl_enabled</strong> :</td>
+<td align="left">Logique spéciale pour l'extension internationale PHP (mod_intl).</td>
+</tr>
+<tr>
+<td align="left"><strong>http_x_forwarded</strong> :</td>
+<td align="left">Options de configuration pour les différents en-têtes HTTP_X_FORWARD (<strong>Grav 1.7.0+</strong>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Langues">Langues
+<a href="#Langues" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | languages:
+2  |   supported: []
+3  |   default_lang:
+4  |   include_default_lang: true
+5  |   include_default_lang_file_extension: true
+6  |   pages_fallback_only: false
+7  |   translations: true
+8  |   translations_fallback: true
+9  |   session_store_active: false
+10 |   http_accept_language: false
+11 |   override_locale: false
+12 |   content_fallback: {}
+</code></pre>
+<p>La zone <strong>Langues</strong> du fichier établit les paramètres de langue du site. Cela inclut les langues prises en charge, la désignation de la langue par défaut dans les URL et les traductions. Voici la répartition de la zone <strong>Langues</strong> du fichier de configuration système :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>supported</strong> :</td>
+<td align="left">Liste des langues prises en charge. ex: <code>[en, fr, de]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>default_lang</strong> :</td>
+<td align="left">La valeur par défaut est la première langue prise en charge. <br>Doit être l'une des langues prises en charge.</td>
+</tr>
+<tr>
+<td align="left"><strong>include_default_lang</strong> :</td>
+<td align="left">Inclut le préfixe de langue par défaut dans toutes les URL. <br>Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>include_default_lang_file_extension</strong> :</td>
+<td align="left">Si cette option est activée, l'enregistrement d'une page ajoutera la langue <br>par défaut à l'extension de fichier (par exemple, <code>.en.md</code>).<br> Désactivez-le pour conserver la langue par défaut en utilisant l'extension de fichier <code>.md</code>. <br>Peut être <code>true</code> ou <code>false</code> (<strong>Grav 1.7.0+</strong>).</td>
+</tr>
+<tr>
+<td align="left"><strong>pages_fallback_only</strong> :</td>
+<td align="left">Seul recours pour rechercher le contenu de la page dans les langues prises en charge. <br>Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>traductions</strong> :</td>
+<td align="left">Activez les traductions par défaut. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>translations_fallback</strong> :</td>
+<td align="left">retour aux traductions prises en charge si la langue active n'existe pas. <br>Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>session_store_active</strong> :</td>
+<td align="left">Stocke la langue active dans la session. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>http_accept_language</strong> :</td>
+<td align="left">Essayez de définir la langue en fonction de l'en-tête http_accept_language dans le navigateur. <br>Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>override_locale</strong> :</td>
+<td align="left">Remplacez les paramètres régionaux par défaut ou système par des paramètres spécifiques <br> à la langue. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>content_fallback</strong> :</td>
+<td align="left">Par défaut, si le contenu n'est pas traduit, Grav affichera le contenu dans la langue par défaut. <br>Utilisez ce paramètre pour remplacer ce comportement par langue. (<strong>Grav 1.7.0+</strong>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Home">Home
+<a href="#Home" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | home:
+2 |   alias : '/home'
+3 |   hide_in_urls : false
+</code></pre>
+<p>La section <strong>Home</strong> est l'endroit où vous définissez le chemin par défaut pour la page d'accueil du site. Vous pouvez également choisir de masquer la route d'accueil dans les URL.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>alias</strong> :</td>
+<td align="left">Chemin par défaut pour home, c'est-à-dire : <code>/home</code> ou <code>/</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>hide_in_urls</strong> :</td>
+<td align="left">Masque la route d'accueil dans les URL. Peut être <code>true</code> ou <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Pages">Pages
+<a href="#Pages" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | pages:
+2  |   type: regular
+3  |   theme: quark
+4  |   order:
+5  |     by: default
+6  |     dir: asc
+7  |   list:
+8  |     count: 20
+9  |   dateformat:
+10 |     default:
+11 |     short: 'jS M Y'
+12 |     long: 'F jS \a\t g:ia'
+13 |   publish_dates: true
+14 |   process:
+15 |     markdown: true
+16 |     twig: false
+17 |   twig_first: false
+18 |   never_cache_twig: false
+19 |   events:
+20 |     page: true
+21 |     twig: true
+22 |   markdown:
+23 |     extra: false
+24 |     auto_line_breaks: false
+25 |     auto_url_links: false
+26 |     escape_markup: false
+27 |     special_chars:
+28 |       '&gt;': 'gt'
+29 |       '&lt;': 'lt'
+30 |     valid_link_attributes:
+31 |       - rel
+32 |       - target
+33 |       - id
+34 |       - class
+35 |       - classes
+36 |   types: [html,htm,xml,txt,json,rss,atom]
+37 |   append_url_extension: ''
+38 |   expires: 604800
+39 |   cache_control:
+40 |   last_modified: false
+41 |   etag: false
+42 |   vary_accept_encoding: false
+43 |   redirect_default_route: false
+44 |   redirect_default_code: 302
+45 |   redirect_trailing_slash: true
+46 |   ignore_files: [.DS_Store]
+47 |   ignore_folders: [.git, .idea]
+48 |   ignore_hidden: true
+49 |   hide_empty_folders: false
+50 |   url_taxonomy_filters: true
+51 |   frontmatter:
+52 |     process_twig: false
+53 |     ignore_fields: ['form','forms']
+</code></pre>
+<p>La section <strong>Pages</strong> du fichier <code>system/config/system.yaml</code> est l'endroit où vous définissez un grand nombre des principaux paramètres liés au thème. Par exemple, c'est ici que vous définissez le thème utilisé pour afficher le site, l'ordre des pages, le traitement par défaut de twig et markdown, etc. C'est là que la plupart des décisions qui affectent la façon dont vos pages sont rendues sont prises.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>type</strong> :</td>
+<td align="left">Paramètre expérimental pour activer les <strong>Pages Flex</strong> dans le frontend. Utilisez <code>flex</code> <br> pour activer, <code>regular</code> sinon. Par défaut <code>regular</code> (<strong>Grav 1.7+</strong>).</td>
+</tr>
+<tr>
+<td align="left"><strong>theme</strong> :</td>
+<td align="left">C'est ici que vous définissez le thème par défaut. Par défaut, c'est <code>quark</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>order</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... by</strong> :</td>
+<td align="left">Ordonner les pages par <code>default</code>, <code>alpha</code> ou <code>date</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... dir</strong> :</td>
+<td align="left">Sens d'ordre par défaut, <code>asc</code> ou <code>desc</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>list</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... count</strong> :</td>
+<td align="left">Nombre d'éléments par défaut par page.</td>
+</tr>
+<tr>
+<td align="left"><strong>dateformat</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... default</strong> :</td>
+<td align="left">Le format de date par défaut que Grav attend dans le champ <code>date</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... short</strong> :</td>
+<td align="left">Format de date court. Exemple : <code>'jS M Y'</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... long</strong> :</td>
+<td align="left">Format de date long. Exemple : <code>'F jS \a\t g:ia'</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>publish_dates</strong> :</td>
+<td align="left">Publie/dépublie automatiquement en fonction des dates. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>process</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... markdown</strong> :</td>
+<td align="left">Activez ou désactivez le traitement de markdown sur le front-end. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... twig</strong> :</td>
+<td align="left">Activez ou désactivez le traitement de twig sur le front-end. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>twig_first</strong> :</td>
+<td align="left">Traite Twig avant markdown lors du traitement des deux sur une page. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>never_cache_twig</strong> :</td>
+<td align="left">L'activation de cette option vous permettra d'ajouter une logique de traitement <br> qui peut changer dynamiquement à chaque chargement de page, plutôt que de mettre <br> en cache les résultats et de les stocker pour chaque chargement de page. Cela peut être activé/désactivé <br>à l'échelle du site dans le fichier <strong>system.yaml</strong>, ou sur une page spécifique. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>events</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... page</strong> :</td>
+<td align="left">Active les événements au niveau de la page. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... twig</strong> :</td>
+<td align="left">Active les événements de niveau Twig. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>markdown</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... extra</strong> :</td>
+<td align="left">Activez le support de la prise en charge de Markdown Extra (GitHub-flavored <br>Markdown (GFM) par défaut). Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... auto_line_breaks</strong> :</td>
+<td align="left">Active les sauts de ligne automatiques. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... auto_url_links</strong> :</td>
+<td align="left">Active les liens HTML automatiques. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... escape_markup</strong> :</td>
+<td align="left">Échappez les balises de balisage dans les entités. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... special_chars</strong> :</td>
+<td align="left">Liste des caractères spéciaux à convertir automatiquement en entités. Chaque caractère <br>occupe une ligne sous cette variable. Exemple : <code>'&gt;' : 'gt'</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... valid_link_attributes</strong> :</td>
+<td align="left">Aattributs valides à transmettre via des liens markdown  <strong>(Grav 1.7+)</strong>.</td>
+</tr>
+<tr>
+<td align="left"><strong>types</strong> :</td>
+<td align="left">Liste des types de page valides. Par exemple : <code>[txt,xml,html,htm,json,rss,atom]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>append_url_extension</strong> :</td>
+<td align="left">Ajoute l'extension de la page dans les URL de page (par exemple, <code>.html</code> donne <code>/chemin/page.html</code>).</td>
+</tr>
+<tr>
+<td align="left"><strong>expires</strong> :</td>
+<td align="left">La page expire le temps en secondes (604800 secondes = 7 jours) (<code>no cache</code>est également possible).</td>
+</tr>
+<tr>
+<td align="left"><strong>cache_control</strong> :</td>
+<td align="left">Peut être vide pour aucun paramètre, ou une valeur de texte de contrôle de cache valide.</td>
+</tr>
+<tr>
+<td align="left"><strong>last_modified</strong> :</td>
+<td align="left">Définit l'en-tête de date de la dernière modification en fonction de l'horodatage <br>de modification du fichier. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>etag</strong> :</td>
+<td align="left">Définit la balise d'en-tête etag. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>varie_accept_encoding</strong> :</td>
+<td align="left">Ajouter l'en-tête <code>Vary : Accept-Encoding</code>. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>redirect_default_route</strong> :</td>
+<td align="left">Redirige automatiquement vers la route par défaut d'une page. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>redirect_default_code</strong> :</td>
+<td align="left">Code par défaut à utiliser pour les redirections. Par exemple : <code>302</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>redirect_trailing_slash</strong> :</td>
+<td align="left">Gérer automatiquement ou rediriger 302 une URL de fin.</td>
+</tr>
+<tr>
+<td align="left"><strong>ignore_files</strong> :</td>
+<td align="left">Fichiers à ignorer dans Pages. Exemple : <code>[.DS_Store]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>ignore_folders</strong> :</td>
+<td align="left">Dossiers à ignorer dans Pages. Exemple : <code>[.git, .idea]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>ignore_hidden</strong> :</td>
+<td align="left">Ignore tous les fichiers et dossiers cachés. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>hide_empty_folders</strong> :</td>
+<td align="left">Si le dossier n'a pas de fichier .md, doit-il être masqué. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>url_taxonomy_filters</strong> :</td>
+<td align="left">Activez les filtres de taxonomie automatiques basés sur les URL pour les collections de pages. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>frontmatter</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... process_twig</strong> :</td>
+<td align="left">Le frontmatter doit-il être traité pour remplacer les variables Twig ? Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>... ignore_fields</strong> :</td>
+<td align="left">Champs pouvant contenir des variables Twig et ne devant pas être traités. Exemple : <code>['form','forms']</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Cache">Cache
+<a href="#Cache" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | cache:
+2  |   enabled: true
+3  |   check:
+4  |     method: file
+5  |   driver: auto
+6  |   prefix: 'g'
+7  |   purge_at: '0 4 * * *'
+8  |   clear_at: '0 3 * * *'
+9  |   clear_job_type: 'standard'
+10 |   clear_images_by_default: false
+11 |   cli_compatibility: false
+12 |   lifetime: 604800
+13 |   gzip: false
+14 |   allow_webserver_gzip: false
+15 |   redis:
+16 |     socket: false
+17 |     password:
+18 |     database:
+</code></pre>
+<p>La section <strong>Cache</strong> est l'endroit où vous pouvez configurer les paramètres de mise en cache du site. Vous pouvez activer, désactiver, choisir la méthode, etc.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>enabled</strong> :</td>
+<td align="left">Défini sur true pour activer la mise en cache. Peut être défini sur  <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>check</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... méthod</strong> :</td>
+<td align="left">Méthode pour vérifier les mises à jour dans les pages. Options : <code>file</code>, <code>folder</code>, <code>hash</code> et <code>none</code>. plus de details.</td>
+</tr>
+<tr>
+<td align="left"><strong>driver</strong> :</td>
+<td align="left">Sélectionnez un pilote de cache. Les options sont : <code>auto</code>, file, <code>apcu</code>, <code>redis</code>, <code>memcache</code> et <code>wincache</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>prefix</strong> :</td>
+<td align="left">Chaîne de préfixe de cache (évite les conflits de cache). Exemple : <code>g</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>purge_at</strong> :</td>
+<td align="left">Planificateur : fréquence de purge de l'ancien cache à l'aide de la syntaxe cron <code>at</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>clear_at</strong> :</td>
+<td align="left">Scheduler : fréquence d'effacement du cache à l'aide de la syntaxe cron <code>at</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>clear_job_type</strong> :</td>
+<td align="left">Tyype à effacer lors du traitement de la tâche d'effacement planifiée. Option : <code>standard</code></td>
+</tr>
+<tr>
+<td align="left"><strong>clear_images_by_default</strong> :</td>
+<td align="left">Par défaut, grav n'inclut pas les images traitées lorsque le cache est effacé, cela peut être activé en le définissant sur <code>true</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>cli_compatibility</strong> :</td>
+<td align="left">Garantit que seuls des pilotes non volatiles sont utilisés (file, redis, memcache, etc...).</td>
+</tr>
+<tr>
+<td align="left"><strong>lifetime</strong> :</td>
+<td align="left">Durée de vie des données mises en cache en secondes (<code>0</code> = infini). <code>604800</code> égal 7 jours.</td>
+</tr>
+<tr>
+<td align="left"><strong>gzip</strong> :</td>
+<td align="left">GZip compresse la sortie de la page. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>allow_webserver_gzip</strong> :</td>
+<td align="left">Cette option changera l'en-tête en <code>Content-Encoding : identiy</code> permettant à gzip d'être défini de manière plus fiable<br> par le serveur Web, bien que cela rompe généralement la capacité <code>onShutDown()</code> hors processus.L'événement s'exécutera toujours, mais il ne<br> sera pas hors processus et peut bloquer la page jusqu'à ce que l'événement soit terminé.</td>
+</tr>
+<tr>
+<td align="left"><strong>redis</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... socket</strong> :</td>
+<td align="left">Le chemin d'accès au fichier de socket. Redis.</td>
+</tr>
+<tr>
+<td align="left"><strong>... mot de passe</strong> :</td>
+<td align="left">Mot de passe facultatif.</td>
+</tr>
+<tr>
+<td align="left"><strong>... base de données</strong> :</td>
+<td align="left">ID de base de données facultatif.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Twig">Twig
+<a href="#Twig" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | twig:
+2 |   cache: true
+3 |   debug: true
+4 |   auto_reload: true
+5 |   autoescape: false
+6 |   0ndefined_functions: true
+7 |   undefined_filters: true
+8 |  umask_fix: false
+</code></pre>
+<p>La section <strong>Twig</strong> vous donne un ensemble rapide d'outils avec lesquels configurer Twig sur votre site pour le débogage, la mise en cache et l'optimisation.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>cache</strong> :</td>
+<td align="left">Défini sur <code>true</code> pour activer la mise en cache de Twig. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>debug</strong> :</td>
+<td align="left">Activez le débogage de Twig. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>auto_reload</strong> :</td>
+<td align="left">Actualise le cache lors des modifications. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>autoescape</strong> :</td>
+<td align="left">Variables Autoescape Twig. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>undefined_functions</strong>* :</td>
+<td align="left">Autorise les fonctions non définies. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>undefined_filters</strong> :</td>
+<td align="left">Autorise les filtres non définis. Peut être défini sur <code>true</code> ou <code>false</code> .</td>
+</tr>
+<tr>
+<td align="left"><strong>umask_fix</strong> :</td>
+<td align="left">Par défaut, Twig crée des fichiers en cache en tant que 755, le correctif passe à 775. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Assets">Assets
+<a href="#Assets" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | assets:
+2  |    css_pipeline: false
+3  |    css_pipeline_include_externals: true
+4  |    css_pipeline_before_excludes: true
+5  |    css_minify: true
+6  |    css_minify_windows: false
+7  |    css_rewrite: true
+8  |    js_pipeline: false
+9  |    js_pipeline_include_externals: true
+10 |    js_pipeline_before_excludes: true
+11 |    js_module_pipeline: false
+12 |    s_module_pipeline_include_externals: true
+13 |    js_module_pipeline_before_excludes: true
+14 |    js_minify: true
+15 |    enable_asset_timestamp: false
+16 |    enable_asset_sri: false
+17 |    collections:
+18 |       jquery: system://assets/jquery/jquery-2.x.min.js
+</code></pre>
+<p>La section <strong>Assets</strong> permet de paramétrer les options liées aux Assets Manager (JS, CSS).</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>css_pipeline</strong> :</td>
+<td align="left">Le pipeline CSS est l'unification de plusieurs ressources CSS dans un seul fichier. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>css_pipeline_include_externals</strong> :</td>
+<td align="left">Inclut les URL externes dans le pipeline par défaut. Peut être défini <br>sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>css_pipeline_before_excludes</strong> :</td>
+<td align="left">Rend le pipeline avant tout fichier exclu. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>css_minify</strong> :</td>
+<td align="left">Minifie le CSS pendant le pipelining. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>css_minify_windows</strong> :</td>
+<td align="left">Minify Override pour les platesformes Windows. <code>false</code> par défaut en raison <br>de ThreadStackSize. Peut être défini sur <code>true</code> ou <code>false.</code></td>
+</tr>
+<tr>
+<td align="left"><strong>css_rewrite</strong> :</td>
+<td align="left">Réécrivez toutes les URL relatives CSS pendant le pipelining. Peut être défini <br>sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_pipeline</strong> :</td>
+<td align="left">Le pipeline JS est l'unification de plusieurs ressources JS dans un seul fichier. <br>Peut être défini sur<code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_pipeline_include_externals</strong> :</td>
+<td align="left">Inclut les URL externes dans le pipeline par défaut. Peut être défini <br>sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_pipeline_before_excludes</strong> :</td>
+<td align="left">Rend le pipeline avant tout fichier exclu. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_module_pipeline</strong> :</td>
+<td align="left">Le pipeline du module JS est l'unification de plusieurs ressources du module JS <br>dans un seul fichier. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_module_pipeline_include_externals</strong> :</td>
+<td align="left">Inclure les URL externes dans le pipeline par défaut. Peut être défini <br>sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_module_pipeline_before_excludes</strong> :</td>
+<td align="left">Rendre le pipeline avant tout fichier exclu. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>js_minify</strong> :</td>
+<td align="left">Minifie le JS pendant le pipelining. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>enable_asset_timestamp</strong> :</td>
+<td align="left">Active les assets horodatages. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>enable_asset_sri</strong> :</td>
+<td align="left">Active les assets ISR. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>collections</strong> :</td>
+<td align="left">Elles contiennent des collections, désignées comme des sous-éléments. Par exemple : <br><code>query : system://assets/jquery/jquery-3.x.min.js</code>. En savoir plus à ce sujet.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Errors">Errors
+<a href="#Errors" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | errors:
+2 |   display: 0
+3 |   log: true
+</code></pre>
+<p>La section <strong>Errors</strong> détermine comment Grav gère l'affichage et la journalisation des erreurs.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>display</strong> :</td>
+<td align="left">Détermine comment les erreurs sont affichées. Entrez soit <code>1</code> pour la trace complète, <code>0</code> <br>pour une erreur simple ou <code>-1</code> pour une erreur système.</td>
+</tr>
+<tr>
+<td align="left"><strong>log</strong> :</td>
+<td align="left">Consigne les erreurs dans le dossier <code>/logs</code>. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Log">Log
+<a href="#Log" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | log:
+2 |   handler: file
+3 |   syslog:
+4 |     facility: local6
+</code></pre>
+<p>La section <strong>Log</strong> vous permet de configurer d'autres capacités de journalisation pour Grav.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>handler</strong> :</td>
+<td align="left">Gestionnaire de journaux. Actuellement pris en charge : f<code>ile | syslog</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>syslog</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>...facility</strong> :</td>
+<td align="left">Sortie des installations Syslog.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Debugger">Debugger
+<a href="#Debugger" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | debugger:
+2 |   enabled: false
+3 |   provider: clockwork
+4 |   censored: false
+5 |   shutdown:
+6 |     close_connection: true
+</code></pre>
+<p>La section <strong>Debugger</strong> vous donne la possibilité d'activer le débogueur de Grav. Un outil utile lors du développement.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>enabled</strong> :</td>
+<td align="left">Activez le débogueur Grav et les paramètres suivants. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>provider</strong> :</td>
+<td align="left">Fournisseur de débogage : peut être défini sur <code>debugbar</code>ou sur <code>clockwork</code> (<strong>Grav 1.7+</strong>).</td>
+</tr>
+<tr>
+<td align="left"><strong>censored</strong> :</td>
+<td align="left">Censure les informations potentiellement sensibles (paramètres POST, cookies, fichiers, <br>configuration et la plupart des données de tableau/objet dans les messages de journal).<br> Peut être défini sur<code>true</code> ou <code>false</code> (<strong>Grav 1.7+</strong>).</td>
+</tr>
+<tr>
+<td align="left"><strong>shutdown</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... close_connection</strong> :</td>
+<td align="left">Ferme la connexion avant d'appeler <code>onShutdown(</code>). <code>false</code> pour le débogage.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Images">Images
+<a href="#Images" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | images:
+2  |   default_image_quality: 85
+3  |   cache_all: false
+4  |   cache_perms: '0755'
+5  |   debug: false
+6  |   auto_fix_orientation: false
+7  |   seofriendly: false
+8  |   cls:
+9  |     auto_sizes: false
+10 |     aspect_ratio: false
+11 |     retina_scale: 1
+12 |   defaults:
+13 |     loading: auto
+</code></pre>
+<p>La section <strong>Images</strong> vous permet de définir la qualité d'image par défaut pour laquelle les images sont rééchantillonnées, ainsi que de contrôler les fonctionnalités de mise en cache et de débogage des images.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>default_image_quality</strong> :</td>
+<td align="left">Qualité d'image par défaut à utiliser lors du rééchantillonnage des images. Par exemple : <code>85</code> = 85 %</td>
+</tr>
+<tr>
+<td align="left"><strong>cache_all</strong> :</td>
+<td align="left">Cache toutes les images par défaut. Peut être défini sur <code>true</code> ou <code>false</code></td>
+</tr>
+<tr>
+<td align="left"><strong>cache_perms</strong> :</td>
+<td align="left"><strong>Doit être entre guillemets !</strong> Permissionss par défaut du dossier de cache. Généralement <code>'0755'</code> ou <code>'0775'</code></td>
+</tr>
+<tr>
+<td align="left"><strong>debug</strong> :</td>
+<td align="left">Affiche une superposition sur les images indiquant la profondeur en pixels de l'image <br>lorsque vous <br>travaillez avec retina, par exemple. Peut être défini sur <code>true</code> ou <code>false</code></td>
+</tr>
+<tr>
+<td align="left"><strong>auto_fix_orientation</strong> :</td>
+<td align="left">Essayez de corriger automatiquement les images téléchargées avec une rotation non standard</td>
+</tr>
+<tr>
+<td align="left"><strong>seofriendly</strong> :</td>
+<td align="left">noms d'images traités optimisés pour le référencement</td>
+</tr>
+<tr>
+<td align="left"><strong>cls</strong> :</td>
+<td align="left">Changement de mise en page cumulé. Plus de détails</td>
+</tr>
+<tr>
+<td align="left"><strong>... auto_sizes</strong> :</td>
+<td align="left">Ajoute automatiquement hauteur/largeur à l'image</td>
+</tr>
+<tr>
+<td align="left"><strong>... aspect_ratio</strong> :</td>
+<td align="left">Réserver de l'espace avec aspect ratio style</td>
+</tr>
+<tr>
+<td align="left"><strong>... retina_scale</strong> :</td>
+<td align="left">Mise à l'échelle pour ajuster les tailles automatiques pour une meilleure gestion des résolutions HiDPI</td>
+</tr>
+<tr>
+<td align="left"><strong>defaults</strong> :</td>
+<td align="left">(<strong>Grav 1.7+</strong>)</td>
+</tr>
+<tr>
+<td align="left"><strong>... loading</strong> :</td>
+<td align="left">Laissez le navigateur choisir : <code>auto</code>, <code>lazy</code> ou <code>eager</code> (<strong>Grav 1.7+</strong>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Média">Média
+<a href="#Média" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | media:
+2 |   enable_media_timestamp: false
+3 |   unsupported_inline_types: []
+4 |   allowed_fallback_types: []
+5 |   auto_metadata_exif: false
+</code></pre>
+<p>La section <strong>Média</strong> gère les options de configuration pour les paramètres liés à la gestion des fichiers multimédias. Cela inclut l'affichage de l'horodatage, la taille du téléchargement, etc.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>enable_media_timestamp</strong> :</td>
+<td align="left">Activer les horodatages des médias.</td>
+</tr>
+<tr>
+<td align="left"><strong>unsupported_inline_types</strong> :</td>
+<td align="left">Tableau des types de médias pris en charge pour essayer d'afficher en ligne. <br>Ces types de fichiers sont placés entre crochets <code>[]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>allow_fallback_types</strong> :</td>
+<td align="left">Tableau des types de médias autorisés pour les fichiers trouvés en cas d'accès via l<br>a route de la page. Ces types de fichiers sont placés entre crochets <code>[]</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>auto_metadata_exif</strong> :</td>
+<td align="left">Créez automatiquement des fichiers de métadonnées à partir de données Exif <br>lorsque cela est possible.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Session">Session
+<a href="#Session" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | session:
+2  |   enabled: true
+3  |   initialize: true
+4  |   timeout: 1800
+5  |   name: grav-site
+6  |   uniqueness: path
+7  |   secure: false
+8  |   httponly: true
+9  |   samesite: Lax
+10 |   split: true
+11 |   domain:
+12 |   path:
+</code></pre>
+<p>Ces options déterminent les propriétés de session pour votre site.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>enabled</strong> :</td>
+<td align="left">Activez la prise en charge de la session. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>initialize</strong> :</td>
+<td align="left">Initialise la session à partir de Grav (si <code>false</code>, le plugin doit démarrer la session).</td>
+</tr>
+<tr>
+<td align="left"><strong>timeout</strong> :</td>
+<td align="left">Délai d'attente en secondes. Par exemple : <code>1800</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>name</strong> :</td>
+<td align="left">Préfixe du nom du cookie de session. Utilisez uniquement des caractères alphanumériques, des tirets ou <br>des traits de soulignement. N'utilisez pas de points dans le nom de la session. Par exemple : <code>grav-site</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>iniqueness</strong> :</td>
+<td align="left">Les sessions doivent-elles être basées sur le <code>path</code> ou sur <code>security.salt</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>secure</strong> :</td>
+<td align="left">Définissez la session comme sécurisée. Si <code>true</code>, indique que la communication pour ce cookie doit se faire <br>via une transmission cryptée. Activez cette option uniquement sur les sites qui s'exécutent exclusivement sur HTTPS. <br>Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>httponly</strong> :</td>
+<td align="left">Définit la session HTTP uniquement. Si <code>true</code>, indique que les cookies ne doivent être utilisés que sur HTTP et <br>que la modification de JavaScript n'est pas autorisée. Peut être défini sur <code>true</code> ou <code>false</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>samesite</strong> :</td>
+<td align="left">Définissez la session SameSite. Les valeurs possibles sont Lax, Strict et None. Vois ici.</td>
+</tr>
+<tr>
+<td align="left"><strong>domain</strong> :</td>
+<td align="left">Le domaine de session à utiliser dans les réponses. À utiliser uniquement si vous réécrivez le domaine du<br> site, par exemple dans un conteneur Docker.</td>
+</tr>
+<tr>
+<td align="left"><strong>path</strong> :</td>
+<td align="left">Chemin de la session à utiliser dans les réponses. À utiliser uniquement si vous réécrivez le sous-dossier<br> du site par exemple dans un conteneur Docker.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="GPM">GPM
+<a href="#GPM" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | gpm:
+2 |   releases: stable
+3 |   proxy_url:
+4 |   method: 'auto'
+5 |   verify_peer: true
+6 |   official_gpm_only: true
+</code></pre>
+<p>Les options de la section <strong>GPM</strong> contrôlent le GPM de Grav (Grav Package Manager). Par exemple, vous pouvez limiter GPM à l'utilisation de sources officielles et sélectionner la méthode utilisée par GPM pour récupérer les packages. Vous pouvez également choisir entre des versions stables et de test, ainsi que configurer une URL proxy.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>releases</strong> :</td>
+<td align="left">Définir sur <code>stable</code> ou <code>testing</code> pour déterminer si vous souhaitez effectuer la mise à jour vers <br>la dernière version stable ou testing.</td>
+</tr>
+<tr>
+<td align="left"><strong>proxy_url</strong> :</td>
+<td align="left">Configurez une URL de proxy manuelle pour GPM. Par exemple : <code>127.0.0.1:3128</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>method</strong> :</td>
+<td align="left">Soit <code>'curl'</code>, <code>'fopen'</code> ou <code>'auto'</code>. <code>'auto'</code> essaiera d'abord fopen et s'il n'est pas disponible cURL.</td>
+</tr>
+<tr>
+<td align="left"><strong>verify_peer</strong> :</td>
+<td align="left">Sur certains systèmes (principalement Windows), GPM ne peut pas se connecter car le certificat SSL<br> ne peut pas être vérifié. La désactivation de ce paramètre peut aider.</td>
+</tr>
+<tr>
+<td align="left"><strong>official_gpm_only</strong> :</td>
+<td align="left">Par défaut, l'installation directe de GPM n'autorisera que les URL via le proxy officiel de GPM <br>pour assurer la sécurité, désactivez-le pour autoriser d'autres sources.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Accounts">Accounts
+<a href="#Accounts" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | accounts:
+2 |   type: regular
+3 |   storage: file
+</code></pre>
+<p>Les paramètres de compte vous permettent d'essayer les nouveaux utilisateurs Flex expérimentaux. Cela signifie essentiellement que les utilisateurs sont stockés sous forme d'objets Flex permettant plus de puissance et de performances.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>type</strong> :</td>
+<td align="left">Type de compte : <code>regular</code> ou <code>flex</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>storage</strong> :</td>
+<td align="left">Type de stockage felx : <code>file</code> ou <code>folder</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Flex">Flex
+<a href="#Flex" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1  | flex:
+2  |   cache:
+3  |     index:
+4  |       enabled: true
+5  |       lifetime: 60
+6  |     object:
+7  |       enabled: true
+8  |       lifetime: 600
+9  |     render:
+10 |       enabled: true
+11 |       lifetime: 600
+</code></pre>
+<p>Les paramètres de configuration du cache Flex Objects sont nouveaux dans <strong>Grav 1.7</strong>. Il s'agit de paramètres par défaut pour tous les types Flex, mais ils peuvent être remplacés pour chaque  <code>Flex Directory</code>.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>cache</strong> :</td>
+<td align="left"><strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... indice</strong> :</td>
+<td align="left"><strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... ... enabled</strong> :</td>
+<td align="left">Défini sur <code>true</code> pour activer la mise en cache de l'index Flex. <br>Est utilisé pour mettre en cache les horodatages dans les fichiers <strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left">.<strong>.. ... lifetime</strong> :</td>
+<td align="left">Durée de vie de l'index en cache en secondes (0 = infini) <strong>(Grav</strong> 1.7+)</td>
+</tr>
+<tr>
+<td align="left"><strong>... object</strong> :</td>
+<td align="left"><strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... ... enabled</strong> :</td>
+<td align="left">Définir sur <code>true</code> pour actver la mise en cache des objets Flex. <br>Est utilisé pour mettre en cache les données d'objet <strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... ... lifetime</strong> :</td>
+<td align="left">Durée de vie des objets mis en cache en secondes (0 = infini) <strong>(Grav</strong> 1.7+)</td>
+</tr>
+<tr>
+<td align="left"><strong>... render</strong> :</td>
+<td align="left"><strong>(Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... ... enabled</strong> :</td>
+<td align="left">Défini sur <code>true</code> pour activer la mise en cache du rendu Flex. <br>Est utilisé pour mettre en cache la sortie rendue (<strong>Grav 1.7+)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>... ... lifetime</strong> :</td>
+<td align="left">Durée de vie du cache HTML en secondes (0 = infini) (<strong>Grav 1.7+</strong>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Strict Mode">Strict Mode
+<a href="#Strict Mode" class="toc-anchor after"></a></h3>
+
+<pre><code class="language-yaml">1 | strict_mode:
+2 |   yaml_compat: true
+3 |   twig_compat: true
+4 |   blueprint_compat: false
+</code></pre>
+<p>Le mode strict permet une migration plus propre vers les futures versions de Grav en passant aux nouvelles versions des processeurs YAML et Twig. Celles-ci peuvent ne pas être compatibles avec toutes les extensions tierces.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>yaml_compat</strong> :</td>
+<td align="left">Active la rétrocompatibilité YAML.</td>
+</tr>
+<tr>
+<td align="left"><strong>twig_compat</strong> :</td>
+<td align="left">Active le paramètre d'échappement automatique Twig. obsolète</td>
+</tr>
+<tr>
+<td align="left"><strong>blueprint_compat</strong> :</td>
+<td align="left">Permet une prise en charge stricte rétrocompatible pour blueprints.</td>
+</tr>
+</tbody>
+</table>
+<div class = "notice info">
+Vous n'avez pas besoin de copier l'intégralité du fichier de configuration pour le remplacer, vous pouvez remplacer aussi peu ou autant que vous le souhaitez. Assurez-vous simplement d'avoir exactement la même structure de nommage pour le paramètre particulier que vous souhaitez remplacer.
+</div>
+
+<h2 id="Configuration du site">Configuration du site
+<a href="#Configuration du site" class="toc-anchor after"></a></h2>
+
+<p>En plus du fichier <code>system.yaml</code>, Grav fournit également un fichier de configuration <code>site.yaml</code> par défaut qui est utilisé pour définir certaines configurations spécifiques au front-end telles que le nom de l'auteur, l'adresse e-mail de l'auteur, ainsi que certains paramètres de taxonomie clés. Vous pouvez les remplacer de la même manière que vous le feriez pour system.yaml en fournissant votre propre fichier de configuration dans <code>user/config/site.yaml</code>. Vous pouvez également utiliser ce fichier pour définir des options de configuration arbitraires que vous souhaiterez peut-être référencer à partir de votre contenu ou de vos modèles.</p>
+<p>Le fichier <code>system/config/site.yaml</code> par défaut fourni avec Grav ressemble à ceci :</p>
+<pre><code class="language-yaml">1  | title : Grav                    # Nom du site.
+2  | default_lang : en               # Langue par défaut pour le site (potentiellement 
+   |                                 # utilisée par le thème).
+3  |
+4  | author:
+5  |   name: John Appleseed          # Nom d'auteur par défaut.
+6  |   email: 'john@example.com'     # E-mail de l'auteur par défaut.
+7  |
+8  | taxonomies : [category,tag]     # Liste arbitraire de types de taxonomie.
+9  |
+10 | metadata :
+11 |   description: 'Mon site Grav'  # Description du site
+12 |
+13 | summary:
+14 |   enabled : true                # activer ou désactiver le résumé de la page
+15 |   format : short                # long = le délimiteur de résumé sera ignoré ; short = 
+   |                                 # utiliser la première occurrence du délimiteur ou de la taille
+16 |   size : 300                    # Longueur maximale du résumé (caractères)
+17 |   délimiter : ===               # Le délimiteur récapitulatif
+18 |
+19 | redirects :
+20 | # '/redirect-test': '/'         # Le test de redirection va à la page d'accueil
+21 | # '/old/(.*)': '/new/$1'        # Redirigerait /old/ma-page vers /new/ma-page
+22 |
+23 | routes :
+24 | # '/quelque chose/autre' : '/blog/sample-3'    # Alias ​​pour /blog/sample-3
+25 | # '/new/(.*)': '/blog/$1'                      # Regex any /new/my-page URL
+26 | to /blog/my-page Route
+27 |
+18 | blog:
+29 |   route : '/blog'               # Valeur ajoutée personnalisée (accessible 
+   | via site.blog.route)
+30 |
+31 | #menu :                         # Exemple de menu
+32 | #     - text : Source
+33 | #       icon : github
+34 | #       url : https://github.com/getgrav/grav
+34 | #     - icon : twitter
+35 | #       url : http://twitter.com/getgrav
+</code></pre>
+<p>Décomposons les éléments de cet exemple de fichier :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>PROPRIÉTÉS</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>title</strong> :</td>
+<td align="left">Le titre est une simple variable de chaîne qui peut être référencée chaque fois que vous souhaitez afficher<br> le nom de ce site.</td>
+</tr>
+<tr>
+<td align="left"><strong>author</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... name</strong> :</td>
+<td align="left">Le nom de l'auteur du site, qui peut être référencé quand vous en avez besoin.</td>
+</tr>
+<tr>
+<td align="left"><strong>... email</strong> :</td>
+<td align="left">Un e-mail par défaut à utiliser sur votre site.</td>
+</tr>
+<tr>
+<td align="left"><strong>taxonomies</strong> :</td>
+<td align="left">Une liste arbitraire de types de haut niveau que vous pouvez utiliser pour organiser votre contenu. <br>Vous pouvez attribuer du contenu à des types de taxonomie spécifiques, par exemple, des catégories ou des balises. <br>N'hésitez pas à modifier ou à ajouter le vôtre.</td>
+</tr>
+<tr>
+<td align="left"><strong>metadata</strong> :</td>
+<td align="left">Définissez les métadonnées par défaut pour toutes vos pages, consultez la section des en-têtes de page <br>de contenu pour plus de détails.</td>
+</tr>
+<tr>
+<td align="left"><strong>summary</strong> :</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>... size</strong> :</td>
+<td align="left">Une variable pour remplacer le nombre de caractères par défaut qui peut être utilisé pour définir <br>la taille du résumé lors de l'affichage d'une partie du contenu.</td>
+</tr>
+<tr>
+<td align="left"><strong>routes</strong> :</td>
+<td align="left">Il s'agit d'une carte de base qui peut fournir des fonctionnalités d'alias d'URL simples dans Grav. <br>Si vous naviguez vers <code>/something/else</code>, vous serez en fait redirigé vers <code>/blog/sample-3</code>. <br>N'hésitez pas à modifier ou à ajouter les vôtres au besoin. Les <strong>remplacements Regex</strong> <code>((.*) - $1)</code> sont désormais <br>pris en charge à la fin des alias de route. Vous devez les mettre en bas de la liste pour des performances optimales.</td>
+</tr>
+<tr>
+<td align="left"><strong>(custom options)</strong></td>
+<td align="left">Vous pouvez créer n'importe quelle option que vous aimez dans ce fichier et un bon exemple est l'option <br><code>blog: route: '/blog'</code> qui est accessible dans vos modèles Twig avec <code>site.blog.route</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class = "notice info">
+Pour la plupart des gens, l'élément le plus important de ce fichier est la liste de <code>Taxonomy</code>. Les taxonomies de cette liste doivent être définies ici si vous souhaitez les utiliser dans votre contenu.
+</div>
+<blockquote></blockquote>
+<h3 id="Securité">Securité
+<a href="#Securité" class="toc-anchor after"></a></h3>
+
+<p>Pour une sécurité accrue, il existe un fichier <code>system/config/security.yaml</code> qui définit des valeurs par défaut sensibles et est utilisé par le plugin Admin lors de <strong>l'enregistrement</strong> du contenu, ainsi que dans la nouvelle section <strong>Rapports</strong> des <strong>Outils.</strong></p>
+<p>La configuration par défaut ressemble à ceci :</p>
+<pre><code class="language-yaml">1  | xss_whitelist: [admin.super]
+2  | xss_enabled:
+3  |     on_events: true
+4  |     invalid_protocols: true
+5  |     moz_binding: true
+6  |     html_inline_styles: true
+7  |     dangerous_tags: true
+8  | xss_invalid_protocols:
+9  |     - javascript
+10 |     - livescript
+11 |     - vbscript
+12 |     - mocha
+13 |     - feed
+14 |     - data
+15 | xss_dangerous_tags:
+16 |     - applet
+17 |      - meta
+18 |     - xml
+19 |     - blink
+20 |     - link
+21 |     - style
+22 |     - script
+23 |     - embed
+24 |     - object
+25 |     - iframe
+26 |     - frame
+27 |     - frameset
+28 |     - ilayer
+39 |     - layer
+30 |     - bgsound
+31 |     - title
+32 |     - base
+33 | uploads_dangerous_extensions:
+34 |     - php
+35 |     - html
+36 |     - htm
+37 |     - js
+38 |    - exe
+39 | sanitize_svg: true
+</code></pre>
+<p>Si vous souhaitez apporter des modifications à ces paramètres, vous devez copier ce fichier dans <code>user/config/security.yaml</code> et y apporter des modifications.</p>
+<h2 id="Autres paramètres et fichiers de configuration">Autres paramètres et fichiers de configuration
+<a href="#Autres paramètres et fichiers de configuration" class="toc-anchor after"></a></h2>
+
+<p>La configuration de l'utilisateur est entièrement facultative. Vous pouvez remplacer autant ou peu de paramètres par défaut que vous le souhaitez. Cela s'applique à la fois au système, au site et à toutes les configurations de plug-in de votre site.</p>
+<p>Vous n'êtes pas non plus limité aux fichiers <code>user/config/system.yaml</code> ou <code>user/config/site.yaml</code> comme décrit ci-dessus. Vous pouvez créer n'importe quel fichier de configuration <code>.yaml</code> arbitraire dans le dossier <code>user/config</code> que vous souhaitez et il sera automatiquement récupéré par Grav.</p>
+<p>Par exemple, si le nouveau fichier de configuration est nommé <code>user/config/data.yaml</code> et qu'une variable yaml dans ce fichier est appelée count :</p>
+<p><code>compte: 39</code></p>
+<p>La variable serait accessible dans votre modèle Twig en utilisant la syntaxe suivante :</p>
+<p><code>{{ config.data.count }}</code></p>
+<p>Il serait également accessible via PHP depuis n'importe quel plugin avec le code :</p>
+<p><code>$ count_var = Grav::instance()['config']-&gt;get('data.count');</code></p>
+<div class = "notice note">
+Vous pouvez également fournir un plan personnalisé pour permettre à votre fichier personnalisé d'être modifiable dans le plug-in d'administration. Consultez la <a href="/cookbook-recettes-admin">recette correspondante dans la section Admin Cookbook</a>.
+</div>
+
+<h3 id="Espaces de nom des variables de configuration">Espaces de nom des variables de configuration
+<a href="#Espaces de nom des variables de configuration" class="toc-anchor after"></a></h3>
+
+<p>Les chemins d'accès aux fichiers de configuration seront utilisés comme <strong>espace de noms</strong> pour vos options de configuration.</p>
+<p>Vous pouvez également placer toutes les options dans un seul fichier et utiliser des structures YAML pour spécifier la hiérarchie de vos options de configuration. Cet espacement de noms est construit à partir d'une combinaison du <strong>path + filename + option name</strong>.</p>
+<p>Par exemple : Une option telle que <code>author: Frank Smith</code> dans le fichier <code>plugins/myplugin.yaml</code> pourrait être accessible via : <code>plugins.myplugin.author</code>. Cependant, vous pourriez également avoir un fichier <code>plugins.yaml</code> et dans ce fichier avoir un nom d'option appelé <code>myplugin: author: Frank Smith</code> et il serait toujours accessible par le même espace de noms <code>plugins.myplugin.author</code>.</p>
+<p>Certains exemples de fichiers de configuration pourraient être structurés :</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>FICHIER</strong></th>
+<th align="left"><strong>DESCRIPTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong> user/config/system.yaml</strong></td>
+<td align="left">Fichier de configuration système global</td>
+</tr>
+<tr>
+<td align="left"><strong>user/config/site.yaml</strong></td>
+<td align="left">Un fichier de configuration spécifique au site</td>
+</tr>
+<tr>
+<td align="left"><strong> user/config/plugins/myplugin.yaml</strong></td>
+<td align="left">Fichier de configuration individuel pour le plugin myplugin</td>
+</tr>
+<tr>
+<td align="left"><strong>user/config/themes/mytheme.yaml</strong></td>
+<td align="left">Fichier de configuration individuel pour le thème mythème</td>
+</tr>
+</tbody>
+</table>
+<div class = "notice info">
+Avoir un fichier de configuration avec espace de noms remplacera ou masquera toutes les options ayant le même chemin dans les fichiers de configuration par défaut.
+</div>
+
+<h3 id="Configuration de plugins">Configuration de plugins
+<a href="#Configuration de plugins" class="toc-anchor after"></a></h3>
+
+<p>La plupart des <strong>plugins</strong> sont livrés avec leur propre fichier de configuration YAML. Nous vous recommandons de copier ce fichier dans le répertoire <code>user/config/plugins/</code> plutôt que de modifier les options de configuration directement dans le fichier situé dans le répertoire du plugin. Cela garantira qu'une mise à jour du plug-in n'écrasera pas vos paramètres et conservera toutes vos options configurables en un seul endroit pratique.</p>
+<p>Si vous avez un plugin appelé <code>user/plugins/myplugin</code> qui a un fichier de configuration appelé <code>user/plugins/myplugin/myplugin.yaml</code> alors vous devez copier ce fichier dans <code>user/config/plugins/myplugin.yaml</code> et y modifier le fichier.</p>
+<p>Le fichier YAML qui existe dans le répertoire principal du plugin agira comme une solution de secours. Tous les paramètres répertoriés ici et non dans la copie du dossier utilisateur seront récupérés et utilisés par Grav.</p>
+<h3 id="Configuration des thèmes">Configuration des thèmes
+<a href="#Configuration des thèmes" class="toc-anchor after"></a></h3>
+
+<p>Les mêmes règles pour les thèmes s'appliquent que pour les plugins. Donc, si vous avez un thème appelé <code>user/themes/mytheme</code> qui a un fichier de configuration appelé <code>user/themes/mytheme/mytheme.yaml</code>, vous devez alors copier ce fichier dans <code>user/config/themes/mytheme.yaml</code> et y modifier le fichier.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../tutoriel/" class="btn btn-neutral float-left" title="Tutoriel de base"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../structure-dossiers/" class="btn btn-neutral float-right" title="Structure des dossiers">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../tutoriel/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../structure-dossiers/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

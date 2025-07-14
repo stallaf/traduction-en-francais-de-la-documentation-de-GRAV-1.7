@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/plugin-tutoriel/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tutoriel - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tutoriel";
+        var mkdocs_page_input_path = "plugin-tutoriel.md";
+        var mkdocs_page_url = "/plugin-tutoriel/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filtres-twig/">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>4. Plugins &raquo;</li><li>Tutoriel</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Tutoriel sur les plugins</h1>
+
+<p>Les plugins sont généralement développés car il existe une tâche qui ne peut pas être complétée avec les fonctionnalités de base de Grav.</p>
+<p>Dans ce tutoriel, nous allons créer un plugin qui aide Grav à fournir une page aléatoire à l'utilisateur. Vous avez probablement vu une fonctionnalité similaire sur les sites de blog comme un moyen de fournir un article de blog aléatoire lorsque vous cliquez sur un bouton.</p>
+<div class="notice note">
+Puisqu'il existe déjà un plugin qui effectue ce travail nommé <code>Random</code>, nous appellerons ce plugin de test <code>Randomizer</code>.
+</div>
+
+<p>Cette fonctionnalité n'est pas possible <strong>prête à l'emploi</strong>, mais est <strong>facilement</strong> fournie via un plugin. Comme c'est le cas avec un grand nombre d'aspects de Grav, il n'y a pas de moyen unique de le faire. Au lieu de cela, vous avez de nombreuses options. Nous ne couvrirons qu'une seule approche...</p>
+<h2 id="Présentation du plug-in Randomizer">Présentation du plug-in Randomizer
+<a href="#Présentation du plug-in Randomizer" class="toc-anchor after"></a></h2>
+
+<p>Pour notre plugin, nous adopterons l'approche suivante :</p>
+<ol>
+<li>
+<p>Activez le plugin si un URI correspond à notre "route de déclenchement" configurée. (par exemple <code>/random</code>)</p>
+</li>
+<li>
+<p>Créez un filtre afin que seules les taxonomies configurées soient dans le pool de pages aléatoires. (ex. <code>catégorie : blog</code>)</p>
+</li>
+<li>
+<p>Trouvez une page au hasard dans notre pool filtré et dites à Grav de l'utiliser pour le contenu de la page.</p>
+</li>
+</ol>
+<p>OK ! Cela semble assez simple, non ? Alors, laissez-nous craquer!</p>
+<h3 id="Étape 1 - Installer le plug-in DevTools">Étape 1 - Installer le plug-in DevTools
+<a href="#Étape 1 - Installer le plug-in DevTools" class="toc-anchor after"></a></h3>
+
+<div class="notice tip">
+Les versions précédentes de ce didacticiel nécessitaient la création manuelle d'un plugin. Tout ce processus peut être ignoré grâce à notre <strong>nouveau plugin DevTools</strong>.
+</div>
+
+<p>La première étape de la création d'un nouveau plugin consiste à <strong>installer le plugin DevTools</strong>. Ceci peut être fait de deux façons.</p>
+<h3 id="Installer via CLI GPM">Installer via CLI GPM
+<a href="#Installer via CLI GPM" class="toc-anchor after"></a></h3>
+
+<p>Naviguez dans la ligne de commande jusqu'à la racine de votre installation Grav</p>
+<pre><code class="language-console">$ | bin/gpm install devtools
+</code></pre>
+<h4 id="Installer via le plugin Admin">Installer via le plugin Admin
+<a href="#Installer via le plugin Admin" class="toc-anchor after"></a></h4>
+
+<ul>
+<li>Une fois connecté, accédez simplement à la section <strong>Plugins</strong> depuis la barre latérale.</li>
+<li>Cliquez sur le bouton <span class="fa fa-plus"></span><strong>Add</strong> en haut à droite.</li>
+<li>Recherchez <strong>DevTools</strong> dans la liste et cliquez sur le bouton <span class="fa fa-plus"></span> <strong>Install</strong>.</li>
+</ul>
+<h3 id="Étape 2 - Créer le plugin Randomizer">Étape 2 - Créer le plugin Randomizer
+<a href="#Étape 2 - Créer le plugin Randomizer" class="toc-anchor after"></a></h3>
+
+<p>Pour cette prochaine étape, vous devez vraiment être dans la <a href="../cli-intro/">ligne de commande</a> car les DevTools fournissent quelques commandes CLI pour faciliter le processus de création d'un nouveau plugin !</p>
+<p>Depuis la racine de votre installation Grav saisissez la commande suivante :</p>
+<pre><code class="language-console">$ | bin/plugin devtools new-plugin
+</code></pre>
+<p>Ce processus vous posera quelques questions nécessaires à la création du nouveau plugin :</p>
+<pre><code class="language-console">$ | bin/plugin devtools new-plugin
+  | Enter Plugin Name: Randomizer
+  | Enter Plugin Description: Sends the user to a random page
+  | Enter Developer Name: Acme Corp
+  | Enter Developer Email: contact@acme.co
+  | 
+  | SUCCESS plugin Randomizer -&gt; Created Successfully
+  |
+  | Path: /www/user/plugins/randomizer
+  | 
+  | Make sure to run `composer update` to initialize the autoloader
+</code></pre>
+<div class="notice note">
+À ce stade, vous devez <strong>exécuter la mise à jour</strong> de <code>composer update</code> dans le dossier du plug-in nouvellement créé.
+</div>
+
+<p>La commande DevTools vous indique où ce nouveau plugin a été créé. Ce plugin créé est entièrement fonctionnel mais n'aura pas automatiquement la logique pour exécuter la fonction que nous souhaitons. Nous devrons le modifier en fonction de nos besoins.</p>
+<h3 id="Étape 3 - Bases du plugin">Étape 3 - Bases du plugin
+<a href="#Étape 3 - Bases du plugin" class="toc-anchor after"></a></h3>
+
+<p>Nous avons maintenant créé un nouveau plugin qui peut être modifié et développé. Décomposons-le et regardons ce qui constitue un plugin. Si vous regardez dans le dossier <code>user/plugins/randomizer</code> vous verrez :</p>
+<pre>
+<div class="pre">
+.
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── blueprints.yaml
+├── randomizer.php
+</pre>
+</div>
+<p>Ceci est un exemple de structure mais certaines choses sont requises :</p>
+<h4 id="Éléments requis pour fonctionner">Éléments requis pour fonctionner
+<a href="#Éléments requis pour fonctionner" class="toc-anchor after"></a></h4>
+
+<p>Ces éléments sont essentiels et votre plugin ne fonctionnera pas de manière fiable à moins que vous ne les incluiez dans votre plugin.</p>
+<ul>
+<li><code>blueprints.yaml</code> - Le fichier de configuration utilisé par Grav pour obtenir des informations sur votre plugin. Il peut également définir un formulaire que l'administrateur peut afficher lors de l'affichage des détails du plugin. Ce formulaire vous permettra d'enregistrer les paramètres du plugin. <a href="../formulaires-blueprints/">Ce fichier est documenté dans le chapitre Formulaires</a>.</li>
+<li><code>randomizer.php</code> - Ce fichier sera nommé en fonction de votre plugin, mais peut être utilisé pour héberger toute logique dont votre plugin a besoin. Vous pouvez utiliser n'importe quel <a href="../crochets-evenements/">crochet d'événement de plugin</a> pour exécuter la logique à peu près n'importe quel moment du <a href="../cycle-vie/">cycle de vie de Grav</a>.</li>
+<li><code>randomizer.yaml</code> - Il s'agit de la configuration utilisée par le plugin pour définir les options que le plugin pourrait utiliser. Celui-ci doit être nommé de la même manière que le fichier <code>.php</code>.</li>
+</ul>
+<p><br></p>
+<h4 id="Éléments requis pour la release">Éléments requis pour la release
+<a href="#Éléments requis pour la release" class="toc-anchor after"></a></h4>
+
+<p>Ces éléments sont nécessaires si vous souhaitez publier votre plugin via GPM.</p>
+<ul>
+<li><code>CHANGELOG.md</code> - Un fichier qui suit le <a href="../avance-grav-developpement/">format Grav Changelog</a> pour montrer les changements dans les versions.</li>
+<li><code>LICENCE</code> - un fichier de licence, devrait probablement être MIT sauf si vous avez un besoin spécifique pour autre chose.</li>
+<li><code>README.md</code> - Un 'Readme' qui devrait contenir toute documentation pour le plugin. Comment l'installer, le configurer et l'utiliser.</li>
+</ul>
+<p><br></p>
+<h3 id="Étape 4 - Configuration du plugin">Étape 4 - Configuration du plugin
+<a href="#Étape 4 - Configuration du plugin" class="toc-anchor after"></a></h3>
+
+<p>Comme nous l'avons décrit dans la <strong>présentation du plugin</strong>, nous avons besoin de quelques options de configuration pour notre plugin, donc le fichier <code>randomizer.yaml</code> devrait ressembler à ceci :</p>
+<pre><code class="language-yaml">1 | enabled: true
+2 | active: true
+3 | route: /random
+4 | filters:
+5 |     category: blog
+</code></pre>
+<p>Cela nous permet d'avoir plusieurs filtres si nous le souhaitons, mais pour l'instant, nous voulons juste que tout le contenu avec la taxonomie <code>category: blog</code> soit éligible pour la sélection aléatoire.</p>
+<p>Tous les plugins doivent avoir l'option <code>enabled</code>. Si cela est <code>false</code> dans la configuration à l'échelle du site, votre plugin ne sera jamais initialisé par Grav. Tous les plugins ont également l'option <code>active</code>. Si cela est faux dans la configuration à l'échelle du site, chaque page devra activer votre plugin. Notez que plusieurs plugins prennent également en charge <code>enabled/active</code> dans le frontmatter de la page en utilisant <code>mergeConfig</code>, détaillé ci-dessous.</p>
+<div class="notice warming">
+L'installation par défaut de Grav a une taxonomie définie pour la <code>category</code> et le <code>tag</code> par défaut. Cette configuration peut être modifiée dans votre fichier <code>user/config/site.yaml</code>.
+</div>
+
+<p>Bien sûr, comme pour toutes les autres configurations dans Grav, il est conseillé de ne pas toucher à cette configuration par défaut pour le contrôle au jour le jour. Au lieu de cela, vous devez créer un remplacement dans un fichier appelé <code>/user/config/plugins/randomizer.yaml</code> pour héberger tous les paramètres personnalisés. Ce plugin <code>randomizer.yaml</code> fourni est vraiment destiné à définir des valeurs par défaut raisonnables pour votre plugin.</p>
+<h3 id="Étape 5 - Structure du plugin de base">Étape 5 - Structure du plugin de base
+<a href="#Étape 5 - Structure du plugin de base" class="toc-anchor after"></a></h3>
+
+<p>La structure de classe du plugin de base ressemblera déjà à ceci :</p>
+<pre><code class="language-php">1  | &lt;?php
+2  | namespace Grav\Plugin;
+3  |
+4  | use Composer\Autoload\ClassLoader;
+5  | use Grav\Common\Plugin;
+6  | use RocketTheme\Toolbox\Event\Event;
+7  |
+8  | /**
+9  |  * Class RandomizerPlugin
+10 |  * @package Grav\Plugin
+11 |  */
+12 | class RandomizerPlugin extends Plugin
+13 | {
+14 |     /**
+15 |      * Composer autoload.
+16 |      *
+17 |      * @return ClassLoader
+18 |      */
+19 |     public function autoload(): ClassLoader
+20 |     {
+21 |         return require __DIR__ . '/vendor/autoload.php';
+22 |     }
+23 | }
+</code></pre>
+<p>Nous devons ajouter quelques instructions <code>use</code> car nous allons utiliser ces classes dans notre plugin, et cela économise de l'espace et rend le code plus lisible si nous n'avons pas à mettre l'espace de noms complet pour chaque classe en ligne.</p>
+<p>Modifiez les instructions <code>use</code> pour qu'elles ressemblent à ceci :</p>
+<pre><code class="language-console">1 | use Composer\Autoload\ClassLoader;
+2 | use Grav\Common\Plugin;
+3 | use Grav\Common\Page\Collection;
+4 | use Grav\Common\Uri;
+5 | use Grav\Common\Taxonomy;
+</code></pre>
+<p>Les deux éléments clés de cette structure de classe sont :</p>
+<ol>
+<li>Les plugins doivent avoir un <code>namespace Grav\Plugin</code> en haut du fichier PHP.</li>
+<li>Les plugins doivent être nommés en <strong>casse de titre</strong> en fonction du nom du plugin avec la chaîne <code>Plugin</code> ajoutée à la fin, et doivent étendre <code>Plugin</code>, d'où le nom de classe <code>RandomizerPlugin</code>.</li>
+</ol>
+<p><br></p>
+<h3 id="Étape 6 - Événements auxquels vous êtes abonnés">Étape 6 - Événements auxquels vous êtes abonnés
+<a href="#Étape 6 - Événements auxquels vous êtes abonnés" class="toc-anchor after"></a></h3>
+
+<p>Grav utilise un système d'événements sophistiqué, et pour assurer des performances optimales, tous les plugins sont inspectés par Grav pour déterminer à quels événements le plugin est abonné.</p>
+<pre><code class="language-php">1 | public static function getSubscribedEvents(): array
+2 | {
+3 |     return [
+4 |         'onPluginsInitialized' =&gt; [
+5 |             ['autoload', 100000], // TODO: Remove when plugin requires Grav &gt;=1.7
+6 |            ['onPluginsInitialized', 0]
+7 |         ]
+8 |     ];
+9 |}
+</code></pre>
+<p>Dans ce plugin, nous allons dire à Grav que nous nous abonnons à l'événement <code>onPluginsInitialized</code>. De cette façon, nous pouvons utiliser cet événement (qui est le premier événement disponible pour les plugins) pour déterminer si nous devons nous abonner à d'autres événements.</p>
+<div class="notice tip">
+<strong>Remarque</strong> : Le premier écouteur d'événement de chargement <code>autoload</code> n'est nécessaire que dans Grav 1.6. Grav 1.7 appelle automatiquement la méthode.
+</div>
+
+<h3 id="Étape 7 - Déterminez si le plugin doit s'exécuter">Étape 7 - Déterminez si le plugin doit s'exécuter
+<a href="#Étape 7 - Déterminez si le plugin doit s'exécuter" class="toc-anchor after"></a></h3>
+
+<p>L'étape suivante consiste à ajouter une méthode à notre classe <code>RandomizerPlugin</code> pour gérer l'événement <code>onPluginsInitialized</code> afin qu'il ne s'active que lorsqu'un utilisateur essaie d'accéder à la route que nous avons configurée dans notre fichier <code>randomizer.yaml</code>. Remplacez la logique actuelle du plug-in "exemple" par ce qui suit :</p>
+<pre><code class="language-php">1  | public function onPluginsInitialized(): void
+2  | {
+3  |     // Don't proceed if we are in the admin plugin
+4  |     if ($this-&gt;isAdmin()) {
+5  |         return;
+6  |     }
+7  | 
+8  |     /** @var Uri $uri */
+9  |     $uri = $this-&gt;grav['uri'];
+10 |     $config = $this-&gt;config();
+11 |
+12 |     $route = $config['route'] ?? null;
+13 |     if ($route &amp;&amp; $route == $uri-&gt;path()) {
+14 |         $this-&gt;enable([
+15 |             'onPageInitialized' =&gt; ['onPageInitialized', 0]
+16 |         ]);
+17 |     }
+18 | }
+</code></pre>
+<p>Tout d'abord, nous obtenons l'<strong>objet Uri</strong> du <strong>conteneur d'injection de dépendance</strong>. Celui-ci contient toutes les informations sur l'URI actuel, y compris les informations de route.</p>
+<p>La <strong>méthode config()</strong> fait déjà partie du <strong>Plugin</strong> de base, nous pouvons donc simplement l'utiliser pour obtenir la valeur de configuration de notre <code>route</code> configurée.</p>
+<p>Ensuite, nous comparons la route configurée au chemin URI actuel. S'ils sont égaux, nous indiquons au répartiteur que notre plugin écoutera également un nouvel événement : <code>onPageInitialized</code>.</p>
+<p>En utilisant cette approche, nous nous assurons de ne pas exécuter de code supplémentaire si nous n'en avons pas besoin. Des pratiques comme celles-ci garantiront que votre site fonctionne aussi rapidement que possible.</p>
+<h3 id="Étape 8 - Afficher la page aléatoire">Étape 8 - Afficher la page aléatoire
+<a href="#Étape 8 - Afficher la page aléatoire" class="toc-anchor after"></a></h3>
+
+<p>La dernière étape de notre plugin consiste à afficher la page au hasard, et nous pouvons le faire en ajoutant la méthode suivante :</p>
+<pre><code class="language-php">1  | /**
+2  |  * Send user to a random page
+3  |  */
+4  | public function onPageInitialized(): void
+5  | {
+6  |     /** @var Taxonomy $uri */
+7  |     $taxonomy_map = $this-&gt;grav['taxonomy'];
+8  |     $config = $this-&gt;config();
+9  |
+10 |     $filters = (array)($config['filters'] ?? []);
+11 |     $operator = $config['filter_combinator'] ?? 'and';
+12 | 
+13 |     if (count($filters) &gt; 0) {
+14 |         $collection = new Collection();
+15 |         $collection-&gt;append($taxonomy_map-&gt;findTaxonomy($filters, $operator)-&gt;toArray());
+16 |         if (count($collection) &gt; 0) {
+17 |             unset($this-&gt;grav['page']);
+18 |             $this-&gt;grav['page'] = $collection-&gt;random()-&gt;current();
+19 |         }
+20 |     }
+21 | }
+</code></pre>
+<p>Cette méthode est un peu plus compliquée, nous allons donc passer en revue ce qui se passe :</p>
+<ol>
+<li>
+<p>Tout d'abord, nous récupérons l'<strong>objet Taxonomy</strong> du <strong>conteneur Grav DI</strong> et l'affectons à une variable <code>$taxonomy_map</code>.</p>
+</li>
+<li>
+<p>Ensuite, nous récupérons le tableau de filtres de notre configuration de plugin. Dans notre configuration, il s'agit d'un tableau avec 1 élément : ['category' =&gt; 'blog'].</p>
+</li>
+<li>
+<p>Vérifiez que nous avons des filtres, puis créez une nouvelle <code>Collection</code> dans la variable <code>$collection</code> pour stocker nos pages.</p>
+</li>
+<li>
+<p>Ajoutez toutes les pages qui correspondent au filtre à notre variable <code>$collection</code>.</p>
+</li>
+<li>
+<p>Annulez la définition de l'objet de la <code>page</code> actuelle dont Grav a connaissance.</p>
+</li>
+<li>
+<p>Définissez la <code>page</code> actuelle sur un élément aléatoire de la collection.</p>
+</li>
+</ol>
+<h3 id="Étape 9 - Nettoyage">Étape 9 - Nettoyage
+<a href="#Étape 9 - Nettoyage" class="toc-anchor after"></a></h3>
+
+<p>L'exemple de plugin créé avec le plugin <strong>DevTool</strong>s utilisait un événement appelé <code>onPageContentRaw()</code>. Cet événement n'est pas utilisé dans notre nouveau plugin, nous pouvons donc supprimer la fonction entière en toute sécurité.</p>
+<h3 id="Étape 10 - Classe finale du plugin">Étape 10 - Classe finale du plugin
+<a href="#Étape 10 - Classe finale du plugin" class="toc-anchor after"></a></h3>
+
+<p>Et c'est tout ce qu'il y a à faire ! Le plugin est maintenant terminé. Votre classe de plugin complète devrait ressembler à ceci :</p>
+<pre><code class="language-php">1  | &lt;?php
+2  | namespace Grav\Plugin;
+3  | 
+4  | use Composer\Autoload\ClassLoader;
+5  | use Grav\Common\Plugin;
+6  | use Grav\Common\Page\Collection;
+7  | use Grav\Common\Uri;
+8  | use Grav\Common\Taxonomy;
+9  | 
+10 | /**
+11 |  * Class RandomizerPlugin
+12 |  * @package Grav\Plugin
+13 |  */
+14 | class RandomizerPlugin extends Plugin
+15 | {
+16 |     /**
+17 |      * @return array
+18 |      *
+19 |      * The getSubscribedEvents() gives the core a list of events
+20 |      *     that the plugin wants to listen to. The key of each
+21 |      *     array section is the event that the plugin listens to
+22 |      *     and the value (in the form of an array) contains the
+23 |      *     callable (or function) as well as the priority. The
+24 |      *     higher the number the higher the priority.
+25 |      */
+26 |     public static function getSubscribedEvents(): array
+27 |     {
+28 |     return [
+29 |        'onPluginsInitialized' =&gt; [
+30 |             ['autoload', 100000], // TODO: Remove when plugin requires Grav &gt;=1.7
+31 |             ['onPluginsInitialized', 0]
+32 |         ]
+33 |     ];
+34 |     }
+35 | 
+36 |     /**
+37 |      * Composer autoload.
+38 |      *
+40 |      * @return ClassLoader
+41 |      */
+42 |     public function autoload(): ClassLoader
+43 |     {
+44 |         return require __DIR__ . '/vendor/autoload.php';
+45 |     }
+46 |     public function onPluginsInitialized(): void
+47 |     {
+48 |         // Don't proceed if we are in the admin plugin
+49 |         if ($this-&gt;isAdmin()) {
+50 |             return;
+51 |         }
+52 | 
+53 |         /** @var Uri $uri */
+54 |         $uri = $this-&gt;grav['uri'];
+55 |         $config = $this-&gt;config();
+56 | 
+57 |         $route = $config['route'] ?? null;
+58 |         if ($route &amp;&amp; $route == $uri-&gt;path()) {
+59 |             $this-&gt;enable([
+60 |                 'onPageInitialized' =&gt; ['onPageInitialized', 0]
+61 |             ]);
+62 |         }
+63 |     }
+64 | 
+65 |     /**
+66 |      * Send user to a random page
+67 |      */
+68 |     public function onPageInitialized(): void
+69 |     {
+70 |         /** @var Taxonomy $uri */
+71 |         $taxonomy_map = $this-&gt;grav['taxonomy'];
+72 |         $config = $this-&gt;config();
+73 | 
+74 |         $filters = (array)($config['filters'] ?? []);
+75 |         $operator = $config['filter_combinator'] ?? 'and';
+76 | 
+77 |         if (count($filters) &gt; 0) {
+78 |             $collection = new Collection();
+79 |             $collection-&gt;append($taxonomy_map-&gt;findTaxonomy($filters, $operator)-&gt;toArray());
+80 |             if (count($collection) &gt; 0) {
+81 |                 unset($this-&gt;grav['page']);
+82 |                 $this-&gt;grav['page'] = $collection-&gt;random()-&gt;current();
+83 |             }
+84 |         }
+85 |     }
+86 | }
+</code></pre>
+<p>Si vous avez suivi, vous devriez avoir un plugin <strong>Randomizer</strong> entièrement fonctionnel activé pour votre site. Pointez simplement votre navigateur sur <code>http://votresite.com/random</code>, et vous devriez voir une page au hasard. Vous pouvez également télécharger le plugin <strong>Random</strong> original directement depuis la section <a href="https://getgrav.org/downloads/plugins">Plugins Download</a> du site <a href="https://getgrav.org/">getgrav.org</a>.</p>
+<h2 id="Fusion du plugin et de la configuration de la page">Fusion du plugin et de la configuration de la page
+<a href="#Fusion du plugin et de la configuration de la page" class="toc-anchor after"></a></h2>
+
+<p>Une technique populaire utilisée dans une variété de plugins est le concept de fusion de la configuration du plugin (configuration utilisateur par défaut ou remplacée) avec la configuration au niveau de la page. Cela signifie que vous pouvez définir une configuration <strong>à l'échelle du site</strong>, puis disposer d'une configuration spécifique pour une page donnée selon vos besoins. Cela offre beaucoup de puissance et de flexibilité à votre plugin.</p>
+<p>Dans les versions récentes de Grav, une méthode d'assistance a été ajoutée pour exécuter cette fonctionnalité automatiquement plutôt que de devoir coder cette logique vous-même. Le plugin <strong>SmartyPants</strong> fournit un bon exemple de cette fonctionnalité en action :</p>
+<pre><code class="language-php">1  | public function onPageContentProcessed(Event $event): void
+2  | {
+3  |     $page = $event['page'];
+4  |     $config = $this-&gt;mergeConfig($page);
+5  | 
+6  |     if ($config-&gt;get('process_content')) {
+7  |         $page-&gt;setRawContent(\Michelf\SmartyPants::defaultTransform(
+8  |             $page-&gt;getRawContent(),
+9  |             $config-&gt;get('options')
+10 |         ));
+11 |     }
+12 | }
+</code></pre>
+<h2 id="Implémentation de la CLI dans votre plugin">Implémentation de la CLI dans votre plugin
+<a href="#Implémentation de la CLI dans votre plugin" class="toc-anchor after"></a></h2>
+
+<p>Les plugins ont également la capacité de s'intégrer à la ligne de commande <code>bin/plugin</code> pour exécuter des tâches. Vous pouvez suivre la documentation CLI du plug-in si vous souhaitez implémenter une telle fonctionnalité.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../plugin-installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../crochets-evenements/" class="btn btn-neutral float-right" title="Crochets d'évènements">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../plugin-installation/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../crochets-evenements/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>

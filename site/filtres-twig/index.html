@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SF aka stallaf" /><link rel="canonical" href="https://grav.stallaf.net/filtres-twig/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Filtres Twig - grav.stallaf.net</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/stallafgrav.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Filtres Twig";
+        var mkdocs_page_input_path = "filtres-twig.md";
+        var mkdocs_page_url = "/filtres-twig/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/md.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/json.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/ini.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/txt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/twig.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/console.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> grav.stallaf.net
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Rechercher des documents" title="Tapez vos mots clés ici" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navigation">
+              <p class="caption"><span class="caption-text">1. Bases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quesque-grav/">C'est quoi Grav ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prerequis/">Prérequis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel/">Tutoriel de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../structure-dossiers/">Structure des dossiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obtenir-aide/">Obtenir de l'aide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../maj-grav/">Mise à jour</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2. Contenu</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages/">Pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../en-tete-frontmatter/">En-têtes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-collection/">Collection de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntaxe-markdown/">Syntaxe Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-pages/">Liaison de pages</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../liaison-images/">Liaison d'images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../media/">Média</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../taxonomy/">Taxonomie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../pages-modulaires/">Pages modulaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../routage/">Routage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../multi-langue/">Multi langue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../types-contenu/">Types de contenu</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3. Themes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../themes-base/">Theme de base</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tutoriel-theme/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bases-twig/">Approche de Twig</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Balises, Filtres & Fonctions Twig</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../resume-twig/">Résumé</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../balises-twig/">Balises Twig</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Filtres Twig</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fonctions-twig/">Fonctions Twig</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration-theme/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../variables-theme/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../asset-manager/">Asset Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../personnalisation/">Personnalisation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4. Plugins</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-bases/">Les Bases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../plugin-tutoriel/">Tutoriel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crochets-evenements/">Crochets d'évènements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cycle-vie/">Cycle de vie de Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5. Panneau d'Administration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../panneau-admin-intro/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tableau de bord</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard/">Tableau de bord</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-systeme/">Configuration (systeme)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-site/">Configuration (site)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../profil/">Profil</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Comptes</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../comptes/">Comptes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../compte-utilisateur/">Compte utilisateur</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../groupe-utilisateur/">Groupe d'utilisateurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../configuration-comptes/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Pages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages/">Pages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-contenu/">Editeur (Contenu)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-options/">Editeur (Options)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-avance/">Editeur (Avancé)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-editeur-securite/">Editeur (Sécurité)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-configuration/">Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-pages-permissions/">Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Plugins</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugin/">Plugins</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-plugins-options/">Options</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-themes/">Thémes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Sécurité</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-authentification/">Authentification à 2 facteurs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-flood/">Protection contre le Flood</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-outils/">Outils</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Extensions</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-extensions/">Modifier le panneau</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dashboard-evenements/">Crochets d'évènements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6. Formulaires</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Blueprints</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprints/">Blueprints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-references/">Référence - Champs de formulaire Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-blueprint/">Exemple - Plugin Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config/">Exemple - Plugin Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-page-blueprint/">Exemple - Page Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-config-blueprint/">Exemple - Config Blueprint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-telechargement/">Comment ajouter un téléchargement de fichier</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-blueprint-avance/">Fonctionnalités avancés Blueprint</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Formulaires</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-frontaux/">Formulaire frontaux</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-options-formulaires/">Référence - Options de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-index-formulaires/">Référence - Index des champs de formulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ex-formulaire-contact/">Exemple - Formulaire de contact</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-ref-formulaire-actions/">Référence - Formulaire actions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-formulaire-pages/">Procedure - Formulaire pages modulaires</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../formulaires-procedure-traitement-ajax/">Procédure - Traitement Ajax</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7. CLI Console</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-intro/">Introduction ligne de commandes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-grav/">Commandes Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-plugin/">Commandes de plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-commandes-gpm/">Commandes GPM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cli-mise-a-niveau/">Mises à niveau scripté</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8. Avancé</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Objets Flexibles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-flex-objets/">Objets flexibles</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Administration</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-administration/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-intro/">Introduction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-liste-contenus/">Liste de contenus</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-editeur-contenus/">Editeur de contenu</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-configuration/">Configuration</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Utilisation d'objets flexibles</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-utilisation/">Utilisation</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-flex/">Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-repertoire/">Répertoire Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-collection/">Collection Flex</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-objets-flex/">Objets Flex</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Type de répertoires personnalisés</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-repertoires/">Résumé</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../avance-flex-type-blueprint/">Blueprintt</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-perf-cache/">Performances et mise en cache</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-debogage-journalisation/">Débogage et journalisation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-environnement/">Configuration de l'envirronement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-config-multisite/">Configuration multisite</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-priorisation-plugin/">Priorisarion  des plugins</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-planificateur/">Planificateur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-sauvegardes/">Sauvegardes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Développement Grav</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-developpement/">Développement Grav</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-1-6/">Mise à niveau depuis Grav <1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-6/">Mise à niveau vers Grav 1.6</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../avance-grav-up-to-1-7/">Mise à niveau vers Grav 1.7</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-syntaxe-yaml/">Syntaxe YAML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-groupes-autorisations/">Groupes et autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../avance-url/">Modifier l'URL du site</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9. Serveurs Web et Hébergement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Serveurs Web</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-nginx/">Nginx</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-serveur-grav/">Serveur Web Grav intégré</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-rochen/">Rochen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-wirenine/">WireNine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-crucial/">Crucial</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-siteground/">SiteGround</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-arvixe/">Arvixe</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-dreamhost/">Dreamhost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../web-hebergement-alwaysdata/">alwaysdata</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">VPS partagé</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-digitalocean/">DigitalOcean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-linode/">Linode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-rosehosting/">RoseHosting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../vps-hebergement-vultr/">Vultr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hébergement PaaS</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-fortrabbit/">Fortrabbit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-heroku/">Heroku</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-cloudways/">Cloudways</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-azure/">Microsoft Azure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../paas-hebergement-dokku/">Dokku</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-ddev/">Développement local avec ddev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-deploy-git/">Déployer avec Git</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-php/">Serveur Web PHP intégré</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../server-win-pour-linux/">Sous-système Windows pour Linux</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10. Cookbook</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes/">Recettes Générales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-twig/">Recettes Twig</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-plugin/">Recettes Plugin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cookbook-recettes-admin/">Recettes Administration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Tuotirel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cookbook-tutoriel/">Créer un Blog</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11. Dépannage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-404/">404 non trouvé</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-erreur-serveur/">Erreus du Serveur Grav</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-500/">500 Erreur Interne au Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-403/">403 Interdit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-token/">Jeton de Sécurité non Valide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-autorisations/">Autorisations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-proxy/">Problèmes de Proxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-communs/">Problèmes Communs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../depannage-htaccess/">htacces</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12. Migration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../migrer/">Migrer de Drupal 7 vers Grav</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13. Sécurité</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-apercu/">Aperçu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-config/">Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-utilisateurs/">Utilisateurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-dev/">Développeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-server/">Ducôté Serveur</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../securite-rapports/">Rapports</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14. API Grav</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">15. Trucs et Astuces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../trucs-metadonnees/">Métadonnées des Blogs</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navigation sur mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">grav.stallaf.net</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Documents"></a> &raquo;</li>
+          <li>3. Themes &raquo;</li>
+          <li>Balises, Filtres & Fonctions Twig &raquo;</li><li>Filtres Twig</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 class="rem">Les filtres Twig</h1>
+
+<p>Les filtres Twig sont appliqués aux variables Twig en utilisant le <code>|</code> caractère suivi du nom du filtre. Les paramètres peuvent être transmis comme les fonctions Twig en utilisant des parenthèses.</p>
+<div class="typo" id="absolute_url">
+absolute_url
+<a href="#absolute_url" class="toc-anchor after"></a>
+</div>
+
+<p>Prend un extrait de code HTML contenant un attribut <code>src</code> ou <code>href</code> qui utilise un chemin relatif. Convertit la chaîne de chemin d'accès en un format d'URL absolu, y compris le nom d'hôte.</p>
+<p><code>&lt;img src="/some/path/to/image.jpg"/&gt;|absolute_url</code> → </p>
+<div class="typo" id="array_unique">
+array_unique
+<a href="#array_unique" class="toc-anchor after"></a>
+</div>
+
+<p>Wrapper pour PHP <code>array_unique()</code> qui supprime les doublons d'un tableau.</p>
+<p><code>['foo', 'bar', 'foo', 'baz']|array_unique</code> <strong>→ Array ( [0] =&gt; foo [1] =&gt; bar [3] =&gt; baz )</strong></p>
+<div class="typo" id="base32_encode">
+base32_encode
+<a href="#base32_encode" class="toc-anchor after"></a>
+</div>
+
+<p>Effectue un encodage base32 sur la variable <code>'some variable here'|base32-encode</code> <strong>→  ONXW2ZJAOZQXE2LBMJWGKIDIMVZGK</strong></p>
+<div class="typo" id="base32_decode">
+base32_decode
+<a href="#base32_decode" class="toc-anchor after"></a>
+</div>
+
+<p>Effectue un décodage en base32 sur la variable
+<code>'ONXW2ZJAOZQXE2LBMJWGKIDIMVZGK'|base32_decode</code> <strong>→ some variable here</strong></p>
+<div class="typo" id="base64_encode">
+base64_encode
+<a href="#base64_encode" class="toc-anchor after"></a>
+</div>
+
+<p>Effectue un encodage base64 sur la variable <code>'some variable here'|base64_encode</code> <strong>→ c29tZSB2YXJpYWJsZSBoZXJl</strong></p>
+<div class="typo" id="base64_decode">
+base64_decode
+<a href="#base64_decode" class="toc-anchor after"></a>
+</div>
+
+<p>Effectue un décodage base64 sur la variable
+<code>'c29tZSB2YXJpYWJsZSBoZXJl'|base64_decode</code> <strong>→ some variable here</strong></p>
+<div class="typo" id="basename">
+basename
+<a href="#basename" class="toc-anchor after"></a>
+</div>
+
+<p>Renvoie le nom de base d'un chemin.</p>
+<p><code>'/etc/sudoers.d'|basename</code> <strong>→ sudoers.d</strong></p>
+<div class="typo" id="camelize">
+camelize
+<a href="#camelize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne au format "CamelCase"</p>
+<p><code>'send_email'|camelize</code> <strong>→ SendEmail</strong>l</p>
+<div class="typo" id="chunk_split">
+chunk_split
+<a href="#chunk_split" class="toc-anchor after"></a>
+</div>
+
+<p>Divise une chaîne en plus petits morceaux d'une certaine taille</p>
+<p><code>'ONXW2ZJAOZQXE2LBMJWGKIDIMVZGKA'|chunk_split(6, '-')</code> <strong>→ ONXW2Z-JAOZQX-E2LBMJ-WGKIDI-MVZGKA-</strong></p>
+<div class="typo" id="contains">
+contains
+<a href="#contains" class="toc-anchor after"></a>
+</div>
+
+<p>Déterminer si une chaîne particulière contient une autre chaîne</p>
+<p><code>'une chaîne avec des choses dedans'|contains('things')</code> <strong>→ 1</strong></p>
+<h2 id="Casting Values">Casting Values
+<a href="#Casting Values" class="toc-anchor after"></a></h2>
+
+<p>PHP 7 obtient des vérifications de type plus strictes, ce qui signifie que le passage d'une valeur de type incorrect peut désormais lever une exception. Pour éviter cela, vous devez utiliser des filtres qui garantissent que la valeur transmise à une méthode est valide :</p>
+<div class="typo" id="string">
+string
+<a href="#string" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|string</code> pour convertir la valeur en chaîne.</p>
+<div class="typo" id="int">
+int
+<a href="#int" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|int</code> pour convertir la valeur en entier.</p>
+<div class="typo" id="bool">
+bool
+<a href="#bool" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|bool</code> pour convertir la valeur en booléen.</p>
+<div class="typo" id="float">
+float
+<a href="#float" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|float</code> pour convertir la valeur en nombre à virgule flottante.</p>
+<div class="typo" id="array">
+array
+<a href="#array" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|array</code> pour transtyper la valeur dans un tableau.</p>
+<div class="typo" id="defined">
+defined
+<a href="#defined" class="toc-anchor after"></a>
+</div>
+
+<p>Parfois, vous voulez vérifier si une variable est définie, et si ce n'est pas le cas, fournissez une valeur par défaut. Par example:</p>
+<p><code>set header_image_width = page.header.header_image_width|defined(900)</code></p>
+<p>Cela définira la variable <code>header_image_width</code> sur la valeur <code>900</code> si elle n'est pas définie dans l'en-tête de la page.</p>
+<div class="typo" id="dirname">
+dirname
+<a href="#dirname" class="toc-anchor after"></a>
+</div>
+
+<p>Renvoie le dirname d'un chemin.</p>
+<p><code>'/etc/sudoers.d'|dirname</code> <strong>→ /etc</strong></p>
+<div class="typo" id="ends_with">
+ends_with
+<a href="#ends_with" class="toc-anchor after"></a>
+</div>
+
+<p>Prend une aiguille et une botte de foin et détermine si la botte de foin se termine par l'aiguille. Fonctionne également maintenant avec un tableau d'aiguilles et renverra <code>true</code> si une botte de foin se termine par l'aiguille.</p>
+<p><code>'le renard brun rapide'|ends_with('fox')</code> <strong>→ true</strong></p>
+<div class="typo" id="fieldName">
+fieldName
+<a href="#fieldName" class="toc-anchor after"></a>
+</div>
+
+<p>Filtre le nom du champ en changeant la notation par points en notation par tableau</p>
+<p><code>'field.name'|fieldName field[name]</code> <strong>→ field[name]</strong></p>
+<div class="typo" id="gate_type">
+gate_type
+<a href="#gate_type" class="toc-anchor after"></a>
+</div>
+
+<p>Obtient le type d'une variable :</p>
+<p><code>page|get_type</code> <strong>→ object</strong></p>
+<div class="typo" id="humanize">
+humanize
+<a href="#humanize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne dans un format plus "lisible par l'homme"</p>
+<p><code>'something_text_to_read'|humanise</code> <strong>→ something text to read</strong></p>
+<div class="typo" id="hyphenize">
+hyphenize
+<a href="#hyphenize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne en une version avec trait d'union.</p>
+<p><code>'Something text to read'|hyphenize</code> <strong>→ something text to read</strong></p>
+<div class="typo" id="json_decode">
+json_decode
+<a href="#json_decode" class="toc-anchor after"></a>
+</div>
+
+<p>Vous pouvez décoder JSON en appliquant simplement ce filtre :</p>
+<p><code>array|json_decode</code></p>
+<pre><code class="language-twig">1 | {% set array = '{&quot;first_name&quot;: &quot;Guido&quot;, &quot;last_name&quot;:&quot;Rossum&quot;}'|json_decode %}
+2 | {{ print_r(array) }}
+</code></pre>
+<pre><code class="language-twig">stdClass Object
+(
+    [first_name] =&gt; Guido
+    [last_name] =&gt; Rossum
+)
+</code></pre>
+<div class="typo" id="ksort">
+ksort
+<a href="#ksort" class="toc-anchor after"></a>
+</div>
+
+<p>Trier une carte de tableau par chaque clé</p>
+<p><code>array|ksort</code></p>
+<pre><code class="language-twig">1 | {% set items = {'orange':1, 'apple':2, 'peach':3}|ksort %}
+2 | {{ print_r(items) }}
+</code></pre>
+<pre><code class="language-twig">Array
+(
+    [apple] =&gt; 2
+    [orange] =&gt; 1
+    [peach] =&gt; 3
+)
+</code></pre>
+<div class="typo" id="ltrim">
+ltrim
+<a href="#ltrim" class="toc-anchor after"></a>
+</div>
+
+<p><code>'/strip/leading/slash/'|ltrim('/')</code> → strip/leading/slash/</p>
+<p>Trim gauche supprime les espaces de fin au début d'une chaîne. Il peut également supprimer d'autres caractères en définissant le masque de caractère (voir <a href="https://php.net/manual/en/function.ltrim.php">https://php.net/manual/en/function.ltrim.php</a>)</p>
+<div class="typo" id="markdown">
+markdown
+<a href="#markdown" class="toc-anchor after"></a>
+</div>
+
+<p>Prenez une chaîne arbitraire contenant du démarquage et convertissez-la en HTML à l'aide de l'analyseur de démarquage de Grav. Paramètre <code>boolean</code> facultatif :</p>
+<ul>
+<li><code>true</code> (par défaut) : traiter comme un bloc (mode texte, le contenu sera enveloppé dans des balises <code>&lt;p&gt;</code>)</li>
+<li><code>false</code> : traiter comme une ligne (le contenu ne sera pas encapsulé)</li>
+</ul>
+<p><code>string|markdown($is_block)</code></p>
+<pre><code class="language-html">1 | &lt;div class=&quot;div&quot;&gt;
+2 | {{ 'Un paragraphe avec **markdown** et [un lien](http://www.cnn.com)'|markdown }}
+3 | &lt;/div&gt;
+4 |
+5 | &lt;p class=&quot;paragraph&quot;&gt;{{'Une ligne avec **markdown** et [un lien](http://www.cnn.com)'|markdown(false)}}&lt;/p&gt;
+</code></pre>
+<pre><code class="language-html">&lt;/p&gt;
+&lt;div class=&quot;div&quot;&gt;
+&lt;p&gt;Un paragraphe avec &lt;strong&gt;markdown&lt;/strong&gt; et &lt;a href=&quot;http://www.cnn.com&quot;&gt;un lien&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class=&quot;paragraph&quot;&gt;Une ligne avec &lt;strong&gt;markdown&lt;/strong&gt; et &lt;a href=&quot;http://www.cnn.com&quot;&gt;un lien&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+</code></pre>
+<div class="typo" id="md5">
+md5
+<a href="#md5" class="toc-anchor after"></a>
+</div>
+
+<p>Crée un hachage md5 pour la chaîne</p>
+<p><code>'n'importe quoi'|md5</code> <strong>→ f0e166dc34d14d6c228ffac576c9a43c</strong></p>
+<div class="typo" id="modulus">
+modulus
+<a href="#modulus" class="toc-anchor after"></a>
+</div>
+
+<p>Effectue la même fonctionnalité que le symbole Modulo <code>%</code> en PHP. Il fonctionne sur un nombre en transmettant un diviseur numérique et un tableau facultatif d'éléments à sélectionner.</p>
+<p><code>7|modulus(3, ['rouge', 'bleu', 'vert'])</code> <strong>→ bleu</strong></p>
+<div class="typo" id="monthize">
+monthize
+<a href="#monthize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit un nombre entier de jours en nombre de mois</p>
+<p><code>'181'|monthize</code> <strong>→ 5</strong></p>
+<div class="typo" id="nicecron">
+nicecron
+<a href="#nicecron" class="toc-anchor after"></a>
+</div>
+
+<p>Obtient une sortie lisible par l'homme pour la syntaxe cron</p>
+<p><code>"2 * * * *"|nicecron</code> <strong>→ Toutes les heures à 2 minutes après l'heure</strong></p>
+<div class="typo" id="nicefilesize">
+nicefilesize
+<a href="#nicefilesize" class="toc-anchor after"></a>
+</div>
+
+<p>Sortie d'une taille de fichier dans un format de bonne taille lisible par l'homme</p>
+<p><code>612394|nicefilesize</code> <strong>→ 598,04 Ko</strong></p>
+<div class="typo" id="nicenumber">
+nicenumber
+<a href="#nicenumber" class="toc-anchor after"></a>
+</div>
+
+<p>Générer un nombre dans un format de nombre gentil lisible par l'homme</p>
+<p><code>12430|nicenumber</code> <strong>→ 12,43 k</strong></p>
+<div class="typo" id="nicetime">
+nicetime
+<a href="#nicetime" class="toc-anchor after"></a>
+</div>
+
+<p>Afficher une date dans un format d'heure agréable lisible par l'homme</p>
+<p><code>page.date|nicetime(false)</code> <strong>→ Il y a 4 mois</strong></p>
+<p>Le premier argument spécifie s'il faut utiliser une description de date au format complet. C'est <code>true</code> par défaut.</p>
+<p>Vous pouvez fournir un deuxième argument de <code>false</code> si vous souhaitez supprimer le descripteur relatif au temps (comme « il y a » ou « à partir de maintenant » dans votre langue) du résultat.</p>
+<div class="typo" id="of_type">
+of_type
+<a href="#of_type" class="toc-anchor after"></a>
+</div>
+
+<p>Vérifie le type d'une variable au paramètre :</p>
+<p><code>page|of_type('string')</code> <strong>→ false</strong></p>
+<div class="typo" id="ordinalise">
+ordinalise
+<a href="#ordinalise" class="toc-anchor after"></a>
+</div>
+
+<p>Ajoute un ordinal à l'entier (tel que 1er, 2e, 3e, 4e)</p>
+<p><code>'10'|ordinalize</code> <strong>→ 10</strong></p>
+<div class="typo" id="pad">
+pad
+<a href="#pad" class="toc-anchor after"></a>
+</div>
+
+<p>Complète une chaîne à une certaine longueur avec un autre caractère. Il s'agit d'un wrapper pour la fonction PHP str_pad().</p>
+<p><code>'foobar'|pad(10, '-')</code> <strong>→ foobar----</strong></p>
+<div class="typo" id="pluralize">
+pluralize
+<a href="#pluralize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne en version plurielle anglaise</p>
+<p><code>'person'| → pluralize</code> <strong>→ les gens</strong></p>
+<p><code>pluralize</code> prend également un paramètre numérique facultatif que vous pouvez transmettre lorsque vous ne savez pas à l'avance à combien d'éléments le nom fera référence. Sa valeur par défaut est 2, donc fournira la forme plurielle si elle est omise. Par example:</p>
+<pre><code>&lt;p&gt;We have {{ num_vacancies }} {{ 'vacancy'|pluralize(num_vacancies) }} right now.&lt;/p&gt;
+</code></pre>
+<div class="typo" id="print_r">
+print_r
+<a href="#print_r" class="toc-anchor after"></a>
+</div>
+
+<p>Imprime des informations lisibles par l'homme sur une variable</p>
+<p><code>page.header|print_r</code></p>
+<pre><code class="language-twig">Objet stdClass
+(
+    [title] =&gt; Filtres Brindille
+    [body_classes] =&gt; twig__headers
+    [page-toc] =&gt; Tableau
+        (
+            [actif] =&gt; 1
+            [début] =&gt; 3
+            [profondeur] =&gt; 1
+        )
+
+    [processus] =&gt; Tableau
+        (
+            [brindille] =&gt; 1
+        )
+
+    [taxonomie] =&gt; Tableau
+        (
+            [catégorie] =&gt; docs
+        )
+
+    [métadonnées] =&gt; Tableau
+        (
+            [description] =&gt;
+            [générateur] =&gt; GravCMS
+            [title] =&gt; Filtres Brindille
+            [image] =&gt; https://webshot.getgrav.org/?url=aHR0cHM6Ly9sZWFybi5nZXRncmF2Lm9yZy8xNy90aGVtZXMvdHdpZy10YWdzLWZpbHRlcnMtZnVuY3Rpb25zL2ZpbHRlcnM=
+            [robots] =&gt; tous
+            [fb:app_id] =&gt;
+            [og:url] =&gt; https://learn.getgrav.org/17/themes/twig-tags-filters-functions/filters
+            [og:site_name] =&gt; Documentation Grav
+            [og:title] =&gt; Filtres Twig
+            [og:description] =&gt;
+            [og:type] =&gt; article
+            [og:image] =&gt; https://webshot.getgrav.org/?url=aHR0cHM6Ly9sZWFybi5nZXRncmF2Lm9yZy8xNy90aGVtZXMvdHdpZy10YWdzLWZpbHRlcnMtZnVuY3Rpb25zL2ZpbHRlcnM=
+            [og:image:largeur] =&gt; 1200
+            [og:image:hauteur] =&gt; 630
+            [og:image:secure] =&gt; https://webshot.getgrav.org/?url=aHR0cHM6Ly9sZWFybi5nZXRncmF2Lm9yZy8xNy90aGVtZXMvdHdpZy10YWdzLWZpbHRlcnMtZnVuY3Rpb25zL2ZpbHRlcnM=
+            [twitter:card] =&gt; summary_large_image
+            [gazouillement:site] =&gt;
+            [twitter:title] =&gt; Filtres Twig
+            [twitter:description] =&gt;
+            [twitter:image] =&gt; https://webshot.getgrav.org/?url=aHR0cHM6Ly9sZWFybi5nZXRncmF2Lm9yZy8xNy90aGVtZXMvdHdpZy10YWdzLWZpbHRlcnMtZnVuY3Rpb25zL2ZpbHRlcnM=
+            [twitter:image:alt] =&gt; Filtres Twig
+        )
+)
+</code></pre>
+<div class="typo" id="randomize">
+randomize
+<a href="#randomize" class="toc-anchor after"></a>
+</div>
+
+<p>Randomise la liste fournie. Si une valeur est fournie en tant que paramètre, il ignorera les n premières valeurs et les conservera dans l'ordre.</p>
+<p><code>array|randomiser</code></p>
+<pre><code class="language-twig">1 | {% set ritems = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']|randomize(2) %}
+2 | {{ print_r(ritems) }}
+</code></pre>
+<pre><code>Array
+(
+    [0] =&gt; one
+    [1] =&gt; two
+    [2] =&gt; four
+    [3] =&gt; seven
+    [4] =&gt; ten
+    [5] =&gt; three
+    [6] =&gt; eight
+    [7] =&gt; five
+    [8] =&gt; nine
+    [9] =&gt; six
+)
+</code></pre>
+<div class="typo" id="regex_replace">
+regex_replace
+<a href="#regex_replace" class="toc-anchor after"></a>
+</div>
+
+<p>Un wrapper utile pour la méthode PHP <a href="https://php.net/manual/en/function.preg-replace.php">preg_replace()</a>, vous pouvez effectuer des remplacements complexes de Regex sur du texte via ce filtre :</p>
+<p><code>'The quick brown fox jumps over the lazy dog.'|regex_replace(['/quick/','/brown/','/fox/','/dog/'], ['slow','black', 'bear','turtle'])</code> <strong>→ The slow black bear jumps over the lazy turtle</strong>.</p>
+<div class="notice note">
+Utilisez le délimiteur <code>~</code> plutôt que le délimiteur <code>/</code> si possible. Sinon, vous devrez probablement <a href="https://github.com/getgrav/grav/issues/833">double-échapper certains caractères</a>. Par exemple <code>~\/\/#.*~</code> plutôt que <code>'/\\/\\#.*/'</code>, qui se conforme plus étroitement à la <a href="https://www.php.net/manual/en/regexp.reference.delimiters.php">syntaxe PCRE</a> utilisée par PHP.
+</div>
+
+<div class="typo" id="rtrim">
+rtrim
+<a href="#rtrim" class="toc-anchor after"></a>
+</div>
+
+<p><code>'/strip/trailing/slash/'|rtrim('/')</code> <strong>→ /strip/trailing/slash</strong></p>
+<p>Supprime les espaces de fin à la fin d'une chaîne. Il peut également supprimer d'autres caractères en définissant le masque de caractère (voir <a href="https://php.net/manual/en/function.rtrim.php">https://php.net/manual/en/function.rtrim.php</a>).</p>
+<div class="typo" id="singularize">
+singularize
+<a href="#singularize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne en version anglaise singulière</p>
+<p><code>'shoes'|singularize</code> <strong>→ shoe</strong></p>
+<div class="typo" id="safe_email">
+safe_email
+<a href="#safe_email" class="toc-anchor after"></a>
+</div>
+
+<p>Le filtre de messagerie sécurisé convertit une adresse e-mail en caractères ASCII pour la rendre plus difficile à reconnaître et à capturer par les robots de spam.</p>
+<p><code>"someone@domaine.com"|safe_email</code> <strong>→ somone@domaine.com</strong></p>
+<p>Exemple d'utilisation avec un lien mailto :</p>
+<pre><code class="language-html">1 | &lt;a href=&quot;mailto:{{ 'your.email@server.com'|safe_email }}&quot;&gt;
+2 |    Email me
+3 | &lt;/a&gt;
+</code></pre>
+<p>Vous ne remarquerez peut-être pas de différence au début, mais l'examen de la source de la page (sans utiliser les outils de développement du navigateur, la source de la page réelle) révélera l'encodage des caractères sous-jacents.</p>
+<div class="typo" id="sort_by_key">
+sort_by_key
+<a href="#sort_by_key" class="toc-anchor after"></a>
+</div>
+
+<p>Trier une carte de tableau par une clé particulière</p>
+<p><code>array|sort_by_key</code></p>
+<pre><code class="language-twig">1 | {% set people = [{'email':'fred@yahoo.com', 'id':34}, {'email':'tim@exchange.com', 'id':21}, 
+2 | {'email':'john@apple.com', 'id':2}]|sort_by_key('id') %}
+3 | {% for person in people %}{{ person.email }}:{{ person.id }}, {% endfor %}
+</code></pre>
+<p><strong>john@apple.com:2, tim@exchange.com:21, fred@yahoo.com:34,</strong></p>
+<div class="typo" id="starts_with">
+starts_with
+<a href="#starts_with" class="toc-anchor after"></a>
+</div>
+
+<p>Prend une aiguille et une botte de foin et détermine si la botte de foin commence par l'aiguille. Fonctionne également maintenant avec un tableau d'aiguilles et renverra <code>true</code> si aucune botte de foin commence par l'aiguille.</p>
+<p><code>'The quick brown fox'|starts_with('the')</code> <strong>→ true</strong></p>
+<div class="typo" id="titleize">
+titleize
+<a href="#titleize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne au format "Title Case"</p>
+<p><code>'welcome page'|titleize</code> <strong>→ Welcome Page</strong></p>
+<div class="typo" id="t">
+t
+<a href="#t" class="toc-anchor after"></a>
+</div>
+
+<p>Traduire une chaîne dans la langue courante</p>
+<p><code>'MY_LANGUAGE_KEY_STRING'|t</code> <strong>→ 'Du texte en anglais'</strong></p>
+<p>Cela suppose que ces chaînes de langue sont traduites sur votre site et que vous avez activé la prise en charge de -language. Veuillez vous référer à la <a href="../multi-langue/">documentation multilingue</a> pour des informations plus détaillées.</p>
+<div class="typo" id="tu">
+tu
+<a href="#tu" class="toc-anchor after"></a>
+</div>
+
+<p>Traduire une chaîne dans la langue actuelle définie dans les préférences utilisateur de l'interface d'administration</p>
+<p><code>'MY_LANGUAGE_KEY_STRING'|tu</code> <strong>→ Quelque texte en anglais'</strong></p>
+<p>Cela utilise le champ de langue défini dans l'utilisateur yaml.</p>
+<div class="typo" id="ta">
+ta
+<a href="#ta" class="toc-anchor after"></a>
+</div>
+
+<p>Traduit un tableau avec une langue utilise le filtre <code>|ta</code>. Voir la <a href="../multi-langue/">documentation multilingue</a> pour un exemple détaillé.</p>
+<p><code>'MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1)</code> <strong>→ april</strong></p>
+<div class="typo" id="tl">
+tl
+<a href="#tl" class="toc-anchor after"></a>
+</div>
+
+<p>Traduit une chaîne dans une langue spécifique. Pour plus de détails, consultez la <a href="../multi-langue/">documentation multilingue</a>.</p>
+<p><code>'SIMPLE_TEXT'|tl(['en'])</code></p>
+<div class="typo" id="truncate">
+truncate
+<a href="#truncate" class="toc-anchor after"></a>
+</div>
+
+<p>Vous pouvez facilement générer une version raccourcie et tronquée d'une chaîne à l'aide de ce filtre. Il prend un certain nombre de caractères comme seul champ obligatoire, mais a quelques autres options :</p>
+<p><code>'one sentence. two sentences'|truncate(5)|raw</code> <strong>→ one s…</strong></p>
+<p>Tronque simplement à 5 caractères.</p>
+<p><code>'one sentence. two sentences'|truncate(5, true)|raw</code> <strong>→ one sentence.…</strong></p>
+<div class="notice note">
+Le filtre <code>|raw</code> Twig doit être utilisé avec la valeur par défaut <code>&hellip;</code> (points de suspension) élément de remplacement afin qu'il soit rendu avec l'échappement automatique de Twig.
+</div>
+
+<p>Tronque à la fin de phrase la plus proche après 5 caractères.</p>
+<p>Vous pouvez également tronquer le texte HTML, mais vous devez d'abord utiliser le filtre <code>|striptags</code> pour supprimer toute mise en forme HTML qui pourrait être endommagée si vous terminez entre des balises :</p>
+<p><code>'&lt;span&gt;une &lt;strong&gt;sentence&lt;/strong&gt;. deux phrases&lt;/span&gt;' |raw|striptags|truncate(25)</code> <strong>→ one sentence. two sentenc…</strong></p>
+<h2 id="Versions spécialisées :">Versions spécialisées :
+<a href="#Versions spécialisées :" class="toc-anchor after"></a></h2>
+
+<div class="typo" id="safe_truncate">
+safe_truncate
+<a href="#safe_truncate" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|safe_truncate</code> pour tronquer le texte par nombre de caractères d'une manière "word-safe".</p>
+<div class="typo" id="truncate_html">
+truncate_html
+<a href="#truncate_html" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|truncate_html</code> pour tronquer le code HTML par nombre de caractères. pas "mot-sûr" !</p>
+<div class="typo" id="safe_truncate_html">
+safe_truncate_html
+<a href="#safe_truncate_html" class="toc-anchor after"></a>
+</div>
+
+<p>Utilisez <code>|safe_truncate_html</code> pour tronquer le code HTML par nombre de caractères d'une manière « sans danger pour les mots ».</p>
+<div class="typo" id="underscorize">
+underscorize
+<a href="#underscorize" class="toc-anchor after"></a>
+</div>
+
+<p>Convertit une chaîne au format "under_scored"</p>
+<p><code>'CamelCased'|underscorize</code> <strong>→ camel_cased</strong></p>
+<div class="typo" id="yaml_encode">
+yaml_encode
+<a href="#yaml_encode" class="toc-anchor after"></a>
+</div>
+
+<p>Vider/encoder une variable dans la syntaxe YAML</p>
+<pre><code class="language-twig">1 | {% set array = {foo: [0, 1, 2, 3], baz: 'qux' } %}
+2 | {{ array|yaml_encode }}
+</code></pre>
+<pre><code>foo :
+  - 0
+  - 1
+  - 2
+  - 3
+baz: qux
+</code></pre>
+<div class="typo" id="yaml_decode">
+yaml_decode
+<a href="#yaml_decode" class="toc-anchor after"></a>
+</div>
+
+<p>Décoder/analyser une variable à partir de la syntaxe YAML</p>
+<pre><code class="language-twig">1 | {% set yaml = &quot;foo: [0, 1, 2, 3]\nbaz: qux&quot; %}
+2 | {{ yaml|yaml_decode|var_dump }}
+</code></pre>
+<pre><code class="language-yaml">array(2) {
+  [&quot;foo&quot;]=&gt;
+  array(4) {
+    [0]=&gt;
+    int(0)
+    [1]=&gt;
+    int(1)
+    [2]=&gt;
+    int(2)
+    [3]=&gt;
+    int(3)
+  }
+  [&quot;baz&quot;]=&gt;
+  string(3) &quot;qux&quot;
+}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
+        <a href="../balises-twig/" class="btn btn-neutral float-left" title="Balises Twig"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../fonctions-twig/" class="btn btn-neutral float-right" title="Fonctions Twig">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../balises-twig/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+    
+    
+      <span><a href="../fonctions-twig/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        };
+    </script>
+
+</body>
+</html>
